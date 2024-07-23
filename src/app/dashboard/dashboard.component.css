@@ -1,0 +1,47 @@
+
+
+
+.btnToggle{
+  display: none;
+}
+.gapCard{
+  gap:50px;
+
+}
+
+.genralInfo{
+  height: 100%;
+}
+.mainCard{
+  min-width: 300px;
+  height: 550px;
+}
+
+
+#instDropDown{
+  max-width: 230px;
+}
+@media (max-width:1100px){
+  .btnToggle{
+    display: block;
+  }
+}
+
+@media (max-width:850px){
+  .gapCard app-card{
+    flex: 1 0 100%;
+  }
+
+  .gapCard {
+    gap: 15px;
+
+  }
+}
+
+
+
+
+
+
+
+

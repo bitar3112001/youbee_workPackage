@@ -1,0 +1,18 @@
+
+.s2{
+  display: none !important;
+}
+.s1{
+  display: block !important;
+}
+
+@media (max-width:1100px) {
+.s1{
+  display: none !important;
+}
+.s2{
+  display: block !important;
+  height: 100vh;
+
+} 
+}

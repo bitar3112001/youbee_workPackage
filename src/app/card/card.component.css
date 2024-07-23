@@ -1,0 +1,4 @@
+.updateCard{
+  border-left-width: 5px !important;
+  border-left-color: var(--greenColor) !important;
+}
