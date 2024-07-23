@@ -24,7 +24,9 @@
 @media (max-width:1100px){
   .btnToggle{
     display: block;
+    margin-left: 20px;
   }
+
 }
 
 @media (max-width:850px){
@@ -36,6 +38,11 @@
     gap: 15px;
 
   }
+
+  #instDropDown{
+    max-width: 200px;
+  }
+
 }
 
 

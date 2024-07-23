@@ -140,6 +140,7 @@ export class DashboardComponent implements OnInit {
   }
 
   sendBtn(){
+    console.log("pst")
 this.side= !this.side
 this.openSide.emit(this.side)
   }

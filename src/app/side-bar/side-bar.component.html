@@ -1,14 +1,14 @@
 
 
 
-<div class="flex-shrink-0 p-3 bg-light " [ngClass]="{ s1: !isTrue, s2: isTrue }" style="width: 280px; height: 100vh;">
-  <div class="d-flex align-items-center justify-content-between">
+<div class="flex-shrink-0 p-3 bg-light" [ngClass]="{ s1: !isTrue, s2: isTrue }" style="height: 100vh;">
+  <div class="d-flex align-items-center ">
 
+    <button  *ngIf="isTrue" class="border-0 bg-light rounded btnToggle me-4 align-self-start" (click)="handleChangeIstrue()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-justify"><line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line></svg></button>
     <!-- <button *ngIf="isTrue" class="border-0 bg-light rounded btnToggle align-self-start " (click)="handleChangeIstrue()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button> -->
     <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
         <span class="fs-5 fw-semibold ">YouBee.ai</span>
     </a>
-    <button *ngIf="isTrue" class="border-0 bg-light rounded btnToggle me-4 align-self-start" (click)="handleChangeIstrue()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-justify"><line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line></svg></button>
 
   </div>
   <ul class="list-unstyled ps-0">
