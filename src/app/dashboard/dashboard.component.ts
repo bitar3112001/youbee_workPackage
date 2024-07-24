@@ -127,7 +127,7 @@ export class DashboardComponent implements OnInit {
   isDoughnut: boolean = false;
   showLegend = true;
   dynamicLegendPosition: LegendPosition = LegendPosition.Below;
-
+  
 @Output() openSide= new EventEmitter();
 @Input() side= false;
 

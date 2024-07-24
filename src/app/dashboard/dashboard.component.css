@@ -45,6 +45,14 @@
 
 }
 
+@media (max-width:500px) {
+
+  #instDropDown{
+    max-width: 125px;
+  }
+
+}
+
 
 
 

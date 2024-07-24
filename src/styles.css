@@ -23,8 +23,28 @@ svg{
 
 
 @media (max-width:850px){
+  .ngx-charts{
+    max-width: 280px;
+  }
+
   .legend-label{
     display: block !important;
   }
+
+.legend-title{
+  max-width: 200px;
+  position: relative;
+  left:15%;
+  margin-bottom: 5px;
+
+}
+  .legend-labels {
+    max-width: 200px;
+    position: relative;
+    left: 15%;
+
+  }
+
+
 }
 
