@@ -1,16 +1,5 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
-  BrowserDomAdapter,
-  BrowserModule,
-  DomRendererFactory2,
-  EVENT_MANAGER_PLUGINS,
-  EventManagerPlugin
-} from "./chunk-6BO3GKCN.js";
-import {
-  HTTP_ROOT_INTERCEPTOR_FNS,
-  HttpClientModule
-} from "./chunk-YA4VWXEY.js";
-import {
   AUTO_STYLE,
   AnimationGroupPlayer,
   AnimationMetadataType,
@@ -18,7 +7,18 @@ import {
   sequence,
   style,
   ɵPRE_STYLE
-} from "./chunk-Q4Z2CQDY.js";
+} from "./chunk-DAP6245J.js";
+import {
+  BrowserDomAdapter,
+  BrowserModule,
+  DomRendererFactory2,
+  EVENT_MANAGER_PLUGINS,
+  EventManagerPlugin
+} from "./chunk-2DKD5MEC.js";
+import {
+  HTTP_ROOT_INTERCEPTOR_FNS,
+  HttpClientModule
+} from "./chunk-3RBH6API.js";
 import {
   DOCUMENT,
   NullViewportScroller,
@@ -28,7 +28,7 @@ import {
   XhrFactory,
   getDOM,
   setRootDomAdapter
-} from "./chunk-C7T6SEYU.js";
+} from "./chunk-7VMK67ET.js";
 import {
   ALLOW_MULTIPLE_PLATFORMS,
   ANIMATION_MODULE_TYPE,
@@ -58,7 +58,6 @@ import {
   inject,
   makeEnvironmentProviders,
   platformCore,
-  require_cjs,
   setClassMetadata,
   setDocument,
   whenStable,
@@ -66,13 +65,18 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject
-} from "./chunk-CVVIHLGL.js";
+} from "./chunk-B2KR432S.js";
+import {
+  require_cjs
+} from "./chunk-EV7KNUGL.js";
+import "./chunk-ASIW4J5P.js";
+import "./chunk-WL73QKZY.js";
 import {
   __async,
   __objRest,
   __spreadValues,
   __toESM
-} from "./chunk-NQ4HTGF6.js";
+} from "./chunk-LV3DCXXS.js";
 
 // node_modules/@angular/animations/fesm2022/browser.mjs
 var LINE_START = "\n - ";
@@ -20463,7 +20467,7 @@ var _ServerXhr = class _ServerXhr {
       if (!this.xhrImpl) {
         const {
           default: xhr
-        } = yield import("./xhr2-AQ42KH57.js");
+        } = yield import("./xhr2-YBBZRAL2.js");
         this.xhrImpl = xhr;
       }
     });

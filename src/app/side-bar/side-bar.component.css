@@ -5,7 +5,7 @@
   opacity: 1;
   visibility: visible;
   transition: width 0.5s, opacity 0.5s, visibility 0.5s;
-
+  height: 100vh;
 }
 
 
@@ -14,7 +14,16 @@
   opacity: 0;
   visibility: hidden;
   transition: width 0.5s, opacity 0.5s, visibility 0.5s;
+  height: 100vh;
+}
+#mainSvg{
+  width:24px;
+   height:24px;
+}
+#subSvg{
 
+  width:14px;
+  height:14px;
 }
 
 
@@ -33,6 +42,6 @@
     visibility: visible;
     transition: width 0.5s, opacity 0.5s, visibility 0.5s;
     height: 100vh;
-   
+
   }
 }

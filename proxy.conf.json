@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://analyticsservice-dev-rqivqt7gaq-ew.a.run.app",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}

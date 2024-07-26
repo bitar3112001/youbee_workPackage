@@ -6,7 +6,7 @@ import {
   NgTemplateOutlet,
   isPlatformBrowser,
   isPlatformServer
-} from "./chunk-7MDXYZHK.js";
+} from "./chunk-2ZKNZU6R.js";
 import {
   ANIMATION_MODULE_TYPE,
   ApplicationRef,
@@ -35,13 +35,6 @@ import {
   ViewChild,
   ViewContainerRef,
   ViewEncapsulation$1,
-  __commonJS,
-  __decorate,
-  __spreadProps,
-  __spreadValues,
-  __toESM,
-  debounceTime,
-  fromEvent,
   inject,
   setClassMetadata,
   ɵɵInheritDefinitionFeature,
@@ -94,7 +87,49 @@ import {
   ɵɵtextInterpolate1,
   ɵɵtextInterpolate2,
   ɵɵviewQuery
-} from "./chunk-VCHMGALW.js";
+} from "./chunk-PS32Z2ZL.js";
+import {
+  fromEvent
+} from "./chunk-ZFEMJNE7.js";
+import "./chunk-XKHFCS7L.js";
+import {
+  __decorate,
+  debounceTime
+} from "./chunk-HBBEYCRV.js";
+import {
+  arc_default,
+  area_default,
+  band,
+  brushX,
+  cardinalClosed_default,
+  format,
+  lineRadial_default,
+  line_default,
+  linear2 as linear,
+  linear_default,
+  max,
+  min,
+  ordinal,
+  pie_default,
+  point,
+  quantile,
+  quantile2,
+  range,
+  rgb,
+  select_default,
+  sinInOut,
+  stratify_default,
+  time,
+  timeFormat,
+  treemap_default,
+  value_default
+} from "./chunk-265UZNVO.js";
+import {
+  __commonJS,
+  __spreadProps,
+  __spreadValues,
+  __toESM
+} from "./chunk-4KQ2WF6L.js";
 
 // node_modules/rfdc/index.js
 var require_rfdc = __commonJS({
@@ -121,20 +156,20 @@ var require_rfdc = __commonJS({
       }
       let handler = null;
       return opts.proto ? cloneProto : clone;
-      function cloneArray(a3, fn) {
-        const keys = Object.keys(a3);
+      function cloneArray(a2, fn) {
+        const keys = Object.keys(a2);
         const a22 = new Array(keys.length);
         for (let i = 0; i < keys.length; i++) {
-          const k3 = keys[i];
-          const cur = a3[k3];
+          const k2 = keys[i];
+          const cur = a2[k2];
           if (typeof cur !== "object" || cur === null) {
-            a22[k3] = cur;
+            a22[k2] = cur;
           } else if (cur.constructor !== Object && (handler = constructorHandlers.get(cur.constructor))) {
-            a22[k3] = handler(cur, fn);
+            a22[k2] = handler(cur, fn);
           } else if (ArrayBuffer.isView(cur)) {
-            a22[k3] = copyBuffer(cur);
+            a22[k2] = copyBuffer(cur);
           } else {
-            a22[k3] = fn(cur);
+            a22[k2] = fn(cur);
           }
         }
         return a22;
@@ -146,17 +181,17 @@ var require_rfdc = __commonJS({
           return handler(o, clone);
         }
         const o2 = {};
-        for (const k3 in o) {
-          if (Object.hasOwnProperty.call(o, k3) === false) continue;
-          const cur = o[k3];
+        for (const k2 in o) {
+          if (Object.hasOwnProperty.call(o, k2) === false) continue;
+          const cur = o[k2];
           if (typeof cur !== "object" || cur === null) {
-            o2[k3] = cur;
+            o2[k2] = cur;
           } else if (cur.constructor !== Object && (handler = constructorHandlers.get(cur.constructor))) {
-            o2[k3] = handler(cur, clone);
+            o2[k2] = handler(cur, clone);
           } else if (ArrayBuffer.isView(cur)) {
-            o2[k3] = copyBuffer(cur);
+            o2[k2] = copyBuffer(cur);
           } else {
-            o2[k3] = clone(cur);
+            o2[k2] = clone(cur);
           }
         }
         return o2;
@@ -168,16 +203,16 @@ var require_rfdc = __commonJS({
           return handler(o, cloneProto);
         }
         const o2 = {};
-        for (const k3 in o) {
-          const cur = o[k3];
+        for (const k2 in o) {
+          const cur = o[k2];
           if (typeof cur !== "object" || cur === null) {
-            o2[k3] = cur;
+            o2[k2] = cur;
           } else if (cur.constructor !== Object && (handler = constructorHandlers.get(cur.constructor))) {
-            o2[k3] = handler(cur, cloneProto);
+            o2[k2] = handler(cur, cloneProto);
           } else if (ArrayBuffer.isView(cur)) {
-            o2[k3] = copyBuffer(cur);
+            o2[k2] = copyBuffer(cur);
           } else {
-            o2[k3] = cloneProto(cur);
+            o2[k2] = cloneProto(cur);
           }
         }
         return o2;
@@ -197,24 +232,24 @@ var require_rfdc = __commonJS({
       }
       let handler = null;
       return opts.proto ? cloneProto : clone;
-      function cloneArray(a3, fn) {
-        const keys = Object.keys(a3);
+      function cloneArray(a2, fn) {
+        const keys = Object.keys(a2);
         const a22 = new Array(keys.length);
         for (let i = 0; i < keys.length; i++) {
-          const k3 = keys[i];
-          const cur = a3[k3];
+          const k2 = keys[i];
+          const cur = a2[k2];
           if (typeof cur !== "object" || cur === null) {
-            a22[k3] = cur;
+            a22[k2] = cur;
           } else if (cur.constructor !== Object && (handler = constructorHandlers.get(cur.constructor))) {
-            a22[k3] = handler(cur, fn);
+            a22[k2] = handler(cur, fn);
           } else if (ArrayBuffer.isView(cur)) {
-            a22[k3] = copyBuffer(cur);
+            a22[k2] = copyBuffer(cur);
           } else {
-            const index4 = refs.indexOf(cur);
-            if (index4 !== -1) {
-              a22[k3] = refsNew[index4];
+            const index2 = refs.indexOf(cur);
+            if (index2 !== -1) {
+              a22[k2] = refsNew[index2];
             } else {
-              a22[k3] = fn(cur);
+              a22[k2] = fn(cur);
             }
           }
         }
@@ -229,21 +264,21 @@ var require_rfdc = __commonJS({
         const o2 = {};
         refs.push(o);
         refsNew.push(o2);
-        for (const k3 in o) {
-          if (Object.hasOwnProperty.call(o, k3) === false) continue;
-          const cur = o[k3];
+        for (const k2 in o) {
+          if (Object.hasOwnProperty.call(o, k2) === false) continue;
+          const cur = o[k2];
           if (typeof cur !== "object" || cur === null) {
-            o2[k3] = cur;
+            o2[k2] = cur;
           } else if (cur.constructor !== Object && (handler = constructorHandlers.get(cur.constructor))) {
-            o2[k3] = handler(cur, clone);
+            o2[k2] = handler(cur, clone);
           } else if (ArrayBuffer.isView(cur)) {
-            o2[k3] = copyBuffer(cur);
+            o2[k2] = copyBuffer(cur);
           } else {
             const i = refs.indexOf(cur);
             if (i !== -1) {
-              o2[k3] = refsNew[i];
+              o2[k2] = refsNew[i];
             } else {
-              o2[k3] = clone(cur);
+              o2[k2] = clone(cur);
             }
           }
         }
@@ -260,20 +295,20 @@ var require_rfdc = __commonJS({
         const o2 = {};
         refs.push(o);
         refsNew.push(o2);
-        for (const k3 in o) {
-          const cur = o[k3];
+        for (const k2 in o) {
+          const cur = o[k2];
           if (typeof cur !== "object" || cur === null) {
-            o2[k3] = cur;
+            o2[k2] = cur;
           } else if (cur.constructor !== Object && (handler = constructorHandlers.get(cur.constructor))) {
-            o2[k3] = handler(cur, cloneProto);
+            o2[k2] = handler(cur, cloneProto);
           } else if (ArrayBuffer.isView(cur)) {
-            o2[k3] = copyBuffer(cur);
+            o2[k2] = copyBuffer(cur);
           } else {
             const i = refs.indexOf(cur);
             if (i !== -1) {
-              o2[k3] = refsNew[i];
+              o2[k2] = refsNew[i];
             } else {
-              o2[k3] = cloneProto(cur);
+              o2[k2] = cloneProto(cur);
             }
           }
         }
@@ -527,9 +562,9 @@ var DomPortalOutlet = class extends BasePortalOutlet {
     viewRef.rootNodes.forEach((rootNode) => this.outletElement.appendChild(rootNode));
     viewRef.detectChanges();
     this.setDisposeFn(() => {
-      let index4 = viewContainer.indexOf(viewRef);
-      if (index4 !== -1) {
-        viewContainer.remove(index4);
+      let index2 = viewContainer.indexOf(viewRef);
+      if (index2 !== -1) {
+        viewContainer.remove(index2);
       }
     });
     this._attachedPortal = portal;
@@ -912,11 +947,11 @@ var _BrowserAnimationBuilder = class _BrowserAnimationBuilder extends AnimationB
     }
   }
   build(animation) {
-    const id3 = this._nextAnimationId;
+    const id2 = this._nextAnimationId;
     this._nextAnimationId++;
     const entry = Array.isArray(animation) ? sequence(animation) : animation;
-    issueAnimationCommand(this._renderer, null, id3, "register", [entry]);
-    return new BrowserAnimationFactory(id3, this._renderer);
+    issueAnimationCommand(this._renderer, null, id2, "register", [entry]);
+    return new BrowserAnimationFactory(id2, this._renderer);
   }
 };
 _BrowserAnimationBuilder.ɵfac = function BrowserAnimationBuilder_Factory(t) {
@@ -955,8 +990,8 @@ var BrowserAnimationFactory = class extends AnimationFactory {
   }
 };
 var RendererAnimationPlayer = class {
-  constructor(id3, element, options, _renderer) {
-    this.id = id3;
+  constructor(id2, element, options, _renderer) {
+    this.id = id2;
     this.element = element;
     this._renderer = _renderer;
     this.parentPlayer = null;
@@ -1012,5071 +1047,64 @@ var RendererAnimationPlayer = class {
     return unwrapAnimationRenderer(this._renderer)?.engine?.players[this.id]?.getPosition() ?? 0;
   }
 };
-function issueAnimationCommand(renderer, element, id3, command, args) {
-  renderer.setProperty(element, `@@${id3}:${command}`, args);
+function issueAnimationCommand(renderer, element, id2, command, args) {
+  renderer.setProperty(element, `@@${id2}:${command}`, args);
 }
 function unwrapAnimationRenderer(renderer) {
-  const type2 = renderer.ɵtype;
-  if (type2 === 0) {
+  const type = renderer.ɵtype;
+  if (type === 0) {
     return renderer;
-  } else if (type2 === 1) {
+  } else if (type === 1) {
     return renderer.animationRenderer;
   }
   return null;
 }
 function isAnimationRenderer(renderer) {
-  const type2 = renderer.ɵtype;
-  return type2 === 0 || type2 === 1;
+  const type = renderer.ɵtype;
+  return type === 0 || type === 1;
 }
 
-// node_modules/d3-selection/src/namespaces.js
-var xhtml = "http://www.w3.org/1999/xhtml";
-var namespaces_default = {
-  svg: "http://www.w3.org/2000/svg",
-  xhtml,
-  xlink: "http://www.w3.org/1999/xlink",
-  xml: "http://www.w3.org/XML/1998/namespace",
-  xmlns: "http://www.w3.org/2000/xmlns/"
-};
+// node_modules/@swimlane/ngx-charts/fesm2020/swimlane-ngx-charts.mjs
+var import_rfdc = __toESM(require_rfdc(), 1);
 
-// node_modules/d3-selection/src/namespace.js
-function namespace_default(name) {
-  var prefix = name += "", i = prefix.indexOf(":");
-  if (i >= 0 && (prefix = name.slice(0, i)) !== "xmlns") name = name.slice(i + 1);
-  return namespaces_default.hasOwnProperty(prefix) ? {
-    space: namespaces_default[prefix],
-    local: name
-  } : name;
+// node_modules/d3-sankey/node_modules/d3-array/src/ascending.js
+function ascending_default(a2, b) {
+  return a2 < b ? -1 : a2 > b ? 1 : a2 >= b ? 0 : NaN;
 }
 
-// node_modules/d3-selection/src/creator.js
-function creatorInherit(name) {
-  return function() {
-    var document2 = this.ownerDocument, uri = this.namespaceURI;
-    return uri === xhtml && document2.documentElement.namespaceURI === xhtml ? document2.createElement(name) : document2.createElementNS(uri, name);
-  };
-}
-function creatorFixed(fullname) {
-  return function() {
-    return this.ownerDocument.createElementNS(fullname.space, fullname.local);
-  };
-}
-function creator_default(name) {
-  var fullname = namespace_default(name);
-  return (fullname.local ? creatorFixed : creatorInherit)(fullname);
-}
-
-// node_modules/d3-selection/src/selector.js
-function none() {
-}
-function selector_default(selector) {
-  return selector == null ? none : function() {
-    return this.querySelector(selector);
-  };
-}
-
-// node_modules/d3-selection/src/selection/select.js
-function select_default(select) {
-  if (typeof select !== "function") select = selector_default(select);
-  for (var groups4 = this._groups, m = groups4.length, subgroups = new Array(m), j = 0; j < m; ++j) {
-    for (var group4 = groups4[j], n = group4.length, subgroup = subgroups[j] = new Array(n), node, subnode, i = 0; i < n; ++i) {
-      if ((node = group4[i]) && (subnode = select.call(node, node.__data__, i, group4))) {
-        if ("__data__" in node) subnode.__data__ = node.__data__;
-        subgroup[i] = subnode;
-      }
-    }
-  }
-  return new Selection(subgroups, this._parents);
-}
-
-// node_modules/d3-selection/src/array.js
-function array(x3) {
-  return x3 == null ? [] : Array.isArray(x3) ? x3 : Array.from(x3);
-}
-
-// node_modules/d3-selection/src/selectorAll.js
-function empty() {
-  return [];
-}
-function selectorAll_default(selector) {
-  return selector == null ? empty : function() {
-    return this.querySelectorAll(selector);
-  };
-}
-
-// node_modules/d3-selection/src/selection/selectAll.js
-function arrayAll(select) {
-  return function() {
-    return array(select.apply(this, arguments));
-  };
-}
-function selectAll_default(select) {
-  if (typeof select === "function") select = arrayAll(select);
-  else select = selectorAll_default(select);
-  for (var groups4 = this._groups, m = groups4.length, subgroups = [], parents = [], j = 0; j < m; ++j) {
-    for (var group4 = groups4[j], n = group4.length, node, i = 0; i < n; ++i) {
-      if (node = group4[i]) {
-        subgroups.push(select.call(node, node.__data__, i, group4));
-        parents.push(node);
-      }
-    }
-  }
-  return new Selection(subgroups, parents);
-}
-
-// node_modules/d3-selection/src/matcher.js
-function matcher_default(selector) {
-  return function() {
-    return this.matches(selector);
-  };
-}
-function childMatcher(selector) {
-  return function(node) {
-    return node.matches(selector);
-  };
-}
-
-// node_modules/d3-selection/src/selection/selectChild.js
-var find = Array.prototype.find;
-function childFind(match) {
-  return function() {
-    return find.call(this.children, match);
-  };
-}
-function childFirst() {
-  return this.firstElementChild;
-}
-function selectChild_default(match) {
-  return this.select(match == null ? childFirst : childFind(typeof match === "function" ? match : childMatcher(match)));
-}
-
-// node_modules/d3-selection/src/selection/selectChildren.js
-var filter = Array.prototype.filter;
-function children() {
-  return Array.from(this.children);
-}
-function childrenFilter(match) {
-  return function() {
-    return filter.call(this.children, match);
-  };
-}
-function selectChildren_default(match) {
-  return this.selectAll(match == null ? children : childrenFilter(typeof match === "function" ? match : childMatcher(match)));
-}
-
-// node_modules/d3-selection/src/selection/filter.js
-function filter_default(match) {
-  if (typeof match !== "function") match = matcher_default(match);
-  for (var groups4 = this._groups, m = groups4.length, subgroups = new Array(m), j = 0; j < m; ++j) {
-    for (var group4 = groups4[j], n = group4.length, subgroup = subgroups[j] = [], node, i = 0; i < n; ++i) {
-      if ((node = group4[i]) && match.call(node, node.__data__, i, group4)) {
-        subgroup.push(node);
-      }
-    }
-  }
-  return new Selection(subgroups, this._parents);
-}
-
-// node_modules/d3-selection/src/selection/sparse.js
-function sparse_default(update) {
-  return new Array(update.length);
-}
-
-// node_modules/d3-selection/src/selection/enter.js
-function enter_default() {
-  return new Selection(this._enter || this._groups.map(sparse_default), this._parents);
-}
-function EnterNode(parent, datum2) {
-  this.ownerDocument = parent.ownerDocument;
-  this.namespaceURI = parent.namespaceURI;
-  this._next = null;
-  this._parent = parent;
-  this.__data__ = datum2;
-}
-EnterNode.prototype = {
-  constructor: EnterNode,
-  appendChild: function(child) {
-    return this._parent.insertBefore(child, this._next);
-  },
-  insertBefore: function(child, next) {
-    return this._parent.insertBefore(child, next);
-  },
-  querySelector: function(selector) {
-    return this._parent.querySelector(selector);
-  },
-  querySelectorAll: function(selector) {
-    return this._parent.querySelectorAll(selector);
-  }
-};
-
-// node_modules/d3-selection/src/constant.js
-function constant_default(x3) {
-  return function() {
-    return x3;
-  };
-}
-
-// node_modules/d3-selection/src/selection/data.js
-function bindIndex(parent, group4, enter, update, exit, data) {
-  var i = 0, node, groupLength = group4.length, dataLength = data.length;
-  for (; i < dataLength; ++i) {
-    if (node = group4[i]) {
-      node.__data__ = data[i];
-      update[i] = node;
-    } else {
-      enter[i] = new EnterNode(parent, data[i]);
-    }
-  }
-  for (; i < groupLength; ++i) {
-    if (node = group4[i]) {
-      exit[i] = node;
-    }
-  }
-}
-function bindKey(parent, group4, enter, update, exit, data, key) {
-  var i, node, nodeByKeyValue = /* @__PURE__ */ new Map(), groupLength = group4.length, dataLength = data.length, keyValues = new Array(groupLength), keyValue;
-  for (i = 0; i < groupLength; ++i) {
-    if (node = group4[i]) {
-      keyValues[i] = keyValue = key.call(node, node.__data__, i, group4) + "";
-      if (nodeByKeyValue.has(keyValue)) {
-        exit[i] = node;
-      } else {
-        nodeByKeyValue.set(keyValue, node);
-      }
-    }
-  }
-  for (i = 0; i < dataLength; ++i) {
-    keyValue = key.call(parent, data[i], i, data) + "";
-    if (node = nodeByKeyValue.get(keyValue)) {
-      update[i] = node;
-      node.__data__ = data[i];
-      nodeByKeyValue.delete(keyValue);
-    } else {
-      enter[i] = new EnterNode(parent, data[i]);
-    }
-  }
-  for (i = 0; i < groupLength; ++i) {
-    if ((node = group4[i]) && nodeByKeyValue.get(keyValues[i]) === node) {
-      exit[i] = node;
-    }
-  }
-}
-function datum(node) {
-  return node.__data__;
-}
-function data_default(value2, key) {
-  if (!arguments.length) return Array.from(this, datum);
-  var bind = key ? bindKey : bindIndex, parents = this._parents, groups4 = this._groups;
-  if (typeof value2 !== "function") value2 = constant_default(value2);
-  for (var m = groups4.length, update = new Array(m), enter = new Array(m), exit = new Array(m), j = 0; j < m; ++j) {
-    var parent = parents[j], group4 = groups4[j], groupLength = group4.length, data = arraylike(value2.call(parent, parent && parent.__data__, j, parents)), dataLength = data.length, enterGroup = enter[j] = new Array(dataLength), updateGroup = update[j] = new Array(dataLength), exitGroup = exit[j] = new Array(groupLength);
-    bind(parent, group4, enterGroup, updateGroup, exitGroup, data, key);
-    for (var i0 = 0, i1 = 0, previous, next; i0 < dataLength; ++i0) {
-      if (previous = enterGroup[i0]) {
-        if (i0 >= i1) i1 = i0 + 1;
-        while (!(next = updateGroup[i1]) && ++i1 < dataLength) ;
-        previous._next = next || null;
-      }
-    }
-  }
-  update = new Selection(update, parents);
-  update._enter = enter;
-  update._exit = exit;
-  return update;
-}
-function arraylike(data) {
-  return typeof data === "object" && "length" in data ? data : Array.from(data);
-}
-
-// node_modules/d3-selection/src/selection/exit.js
-function exit_default() {
-  return new Selection(this._exit || this._groups.map(sparse_default), this._parents);
-}
-
-// node_modules/d3-selection/src/selection/join.js
-function join_default(onenter, onupdate, onexit) {
-  var enter = this.enter(), update = this, exit = this.exit();
-  if (typeof onenter === "function") {
-    enter = onenter(enter);
-    if (enter) enter = enter.selection();
-  } else {
-    enter = enter.append(onenter + "");
-  }
-  if (onupdate != null) {
-    update = onupdate(update);
-    if (update) update = update.selection();
-  }
-  if (onexit == null) exit.remove();
-  else onexit(exit);
-  return enter && update ? enter.merge(update).order() : update;
-}
-
-// node_modules/d3-selection/src/selection/merge.js
-function merge_default(context) {
-  var selection2 = context.selection ? context.selection() : context;
-  for (var groups0 = this._groups, groups1 = selection2._groups, m0 = groups0.length, m1 = groups1.length, m = Math.min(m0, m1), merges = new Array(m0), j = 0; j < m; ++j) {
-    for (var group0 = groups0[j], group1 = groups1[j], n = group0.length, merge4 = merges[j] = new Array(n), node, i = 0; i < n; ++i) {
-      if (node = group0[i] || group1[i]) {
-        merge4[i] = node;
-      }
-    }
-  }
-  for (; j < m0; ++j) {
-    merges[j] = groups0[j];
-  }
-  return new Selection(merges, this._parents);
-}
-
-// node_modules/d3-selection/src/selection/order.js
-function order_default() {
-  for (var groups4 = this._groups, j = -1, m = groups4.length; ++j < m; ) {
-    for (var group4 = groups4[j], i = group4.length - 1, next = group4[i], node; --i >= 0; ) {
-      if (node = group4[i]) {
-        if (next && node.compareDocumentPosition(next) ^ 4) next.parentNode.insertBefore(node, next);
-        next = node;
-      }
-    }
-  }
-  return this;
-}
-
-// node_modules/d3-selection/src/selection/sort.js
-function sort_default(compare) {
-  if (!compare) compare = ascending;
-  function compareNode(a3, b) {
-    return a3 && b ? compare(a3.__data__, b.__data__) : !a3 - !b;
-  }
-  for (var groups4 = this._groups, m = groups4.length, sortgroups = new Array(m), j = 0; j < m; ++j) {
-    for (var group4 = groups4[j], n = group4.length, sortgroup = sortgroups[j] = new Array(n), node, i = 0; i < n; ++i) {
-      if (node = group4[i]) {
-        sortgroup[i] = node;
-      }
-    }
-    sortgroup.sort(compareNode);
-  }
-  return new Selection(sortgroups, this._parents).order();
-}
-function ascending(a3, b) {
-  return a3 < b ? -1 : a3 > b ? 1 : a3 >= b ? 0 : NaN;
-}
-
-// node_modules/d3-selection/src/selection/call.js
-function call_default() {
-  var callback = arguments[0];
-  arguments[0] = this;
-  callback.apply(null, arguments);
-  return this;
-}
-
-// node_modules/d3-selection/src/selection/nodes.js
-function nodes_default() {
-  return Array.from(this);
-}
-
-// node_modules/d3-selection/src/selection/node.js
-function node_default() {
-  for (var groups4 = this._groups, j = 0, m = groups4.length; j < m; ++j) {
-    for (var group4 = groups4[j], i = 0, n = group4.length; i < n; ++i) {
-      var node = group4[i];
-      if (node) return node;
-    }
-  }
-  return null;
-}
-
-// node_modules/d3-selection/src/selection/size.js
-function size_default() {
-  let size = 0;
-  for (const node of this) ++size;
-  return size;
-}
-
-// node_modules/d3-selection/src/selection/empty.js
-function empty_default() {
-  return !this.node();
-}
-
-// node_modules/d3-selection/src/selection/each.js
-function each_default(callback) {
-  for (var groups4 = this._groups, j = 0, m = groups4.length; j < m; ++j) {
-    for (var group4 = groups4[j], i = 0, n = group4.length, node; i < n; ++i) {
-      if (node = group4[i]) callback.call(node, node.__data__, i, group4);
-    }
-  }
-  return this;
-}
-
-// node_modules/d3-selection/src/selection/attr.js
-function attrRemove(name) {
-  return function() {
-    this.removeAttribute(name);
-  };
-}
-function attrRemoveNS(fullname) {
-  return function() {
-    this.removeAttributeNS(fullname.space, fullname.local);
-  };
-}
-function attrConstant(name, value2) {
-  return function() {
-    this.setAttribute(name, value2);
-  };
-}
-function attrConstantNS(fullname, value2) {
-  return function() {
-    this.setAttributeNS(fullname.space, fullname.local, value2);
-  };
-}
-function attrFunction(name, value2) {
-  return function() {
-    var v = value2.apply(this, arguments);
-    if (v == null) this.removeAttribute(name);
-    else this.setAttribute(name, v);
-  };
-}
-function attrFunctionNS(fullname, value2) {
-  return function() {
-    var v = value2.apply(this, arguments);
-    if (v == null) this.removeAttributeNS(fullname.space, fullname.local);
-    else this.setAttributeNS(fullname.space, fullname.local, v);
-  };
-}
-function attr_default(name, value2) {
-  var fullname = namespace_default(name);
-  if (arguments.length < 2) {
-    var node = this.node();
-    return fullname.local ? node.getAttributeNS(fullname.space, fullname.local) : node.getAttribute(fullname);
-  }
-  return this.each((value2 == null ? fullname.local ? attrRemoveNS : attrRemove : typeof value2 === "function" ? fullname.local ? attrFunctionNS : attrFunction : fullname.local ? attrConstantNS : attrConstant)(fullname, value2));
-}
-
-// node_modules/d3-selection/src/window.js
-function window_default(node) {
-  return node.ownerDocument && node.ownerDocument.defaultView || node.document && node || node.defaultView;
-}
-
-// node_modules/d3-selection/src/selection/style.js
-function styleRemove(name) {
-  return function() {
-    this.style.removeProperty(name);
-  };
-}
-function styleConstant(name, value2, priority) {
-  return function() {
-    this.style.setProperty(name, value2, priority);
-  };
-}
-function styleFunction(name, value2, priority) {
-  return function() {
-    var v = value2.apply(this, arguments);
-    if (v == null) this.style.removeProperty(name);
-    else this.style.setProperty(name, v, priority);
-  };
-}
-function style_default(name, value2, priority) {
-  return arguments.length > 1 ? this.each((value2 == null ? styleRemove : typeof value2 === "function" ? styleFunction : styleConstant)(name, value2, priority == null ? "" : priority)) : styleValue(this.node(), name);
-}
-function styleValue(node, name) {
-  return node.style.getPropertyValue(name) || window_default(node).getComputedStyle(node, null).getPropertyValue(name);
-}
-
-// node_modules/d3-selection/src/selection/property.js
-function propertyRemove(name) {
-  return function() {
-    delete this[name];
-  };
-}
-function propertyConstant(name, value2) {
-  return function() {
-    this[name] = value2;
-  };
-}
-function propertyFunction(name, value2) {
-  return function() {
-    var v = value2.apply(this, arguments);
-    if (v == null) delete this[name];
-    else this[name] = v;
-  };
-}
-function property_default(name, value2) {
-  return arguments.length > 1 ? this.each((value2 == null ? propertyRemove : typeof value2 === "function" ? propertyFunction : propertyConstant)(name, value2)) : this.node()[name];
-}
-
-// node_modules/d3-selection/src/selection/classed.js
-function classArray(string) {
-  return string.trim().split(/^|\s+/);
-}
-function classList(node) {
-  return node.classList || new ClassList(node);
-}
-function ClassList(node) {
-  this._node = node;
-  this._names = classArray(node.getAttribute("class") || "");
-}
-ClassList.prototype = {
-  add: function(name) {
-    var i = this._names.indexOf(name);
-    if (i < 0) {
-      this._names.push(name);
-      this._node.setAttribute("class", this._names.join(" "));
-    }
-  },
-  remove: function(name) {
-    var i = this._names.indexOf(name);
-    if (i >= 0) {
-      this._names.splice(i, 1);
-      this._node.setAttribute("class", this._names.join(" "));
-    }
-  },
-  contains: function(name) {
-    return this._names.indexOf(name) >= 0;
-  }
-};
-function classedAdd(node, names) {
-  var list = classList(node), i = -1, n = names.length;
-  while (++i < n) list.add(names[i]);
-}
-function classedRemove(node, names) {
-  var list = classList(node), i = -1, n = names.length;
-  while (++i < n) list.remove(names[i]);
-}
-function classedTrue(names) {
-  return function() {
-    classedAdd(this, names);
-  };
-}
-function classedFalse(names) {
-  return function() {
-    classedRemove(this, names);
-  };
-}
-function classedFunction(names, value2) {
-  return function() {
-    (value2.apply(this, arguments) ? classedAdd : classedRemove)(this, names);
-  };
-}
-function classed_default(name, value2) {
-  var names = classArray(name + "");
-  if (arguments.length < 2) {
-    var list = classList(this.node()), i = -1, n = names.length;
-    while (++i < n) if (!list.contains(names[i])) return false;
-    return true;
-  }
-  return this.each((typeof value2 === "function" ? classedFunction : value2 ? classedTrue : classedFalse)(names, value2));
-}
-
-// node_modules/d3-selection/src/selection/text.js
-function textRemove() {
-  this.textContent = "";
-}
-function textConstant(value2) {
-  return function() {
-    this.textContent = value2;
-  };
-}
-function textFunction(value2) {
-  return function() {
-    var v = value2.apply(this, arguments);
-    this.textContent = v == null ? "" : v;
-  };
-}
-function text_default(value2) {
-  return arguments.length ? this.each(value2 == null ? textRemove : (typeof value2 === "function" ? textFunction : textConstant)(value2)) : this.node().textContent;
-}
-
-// node_modules/d3-selection/src/selection/html.js
-function htmlRemove() {
-  this.innerHTML = "";
-}
-function htmlConstant(value2) {
-  return function() {
-    this.innerHTML = value2;
-  };
-}
-function htmlFunction(value2) {
-  return function() {
-    var v = value2.apply(this, arguments);
-    this.innerHTML = v == null ? "" : v;
-  };
-}
-function html_default(value2) {
-  return arguments.length ? this.each(value2 == null ? htmlRemove : (typeof value2 === "function" ? htmlFunction : htmlConstant)(value2)) : this.node().innerHTML;
-}
-
-// node_modules/d3-selection/src/selection/raise.js
-function raise() {
-  if (this.nextSibling) this.parentNode.appendChild(this);
-}
-function raise_default() {
-  return this.each(raise);
-}
-
-// node_modules/d3-selection/src/selection/lower.js
-function lower() {
-  if (this.previousSibling) this.parentNode.insertBefore(this, this.parentNode.firstChild);
-}
-function lower_default() {
-  return this.each(lower);
-}
-
-// node_modules/d3-selection/src/selection/append.js
-function append_default(name) {
-  var create2 = typeof name === "function" ? name : creator_default(name);
-  return this.select(function() {
-    return this.appendChild(create2.apply(this, arguments));
-  });
-}
-
-// node_modules/d3-selection/src/selection/insert.js
-function constantNull() {
-  return null;
-}
-function insert_default(name, before) {
-  var create2 = typeof name === "function" ? name : creator_default(name), select = before == null ? constantNull : typeof before === "function" ? before : selector_default(before);
-  return this.select(function() {
-    return this.insertBefore(create2.apply(this, arguments), select.apply(this, arguments) || null);
-  });
-}
-
-// node_modules/d3-selection/src/selection/remove.js
-function remove() {
-  var parent = this.parentNode;
-  if (parent) parent.removeChild(this);
-}
-function remove_default() {
-  return this.each(remove);
-}
-
-// node_modules/d3-selection/src/selection/clone.js
-function selection_cloneShallow() {
-  var clone = this.cloneNode(false), parent = this.parentNode;
-  return parent ? parent.insertBefore(clone, this.nextSibling) : clone;
-}
-function selection_cloneDeep() {
-  var clone = this.cloneNode(true), parent = this.parentNode;
-  return parent ? parent.insertBefore(clone, this.nextSibling) : clone;
-}
-function clone_default(deep) {
-  return this.select(deep ? selection_cloneDeep : selection_cloneShallow);
-}
-
-// node_modules/d3-selection/src/selection/datum.js
-function datum_default(value2) {
-  return arguments.length ? this.property("__data__", value2) : this.node().__data__;
-}
-
-// node_modules/d3-selection/src/selection/on.js
-function contextListener(listener) {
-  return function(event) {
-    listener.call(this, event, this.__data__);
-  };
-}
-function parseTypenames(typenames) {
-  return typenames.trim().split(/^|\s+/).map(function(t) {
-    var name = "", i = t.indexOf(".");
-    if (i >= 0) name = t.slice(i + 1), t = t.slice(0, i);
-    return {
-      type: t,
-      name
-    };
-  });
-}
-function onRemove(typename) {
-  return function() {
-    var on = this.__on;
-    if (!on) return;
-    for (var j = 0, i = -1, m = on.length, o; j < m; ++j) {
-      if (o = on[j], (!typename.type || o.type === typename.type) && o.name === typename.name) {
-        this.removeEventListener(o.type, o.listener, o.options);
-      } else {
-        on[++i] = o;
-      }
-    }
-    if (++i) on.length = i;
-    else delete this.__on;
-  };
-}
-function onAdd(typename, value2, options) {
-  return function() {
-    var on = this.__on, o, listener = contextListener(value2);
-    if (on) for (var j = 0, m = on.length; j < m; ++j) {
-      if ((o = on[j]).type === typename.type && o.name === typename.name) {
-        this.removeEventListener(o.type, o.listener, o.options);
-        this.addEventListener(o.type, o.listener = listener, o.options = options);
-        o.value = value2;
-        return;
-      }
-    }
-    this.addEventListener(typename.type, listener, options);
-    o = {
-      type: typename.type,
-      name: typename.name,
-      value: value2,
-      listener,
-      options
-    };
-    if (!on) this.__on = [o];
-    else on.push(o);
-  };
-}
-function on_default(typename, value2, options) {
-  var typenames = parseTypenames(typename + ""), i, n = typenames.length, t;
-  if (arguments.length < 2) {
-    var on = this.node().__on;
-    if (on) for (var j = 0, m = on.length, o; j < m; ++j) {
-      for (i = 0, o = on[j]; i < n; ++i) {
-        if ((t = typenames[i]).type === o.type && t.name === o.name) {
-          return o.value;
-        }
-      }
-    }
-    return;
-  }
-  on = value2 ? onAdd : onRemove;
-  for (i = 0; i < n; ++i) this.each(on(typenames[i], value2, options));
-  return this;
-}
-
-// node_modules/d3-selection/src/selection/dispatch.js
-function dispatchEvent(node, type2, params) {
-  var window2 = window_default(node), event = window2.CustomEvent;
-  if (typeof event === "function") {
-    event = new event(type2, params);
-  } else {
-    event = window2.document.createEvent("Event");
-    if (params) event.initEvent(type2, params.bubbles, params.cancelable), event.detail = params.detail;
-    else event.initEvent(type2, false, false);
-  }
-  node.dispatchEvent(event);
-}
-function dispatchConstant(type2, params) {
-  return function() {
-    return dispatchEvent(this, type2, params);
-  };
-}
-function dispatchFunction(type2, params) {
-  return function() {
-    return dispatchEvent(this, type2, params.apply(this, arguments));
-  };
-}
-function dispatch_default(type2, params) {
-  return this.each((typeof params === "function" ? dispatchFunction : dispatchConstant)(type2, params));
-}
-
-// node_modules/d3-selection/src/selection/iterator.js
-function* iterator_default() {
-  for (var groups4 = this._groups, j = 0, m = groups4.length; j < m; ++j) {
-    for (var group4 = groups4[j], i = 0, n = group4.length, node; i < n; ++i) {
-      if (node = group4[i]) yield node;
-    }
-  }
-}
-
-// node_modules/d3-selection/src/selection/index.js
-var root = [null];
-function Selection(groups4, parents) {
-  this._groups = groups4;
-  this._parents = parents;
-}
-function selection() {
-  return new Selection([[document.documentElement]], root);
-}
-function selection_selection() {
-  return this;
-}
-Selection.prototype = selection.prototype = {
-  constructor: Selection,
-  select: select_default,
-  selectAll: selectAll_default,
-  selectChild: selectChild_default,
-  selectChildren: selectChildren_default,
-  filter: filter_default,
-  data: data_default,
-  enter: enter_default,
-  exit: exit_default,
-  join: join_default,
-  merge: merge_default,
-  selection: selection_selection,
-  order: order_default,
-  sort: sort_default,
-  call: call_default,
-  nodes: nodes_default,
-  node: node_default,
-  size: size_default,
-  empty: empty_default,
-  each: each_default,
-  attr: attr_default,
-  style: style_default,
-  property: property_default,
-  classed: classed_default,
-  text: text_default,
-  html: html_default,
-  raise: raise_default,
-  lower: lower_default,
-  append: append_default,
-  insert: insert_default,
-  remove: remove_default,
-  clone: clone_default,
-  datum: datum_default,
-  on: on_default,
-  dispatch: dispatch_default,
-  [Symbol.iterator]: iterator_default
-};
-var selection_default = selection;
-
-// node_modules/d3-selection/src/select.js
-function select_default2(selector) {
-  return typeof selector === "string" ? new Selection([[document.querySelector(selector)]], [document.documentElement]) : new Selection([[selector]], root);
-}
-
-// node_modules/d3-selection/src/local.js
-var nextId = 0;
-function local() {
-  return new Local();
-}
-function Local() {
-  this._ = "@" + (++nextId).toString(36);
-}
-Local.prototype = local.prototype = {
-  constructor: Local,
-  get: function(node) {
-    var id3 = this._;
-    while (!(id3 in node)) if (!(node = node.parentNode)) return;
-    return node[id3];
-  },
-  set: function(node, value2) {
-    return node[this._] = value2;
-  },
-  remove: function(node) {
-    return this._ in node && delete node[this._];
-  },
-  toString: function() {
-    return this._;
-  }
-};
-
-// node_modules/d3-selection/src/sourceEvent.js
-function sourceEvent_default(event) {
-  let sourceEvent;
-  while (sourceEvent = event.sourceEvent) event = sourceEvent;
-  return event;
-}
-
-// node_modules/d3-selection/src/pointer.js
-function pointer_default(event, node) {
-  event = sourceEvent_default(event);
-  if (node === void 0) node = event.currentTarget;
-  if (node) {
-    var svg = node.ownerSVGElement || node;
-    if (svg.createSVGPoint) {
-      var point10 = svg.createSVGPoint();
-      point10.x = event.clientX, point10.y = event.clientY;
-      point10 = point10.matrixTransform(node.getScreenCTM().inverse());
-      return [point10.x, point10.y];
-    }
-    if (node.getBoundingClientRect) {
-      var rect = node.getBoundingClientRect();
-      return [event.clientX - rect.left - node.clientLeft, event.clientY - rect.top - node.clientTop];
-    }
-  }
-  return [event.pageX, event.pageY];
-}
-
-// node_modules/d3-dispatch/src/dispatch.js
-var noop = {
-  value: () => {
-  }
-};
-function dispatch() {
-  for (var i = 0, n = arguments.length, _ = {}, t; i < n; ++i) {
-    if (!(t = arguments[i] + "") || t in _ || /[\s.]/.test(t)) throw new Error("illegal type: " + t);
-    _[t] = [];
-  }
-  return new Dispatch(_);
-}
-function Dispatch(_) {
-  this._ = _;
-}
-function parseTypenames2(typenames, types) {
-  return typenames.trim().split(/^|\s+/).map(function(t) {
-    var name = "", i = t.indexOf(".");
-    if (i >= 0) name = t.slice(i + 1), t = t.slice(0, i);
-    if (t && !types.hasOwnProperty(t)) throw new Error("unknown type: " + t);
-    return {
-      type: t,
-      name
-    };
-  });
-}
-Dispatch.prototype = dispatch.prototype = {
-  constructor: Dispatch,
-  on: function(typename, callback) {
-    var _ = this._, T = parseTypenames2(typename + "", _), t, i = -1, n = T.length;
-    if (arguments.length < 2) {
-      while (++i < n) if ((t = (typename = T[i]).type) && (t = get(_[t], typename.name))) return t;
-      return;
-    }
-    if (callback != null && typeof callback !== "function") throw new Error("invalid callback: " + callback);
-    while (++i < n) {
-      if (t = (typename = T[i]).type) _[t] = set(_[t], typename.name, callback);
-      else if (callback == null) for (t in _) _[t] = set(_[t], typename.name, null);
-    }
-    return this;
-  },
-  copy: function() {
-    var copy3 = {}, _ = this._;
-    for (var t in _) copy3[t] = _[t].slice();
-    return new Dispatch(copy3);
-  },
-  call: function(type2, that) {
-    if ((n = arguments.length - 2) > 0) for (var args = new Array(n), i = 0, n, t; i < n; ++i) args[i] = arguments[i + 2];
-    if (!this._.hasOwnProperty(type2)) throw new Error("unknown type: " + type2);
-    for (t = this._[type2], i = 0, n = t.length; i < n; ++i) t[i].value.apply(that, args);
-  },
-  apply: function(type2, that, args) {
-    if (!this._.hasOwnProperty(type2)) throw new Error("unknown type: " + type2);
-    for (var t = this._[type2], i = 0, n = t.length; i < n; ++i) t[i].value.apply(that, args);
-  }
-};
-function get(type2, name) {
-  for (var i = 0, n = type2.length, c; i < n; ++i) {
-    if ((c = type2[i]).name === name) {
-      return c.value;
-    }
-  }
-}
-function set(type2, name, callback) {
-  for (var i = 0, n = type2.length; i < n; ++i) {
-    if (type2[i].name === name) {
-      type2[i] = noop, type2 = type2.slice(0, i).concat(type2.slice(i + 1));
-      break;
-    }
-  }
-  if (callback != null) type2.push({
-    name,
-    value: callback
-  });
-  return type2;
-}
-var dispatch_default2 = dispatch;
-
-// node_modules/d3-drag/src/noevent.js
-var nonpassivecapture = {
-  capture: true,
-  passive: false
-};
-function noevent_default(event) {
-  event.preventDefault();
-  event.stopImmediatePropagation();
-}
-
-// node_modules/d3-drag/src/nodrag.js
-function nodrag_default(view) {
-  var root3 = view.document.documentElement, selection2 = select_default2(view).on("dragstart.drag", noevent_default, nonpassivecapture);
-  if ("onselectstart" in root3) {
-    selection2.on("selectstart.drag", noevent_default, nonpassivecapture);
-  } else {
-    root3.__noselect = root3.style.MozUserSelect;
-    root3.style.MozUserSelect = "none";
-  }
-}
-function yesdrag(view, noclick) {
-  var root3 = view.document.documentElement, selection2 = select_default2(view).on("dragstart.drag", null);
-  if (noclick) {
-    selection2.on("click.drag", noevent_default, nonpassivecapture);
-    setTimeout(function() {
-      selection2.on("click.drag", null);
-    }, 0);
-  }
-  if ("onselectstart" in root3) {
-    selection2.on("selectstart.drag", null);
-  } else {
-    root3.style.MozUserSelect = root3.__noselect;
-    delete root3.__noselect;
-  }
-}
-
-// node_modules/d3-drag/src/event.js
-function DragEvent(type2, {
-  sourceEvent,
-  subject,
-  target,
-  identifier,
-  active,
-  x: x3,
-  y: y3,
-  dx,
-  dy,
-  dispatch: dispatch2
-}) {
-  Object.defineProperties(this, {
-    type: {
-      value: type2,
-      enumerable: true,
-      configurable: true
-    },
-    sourceEvent: {
-      value: sourceEvent,
-      enumerable: true,
-      configurable: true
-    },
-    subject: {
-      value: subject,
-      enumerable: true,
-      configurable: true
-    },
-    target: {
-      value: target,
-      enumerable: true,
-      configurable: true
-    },
-    identifier: {
-      value: identifier,
-      enumerable: true,
-      configurable: true
-    },
-    active: {
-      value: active,
-      enumerable: true,
-      configurable: true
-    },
-    x: {
-      value: x3,
-      enumerable: true,
-      configurable: true
-    },
-    y: {
-      value: y3,
-      enumerable: true,
-      configurable: true
-    },
-    dx: {
-      value: dx,
-      enumerable: true,
-      configurable: true
-    },
-    dy: {
-      value: dy,
-      enumerable: true,
-      configurable: true
-    },
-    _: {
-      value: dispatch2
-    }
-  });
-}
-DragEvent.prototype.on = function() {
-  var value2 = this._.on.apply(this._, arguments);
-  return value2 === this._ ? this : value2;
-};
-
-// node_modules/d3-color/src/define.js
-function define_default(constructor, factory, prototype) {
-  constructor.prototype = factory.prototype = prototype;
-  prototype.constructor = constructor;
-}
-function extend(parent, definition) {
-  var prototype = Object.create(parent.prototype);
-  for (var key in definition) prototype[key] = definition[key];
-  return prototype;
-}
-
-// node_modules/d3-color/src/color.js
-function Color() {
-}
-var darker = 0.7;
-var brighter = 1 / darker;
-var reI = "\\s*([+-]?\\d+)\\s*";
-var reN = "\\s*([+-]?(?:\\d*\\.)?\\d+(?:[eE][+-]?\\d+)?)\\s*";
-var reP = "\\s*([+-]?(?:\\d*\\.)?\\d+(?:[eE][+-]?\\d+)?)%\\s*";
-var reHex = /^#([0-9a-f]{3,8})$/;
-var reRgbInteger = new RegExp(`^rgb\\(${reI},${reI},${reI}\\)$`);
-var reRgbPercent = new RegExp(`^rgb\\(${reP},${reP},${reP}\\)$`);
-var reRgbaInteger = new RegExp(`^rgba\\(${reI},${reI},${reI},${reN}\\)$`);
-var reRgbaPercent = new RegExp(`^rgba\\(${reP},${reP},${reP},${reN}\\)$`);
-var reHslPercent = new RegExp(`^hsl\\(${reN},${reP},${reP}\\)$`);
-var reHslaPercent = new RegExp(`^hsla\\(${reN},${reP},${reP},${reN}\\)$`);
-var named = {
-  aliceblue: 15792383,
-  antiquewhite: 16444375,
-  aqua: 65535,
-  aquamarine: 8388564,
-  azure: 15794175,
-  beige: 16119260,
-  bisque: 16770244,
-  black: 0,
-  blanchedalmond: 16772045,
-  blue: 255,
-  blueviolet: 9055202,
-  brown: 10824234,
-  burlywood: 14596231,
-  cadetblue: 6266528,
-  chartreuse: 8388352,
-  chocolate: 13789470,
-  coral: 16744272,
-  cornflowerblue: 6591981,
-  cornsilk: 16775388,
-  crimson: 14423100,
-  cyan: 65535,
-  darkblue: 139,
-  darkcyan: 35723,
-  darkgoldenrod: 12092939,
-  darkgray: 11119017,
-  darkgreen: 25600,
-  darkgrey: 11119017,
-  darkkhaki: 12433259,
-  darkmagenta: 9109643,
-  darkolivegreen: 5597999,
-  darkorange: 16747520,
-  darkorchid: 10040012,
-  darkred: 9109504,
-  darksalmon: 15308410,
-  darkseagreen: 9419919,
-  darkslateblue: 4734347,
-  darkslategray: 3100495,
-  darkslategrey: 3100495,
-  darkturquoise: 52945,
-  darkviolet: 9699539,
-  deeppink: 16716947,
-  deepskyblue: 49151,
-  dimgray: 6908265,
-  dimgrey: 6908265,
-  dodgerblue: 2003199,
-  firebrick: 11674146,
-  floralwhite: 16775920,
-  forestgreen: 2263842,
-  fuchsia: 16711935,
-  gainsboro: 14474460,
-  ghostwhite: 16316671,
-  gold: 16766720,
-  goldenrod: 14329120,
-  gray: 8421504,
-  green: 32768,
-  greenyellow: 11403055,
-  grey: 8421504,
-  honeydew: 15794160,
-  hotpink: 16738740,
-  indianred: 13458524,
-  indigo: 4915330,
-  ivory: 16777200,
-  khaki: 15787660,
-  lavender: 15132410,
-  lavenderblush: 16773365,
-  lawngreen: 8190976,
-  lemonchiffon: 16775885,
-  lightblue: 11393254,
-  lightcoral: 15761536,
-  lightcyan: 14745599,
-  lightgoldenrodyellow: 16448210,
-  lightgray: 13882323,
-  lightgreen: 9498256,
-  lightgrey: 13882323,
-  lightpink: 16758465,
-  lightsalmon: 16752762,
-  lightseagreen: 2142890,
-  lightskyblue: 8900346,
-  lightslategray: 7833753,
-  lightslategrey: 7833753,
-  lightsteelblue: 11584734,
-  lightyellow: 16777184,
-  lime: 65280,
-  limegreen: 3329330,
-  linen: 16445670,
-  magenta: 16711935,
-  maroon: 8388608,
-  mediumaquamarine: 6737322,
-  mediumblue: 205,
-  mediumorchid: 12211667,
-  mediumpurple: 9662683,
-  mediumseagreen: 3978097,
-  mediumslateblue: 8087790,
-  mediumspringgreen: 64154,
-  mediumturquoise: 4772300,
-  mediumvioletred: 13047173,
-  midnightblue: 1644912,
-  mintcream: 16121850,
-  mistyrose: 16770273,
-  moccasin: 16770229,
-  navajowhite: 16768685,
-  navy: 128,
-  oldlace: 16643558,
-  olive: 8421376,
-  olivedrab: 7048739,
-  orange: 16753920,
-  orangered: 16729344,
-  orchid: 14315734,
-  palegoldenrod: 15657130,
-  palegreen: 10025880,
-  paleturquoise: 11529966,
-  palevioletred: 14381203,
-  papayawhip: 16773077,
-  peachpuff: 16767673,
-  peru: 13468991,
-  pink: 16761035,
-  plum: 14524637,
-  powderblue: 11591910,
-  purple: 8388736,
-  rebeccapurple: 6697881,
-  red: 16711680,
-  rosybrown: 12357519,
-  royalblue: 4286945,
-  saddlebrown: 9127187,
-  salmon: 16416882,
-  sandybrown: 16032864,
-  seagreen: 3050327,
-  seashell: 16774638,
-  sienna: 10506797,
-  silver: 12632256,
-  skyblue: 8900331,
-  slateblue: 6970061,
-  slategray: 7372944,
-  slategrey: 7372944,
-  snow: 16775930,
-  springgreen: 65407,
-  steelblue: 4620980,
-  tan: 13808780,
-  teal: 32896,
-  thistle: 14204888,
-  tomato: 16737095,
-  turquoise: 4251856,
-  violet: 15631086,
-  wheat: 16113331,
-  white: 16777215,
-  whitesmoke: 16119285,
-  yellow: 16776960,
-  yellowgreen: 10145074
-};
-define_default(Color, color, {
-  copy(channels) {
-    return Object.assign(new this.constructor(), this, channels);
-  },
-  displayable() {
-    return this.rgb().displayable();
-  },
-  hex: color_formatHex,
-  // Deprecated! Use color.formatHex.
-  formatHex: color_formatHex,
-  formatHex8: color_formatHex8,
-  formatHsl: color_formatHsl,
-  formatRgb: color_formatRgb,
-  toString: color_formatRgb
-});
-function color_formatHex() {
-  return this.rgb().formatHex();
-}
-function color_formatHex8() {
-  return this.rgb().formatHex8();
-}
-function color_formatHsl() {
-  return hslConvert(this).formatHsl();
-}
-function color_formatRgb() {
-  return this.rgb().formatRgb();
-}
-function color(format2) {
-  var m, l;
-  format2 = (format2 + "").trim().toLowerCase();
-  return (m = reHex.exec(format2)) ? (l = m[1].length, m = parseInt(m[1], 16), l === 6 ? rgbn(m) : l === 3 ? new Rgb(m >> 8 & 15 | m >> 4 & 240, m >> 4 & 15 | m & 240, (m & 15) << 4 | m & 15, 1) : l === 8 ? rgba(m >> 24 & 255, m >> 16 & 255, m >> 8 & 255, (m & 255) / 255) : l === 4 ? rgba(m >> 12 & 15 | m >> 8 & 240, m >> 8 & 15 | m >> 4 & 240, m >> 4 & 15 | m & 240, ((m & 15) << 4 | m & 15) / 255) : null) : (m = reRgbInteger.exec(format2)) ? new Rgb(m[1], m[2], m[3], 1) : (m = reRgbPercent.exec(format2)) ? new Rgb(m[1] * 255 / 100, m[2] * 255 / 100, m[3] * 255 / 100, 1) : (m = reRgbaInteger.exec(format2)) ? rgba(m[1], m[2], m[3], m[4]) : (m = reRgbaPercent.exec(format2)) ? rgba(m[1] * 255 / 100, m[2] * 255 / 100, m[3] * 255 / 100, m[4]) : (m = reHslPercent.exec(format2)) ? hsla(m[1], m[2] / 100, m[3] / 100, 1) : (m = reHslaPercent.exec(format2)) ? hsla(m[1], m[2] / 100, m[3] / 100, m[4]) : named.hasOwnProperty(format2) ? rgbn(named[format2]) : format2 === "transparent" ? new Rgb(NaN, NaN, NaN, 0) : null;
-}
-function rgbn(n) {
-  return new Rgb(n >> 16 & 255, n >> 8 & 255, n & 255, 1);
-}
-function rgba(r, g, b, a3) {
-  if (a3 <= 0) r = g = b = NaN;
-  return new Rgb(r, g, b, a3);
-}
-function rgbConvert(o) {
-  if (!(o instanceof Color)) o = color(o);
-  if (!o) return new Rgb();
-  o = o.rgb();
-  return new Rgb(o.r, o.g, o.b, o.opacity);
-}
-function rgb(r, g, b, opacity) {
-  return arguments.length === 1 ? rgbConvert(r) : new Rgb(r, g, b, opacity == null ? 1 : opacity);
-}
-function Rgb(r, g, b, opacity) {
-  this.r = +r;
-  this.g = +g;
-  this.b = +b;
-  this.opacity = +opacity;
-}
-define_default(Rgb, rgb, extend(Color, {
-  brighter(k3) {
-    k3 = k3 == null ? brighter : Math.pow(brighter, k3);
-    return new Rgb(this.r * k3, this.g * k3, this.b * k3, this.opacity);
-  },
-  darker(k3) {
-    k3 = k3 == null ? darker : Math.pow(darker, k3);
-    return new Rgb(this.r * k3, this.g * k3, this.b * k3, this.opacity);
-  },
-  rgb() {
-    return this;
-  },
-  clamp() {
-    return new Rgb(clampi(this.r), clampi(this.g), clampi(this.b), clampa(this.opacity));
-  },
-  displayable() {
-    return -0.5 <= this.r && this.r < 255.5 && -0.5 <= this.g && this.g < 255.5 && -0.5 <= this.b && this.b < 255.5 && 0 <= this.opacity && this.opacity <= 1;
-  },
-  hex: rgb_formatHex,
-  // Deprecated! Use color.formatHex.
-  formatHex: rgb_formatHex,
-  formatHex8: rgb_formatHex8,
-  formatRgb: rgb_formatRgb,
-  toString: rgb_formatRgb
-}));
-function rgb_formatHex() {
-  return `#${hex(this.r)}${hex(this.g)}${hex(this.b)}`;
-}
-function rgb_formatHex8() {
-  return `#${hex(this.r)}${hex(this.g)}${hex(this.b)}${hex((isNaN(this.opacity) ? 1 : this.opacity) * 255)}`;
-}
-function rgb_formatRgb() {
-  const a3 = clampa(this.opacity);
-  return `${a3 === 1 ? "rgb(" : "rgba("}${clampi(this.r)}, ${clampi(this.g)}, ${clampi(this.b)}${a3 === 1 ? ")" : `, ${a3})`}`;
-}
-function clampa(opacity) {
-  return isNaN(opacity) ? 1 : Math.max(0, Math.min(1, opacity));
-}
-function clampi(value2) {
-  return Math.max(0, Math.min(255, Math.round(value2) || 0));
-}
-function hex(value2) {
-  value2 = clampi(value2);
-  return (value2 < 16 ? "0" : "") + value2.toString(16);
-}
-function hsla(h, s3, l, a3) {
-  if (a3 <= 0) h = s3 = l = NaN;
-  else if (l <= 0 || l >= 1) h = s3 = NaN;
-  else if (s3 <= 0) h = NaN;
-  return new Hsl(h, s3, l, a3);
-}
-function hslConvert(o) {
-  if (o instanceof Hsl) return new Hsl(o.h, o.s, o.l, o.opacity);
-  if (!(o instanceof Color)) o = color(o);
-  if (!o) return new Hsl();
-  if (o instanceof Hsl) return o;
-  o = o.rgb();
-  var r = o.r / 255, g = o.g / 255, b = o.b / 255, min7 = Math.min(r, g, b), max7 = Math.max(r, g, b), h = NaN, s3 = max7 - min7, l = (max7 + min7) / 2;
-  if (s3) {
-    if (r === max7) h = (g - b) / s3 + (g < b) * 6;
-    else if (g === max7) h = (b - r) / s3 + 2;
-    else h = (r - g) / s3 + 4;
-    s3 /= l < 0.5 ? max7 + min7 : 2 - max7 - min7;
-    h *= 60;
-  } else {
-    s3 = l > 0 && l < 1 ? 0 : h;
-  }
-  return new Hsl(h, s3, l, o.opacity);
-}
-function hsl(h, s3, l, opacity) {
-  return arguments.length === 1 ? hslConvert(h) : new Hsl(h, s3, l, opacity == null ? 1 : opacity);
-}
-function Hsl(h, s3, l, opacity) {
-  this.h = +h;
-  this.s = +s3;
-  this.l = +l;
-  this.opacity = +opacity;
-}
-define_default(Hsl, hsl, extend(Color, {
-  brighter(k3) {
-    k3 = k3 == null ? brighter : Math.pow(brighter, k3);
-    return new Hsl(this.h, this.s, this.l * k3, this.opacity);
-  },
-  darker(k3) {
-    k3 = k3 == null ? darker : Math.pow(darker, k3);
-    return new Hsl(this.h, this.s, this.l * k3, this.opacity);
-  },
-  rgb() {
-    var h = this.h % 360 + (this.h < 0) * 360, s3 = isNaN(h) || isNaN(this.s) ? 0 : this.s, l = this.l, m2 = l + (l < 0.5 ? l : 1 - l) * s3, m1 = 2 * l - m2;
-    return new Rgb(hsl2rgb(h >= 240 ? h - 240 : h + 120, m1, m2), hsl2rgb(h, m1, m2), hsl2rgb(h < 120 ? h + 240 : h - 120, m1, m2), this.opacity);
-  },
-  clamp() {
-    return new Hsl(clamph(this.h), clampt(this.s), clampt(this.l), clampa(this.opacity));
-  },
-  displayable() {
-    return (0 <= this.s && this.s <= 1 || isNaN(this.s)) && 0 <= this.l && this.l <= 1 && 0 <= this.opacity && this.opacity <= 1;
-  },
-  formatHsl() {
-    const a3 = clampa(this.opacity);
-    return `${a3 === 1 ? "hsl(" : "hsla("}${clamph(this.h)}, ${clampt(this.s) * 100}%, ${clampt(this.l) * 100}%${a3 === 1 ? ")" : `, ${a3})`}`;
-  }
-}));
-function clamph(value2) {
-  value2 = (value2 || 0) % 360;
-  return value2 < 0 ? value2 + 360 : value2;
-}
-function clampt(value2) {
-  return Math.max(0, Math.min(1, value2 || 0));
-}
-function hsl2rgb(h, m1, m2) {
-  return (h < 60 ? m1 + (m2 - m1) * h / 60 : h < 180 ? m2 : h < 240 ? m1 + (m2 - m1) * (240 - h) / 60 : m1) * 255;
-}
-
-// node_modules/d3-color/src/math.js
-var radians = Math.PI / 180;
-var degrees = 180 / Math.PI;
-
-// node_modules/d3-color/src/lab.js
-var K = 18;
-var Xn = 0.96422;
-var Yn = 1;
-var Zn = 0.82521;
-var t0 = 4 / 29;
-var t1 = 6 / 29;
-var t2 = 3 * t1 * t1;
-var t3 = t1 * t1 * t1;
-function labConvert(o) {
-  if (o instanceof Lab) return new Lab(o.l, o.a, o.b, o.opacity);
-  if (o instanceof Hcl) return hcl2lab(o);
-  if (!(o instanceof Rgb)) o = rgbConvert(o);
-  var r = rgb2lrgb(o.r), g = rgb2lrgb(o.g), b = rgb2lrgb(o.b), y3 = xyz2lab((0.2225045 * r + 0.7168786 * g + 0.0606169 * b) / Yn), x3, z;
-  if (r === g && g === b) x3 = z = y3;
-  else {
-    x3 = xyz2lab((0.4360747 * r + 0.3850649 * g + 0.1430804 * b) / Xn);
-    z = xyz2lab((0.0139322 * r + 0.0971045 * g + 0.7141733 * b) / Zn);
-  }
-  return new Lab(116 * y3 - 16, 500 * (x3 - y3), 200 * (y3 - z), o.opacity);
-}
-function lab(l, a3, b, opacity) {
-  return arguments.length === 1 ? labConvert(l) : new Lab(l, a3, b, opacity == null ? 1 : opacity);
-}
-function Lab(l, a3, b, opacity) {
-  this.l = +l;
-  this.a = +a3;
-  this.b = +b;
-  this.opacity = +opacity;
-}
-define_default(Lab, lab, extend(Color, {
-  brighter(k3) {
-    return new Lab(this.l + K * (k3 == null ? 1 : k3), this.a, this.b, this.opacity);
-  },
-  darker(k3) {
-    return new Lab(this.l - K * (k3 == null ? 1 : k3), this.a, this.b, this.opacity);
-  },
-  rgb() {
-    var y3 = (this.l + 16) / 116, x3 = isNaN(this.a) ? y3 : y3 + this.a / 500, z = isNaN(this.b) ? y3 : y3 - this.b / 200;
-    x3 = Xn * lab2xyz(x3);
-    y3 = Yn * lab2xyz(y3);
-    z = Zn * lab2xyz(z);
-    return new Rgb(lrgb2rgb(3.1338561 * x3 - 1.6168667 * y3 - 0.4906146 * z), lrgb2rgb(-0.9787684 * x3 + 1.9161415 * y3 + 0.033454 * z), lrgb2rgb(0.0719453 * x3 - 0.2289914 * y3 + 1.4052427 * z), this.opacity);
-  }
-}));
-function xyz2lab(t) {
-  return t > t3 ? Math.pow(t, 1 / 3) : t / t2 + t0;
-}
-function lab2xyz(t) {
-  return t > t1 ? t * t * t : t2 * (t - t0);
-}
-function lrgb2rgb(x3) {
-  return 255 * (x3 <= 31308e-7 ? 12.92 * x3 : 1.055 * Math.pow(x3, 1 / 2.4) - 0.055);
-}
-function rgb2lrgb(x3) {
-  return (x3 /= 255) <= 0.04045 ? x3 / 12.92 : Math.pow((x3 + 0.055) / 1.055, 2.4);
-}
-function hclConvert(o) {
-  if (o instanceof Hcl) return new Hcl(o.h, o.c, o.l, o.opacity);
-  if (!(o instanceof Lab)) o = labConvert(o);
-  if (o.a === 0 && o.b === 0) return new Hcl(NaN, 0 < o.l && o.l < 100 ? 0 : NaN, o.l, o.opacity);
-  var h = Math.atan2(o.b, o.a) * degrees;
-  return new Hcl(h < 0 ? h + 360 : h, Math.sqrt(o.a * o.a + o.b * o.b), o.l, o.opacity);
-}
-function hcl(h, c, l, opacity) {
-  return arguments.length === 1 ? hclConvert(h) : new Hcl(h, c, l, opacity == null ? 1 : opacity);
-}
-function Hcl(h, c, l, opacity) {
-  this.h = +h;
-  this.c = +c;
-  this.l = +l;
-  this.opacity = +opacity;
-}
-function hcl2lab(o) {
-  if (isNaN(o.h)) return new Lab(o.l, 0, 0, o.opacity);
-  var h = o.h * radians;
-  return new Lab(o.l, Math.cos(h) * o.c, Math.sin(h) * o.c, o.opacity);
-}
-define_default(Hcl, hcl, extend(Color, {
-  brighter(k3) {
-    return new Hcl(this.h, this.c, this.l + K * (k3 == null ? 1 : k3), this.opacity);
-  },
-  darker(k3) {
-    return new Hcl(this.h, this.c, this.l - K * (k3 == null ? 1 : k3), this.opacity);
-  },
-  rgb() {
-    return hcl2lab(this).rgb();
-  }
-}));
-
-// node_modules/d3-color/src/cubehelix.js
-var A = -0.14861;
-var B = 1.78277;
-var C = -0.29227;
-var D = -0.90649;
-var E = 1.97294;
-var ED = E * D;
-var EB = E * B;
-var BC_DA = B * C - D * A;
-function cubehelixConvert(o) {
-  if (o instanceof Cubehelix) return new Cubehelix(o.h, o.s, o.l, o.opacity);
-  if (!(o instanceof Rgb)) o = rgbConvert(o);
-  var r = o.r / 255, g = o.g / 255, b = o.b / 255, l = (BC_DA * b + ED * r - EB * g) / (BC_DA + ED - EB), bl = b - l, k3 = (E * (g - l) - C * bl) / D, s3 = Math.sqrt(k3 * k3 + bl * bl) / (E * l * (1 - l)), h = s3 ? Math.atan2(k3, bl) * degrees - 120 : NaN;
-  return new Cubehelix(h < 0 ? h + 360 : h, s3, l, o.opacity);
-}
-function cubehelix(h, s3, l, opacity) {
-  return arguments.length === 1 ? cubehelixConvert(h) : new Cubehelix(h, s3, l, opacity == null ? 1 : opacity);
-}
-function Cubehelix(h, s3, l, opacity) {
-  this.h = +h;
-  this.s = +s3;
-  this.l = +l;
-  this.opacity = +opacity;
-}
-define_default(Cubehelix, cubehelix, extend(Color, {
-  brighter(k3) {
-    k3 = k3 == null ? brighter : Math.pow(brighter, k3);
-    return new Cubehelix(this.h, this.s, this.l * k3, this.opacity);
-  },
-  darker(k3) {
-    k3 = k3 == null ? darker : Math.pow(darker, k3);
-    return new Cubehelix(this.h, this.s, this.l * k3, this.opacity);
-  },
-  rgb() {
-    var h = isNaN(this.h) ? 0 : (this.h + 120) * radians, l = +this.l, a3 = isNaN(this.s) ? 0 : this.s * l * (1 - l), cosh2 = Math.cos(h), sinh2 = Math.sin(h);
-    return new Rgb(255 * (l + a3 * (A * cosh2 + B * sinh2)), 255 * (l + a3 * (C * cosh2 + D * sinh2)), 255 * (l + a3 * (E * cosh2)), this.opacity);
-  }
-}));
-
-// node_modules/d3-interpolate/src/basis.js
-function basis(t14, v0, v1, v2, v3) {
-  var t22 = t14 * t14, t32 = t22 * t14;
-  return ((1 - 3 * t14 + 3 * t22 - t32) * v0 + (4 - 6 * t22 + 3 * t32) * v1 + (1 + 3 * t14 + 3 * t22 - 3 * t32) * v2 + t32 * v3) / 6;
-}
-function basis_default(values) {
-  var n = values.length - 1;
-  return function(t) {
-    var i = t <= 0 ? t = 0 : t >= 1 ? (t = 1, n - 1) : Math.floor(t * n), v1 = values[i], v2 = values[i + 1], v0 = i > 0 ? values[i - 1] : 2 * v1 - v2, v3 = i < n - 1 ? values[i + 2] : 2 * v2 - v1;
-    return basis((t - i / n) * n, v0, v1, v2, v3);
-  };
-}
-
-// node_modules/d3-interpolate/src/basisClosed.js
-function basisClosed_default(values) {
-  var n = values.length;
-  return function(t) {
-    var i = Math.floor(((t %= 1) < 0 ? ++t : t) * n), v0 = values[(i + n - 1) % n], v1 = values[i % n], v2 = values[(i + 1) % n], v3 = values[(i + 2) % n];
-    return basis((t - i / n) * n, v0, v1, v2, v3);
-  };
-}
-
-// node_modules/d3-interpolate/src/constant.js
-var constant_default3 = (x3) => () => x3;
-
-// node_modules/d3-interpolate/src/color.js
-function linear(a3, d) {
-  return function(t) {
-    return a3 + t * d;
-  };
-}
-function exponential(a3, b, y3) {
-  return a3 = Math.pow(a3, y3), b = Math.pow(b, y3) - a3, y3 = 1 / y3, function(t) {
-    return Math.pow(a3 + t * b, y3);
-  };
-}
-function hue(a3, b) {
-  var d = b - a3;
-  return d ? linear(a3, d > 180 || d < -180 ? d - 360 * Math.round(d / 360) : d) : constant_default3(isNaN(a3) ? b : a3);
-}
-function gamma(y3) {
-  return (y3 = +y3) === 1 ? nogamma : function(a3, b) {
-    return b - a3 ? exponential(a3, b, y3) : constant_default3(isNaN(a3) ? b : a3);
-  };
-}
-function nogamma(a3, b) {
-  var d = b - a3;
-  return d ? linear(a3, d) : constant_default3(isNaN(a3) ? b : a3);
-}
-
-// node_modules/d3-interpolate/src/rgb.js
-var rgb_default = function rgbGamma(y3) {
-  var color2 = gamma(y3);
-  function rgb2(start2, end) {
-    var r = color2((start2 = rgb(start2)).r, (end = rgb(end)).r), g = color2(start2.g, end.g), b = color2(start2.b, end.b), opacity = nogamma(start2.opacity, end.opacity);
-    return function(t) {
-      start2.r = r(t);
-      start2.g = g(t);
-      start2.b = b(t);
-      start2.opacity = opacity(t);
-      return start2 + "";
-    };
-  }
-  rgb2.gamma = rgbGamma;
-  return rgb2;
-}(1);
-function rgbSpline(spline) {
-  return function(colors) {
-    var n = colors.length, r = new Array(n), g = new Array(n), b = new Array(n), i, color2;
-    for (i = 0; i < n; ++i) {
-      color2 = rgb(colors[i]);
-      r[i] = color2.r || 0;
-      g[i] = color2.g || 0;
-      b[i] = color2.b || 0;
-    }
-    r = spline(r);
-    g = spline(g);
-    b = spline(b);
-    color2.opacity = 1;
-    return function(t) {
-      color2.r = r(t);
-      color2.g = g(t);
-      color2.b = b(t);
-      return color2 + "";
-    };
-  };
-}
-var rgbBasis = rgbSpline(basis_default);
-var rgbBasisClosed = rgbSpline(basisClosed_default);
-
-// node_modules/d3-interpolate/src/numberArray.js
-function numberArray_default(a3, b) {
-  if (!b) b = [];
-  var n = a3 ? Math.min(b.length, a3.length) : 0, c = b.slice(), i;
-  return function(t) {
-    for (i = 0; i < n; ++i) c[i] = a3[i] * (1 - t) + b[i] * t;
-    return c;
-  };
-}
-function isNumberArray(x3) {
-  return ArrayBuffer.isView(x3) && !(x3 instanceof DataView);
-}
-
-// node_modules/d3-interpolate/src/array.js
-function genericArray(a3, b) {
-  var nb = b ? b.length : 0, na = a3 ? Math.min(nb, a3.length) : 0, x3 = new Array(na), c = new Array(nb), i;
-  for (i = 0; i < na; ++i) x3[i] = value_default(a3[i], b[i]);
-  for (; i < nb; ++i) c[i] = b[i];
-  return function(t) {
-    for (i = 0; i < na; ++i) c[i] = x3[i](t);
-    return c;
-  };
-}
-
-// node_modules/d3-interpolate/src/date.js
-function date_default(a3, b) {
-  var d = /* @__PURE__ */ new Date();
-  return a3 = +a3, b = +b, function(t) {
-    return d.setTime(a3 * (1 - t) + b * t), d;
-  };
-}
-
-// node_modules/d3-interpolate/src/number.js
-function number_default(a3, b) {
-  return a3 = +a3, b = +b, function(t) {
-    return a3 * (1 - t) + b * t;
-  };
-}
-
-// node_modules/d3-interpolate/src/object.js
-function object_default(a3, b) {
-  var i = {}, c = {}, k3;
-  if (a3 === null || typeof a3 !== "object") a3 = {};
-  if (b === null || typeof b !== "object") b = {};
-  for (k3 in b) {
-    if (k3 in a3) {
-      i[k3] = value_default(a3[k3], b[k3]);
-    } else {
-      c[k3] = b[k3];
-    }
-  }
-  return function(t) {
-    for (k3 in i) c[k3] = i[k3](t);
-    return c;
-  };
-}
-
-// node_modules/d3-interpolate/src/string.js
-var reA = /[-+]?(?:\d+\.?\d*|\.?\d+)(?:[eE][-+]?\d+)?/g;
-var reB = new RegExp(reA.source, "g");
-function zero(b) {
-  return function() {
-    return b;
-  };
-}
-function one(b) {
-  return function(t) {
-    return b(t) + "";
-  };
-}
-function string_default(a3, b) {
-  var bi = reA.lastIndex = reB.lastIndex = 0, am, bm, bs, i = -1, s3 = [], q = [];
-  a3 = a3 + "", b = b + "";
-  while ((am = reA.exec(a3)) && (bm = reB.exec(b))) {
-    if ((bs = bm.index) > bi) {
-      bs = b.slice(bi, bs);
-      if (s3[i]) s3[i] += bs;
-      else s3[++i] = bs;
-    }
-    if ((am = am[0]) === (bm = bm[0])) {
-      if (s3[i]) s3[i] += bm;
-      else s3[++i] = bm;
-    } else {
-      s3[++i] = null;
-      q.push({
-        i,
-        x: number_default(am, bm)
-      });
-    }
-    bi = reB.lastIndex;
-  }
-  if (bi < b.length) {
-    bs = b.slice(bi);
-    if (s3[i]) s3[i] += bs;
-    else s3[++i] = bs;
-  }
-  return s3.length < 2 ? q[0] ? one(q[0].x) : zero(b) : (b = q.length, function(t) {
-    for (var i2 = 0, o; i2 < b; ++i2) s3[(o = q[i2]).i] = o.x(t);
-    return s3.join("");
-  });
-}
-
-// node_modules/d3-interpolate/src/value.js
-function value_default(a3, b) {
-  var t = typeof b, c;
-  return b == null || t === "boolean" ? constant_default3(b) : (t === "number" ? number_default : t === "string" ? (c = color(b)) ? (b = c, rgb_default) : string_default : b instanceof color ? rgb_default : b instanceof Date ? date_default : isNumberArray(b) ? numberArray_default : Array.isArray(b) ? genericArray : typeof b.valueOf !== "function" && typeof b.toString !== "function" || isNaN(b) ? object_default : number_default)(a3, b);
-}
-
-// node_modules/d3-interpolate/src/round.js
-function round_default(a3, b) {
-  return a3 = +a3, b = +b, function(t) {
-    return Math.round(a3 * (1 - t) + b * t);
-  };
-}
-
-// node_modules/d3-interpolate/src/transform/decompose.js
-var degrees2 = 180 / Math.PI;
-var identity = {
-  translateX: 0,
-  translateY: 0,
-  rotate: 0,
-  skewX: 0,
-  scaleX: 1,
-  scaleY: 1
-};
-function decompose_default(a3, b, c, d, e, f) {
-  var scaleX, scaleY, skewX;
-  if (scaleX = Math.sqrt(a3 * a3 + b * b)) a3 /= scaleX, b /= scaleX;
-  if (skewX = a3 * c + b * d) c -= a3 * skewX, d -= b * skewX;
-  if (scaleY = Math.sqrt(c * c + d * d)) c /= scaleY, d /= scaleY, skewX /= scaleY;
-  if (a3 * d < b * c) a3 = -a3, b = -b, skewX = -skewX, scaleX = -scaleX;
-  return {
-    translateX: e,
-    translateY: f,
-    rotate: Math.atan2(b, a3) * degrees2,
-    skewX: Math.atan(skewX) * degrees2,
-    scaleX,
-    scaleY
-  };
-}
-
-// node_modules/d3-interpolate/src/transform/parse.js
-var svgNode;
-function parseCss(value2) {
-  const m = new (typeof DOMMatrix === "function" ? DOMMatrix : WebKitCSSMatrix)(value2 + "");
-  return m.isIdentity ? identity : decompose_default(m.a, m.b, m.c, m.d, m.e, m.f);
-}
-function parseSvg(value2) {
-  if (value2 == null) return identity;
-  if (!svgNode) svgNode = document.createElementNS("http://www.w3.org/2000/svg", "g");
-  svgNode.setAttribute("transform", value2);
-  if (!(value2 = svgNode.transform.baseVal.consolidate())) return identity;
-  value2 = value2.matrix;
-  return decompose_default(value2.a, value2.b, value2.c, value2.d, value2.e, value2.f);
-}
-
-// node_modules/d3-interpolate/src/transform/index.js
-function interpolateTransform(parse, pxComma, pxParen, degParen) {
-  function pop(s3) {
-    return s3.length ? s3.pop() + " " : "";
-  }
-  function translate(xa, ya, xb, yb, s3, q) {
-    if (xa !== xb || ya !== yb) {
-      var i = s3.push("translate(", null, pxComma, null, pxParen);
-      q.push({
-        i: i - 4,
-        x: number_default(xa, xb)
-      }, {
-        i: i - 2,
-        x: number_default(ya, yb)
-      });
-    } else if (xb || yb) {
-      s3.push("translate(" + xb + pxComma + yb + pxParen);
-    }
-  }
-  function rotate(a3, b, s3, q) {
-    if (a3 !== b) {
-      if (a3 - b > 180) b += 360;
-      else if (b - a3 > 180) a3 += 360;
-      q.push({
-        i: s3.push(pop(s3) + "rotate(", null, degParen) - 2,
-        x: number_default(a3, b)
-      });
-    } else if (b) {
-      s3.push(pop(s3) + "rotate(" + b + degParen);
-    }
-  }
-  function skewX(a3, b, s3, q) {
-    if (a3 !== b) {
-      q.push({
-        i: s3.push(pop(s3) + "skewX(", null, degParen) - 2,
-        x: number_default(a3, b)
-      });
-    } else if (b) {
-      s3.push(pop(s3) + "skewX(" + b + degParen);
-    }
-  }
-  function scale(xa, ya, xb, yb, s3, q) {
-    if (xa !== xb || ya !== yb) {
-      var i = s3.push(pop(s3) + "scale(", null, ",", null, ")");
-      q.push({
-        i: i - 4,
-        x: number_default(xa, xb)
-      }, {
-        i: i - 2,
-        x: number_default(ya, yb)
-      });
-    } else if (xb !== 1 || yb !== 1) {
-      s3.push(pop(s3) + "scale(" + xb + "," + yb + ")");
-    }
-  }
-  return function(a3, b) {
-    var s3 = [], q = [];
-    a3 = parse(a3), b = parse(b);
-    translate(a3.translateX, a3.translateY, b.translateX, b.translateY, s3, q);
-    rotate(a3.rotate, b.rotate, s3, q);
-    skewX(a3.skewX, b.skewX, s3, q);
-    scale(a3.scaleX, a3.scaleY, b.scaleX, b.scaleY, s3, q);
-    a3 = b = null;
-    return function(t) {
-      var i = -1, n = q.length, o;
-      while (++i < n) s3[(o = q[i]).i] = o.x(t);
-      return s3.join("");
-    };
-  };
-}
-var interpolateTransformCss = interpolateTransform(parseCss, "px, ", "px)", "deg)");
-var interpolateTransformSvg = interpolateTransform(parseSvg, ", ", ")", ")");
-
-// node_modules/d3-interpolate/src/zoom.js
-var epsilon2 = 1e-12;
-function cosh(x3) {
-  return ((x3 = Math.exp(x3)) + 1 / x3) / 2;
-}
-function sinh(x3) {
-  return ((x3 = Math.exp(x3)) - 1 / x3) / 2;
-}
-function tanh(x3) {
-  return ((x3 = Math.exp(2 * x3)) - 1) / (x3 + 1);
-}
-var zoom_default = function zoomRho(rho, rho2, rho4) {
-  function zoom(p0, p1) {
-    var ux0 = p0[0], uy0 = p0[1], w0 = p0[2], ux1 = p1[0], uy1 = p1[1], w1 = p1[2], dx = ux1 - ux0, dy = uy1 - uy0, d2 = dx * dx + dy * dy, i, S;
-    if (d2 < epsilon2) {
-      S = Math.log(w1 / w0) / rho;
-      i = function(t) {
-        return [ux0 + t * dx, uy0 + t * dy, w0 * Math.exp(rho * t * S)];
-      };
-    } else {
-      var d1 = Math.sqrt(d2), b02 = (w1 * w1 - w0 * w0 + rho4 * d2) / (2 * w0 * rho2 * d1), b12 = (w1 * w1 - w0 * w0 - rho4 * d2) / (2 * w1 * rho2 * d1), r0 = Math.log(Math.sqrt(b02 * b02 + 1) - b02), r1 = Math.log(Math.sqrt(b12 * b12 + 1) - b12);
-      S = (r1 - r0) / rho;
-      i = function(t) {
-        var s3 = t * S, coshr0 = cosh(r0), u = w0 / (rho2 * d1) * (coshr0 * tanh(rho * s3 + r0) - sinh(r0));
-        return [ux0 + u * dx, uy0 + u * dy, w0 * coshr0 / cosh(rho * s3 + r0)];
-      };
-    }
-    i.duration = S * 1e3 * rho / Math.SQRT2;
-    return i;
-  }
-  zoom.rho = function(_) {
-    var _1 = Math.max(1e-3, +_), _2 = _1 * _1, _4 = _2 * _2;
-    return zoomRho(_1, _2, _4);
-  };
-  return zoom;
-}(Math.SQRT2, 2, 4);
-
-// node_modules/d3-interpolate/src/hsl.js
-function hsl2(hue2) {
-  return function(start2, end) {
-    var h = hue2((start2 = hsl(start2)).h, (end = hsl(end)).h), s3 = nogamma(start2.s, end.s), l = nogamma(start2.l, end.l), opacity = nogamma(start2.opacity, end.opacity);
-    return function(t) {
-      start2.h = h(t);
-      start2.s = s3(t);
-      start2.l = l(t);
-      start2.opacity = opacity(t);
-      return start2 + "";
-    };
-  };
-}
-var hsl_default = hsl2(hue);
-var hslLong = hsl2(nogamma);
-
-// node_modules/d3-interpolate/src/hcl.js
-function hcl2(hue2) {
-  return function(start2, end) {
-    var h = hue2((start2 = hcl(start2)).h, (end = hcl(end)).h), c = nogamma(start2.c, end.c), l = nogamma(start2.l, end.l), opacity = nogamma(start2.opacity, end.opacity);
-    return function(t) {
-      start2.h = h(t);
-      start2.c = c(t);
-      start2.l = l(t);
-      start2.opacity = opacity(t);
-      return start2 + "";
-    };
-  };
-}
-var hcl_default = hcl2(hue);
-var hclLong = hcl2(nogamma);
-
-// node_modules/d3-interpolate/src/cubehelix.js
-function cubehelix2(hue2) {
-  return function cubehelixGamma(y3) {
-    y3 = +y3;
-    function cubehelix3(start2, end) {
-      var h = hue2((start2 = cubehelix(start2)).h, (end = cubehelix(end)).h), s3 = nogamma(start2.s, end.s), l = nogamma(start2.l, end.l), opacity = nogamma(start2.opacity, end.opacity);
-      return function(t) {
-        start2.h = h(t);
-        start2.s = s3(t);
-        start2.l = l(Math.pow(t, y3));
-        start2.opacity = opacity(t);
-        return start2 + "";
-      };
-    }
-    cubehelix3.gamma = cubehelixGamma;
-    return cubehelix3;
-  }(1);
-}
-var cubehelix_default = cubehelix2(hue);
-var cubehelixLong = cubehelix2(nogamma);
-
-// node_modules/d3-timer/src/timer.js
-var frame = 0;
-var timeout = 0;
-var interval = 0;
-var pokeDelay = 1e3;
-var taskHead;
-var taskTail;
-var clockLast = 0;
-var clockNow = 0;
-var clockSkew = 0;
-var clock = typeof performance === "object" && performance.now ? performance : Date;
-var setFrame = typeof window === "object" && window.requestAnimationFrame ? window.requestAnimationFrame.bind(window) : function(f) {
-  setTimeout(f, 17);
-};
-function now() {
-  return clockNow || (setFrame(clearNow), clockNow = clock.now() + clockSkew);
-}
-function clearNow() {
-  clockNow = 0;
-}
-function Timer() {
-  this._call = this._time = this._next = null;
-}
-Timer.prototype = timer.prototype = {
-  constructor: Timer,
-  restart: function(callback, delay, time2) {
-    if (typeof callback !== "function") throw new TypeError("callback is not a function");
-    time2 = (time2 == null ? now() : +time2) + (delay == null ? 0 : +delay);
-    if (!this._next && taskTail !== this) {
-      if (taskTail) taskTail._next = this;
-      else taskHead = this;
-      taskTail = this;
-    }
-    this._call = callback;
-    this._time = time2;
-    sleep();
-  },
-  stop: function() {
-    if (this._call) {
-      this._call = null;
-      this._time = Infinity;
-      sleep();
-    }
-  }
-};
-function timer(callback, delay, time2) {
-  var t = new Timer();
-  t.restart(callback, delay, time2);
-  return t;
-}
-function timerFlush() {
-  now();
-  ++frame;
-  var t = taskHead, e;
-  while (t) {
-    if ((e = clockNow - t._time) >= 0) t._call.call(void 0, e);
-    t = t._next;
-  }
-  --frame;
-}
-function wake() {
-  clockNow = (clockLast = clock.now()) + clockSkew;
-  frame = timeout = 0;
-  try {
-    timerFlush();
-  } finally {
-    frame = 0;
-    nap();
-    clockNow = 0;
-  }
-}
-function poke() {
-  var now2 = clock.now(), delay = now2 - clockLast;
-  if (delay > pokeDelay) clockSkew -= delay, clockLast = now2;
-}
-function nap() {
-  var t04, t14 = taskHead, t22, time2 = Infinity;
-  while (t14) {
-    if (t14._call) {
-      if (time2 > t14._time) time2 = t14._time;
-      t04 = t14, t14 = t14._next;
-    } else {
-      t22 = t14._next, t14._next = null;
-      t14 = t04 ? t04._next = t22 : taskHead = t22;
-    }
-  }
-  taskTail = t04;
-  sleep(time2);
-}
-function sleep(time2) {
-  if (frame) return;
-  if (timeout) timeout = clearTimeout(timeout);
-  var delay = time2 - clockNow;
-  if (delay > 24) {
-    if (time2 < Infinity) timeout = setTimeout(wake, time2 - clock.now() - clockSkew);
-    if (interval) interval = clearInterval(interval);
-  } else {
-    if (!interval) clockLast = clock.now(), interval = setInterval(poke, pokeDelay);
-    frame = 1, setFrame(wake);
-  }
-}
-
-// node_modules/d3-timer/src/timeout.js
-function timeout_default(callback, delay, time2) {
-  var t = new Timer();
-  delay = delay == null ? 0 : +delay;
-  t.restart((elapsed) => {
-    t.stop();
-    callback(elapsed + delay);
-  }, delay, time2);
-  return t;
-}
-
-// node_modules/d3-transition/src/transition/schedule.js
-var emptyOn = dispatch_default2("start", "end", "cancel", "interrupt");
-var emptyTween = [];
-var CREATED = 0;
-var SCHEDULED = 1;
-var STARTING = 2;
-var STARTED = 3;
-var RUNNING = 4;
-var ENDING = 5;
-var ENDED = 6;
-function schedule_default(node, name, id3, index4, group4, timing) {
-  var schedules = node.__transition;
-  if (!schedules) node.__transition = {};
-  else if (id3 in schedules) return;
-  create(node, id3, {
-    name,
-    index: index4,
-    // For context during callback.
-    group: group4,
-    // For context during callback.
-    on: emptyOn,
-    tween: emptyTween,
-    time: timing.time,
-    delay: timing.delay,
-    duration: timing.duration,
-    ease: timing.ease,
-    timer: null,
-    state: CREATED
-  });
-}
-function init(node, id3) {
-  var schedule = get2(node, id3);
-  if (schedule.state > CREATED) throw new Error("too late; already scheduled");
-  return schedule;
-}
-function set2(node, id3) {
-  var schedule = get2(node, id3);
-  if (schedule.state > STARTED) throw new Error("too late; already running");
-  return schedule;
-}
-function get2(node, id3) {
-  var schedule = node.__transition;
-  if (!schedule || !(schedule = schedule[id3])) throw new Error("transition not found");
-  return schedule;
-}
-function create(node, id3, self) {
-  var schedules = node.__transition, tween;
-  schedules[id3] = self;
-  self.timer = timer(schedule, 0, self.time);
-  function schedule(elapsed) {
-    self.state = SCHEDULED;
-    self.timer.restart(start2, self.delay, self.time);
-    if (self.delay <= elapsed) start2(elapsed - self.delay);
-  }
-  function start2(elapsed) {
-    var i, j, n, o;
-    if (self.state !== SCHEDULED) return stop();
-    for (i in schedules) {
-      o = schedules[i];
-      if (o.name !== self.name) continue;
-      if (o.state === STARTED) return timeout_default(start2);
-      if (o.state === RUNNING) {
-        o.state = ENDED;
-        o.timer.stop();
-        o.on.call("interrupt", node, node.__data__, o.index, o.group);
-        delete schedules[i];
-      } else if (+i < id3) {
-        o.state = ENDED;
-        o.timer.stop();
-        o.on.call("cancel", node, node.__data__, o.index, o.group);
-        delete schedules[i];
-      }
-    }
-    timeout_default(function() {
-      if (self.state === STARTED) {
-        self.state = RUNNING;
-        self.timer.restart(tick, self.delay, self.time);
-        tick(elapsed);
-      }
-    });
-    self.state = STARTING;
-    self.on.call("start", node, node.__data__, self.index, self.group);
-    if (self.state !== STARTING) return;
-    self.state = STARTED;
-    tween = new Array(n = self.tween.length);
-    for (i = 0, j = -1; i < n; ++i) {
-      if (o = self.tween[i].value.call(node, node.__data__, self.index, self.group)) {
-        tween[++j] = o;
-      }
-    }
-    tween.length = j + 1;
-  }
-  function tick(elapsed) {
-    var t = elapsed < self.duration ? self.ease.call(null, elapsed / self.duration) : (self.timer.restart(stop), self.state = ENDING, 1), i = -1, n = tween.length;
-    while (++i < n) {
-      tween[i].call(node, t);
-    }
-    if (self.state === ENDING) {
-      self.on.call("end", node, node.__data__, self.index, self.group);
-      stop();
-    }
-  }
-  function stop() {
-    self.state = ENDED;
-    self.timer.stop();
-    delete schedules[id3];
-    for (var i in schedules) return;
-    delete node.__transition;
-  }
-}
-
-// node_modules/d3-transition/src/interrupt.js
-function interrupt_default(node, name) {
-  var schedules = node.__transition, schedule, active, empty3 = true, i;
-  if (!schedules) return;
-  name = name == null ? null : name + "";
-  for (i in schedules) {
-    if ((schedule = schedules[i]).name !== name) {
-      empty3 = false;
-      continue;
-    }
-    active = schedule.state > STARTING && schedule.state < ENDING;
-    schedule.state = ENDED;
-    schedule.timer.stop();
-    schedule.on.call(active ? "interrupt" : "cancel", node, node.__data__, schedule.index, schedule.group);
-    delete schedules[i];
-  }
-  if (empty3) delete node.__transition;
-}
-
-// node_modules/d3-transition/src/selection/interrupt.js
-function interrupt_default2(name) {
-  return this.each(function() {
-    interrupt_default(this, name);
-  });
-}
-
-// node_modules/d3-transition/src/transition/tween.js
-function tweenRemove(id3, name) {
-  var tween0, tween1;
-  return function() {
-    var schedule = set2(this, id3), tween = schedule.tween;
-    if (tween !== tween0) {
-      tween1 = tween0 = tween;
-      for (var i = 0, n = tween1.length; i < n; ++i) {
-        if (tween1[i].name === name) {
-          tween1 = tween1.slice();
-          tween1.splice(i, 1);
-          break;
-        }
-      }
-    }
-    schedule.tween = tween1;
-  };
-}
-function tweenFunction(id3, name, value2) {
-  var tween0, tween1;
-  if (typeof value2 !== "function") throw new Error();
-  return function() {
-    var schedule = set2(this, id3), tween = schedule.tween;
-    if (tween !== tween0) {
-      tween1 = (tween0 = tween).slice();
-      for (var t = {
-        name,
-        value: value2
-      }, i = 0, n = tween1.length; i < n; ++i) {
-        if (tween1[i].name === name) {
-          tween1[i] = t;
-          break;
-        }
-      }
-      if (i === n) tween1.push(t);
-    }
-    schedule.tween = tween1;
-  };
-}
-function tween_default(name, value2) {
-  var id3 = this._id;
-  name += "";
-  if (arguments.length < 2) {
-    var tween = get2(this.node(), id3).tween;
-    for (var i = 0, n = tween.length, t; i < n; ++i) {
-      if ((t = tween[i]).name === name) {
-        return t.value;
-      }
-    }
-    return null;
-  }
-  return this.each((value2 == null ? tweenRemove : tweenFunction)(id3, name, value2));
-}
-function tweenValue(transition3, name, value2) {
-  var id3 = transition3._id;
-  transition3.each(function() {
-    var schedule = set2(this, id3);
-    (schedule.value || (schedule.value = {}))[name] = value2.apply(this, arguments);
-  });
-  return function(node) {
-    return get2(node, id3).value[name];
-  };
-}
-
-// node_modules/d3-transition/src/transition/interpolate.js
-function interpolate_default(a3, b) {
-  var c;
-  return (typeof b === "number" ? number_default : b instanceof color ? rgb_default : (c = color(b)) ? (b = c, rgb_default) : string_default)(a3, b);
-}
-
-// node_modules/d3-transition/src/transition/attr.js
-function attrRemove2(name) {
-  return function() {
-    this.removeAttribute(name);
-  };
-}
-function attrRemoveNS2(fullname) {
-  return function() {
-    this.removeAttributeNS(fullname.space, fullname.local);
-  };
-}
-function attrConstant2(name, interpolate, value1) {
-  var string00, string1 = value1 + "", interpolate0;
-  return function() {
-    var string0 = this.getAttribute(name);
-    return string0 === string1 ? null : string0 === string00 ? interpolate0 : interpolate0 = interpolate(string00 = string0, value1);
-  };
-}
-function attrConstantNS2(fullname, interpolate, value1) {
-  var string00, string1 = value1 + "", interpolate0;
-  return function() {
-    var string0 = this.getAttributeNS(fullname.space, fullname.local);
-    return string0 === string1 ? null : string0 === string00 ? interpolate0 : interpolate0 = interpolate(string00 = string0, value1);
-  };
-}
-function attrFunction2(name, interpolate, value2) {
-  var string00, string10, interpolate0;
-  return function() {
-    var string0, value1 = value2(this), string1;
-    if (value1 == null) return void this.removeAttribute(name);
-    string0 = this.getAttribute(name);
-    string1 = value1 + "";
-    return string0 === string1 ? null : string0 === string00 && string1 === string10 ? interpolate0 : (string10 = string1, interpolate0 = interpolate(string00 = string0, value1));
-  };
-}
-function attrFunctionNS2(fullname, interpolate, value2) {
-  var string00, string10, interpolate0;
-  return function() {
-    var string0, value1 = value2(this), string1;
-    if (value1 == null) return void this.removeAttributeNS(fullname.space, fullname.local);
-    string0 = this.getAttributeNS(fullname.space, fullname.local);
-    string1 = value1 + "";
-    return string0 === string1 ? null : string0 === string00 && string1 === string10 ? interpolate0 : (string10 = string1, interpolate0 = interpolate(string00 = string0, value1));
-  };
-}
-function attr_default2(name, value2) {
-  var fullname = namespace_default(name), i = fullname === "transform" ? interpolateTransformSvg : interpolate_default;
-  return this.attrTween(name, typeof value2 === "function" ? (fullname.local ? attrFunctionNS2 : attrFunction2)(fullname, i, tweenValue(this, "attr." + name, value2)) : value2 == null ? (fullname.local ? attrRemoveNS2 : attrRemove2)(fullname) : (fullname.local ? attrConstantNS2 : attrConstant2)(fullname, i, value2));
-}
-
-// node_modules/d3-transition/src/transition/attrTween.js
-function attrInterpolate(name, i) {
-  return function(t) {
-    this.setAttribute(name, i.call(this, t));
-  };
-}
-function attrInterpolateNS(fullname, i) {
-  return function(t) {
-    this.setAttributeNS(fullname.space, fullname.local, i.call(this, t));
-  };
-}
-function attrTweenNS(fullname, value2) {
-  var t04, i0;
-  function tween() {
-    var i = value2.apply(this, arguments);
-    if (i !== i0) t04 = (i0 = i) && attrInterpolateNS(fullname, i);
-    return t04;
-  }
-  tween._value = value2;
-  return tween;
-}
-function attrTween(name, value2) {
-  var t04, i0;
-  function tween() {
-    var i = value2.apply(this, arguments);
-    if (i !== i0) t04 = (i0 = i) && attrInterpolate(name, i);
-    return t04;
-  }
-  tween._value = value2;
-  return tween;
-}
-function attrTween_default(name, value2) {
-  var key = "attr." + name;
-  if (arguments.length < 2) return (key = this.tween(key)) && key._value;
-  if (value2 == null) return this.tween(key, null);
-  if (typeof value2 !== "function") throw new Error();
-  var fullname = namespace_default(name);
-  return this.tween(key, (fullname.local ? attrTweenNS : attrTween)(fullname, value2));
-}
-
-// node_modules/d3-transition/src/transition/delay.js
-function delayFunction(id3, value2) {
-  return function() {
-    init(this, id3).delay = +value2.apply(this, arguments);
-  };
-}
-function delayConstant(id3, value2) {
-  return value2 = +value2, function() {
-    init(this, id3).delay = value2;
-  };
-}
-function delay_default(value2) {
-  var id3 = this._id;
-  return arguments.length ? this.each((typeof value2 === "function" ? delayFunction : delayConstant)(id3, value2)) : get2(this.node(), id3).delay;
-}
-
-// node_modules/d3-transition/src/transition/duration.js
-function durationFunction(id3, value2) {
-  return function() {
-    set2(this, id3).duration = +value2.apply(this, arguments);
-  };
-}
-function durationConstant(id3, value2) {
-  return value2 = +value2, function() {
-    set2(this, id3).duration = value2;
-  };
-}
-function duration_default(value2) {
-  var id3 = this._id;
-  return arguments.length ? this.each((typeof value2 === "function" ? durationFunction : durationConstant)(id3, value2)) : get2(this.node(), id3).duration;
-}
-
-// node_modules/d3-transition/src/transition/ease.js
-function easeConstant(id3, value2) {
-  if (typeof value2 !== "function") throw new Error();
-  return function() {
-    set2(this, id3).ease = value2;
-  };
-}
-function ease_default(value2) {
-  var id3 = this._id;
-  return arguments.length ? this.each(easeConstant(id3, value2)) : get2(this.node(), id3).ease;
-}
-
-// node_modules/d3-transition/src/transition/easeVarying.js
-function easeVarying(id3, value2) {
-  return function() {
-    var v = value2.apply(this, arguments);
-    if (typeof v !== "function") throw new Error();
-    set2(this, id3).ease = v;
-  };
-}
-function easeVarying_default(value2) {
-  if (typeof value2 !== "function") throw new Error();
-  return this.each(easeVarying(this._id, value2));
-}
-
-// node_modules/d3-transition/src/transition/filter.js
-function filter_default2(match) {
-  if (typeof match !== "function") match = matcher_default(match);
-  for (var groups4 = this._groups, m = groups4.length, subgroups = new Array(m), j = 0; j < m; ++j) {
-    for (var group4 = groups4[j], n = group4.length, subgroup = subgroups[j] = [], node, i = 0; i < n; ++i) {
-      if ((node = group4[i]) && match.call(node, node.__data__, i, group4)) {
-        subgroup.push(node);
-      }
-    }
-  }
-  return new Transition(subgroups, this._parents, this._name, this._id);
-}
-
-// node_modules/d3-transition/src/transition/merge.js
-function merge_default2(transition3) {
-  if (transition3._id !== this._id) throw new Error();
-  for (var groups0 = this._groups, groups1 = transition3._groups, m0 = groups0.length, m1 = groups1.length, m = Math.min(m0, m1), merges = new Array(m0), j = 0; j < m; ++j) {
-    for (var group0 = groups0[j], group1 = groups1[j], n = group0.length, merge4 = merges[j] = new Array(n), node, i = 0; i < n; ++i) {
-      if (node = group0[i] || group1[i]) {
-        merge4[i] = node;
-      }
-    }
-  }
-  for (; j < m0; ++j) {
-    merges[j] = groups0[j];
-  }
-  return new Transition(merges, this._parents, this._name, this._id);
-}
-
-// node_modules/d3-transition/src/transition/on.js
-function start(name) {
-  return (name + "").trim().split(/^|\s+/).every(function(t) {
-    var i = t.indexOf(".");
-    if (i >= 0) t = t.slice(0, i);
-    return !t || t === "start";
-  });
-}
-function onFunction(id3, name, listener) {
-  var on0, on1, sit = start(name) ? init : set2;
-  return function() {
-    var schedule = sit(this, id3), on = schedule.on;
-    if (on !== on0) (on1 = (on0 = on).copy()).on(name, listener);
-    schedule.on = on1;
-  };
-}
-function on_default2(name, listener) {
-  var id3 = this._id;
-  return arguments.length < 2 ? get2(this.node(), id3).on.on(name) : this.each(onFunction(id3, name, listener));
-}
-
-// node_modules/d3-transition/src/transition/remove.js
-function removeFunction(id3) {
-  return function() {
-    var parent = this.parentNode;
-    for (var i in this.__transition) if (+i !== id3) return;
-    if (parent) parent.removeChild(this);
-  };
-}
-function remove_default2() {
-  return this.on("end.remove", removeFunction(this._id));
-}
-
-// node_modules/d3-transition/src/transition/select.js
-function select_default3(select) {
-  var name = this._name, id3 = this._id;
-  if (typeof select !== "function") select = selector_default(select);
-  for (var groups4 = this._groups, m = groups4.length, subgroups = new Array(m), j = 0; j < m; ++j) {
-    for (var group4 = groups4[j], n = group4.length, subgroup = subgroups[j] = new Array(n), node, subnode, i = 0; i < n; ++i) {
-      if ((node = group4[i]) && (subnode = select.call(node, node.__data__, i, group4))) {
-        if ("__data__" in node) subnode.__data__ = node.__data__;
-        subgroup[i] = subnode;
-        schedule_default(subgroup[i], name, id3, i, subgroup, get2(node, id3));
-      }
-    }
-  }
-  return new Transition(subgroups, this._parents, name, id3);
-}
-
-// node_modules/d3-transition/src/transition/selectAll.js
-function selectAll_default3(select) {
-  var name = this._name, id3 = this._id;
-  if (typeof select !== "function") select = selectorAll_default(select);
-  for (var groups4 = this._groups, m = groups4.length, subgroups = [], parents = [], j = 0; j < m; ++j) {
-    for (var group4 = groups4[j], n = group4.length, node, i = 0; i < n; ++i) {
-      if (node = group4[i]) {
-        for (var children2 = select.call(node, node.__data__, i, group4), child, inherit2 = get2(node, id3), k3 = 0, l = children2.length; k3 < l; ++k3) {
-          if (child = children2[k3]) {
-            schedule_default(child, name, id3, k3, children2, inherit2);
-          }
-        }
-        subgroups.push(children2);
-        parents.push(node);
-      }
-    }
-  }
-  return new Transition(subgroups, parents, name, id3);
-}
-
-// node_modules/d3-transition/src/transition/selection.js
-var Selection2 = selection_default.prototype.constructor;
-function selection_default2() {
-  return new Selection2(this._groups, this._parents);
-}
-
-// node_modules/d3-transition/src/transition/style.js
-function styleNull(name, interpolate) {
-  var string00, string10, interpolate0;
-  return function() {
-    var string0 = styleValue(this, name), string1 = (this.style.removeProperty(name), styleValue(this, name));
-    return string0 === string1 ? null : string0 === string00 && string1 === string10 ? interpolate0 : interpolate0 = interpolate(string00 = string0, string10 = string1);
-  };
-}
-function styleRemove2(name) {
-  return function() {
-    this.style.removeProperty(name);
-  };
-}
-function styleConstant2(name, interpolate, value1) {
-  var string00, string1 = value1 + "", interpolate0;
-  return function() {
-    var string0 = styleValue(this, name);
-    return string0 === string1 ? null : string0 === string00 ? interpolate0 : interpolate0 = interpolate(string00 = string0, value1);
-  };
-}
-function styleFunction2(name, interpolate, value2) {
-  var string00, string10, interpolate0;
-  return function() {
-    var string0 = styleValue(this, name), value1 = value2(this), string1 = value1 + "";
-    if (value1 == null) string1 = value1 = (this.style.removeProperty(name), styleValue(this, name));
-    return string0 === string1 ? null : string0 === string00 && string1 === string10 ? interpolate0 : (string10 = string1, interpolate0 = interpolate(string00 = string0, value1));
-  };
-}
-function styleMaybeRemove(id3, name) {
-  var on0, on1, listener0, key = "style." + name, event = "end." + key, remove2;
-  return function() {
-    var schedule = set2(this, id3), on = schedule.on, listener = schedule.value[key] == null ? remove2 || (remove2 = styleRemove2(name)) : void 0;
-    if (on !== on0 || listener0 !== listener) (on1 = (on0 = on).copy()).on(event, listener0 = listener);
-    schedule.on = on1;
-  };
-}
-function style_default2(name, value2, priority) {
-  var i = (name += "") === "transform" ? interpolateTransformCss : interpolate_default;
-  return value2 == null ? this.styleTween(name, styleNull(name, i)).on("end.style." + name, styleRemove2(name)) : typeof value2 === "function" ? this.styleTween(name, styleFunction2(name, i, tweenValue(this, "style." + name, value2))).each(styleMaybeRemove(this._id, name)) : this.styleTween(name, styleConstant2(name, i, value2), priority).on("end.style." + name, null);
-}
-
-// node_modules/d3-transition/src/transition/styleTween.js
-function styleInterpolate(name, i, priority) {
-  return function(t) {
-    this.style.setProperty(name, i.call(this, t), priority);
-  };
-}
-function styleTween(name, value2, priority) {
-  var t, i0;
-  function tween() {
-    var i = value2.apply(this, arguments);
-    if (i !== i0) t = (i0 = i) && styleInterpolate(name, i, priority);
-    return t;
-  }
-  tween._value = value2;
-  return tween;
-}
-function styleTween_default(name, value2, priority) {
-  var key = "style." + (name += "");
-  if (arguments.length < 2) return (key = this.tween(key)) && key._value;
-  if (value2 == null) return this.tween(key, null);
-  if (typeof value2 !== "function") throw new Error();
-  return this.tween(key, styleTween(name, value2, priority == null ? "" : priority));
-}
-
-// node_modules/d3-transition/src/transition/text.js
-function textConstant2(value2) {
-  return function() {
-    this.textContent = value2;
-  };
-}
-function textFunction2(value2) {
-  return function() {
-    var value1 = value2(this);
-    this.textContent = value1 == null ? "" : value1;
-  };
-}
-function text_default2(value2) {
-  return this.tween("text", typeof value2 === "function" ? textFunction2(tweenValue(this, "text", value2)) : textConstant2(value2 == null ? "" : value2 + ""));
-}
-
-// node_modules/d3-transition/src/transition/textTween.js
-function textInterpolate(i) {
-  return function(t) {
-    this.textContent = i.call(this, t);
-  };
-}
-function textTween(value2) {
-  var t04, i0;
-  function tween() {
-    var i = value2.apply(this, arguments);
-    if (i !== i0) t04 = (i0 = i) && textInterpolate(i);
-    return t04;
-  }
-  tween._value = value2;
-  return tween;
-}
-function textTween_default(value2) {
-  var key = "text";
-  if (arguments.length < 1) return (key = this.tween(key)) && key._value;
-  if (value2 == null) return this.tween(key, null);
-  if (typeof value2 !== "function") throw new Error();
-  return this.tween(key, textTween(value2));
-}
-
-// node_modules/d3-transition/src/transition/transition.js
-function transition_default() {
-  var name = this._name, id0 = this._id, id1 = newId();
-  for (var groups4 = this._groups, m = groups4.length, j = 0; j < m; ++j) {
-    for (var group4 = groups4[j], n = group4.length, node, i = 0; i < n; ++i) {
-      if (node = group4[i]) {
-        var inherit2 = get2(node, id0);
-        schedule_default(node, name, id1, i, group4, {
-          time: inherit2.time + inherit2.delay + inherit2.duration,
-          delay: 0,
-          duration: inherit2.duration,
-          ease: inherit2.ease
-        });
-      }
-    }
-  }
-  return new Transition(groups4, this._parents, name, id1);
-}
-
-// node_modules/d3-transition/src/transition/end.js
-function end_default() {
-  var on0, on1, that = this, id3 = that._id, size = that.size();
-  return new Promise(function(resolve, reject) {
-    var cancel = {
-      value: reject
-    }, end = {
-      value: function() {
-        if (--size === 0) resolve();
-      }
-    };
-    that.each(function() {
-      var schedule = set2(this, id3), on = schedule.on;
-      if (on !== on0) {
-        on1 = (on0 = on).copy();
-        on1._.cancel.push(cancel);
-        on1._.interrupt.push(cancel);
-        on1._.end.push(end);
-      }
-      schedule.on = on1;
-    });
-    if (size === 0) resolve();
-  });
-}
-
-// node_modules/d3-transition/src/transition/index.js
-var id = 0;
-function Transition(groups4, parents, name, id3) {
-  this._groups = groups4;
-  this._parents = parents;
-  this._name = name;
-  this._id = id3;
-}
-function transition2(name) {
-  return selection_default().transition(name);
-}
-function newId() {
-  return ++id;
-}
-var selection_prototype = selection_default.prototype;
-Transition.prototype = transition2.prototype = {
-  constructor: Transition,
-  select: select_default3,
-  selectAll: selectAll_default3,
-  selectChild: selection_prototype.selectChild,
-  selectChildren: selection_prototype.selectChildren,
-  filter: filter_default2,
-  merge: merge_default2,
-  selection: selection_default2,
-  transition: transition_default,
-  call: selection_prototype.call,
-  nodes: selection_prototype.nodes,
-  node: selection_prototype.node,
-  size: selection_prototype.size,
-  empty: selection_prototype.empty,
-  each: selection_prototype.each,
-  on: on_default2,
-  attr: attr_default2,
-  attrTween: attrTween_default,
-  style: style_default2,
-  styleTween: styleTween_default,
-  text: text_default2,
-  textTween: textTween_default,
-  remove: remove_default2,
-  tween: tween_default,
-  delay: delay_default,
-  duration: duration_default,
-  ease: ease_default,
-  easeVarying: easeVarying_default,
-  end: end_default,
-  [Symbol.iterator]: selection_prototype[Symbol.iterator]
-};
-
-// node_modules/d3-ease/src/cubic.js
-function cubicInOut(t) {
-  return ((t *= 2) <= 1 ? t * t * t : (t -= 2) * t * t + 2) / 2;
-}
-
-// node_modules/d3-ease/src/poly.js
-var exponent = 3;
-var polyIn = function custom(e) {
-  e = +e;
-  function polyIn2(t) {
-    return Math.pow(t, e);
-  }
-  polyIn2.exponent = custom;
-  return polyIn2;
-}(exponent);
-var polyOut = function custom2(e) {
-  e = +e;
-  function polyOut2(t) {
-    return 1 - Math.pow(1 - t, e);
-  }
-  polyOut2.exponent = custom2;
-  return polyOut2;
-}(exponent);
-var polyInOut = function custom3(e) {
-  e = +e;
-  function polyInOut2(t) {
-    return ((t *= 2) <= 1 ? Math.pow(t, e) : 2 - Math.pow(2 - t, e)) / 2;
-  }
-  polyInOut2.exponent = custom3;
-  return polyInOut2;
-}(exponent);
-
-// node_modules/d3-ease/src/sin.js
-var pi = Math.PI;
-var halfPi = pi / 2;
-function sinInOut(t) {
-  return (1 - Math.cos(pi * t)) / 2;
-}
-
-// node_modules/d3-ease/src/math.js
-function tpmt(x3) {
-  return (Math.pow(2, -10 * x3) - 9765625e-10) * 1.0009775171065494;
-}
-
-// node_modules/d3-ease/src/bounce.js
-var b1 = 4 / 11;
-var b2 = 6 / 11;
-var b3 = 8 / 11;
-var b4 = 3 / 4;
-var b5 = 9 / 11;
-var b6 = 10 / 11;
-var b7 = 15 / 16;
-var b8 = 21 / 22;
-var b9 = 63 / 64;
-var b0 = 1 / b1 / b1;
-
-// node_modules/d3-ease/src/back.js
-var overshoot = 1.70158;
-var backIn = function custom4(s3) {
-  s3 = +s3;
-  function backIn2(t) {
-    return (t = +t) * t * (s3 * (t - 1) + t);
-  }
-  backIn2.overshoot = custom4;
-  return backIn2;
-}(overshoot);
-var backOut = function custom5(s3) {
-  s3 = +s3;
-  function backOut2(t) {
-    return --t * t * ((t + 1) * s3 + t) + 1;
-  }
-  backOut2.overshoot = custom5;
-  return backOut2;
-}(overshoot);
-var backInOut = function custom6(s3) {
-  s3 = +s3;
-  function backInOut2(t) {
-    return ((t *= 2) < 1 ? t * t * ((s3 + 1) * t - s3) : (t -= 2) * t * ((s3 + 1) * t + s3) + 2) / 2;
-  }
-  backInOut2.overshoot = custom6;
-  return backInOut2;
-}(overshoot);
-
-// node_modules/d3-ease/src/elastic.js
-var tau = 2 * Math.PI;
-var amplitude = 1;
-var period = 0.3;
-var elasticIn = function custom7(a3, p) {
-  var s3 = Math.asin(1 / (a3 = Math.max(1, a3))) * (p /= tau);
-  function elasticIn2(t) {
-    return a3 * tpmt(- --t) * Math.sin((s3 - t) / p);
-  }
-  elasticIn2.amplitude = function(a4) {
-    return custom7(a4, p * tau);
-  };
-  elasticIn2.period = function(p2) {
-    return custom7(a3, p2);
-  };
-  return elasticIn2;
-}(amplitude, period);
-var elasticOut = function custom8(a3, p) {
-  var s3 = Math.asin(1 / (a3 = Math.max(1, a3))) * (p /= tau);
-  function elasticOut2(t) {
-    return 1 - a3 * tpmt(t = +t) * Math.sin((t + s3) / p);
-  }
-  elasticOut2.amplitude = function(a4) {
-    return custom8(a4, p * tau);
-  };
-  elasticOut2.period = function(p2) {
-    return custom8(a3, p2);
-  };
-  return elasticOut2;
-}(amplitude, period);
-var elasticInOut = function custom9(a3, p) {
-  var s3 = Math.asin(1 / (a3 = Math.max(1, a3))) * (p /= tau);
-  function elasticInOut2(t) {
-    return ((t = t * 2 - 1) < 0 ? a3 * tpmt(-t) * Math.sin((s3 - t) / p) : 2 - a3 * tpmt(t) * Math.sin((s3 + t) / p)) / 2;
-  }
-  elasticInOut2.amplitude = function(a4) {
-    return custom9(a4, p * tau);
-  };
-  elasticInOut2.period = function(p2) {
-    return custom9(a3, p2);
-  };
-  return elasticInOut2;
-}(amplitude, period);
-
-// node_modules/d3-transition/src/selection/transition.js
-var defaultTiming = {
-  time: null,
-  // Set on use.
-  delay: 0,
-  duration: 250,
-  ease: cubicInOut
-};
-function inherit(node, id3) {
-  var timing;
-  while (!(timing = node.__transition) || !(timing = timing[id3])) {
-    if (!(node = node.parentNode)) {
-      throw new Error(`transition ${id3} not found`);
-    }
-  }
-  return timing;
-}
-function transition_default2(name) {
-  var id3, timing;
-  if (name instanceof Transition) {
-    id3 = name._id, name = name._name;
-  } else {
-    id3 = newId(), (timing = defaultTiming).time = now(), name = name == null ? null : name + "";
-  }
-  for (var groups4 = this._groups, m = groups4.length, j = 0; j < m; ++j) {
-    for (var group4 = groups4[j], n = group4.length, node, i = 0; i < n; ++i) {
-      if (node = group4[i]) {
-        schedule_default(node, name, id3, i, group4, timing || inherit(node, id3));
-      }
-    }
-  }
-  return new Transition(groups4, this._parents, name, id3);
-}
-
-// node_modules/d3-transition/src/selection/index.js
-selection_default.prototype.interrupt = interrupt_default2;
-selection_default.prototype.transition = transition_default2;
-
-// node_modules/d3-brush/src/constant.js
-var constant_default4 = (x3) => () => x3;
-
-// node_modules/d3-brush/src/event.js
-function BrushEvent(type2, {
-  sourceEvent,
-  target,
-  selection: selection2,
-  mode: mode2,
-  dispatch: dispatch2
-}) {
-  Object.defineProperties(this, {
-    type: {
-      value: type2,
-      enumerable: true,
-      configurable: true
-    },
-    sourceEvent: {
-      value: sourceEvent,
-      enumerable: true,
-      configurable: true
-    },
-    target: {
-      value: target,
-      enumerable: true,
-      configurable: true
-    },
-    selection: {
-      value: selection2,
-      enumerable: true,
-      configurable: true
-    },
-    mode: {
-      value: mode2,
-      enumerable: true,
-      configurable: true
-    },
-    _: {
-      value: dispatch2
-    }
-  });
-}
-
-// node_modules/d3-brush/src/noevent.js
-function nopropagation2(event) {
-  event.stopImmediatePropagation();
-}
-function noevent_default2(event) {
-  event.preventDefault();
-  event.stopImmediatePropagation();
-}
-
-// node_modules/d3-brush/src/brush.js
-var MODE_DRAG = {
-  name: "drag"
-};
-var MODE_SPACE = {
-  name: "space"
-};
-var MODE_HANDLE = {
-  name: "handle"
-};
-var MODE_CENTER = {
-  name: "center"
-};
-var {
-  abs,
-  max,
-  min
-} = Math;
-function number1(e) {
-  return [+e[0], +e[1]];
-}
-function number2(e) {
-  return [number1(e[0]), number1(e[1])];
-}
-var X = {
-  name: "x",
-  handles: ["w", "e"].map(type),
-  input: function(x3, e) {
-    return x3 == null ? null : [[+x3[0], e[0][1]], [+x3[1], e[1][1]]];
-  },
-  output: function(xy) {
-    return xy && [xy[0][0], xy[1][0]];
-  }
-};
-var Y = {
-  name: "y",
-  handles: ["n", "s"].map(type),
-  input: function(y3, e) {
-    return y3 == null ? null : [[e[0][0], +y3[0]], [e[1][0], +y3[1]]];
-  },
-  output: function(xy) {
-    return xy && [xy[0][1], xy[1][1]];
-  }
-};
-var XY = {
-  name: "xy",
-  handles: ["n", "w", "e", "s", "nw", "ne", "sw", "se"].map(type),
-  input: function(xy) {
-    return xy == null ? null : number2(xy);
-  },
-  output: function(xy) {
-    return xy;
-  }
-};
-var cursors = {
-  overlay: "crosshair",
-  selection: "move",
-  n: "ns-resize",
-  e: "ew-resize",
-  s: "ns-resize",
-  w: "ew-resize",
-  nw: "nwse-resize",
-  ne: "nesw-resize",
-  se: "nwse-resize",
-  sw: "nesw-resize"
-};
-var flipX = {
-  e: "w",
-  w: "e",
-  nw: "ne",
-  ne: "nw",
-  se: "sw",
-  sw: "se"
-};
-var flipY = {
-  n: "s",
-  s: "n",
-  nw: "sw",
-  ne: "se",
-  se: "ne",
-  sw: "nw"
-};
-var signsX = {
-  overlay: 1,
-  selection: 1,
-  n: null,
-  e: 1,
-  s: null,
-  w: -1,
-  nw: -1,
-  ne: 1,
-  se: 1,
-  sw: -1
-};
-var signsY = {
-  overlay: 1,
-  selection: 1,
-  n: -1,
-  e: null,
-  s: 1,
-  w: null,
-  nw: -1,
-  ne: -1,
-  se: 1,
-  sw: 1
-};
-function type(t) {
-  return {
-    type: t
-  };
-}
-function defaultFilter(event) {
-  return !event.ctrlKey && !event.button;
-}
-function defaultExtent() {
-  var svg = this.ownerSVGElement || this;
-  if (svg.hasAttribute("viewBox")) {
-    svg = svg.viewBox.baseVal;
-    return [[svg.x, svg.y], [svg.x + svg.width, svg.y + svg.height]];
-  }
-  return [[0, 0], [svg.width.baseVal.value, svg.height.baseVal.value]];
-}
-function defaultTouchable() {
-  return navigator.maxTouchPoints || "ontouchstart" in this;
-}
-function local2(node) {
-  while (!node.__brush) if (!(node = node.parentNode)) return;
-  return node.__brush;
-}
-function empty2(extent2) {
-  return extent2[0][0] === extent2[1][0] || extent2[0][1] === extent2[1][1];
-}
-function brushX() {
-  return brush(X);
-}
-function brush(dim) {
-  var extent2 = defaultExtent, filter5 = defaultFilter, touchable = defaultTouchable, keys = true, listeners = dispatch_default2("start", "brush", "end"), handleSize = 6, touchending;
-  function brush2(group4) {
-    var overlay = group4.property("__brush", initialize).selectAll(".overlay").data([type("overlay")]);
-    overlay.enter().append("rect").attr("class", "overlay").attr("pointer-events", "all").attr("cursor", cursors.overlay).merge(overlay).each(function() {
-      var extent3 = local2(this).extent;
-      select_default2(this).attr("x", extent3[0][0]).attr("y", extent3[0][1]).attr("width", extent3[1][0] - extent3[0][0]).attr("height", extent3[1][1] - extent3[0][1]);
-    });
-    group4.selectAll(".selection").data([type("selection")]).enter().append("rect").attr("class", "selection").attr("cursor", cursors.selection).attr("fill", "#777").attr("fill-opacity", 0.3).attr("stroke", "#fff").attr("shape-rendering", "crispEdges");
-    var handle = group4.selectAll(".handle").data(dim.handles, function(d) {
-      return d.type;
-    });
-    handle.exit().remove();
-    handle.enter().append("rect").attr("class", function(d) {
-      return "handle handle--" + d.type;
-    }).attr("cursor", function(d) {
-      return cursors[d.type];
-    });
-    group4.each(redraw).attr("fill", "none").attr("pointer-events", "all").on("mousedown.brush", started).filter(touchable).on("touchstart.brush", started).on("touchmove.brush", touchmoved).on("touchend.brush touchcancel.brush", touchended).style("touch-action", "none").style("-webkit-tap-highlight-color", "rgba(0,0,0,0)");
-  }
-  brush2.move = function(group4, selection2, event) {
-    if (group4.tween) {
-      group4.on("start.brush", function(event2) {
-        emitter(this, arguments).beforestart().start(event2);
-      }).on("interrupt.brush end.brush", function(event2) {
-        emitter(this, arguments).end(event2);
-      }).tween("brush", function() {
-        var that = this, state = that.__brush, emit = emitter(that, arguments), selection0 = state.selection, selection1 = dim.input(typeof selection2 === "function" ? selection2.apply(this, arguments) : selection2, state.extent), i = value_default(selection0, selection1);
-        function tween(t) {
-          state.selection = t === 1 && selection1 === null ? null : i(t);
-          redraw.call(that);
-          emit.brush();
-        }
-        return selection0 !== null && selection1 !== null ? tween : tween(1);
-      });
-    } else {
-      group4.each(function() {
-        var that = this, args = arguments, state = that.__brush, selection1 = dim.input(typeof selection2 === "function" ? selection2.apply(that, args) : selection2, state.extent), emit = emitter(that, args).beforestart();
-        interrupt_default(that);
-        state.selection = selection1 === null ? null : selection1;
-        redraw.call(that);
-        emit.start(event).brush(event).end(event);
-      });
-    }
-  };
-  brush2.clear = function(group4, event) {
-    brush2.move(group4, null, event);
-  };
-  function redraw() {
-    var group4 = select_default2(this), selection2 = local2(this).selection;
-    if (selection2) {
-      group4.selectAll(".selection").style("display", null).attr("x", selection2[0][0]).attr("y", selection2[0][1]).attr("width", selection2[1][0] - selection2[0][0]).attr("height", selection2[1][1] - selection2[0][1]);
-      group4.selectAll(".handle").style("display", null).attr("x", function(d) {
-        return d.type[d.type.length - 1] === "e" ? selection2[1][0] - handleSize / 2 : selection2[0][0] - handleSize / 2;
-      }).attr("y", function(d) {
-        return d.type[0] === "s" ? selection2[1][1] - handleSize / 2 : selection2[0][1] - handleSize / 2;
-      }).attr("width", function(d) {
-        return d.type === "n" || d.type === "s" ? selection2[1][0] - selection2[0][0] + handleSize : handleSize;
-      }).attr("height", function(d) {
-        return d.type === "e" || d.type === "w" ? selection2[1][1] - selection2[0][1] + handleSize : handleSize;
-      });
-    } else {
-      group4.selectAll(".selection,.handle").style("display", "none").attr("x", null).attr("y", null).attr("width", null).attr("height", null);
-    }
-  }
-  function emitter(that, args, clean) {
-    var emit = that.__brush.emitter;
-    return emit && (!clean || !emit.clean) ? emit : new Emitter(that, args, clean);
-  }
-  function Emitter(that, args, clean) {
-    this.that = that;
-    this.args = args;
-    this.state = that.__brush;
-    this.active = 0;
-    this.clean = clean;
-  }
-  Emitter.prototype = {
-    beforestart: function() {
-      if (++this.active === 1) this.state.emitter = this, this.starting = true;
-      return this;
-    },
-    start: function(event, mode2) {
-      if (this.starting) this.starting = false, this.emit("start", event, mode2);
-      else this.emit("brush", event);
-      return this;
-    },
-    brush: function(event, mode2) {
-      this.emit("brush", event, mode2);
-      return this;
-    },
-    end: function(event, mode2) {
-      if (--this.active === 0) delete this.state.emitter, this.emit("end", event, mode2);
-      return this;
-    },
-    emit: function(type2, event, mode2) {
-      var d = select_default2(this.that).datum();
-      listeners.call(type2, this.that, new BrushEvent(type2, {
-        sourceEvent: event,
-        target: brush2,
-        selection: dim.output(this.state.selection),
-        mode: mode2,
-        dispatch: listeners
-      }), d);
-    }
-  };
-  function started(event) {
-    if (touchending && !event.touches) return;
-    if (!filter5.apply(this, arguments)) return;
-    var that = this, type2 = event.target.__data__.type, mode2 = (keys && event.metaKey ? type2 = "overlay" : type2) === "selection" ? MODE_DRAG : keys && event.altKey ? MODE_CENTER : MODE_HANDLE, signX = dim === Y ? null : signsX[type2], signY = dim === X ? null : signsY[type2], state = local2(that), extent3 = state.extent, selection2 = state.selection, W = extent3[0][0], w0, w1, N = extent3[0][1], n0, n1, E2 = extent3[1][0], e0, e1, S = extent3[1][1], s0, s1, dx = 0, dy = 0, moving, shifting = signX && signY && keys && event.shiftKey, lockX, lockY, points = Array.from(event.touches || [event], (t) => {
-      const i = t.identifier;
-      t = pointer_default(t, that);
-      t.point0 = t.slice();
-      t.identifier = i;
-      return t;
-    });
-    interrupt_default(that);
-    var emit = emitter(that, arguments, true).beforestart();
-    if (type2 === "overlay") {
-      if (selection2) moving = true;
-      const pts = [points[0], points[1] || points[0]];
-      state.selection = selection2 = [[w0 = dim === Y ? W : min(pts[0][0], pts[1][0]), n0 = dim === X ? N : min(pts[0][1], pts[1][1])], [e0 = dim === Y ? E2 : max(pts[0][0], pts[1][0]), s0 = dim === X ? S : max(pts[0][1], pts[1][1])]];
-      if (points.length > 1) move(event);
-    } else {
-      w0 = selection2[0][0];
-      n0 = selection2[0][1];
-      e0 = selection2[1][0];
-      s0 = selection2[1][1];
-    }
-    w1 = w0;
-    n1 = n0;
-    e1 = e0;
-    s1 = s0;
-    var group4 = select_default2(that).attr("pointer-events", "none");
-    var overlay = group4.selectAll(".overlay").attr("cursor", cursors[type2]);
-    if (event.touches) {
-      emit.moved = moved;
-      emit.ended = ended;
-    } else {
-      var view = select_default2(event.view).on("mousemove.brush", moved, true).on("mouseup.brush", ended, true);
-      if (keys) view.on("keydown.brush", keydowned, true).on("keyup.brush", keyupped, true);
-      nodrag_default(event.view);
-    }
-    redraw.call(that);
-    emit.start(event, mode2.name);
-    function moved(event2) {
-      for (const p of event2.changedTouches || [event2]) {
-        for (const d of points) if (d.identifier === p.identifier) d.cur = pointer_default(p, that);
-      }
-      if (shifting && !lockX && !lockY && points.length === 1) {
-        const point10 = points[0];
-        if (abs(point10.cur[0] - point10[0]) > abs(point10.cur[1] - point10[1])) lockY = true;
-        else lockX = true;
-      }
-      for (const point10 of points) if (point10.cur) point10[0] = point10.cur[0], point10[1] = point10.cur[1];
-      moving = true;
-      noevent_default2(event2);
-      move(event2);
-    }
-    function move(event2) {
-      const point10 = points[0], point0 = point10.point0;
-      var t;
-      dx = point10[0] - point0[0];
-      dy = point10[1] - point0[1];
-      switch (mode2) {
-        case MODE_SPACE:
-        case MODE_DRAG: {
-          if (signX) dx = max(W - w0, min(E2 - e0, dx)), w1 = w0 + dx, e1 = e0 + dx;
-          if (signY) dy = max(N - n0, min(S - s0, dy)), n1 = n0 + dy, s1 = s0 + dy;
-          break;
-        }
-        case MODE_HANDLE: {
-          if (points[1]) {
-            if (signX) w1 = max(W, min(E2, points[0][0])), e1 = max(W, min(E2, points[1][0])), signX = 1;
-            if (signY) n1 = max(N, min(S, points[0][1])), s1 = max(N, min(S, points[1][1])), signY = 1;
-          } else {
-            if (signX < 0) dx = max(W - w0, min(E2 - w0, dx)), w1 = w0 + dx, e1 = e0;
-            else if (signX > 0) dx = max(W - e0, min(E2 - e0, dx)), w1 = w0, e1 = e0 + dx;
-            if (signY < 0) dy = max(N - n0, min(S - n0, dy)), n1 = n0 + dy, s1 = s0;
-            else if (signY > 0) dy = max(N - s0, min(S - s0, dy)), n1 = n0, s1 = s0 + dy;
-          }
-          break;
-        }
-        case MODE_CENTER: {
-          if (signX) w1 = max(W, min(E2, w0 - dx * signX)), e1 = max(W, min(E2, e0 + dx * signX));
-          if (signY) n1 = max(N, min(S, n0 - dy * signY)), s1 = max(N, min(S, s0 + dy * signY));
-          break;
-        }
-      }
-      if (e1 < w1) {
-        signX *= -1;
-        t = w0, w0 = e0, e0 = t;
-        t = w1, w1 = e1, e1 = t;
-        if (type2 in flipX) overlay.attr("cursor", cursors[type2 = flipX[type2]]);
-      }
-      if (s1 < n1) {
-        signY *= -1;
-        t = n0, n0 = s0, s0 = t;
-        t = n1, n1 = s1, s1 = t;
-        if (type2 in flipY) overlay.attr("cursor", cursors[type2 = flipY[type2]]);
-      }
-      if (state.selection) selection2 = state.selection;
-      if (lockX) w1 = selection2[0][0], e1 = selection2[1][0];
-      if (lockY) n1 = selection2[0][1], s1 = selection2[1][1];
-      if (selection2[0][0] !== w1 || selection2[0][1] !== n1 || selection2[1][0] !== e1 || selection2[1][1] !== s1) {
-        state.selection = [[w1, n1], [e1, s1]];
-        redraw.call(that);
-        emit.brush(event2, mode2.name);
-      }
-    }
-    function ended(event2) {
-      nopropagation2(event2);
-      if (event2.touches) {
-        if (event2.touches.length) return;
-        if (touchending) clearTimeout(touchending);
-        touchending = setTimeout(function() {
-          touchending = null;
-        }, 500);
-      } else {
-        yesdrag(event2.view, moving);
-        view.on("keydown.brush keyup.brush mousemove.brush mouseup.brush", null);
-      }
-      group4.attr("pointer-events", "all");
-      overlay.attr("cursor", cursors.overlay);
-      if (state.selection) selection2 = state.selection;
-      if (empty2(selection2)) state.selection = null, redraw.call(that);
-      emit.end(event2, mode2.name);
-    }
-    function keydowned(event2) {
-      switch (event2.keyCode) {
-        case 16: {
-          shifting = signX && signY;
-          break;
-        }
-        case 18: {
-          if (mode2 === MODE_HANDLE) {
-            if (signX) e0 = e1 - dx * signX, w0 = w1 + dx * signX;
-            if (signY) s0 = s1 - dy * signY, n0 = n1 + dy * signY;
-            mode2 = MODE_CENTER;
-            move(event2);
-          }
-          break;
-        }
-        case 32: {
-          if (mode2 === MODE_HANDLE || mode2 === MODE_CENTER) {
-            if (signX < 0) e0 = e1 - dx;
-            else if (signX > 0) w0 = w1 - dx;
-            if (signY < 0) s0 = s1 - dy;
-            else if (signY > 0) n0 = n1 - dy;
-            mode2 = MODE_SPACE;
-            overlay.attr("cursor", cursors.selection);
-            move(event2);
-          }
-          break;
-        }
-        default:
-          return;
-      }
-      noevent_default2(event2);
-    }
-    function keyupped(event2) {
-      switch (event2.keyCode) {
-        case 16: {
-          if (shifting) {
-            lockX = lockY = shifting = false;
-            move(event2);
-          }
-          break;
-        }
-        case 18: {
-          if (mode2 === MODE_CENTER) {
-            if (signX < 0) e0 = e1;
-            else if (signX > 0) w0 = w1;
-            if (signY < 0) s0 = s1;
-            else if (signY > 0) n0 = n1;
-            mode2 = MODE_HANDLE;
-            move(event2);
-          }
-          break;
-        }
-        case 32: {
-          if (mode2 === MODE_SPACE) {
-            if (event2.altKey) {
-              if (signX) e0 = e1 - dx * signX, w0 = w1 + dx * signX;
-              if (signY) s0 = s1 - dy * signY, n0 = n1 + dy * signY;
-              mode2 = MODE_CENTER;
-            } else {
-              if (signX < 0) e0 = e1;
-              else if (signX > 0) w0 = w1;
-              if (signY < 0) s0 = s1;
-              else if (signY > 0) n0 = n1;
-              mode2 = MODE_HANDLE;
-            }
-            overlay.attr("cursor", cursors[type2]);
-            move(event2);
-          }
-          break;
-        }
-        default:
-          return;
-      }
-      noevent_default2(event2);
-    }
-  }
-  function touchmoved(event) {
-    emitter(this, arguments).moved(event);
-  }
-  function touchended(event) {
-    emitter(this, arguments).ended(event);
-  }
-  function initialize() {
-    var state = this.__brush || {
-      selection: null
-    };
-    state.extent = number2(extent2.apply(this, arguments));
-    state.dim = dim;
-    return state;
-  }
-  brush2.extent = function(_) {
-    return arguments.length ? (extent2 = typeof _ === "function" ? _ : constant_default4(number2(_)), brush2) : extent2;
-  };
-  brush2.filter = function(_) {
-    return arguments.length ? (filter5 = typeof _ === "function" ? _ : constant_default4(!!_), brush2) : filter5;
-  };
-  brush2.touchable = function(_) {
-    return arguments.length ? (touchable = typeof _ === "function" ? _ : constant_default4(!!_), brush2) : touchable;
-  };
-  brush2.handleSize = function(_) {
-    return arguments.length ? (handleSize = +_, brush2) : handleSize;
-  };
-  brush2.keyModifiers = function(_) {
-    return arguments.length ? (keys = !!_, brush2) : keys;
-  };
-  brush2.on = function() {
-    var value2 = listeners.on.apply(listeners, arguments);
-    return value2 === listeners ? brush2 : value2;
-  };
-  return brush2;
-}
-
-// node_modules/d3-array/src/ascending.js
-function ascending2(a3, b) {
-  return a3 == null || b == null ? NaN : a3 < b ? -1 : a3 > b ? 1 : a3 >= b ? 0 : NaN;
-}
-
-// node_modules/d3-array/src/descending.js
-function descending(a3, b) {
-  return a3 == null || b == null ? NaN : b < a3 ? -1 : b > a3 ? 1 : b >= a3 ? 0 : NaN;
-}
-
-// node_modules/d3-array/src/bisector.js
-function bisector(f) {
-  let compare1, compare2, delta;
-  if (f.length !== 2) {
-    compare1 = ascending2;
-    compare2 = (d, x3) => ascending2(f(d), x3);
-    delta = (d, x3) => f(d) - x3;
-  } else {
-    compare1 = f === ascending2 || f === descending ? f : zero2;
-    compare2 = f;
-    delta = f;
-  }
-  function left2(a3, x3, lo = 0, hi = a3.length) {
-    if (lo < hi) {
-      if (compare1(x3, x3) !== 0) return hi;
-      do {
-        const mid = lo + hi >>> 1;
-        if (compare2(a3[mid], x3) < 0) lo = mid + 1;
-        else hi = mid;
-      } while (lo < hi);
-    }
-    return lo;
-  }
-  function right2(a3, x3, lo = 0, hi = a3.length) {
-    if (lo < hi) {
-      if (compare1(x3, x3) !== 0) return hi;
-      do {
-        const mid = lo + hi >>> 1;
-        if (compare2(a3[mid], x3) <= 0) lo = mid + 1;
-        else hi = mid;
-      } while (lo < hi);
-    }
-    return lo;
-  }
-  function center2(a3, x3, lo = 0, hi = a3.length) {
-    const i = left2(a3, x3, lo, hi - 1);
-    return i > lo && delta(a3[i - 1], x3) > -delta(a3[i], x3) ? i - 1 : i;
-  }
-  return {
-    left: left2,
-    center: center2,
-    right: right2
-  };
-}
-function zero2() {
-  return 0;
-}
-
-// node_modules/d3-array/src/number.js
-function number(x3) {
-  return x3 === null ? NaN : +x3;
-}
-function* numbers(values, valueof) {
-  if (valueof === void 0) {
-    for (let value2 of values) {
-      if (value2 != null && (value2 = +value2) >= value2) {
-        yield value2;
-      }
-    }
-  } else {
-    let index4 = -1;
-    for (let value2 of values) {
-      if ((value2 = valueof(value2, ++index4, values)) != null && (value2 = +value2) >= value2) {
-        yield value2;
-      }
-    }
-  }
-}
-
-// node_modules/d3-array/src/bisect.js
-var ascendingBisect = bisector(ascending2);
-var bisectRight = ascendingBisect.right;
-var bisectLeft = ascendingBisect.left;
-var bisectCenter = bisector(number).center;
-var bisect_default = bisectRight;
-
-// node_modules/d3-array/src/blur.js
-var blur2 = Blur2(blurf);
-var blurImage = Blur2(blurfImage);
-function Blur2(blur3) {
-  return function(data, rx, ry = rx) {
-    if (!((rx = +rx) >= 0)) throw new RangeError("invalid rx");
-    if (!((ry = +ry) >= 0)) throw new RangeError("invalid ry");
-    let {
-      data: values,
-      width,
-      height
-    } = data;
-    if (!((width = Math.floor(width)) >= 0)) throw new RangeError("invalid width");
-    if (!((height = Math.floor(height !== void 0 ? height : values.length / width)) >= 0)) throw new RangeError("invalid height");
-    if (!width || !height || !rx && !ry) return data;
-    const blurx = rx && blur3(rx);
-    const blury = ry && blur3(ry);
-    const temp = values.slice();
-    if (blurx && blury) {
-      blurh(blurx, temp, values, width, height);
-      blurh(blurx, values, temp, width, height);
-      blurh(blurx, temp, values, width, height);
-      blurv(blury, values, temp, width, height);
-      blurv(blury, temp, values, width, height);
-      blurv(blury, values, temp, width, height);
-    } else if (blurx) {
-      blurh(blurx, values, temp, width, height);
-      blurh(blurx, temp, values, width, height);
-      blurh(blurx, values, temp, width, height);
-    } else if (blury) {
-      blurv(blury, values, temp, width, height);
-      blurv(blury, temp, values, width, height);
-      blurv(blury, values, temp, width, height);
-    }
-    return data;
-  };
-}
-function blurh(blur3, T, S, w, h) {
-  for (let y3 = 0, n = w * h; y3 < n; ) {
-    blur3(T, S, y3, y3 += w, 1);
-  }
-}
-function blurv(blur3, T, S, w, h) {
-  for (let x3 = 0, n = w * h; x3 < w; ++x3) {
-    blur3(T, S, x3, x3 + n, w);
-  }
-}
-function blurfImage(radius) {
-  const blur3 = blurf(radius);
-  return (T, S, start2, stop, step) => {
-    start2 <<= 2, stop <<= 2, step <<= 2;
-    blur3(T, S, start2 + 0, stop + 0, step);
-    blur3(T, S, start2 + 1, stop + 1, step);
-    blur3(T, S, start2 + 2, stop + 2, step);
-    blur3(T, S, start2 + 3, stop + 3, step);
-  };
-}
-function blurf(radius) {
-  const radius0 = Math.floor(radius);
-  if (radius0 === radius) return bluri(radius);
-  const t = radius - radius0;
-  const w = 2 * radius + 1;
-  return (T, S, start2, stop, step) => {
-    if (!((stop -= step) >= start2)) return;
-    let sum6 = radius0 * S[start2];
-    const s0 = step * radius0;
-    const s1 = s0 + step;
-    for (let i = start2, j = start2 + s0; i < j; i += step) {
-      sum6 += S[Math.min(stop, i)];
-    }
-    for (let i = start2, j = stop; i <= j; i += step) {
-      sum6 += S[Math.min(stop, i + s0)];
-      T[i] = (sum6 + t * (S[Math.max(start2, i - s1)] + S[Math.min(stop, i + s1)])) / w;
-      sum6 -= S[Math.max(start2, i - s0)];
-    }
-  };
-}
-function bluri(radius) {
-  const w = 2 * radius + 1;
-  return (T, S, start2, stop, step) => {
-    if (!((stop -= step) >= start2)) return;
-    let sum6 = radius * S[start2];
-    const s3 = step * radius;
-    for (let i = start2, j = start2 + s3; i < j; i += step) {
-      sum6 += S[Math.min(stop, i)];
-    }
-    for (let i = start2, j = stop; i <= j; i += step) {
-      sum6 += S[Math.min(stop, i + s3)];
-      T[i] = sum6 / w;
-      sum6 -= S[Math.max(start2, i - s3)];
-    }
-  };
-}
-
-// node_modules/internmap/src/index.js
-var InternMap = class extends Map {
-  constructor(entries, key = keyof) {
-    super();
-    Object.defineProperties(this, {
-      _intern: {
-        value: /* @__PURE__ */ new Map()
-      },
-      _key: {
-        value: key
-      }
-    });
-    if (entries != null) for (const [key2, value2] of entries) this.set(key2, value2);
-  }
-  get(key) {
-    return super.get(intern_get(this, key));
-  }
-  has(key) {
-    return super.has(intern_get(this, key));
-  }
-  set(key, value2) {
-    return super.set(intern_set(this, key), value2);
-  }
-  delete(key) {
-    return super.delete(intern_delete(this, key));
-  }
-};
-function intern_get({
-  _intern,
-  _key
-}, value2) {
-  const key = _key(value2);
-  return _intern.has(key) ? _intern.get(key) : value2;
-}
-function intern_set({
-  _intern,
-  _key
-}, value2) {
-  const key = _key(value2);
-  if (_intern.has(key)) return _intern.get(key);
-  _intern.set(key, value2);
-  return value2;
-}
-function intern_delete({
-  _intern,
-  _key
-}, value2) {
-  const key = _key(value2);
-  if (_intern.has(key)) {
-    value2 = _intern.get(key);
-    _intern.delete(key);
-  }
-  return value2;
-}
-function keyof(value2) {
-  return value2 !== null && typeof value2 === "object" ? value2.valueOf() : value2;
-}
-
-// node_modules/d3-array/src/sort.js
-function compareDefined(compare = ascending2) {
-  if (compare === ascending2) return ascendingDefined;
-  if (typeof compare !== "function") throw new TypeError("compare is not a function");
-  return (a3, b) => {
-    const x3 = compare(a3, b);
-    if (x3 || x3 === 0) return x3;
-    return (compare(b, b) === 0) - (compare(a3, a3) === 0);
-  };
-}
-function ascendingDefined(a3, b) {
-  return (a3 == null || !(a3 >= a3)) - (b == null || !(b >= b)) || (a3 < b ? -1 : a3 > b ? 1 : 0);
-}
-
-// node_modules/d3-array/src/array.js
-var array2 = Array.prototype;
-var slice = array2.slice;
-var map = array2.map;
-
-// node_modules/d3-array/src/ticks.js
-var e10 = Math.sqrt(50);
-var e5 = Math.sqrt(10);
-var e2 = Math.sqrt(2);
-function tickSpec(start2, stop, count6) {
-  const step = (stop - start2) / Math.max(0, count6), power = Math.floor(Math.log10(step)), error = step / Math.pow(10, power), factor = error >= e10 ? 10 : error >= e5 ? 5 : error >= e2 ? 2 : 1;
-  let i1, i2, inc;
-  if (power < 0) {
-    inc = Math.pow(10, -power) / factor;
-    i1 = Math.round(start2 * inc);
-    i2 = Math.round(stop * inc);
-    if (i1 / inc < start2) ++i1;
-    if (i2 / inc > stop) --i2;
-    inc = -inc;
-  } else {
-    inc = Math.pow(10, power) * factor;
-    i1 = Math.round(start2 / inc);
-    i2 = Math.round(stop / inc);
-    if (i1 * inc < start2) ++i1;
-    if (i2 * inc > stop) --i2;
-  }
-  if (i2 < i1 && 0.5 <= count6 && count6 < 2) return tickSpec(start2, stop, count6 * 2);
-  return [i1, i2, inc];
-}
-function ticks(start2, stop, count6) {
-  stop = +stop, start2 = +start2, count6 = +count6;
-  if (!(count6 > 0)) return [];
-  if (start2 === stop) return [start2];
-  const reverse4 = stop < start2, [i1, i2, inc] = reverse4 ? tickSpec(stop, start2, count6) : tickSpec(start2, stop, count6);
-  if (!(i2 >= i1)) return [];
-  const n = i2 - i1 + 1, ticks2 = new Array(n);
-  if (reverse4) {
-    if (inc < 0) for (let i = 0; i < n; ++i) ticks2[i] = (i2 - i) / -inc;
-    else for (let i = 0; i < n; ++i) ticks2[i] = (i2 - i) * inc;
-  } else {
-    if (inc < 0) for (let i = 0; i < n; ++i) ticks2[i] = (i1 + i) / -inc;
-    else for (let i = 0; i < n; ++i) ticks2[i] = (i1 + i) * inc;
-  }
-  return ticks2;
-}
-function tickIncrement(start2, stop, count6) {
-  stop = +stop, start2 = +start2, count6 = +count6;
-  return tickSpec(start2, stop, count6)[2];
-}
-function tickStep(start2, stop, count6) {
-  stop = +stop, start2 = +start2, count6 = +count6;
-  const reverse4 = stop < start2, inc = reverse4 ? tickIncrement(stop, start2, count6) : tickIncrement(start2, stop, count6);
-  return (reverse4 ? -1 : 1) * (inc < 0 ? 1 / -inc : inc);
-}
-
-// node_modules/d3-array/src/max.js
-function max2(values, valueof) {
-  let max7;
-  if (valueof === void 0) {
-    for (const value2 of values) {
-      if (value2 != null && (max7 < value2 || max7 === void 0 && value2 >= value2)) {
-        max7 = value2;
-      }
-    }
-  } else {
-    let index4 = -1;
-    for (let value2 of values) {
-      if ((value2 = valueof(value2, ++index4, values)) != null && (max7 < value2 || max7 === void 0 && value2 >= value2)) {
-        max7 = value2;
-      }
-    }
-  }
-  return max7;
-}
-
-// node_modules/d3-array/src/min.js
-function min2(values, valueof) {
-  let min7;
-  if (valueof === void 0) {
-    for (const value2 of values) {
-      if (value2 != null && (min7 > value2 || min7 === void 0 && value2 >= value2)) {
-        min7 = value2;
-      }
-    }
-  } else {
-    let index4 = -1;
-    for (let value2 of values) {
-      if ((value2 = valueof(value2, ++index4, values)) != null && (min7 > value2 || min7 === void 0 && value2 >= value2)) {
-        min7 = value2;
-      }
-    }
-  }
-  return min7;
-}
-
-// node_modules/d3-array/src/quickselect.js
-function quickselect(array5, k3, left2 = 0, right2 = Infinity, compare) {
-  k3 = Math.floor(k3);
-  left2 = Math.floor(Math.max(0, left2));
-  right2 = Math.floor(Math.min(array5.length - 1, right2));
-  if (!(left2 <= k3 && k3 <= right2)) return array5;
-  compare = compare === void 0 ? ascendingDefined : compareDefined(compare);
-  while (right2 > left2) {
-    if (right2 - left2 > 600) {
-      const n = right2 - left2 + 1;
-      const m = k3 - left2 + 1;
-      const z = Math.log(n);
-      const s3 = 0.5 * Math.exp(2 * z / 3);
-      const sd = 0.5 * Math.sqrt(z * s3 * (n - s3) / n) * (m - n / 2 < 0 ? -1 : 1);
-      const newLeft = Math.max(left2, Math.floor(k3 - m * s3 / n + sd));
-      const newRight = Math.min(right2, Math.floor(k3 + (n - m) * s3 / n + sd));
-      quickselect(array5, k3, newLeft, newRight, compare);
-    }
-    const t = array5[k3];
-    let i = left2;
-    let j = right2;
-    swap(array5, left2, k3);
-    if (compare(array5[right2], t) > 0) swap(array5, left2, right2);
-    while (i < j) {
-      swap(array5, i, j), ++i, --j;
-      while (compare(array5[i], t) < 0) ++i;
-      while (compare(array5[j], t) > 0) --j;
-    }
-    if (compare(array5[left2], t) === 0) swap(array5, left2, j);
-    else ++j, swap(array5, j, right2);
-    if (j <= k3) left2 = j + 1;
-    if (k3 <= j) right2 = j - 1;
-  }
-  return array5;
-}
-function swap(array5, i, j) {
-  const t = array5[i];
-  array5[i] = array5[j];
-  array5[j] = t;
-}
-
-// node_modules/d3-array/src/quantile.js
-function quantile(values, p, valueof) {
-  values = Float64Array.from(numbers(values, valueof));
-  if (!(n = values.length) || isNaN(p = +p)) return;
-  if (p <= 0 || n < 2) return min2(values);
-  if (p >= 1) return max2(values);
-  var n, i = (n - 1) * p, i0 = Math.floor(i), value0 = max2(quickselect(values, i0).subarray(0, i0 + 1)), value1 = min2(values.subarray(i0 + 1));
-  return value0 + (value1 - value0) * (i - i0);
-}
-function quantileSorted(values, p, valueof = number) {
-  if (!(n = values.length) || isNaN(p = +p)) return;
-  if (p <= 0 || n < 2) return +valueof(values[0], 0, values);
-  if (p >= 1) return +valueof(values[n - 1], n - 1, values);
-  var n, i = (n - 1) * p, i0 = Math.floor(i), value0 = +valueof(values[i0], i0, values), value1 = +valueof(values[i0 + 1], i0 + 1, values);
-  return value0 + (value1 - value0) * (i - i0);
-}
-
-// node_modules/d3-array/src/range.js
-function range(start2, stop, step) {
-  start2 = +start2, stop = +stop, step = (n = arguments.length) < 2 ? (stop = start2, start2 = 0, 1) : n < 3 ? 1 : +step;
-  var i = -1, n = Math.max(0, Math.ceil((stop - start2) / step)) | 0, range2 = new Array(n);
-  while (++i < n) {
-    range2[i] = start2 + i * step;
-  }
-  return range2;
-}
-
-// node_modules/d3-array/src/shuffle.js
-var shuffle_default = shuffler(Math.random);
-function shuffler(random) {
-  return function shuffle2(array5, i0 = 0, i1 = array5.length) {
-    let m = i1 - (i0 = +i0);
-    while (m) {
-      const i = random() * m-- | 0, t = array5[m + i0];
-      array5[m + i0] = array5[i + i0];
-      array5[i + i0] = t;
-    }
-    return array5;
-  };
-}
-
-// node_modules/d3-scale/src/init.js
-function initRange(domain, range2) {
-  switch (arguments.length) {
-    case 0:
-      break;
-    case 1:
-      this.range(domain);
-      break;
-    default:
-      this.range(range2).domain(domain);
-      break;
-  }
-  return this;
-}
-
-// node_modules/d3-scale/src/ordinal.js
-var implicit = Symbol("implicit");
-function ordinal() {
-  var index4 = new InternMap(), domain = [], range2 = [], unknown = implicit;
-  function scale(d) {
-    let i = index4.get(d);
-    if (i === void 0) {
-      if (unknown !== implicit) return unknown;
-      index4.set(d, i = domain.push(d) - 1);
-    }
-    return range2[i % range2.length];
-  }
-  scale.domain = function(_) {
-    if (!arguments.length) return domain.slice();
-    domain = [], index4 = new InternMap();
-    for (const value2 of _) {
-      if (index4.has(value2)) continue;
-      index4.set(value2, domain.push(value2) - 1);
-    }
-    return scale;
-  };
-  scale.range = function(_) {
-    return arguments.length ? (range2 = Array.from(_), scale) : range2.slice();
-  };
-  scale.unknown = function(_) {
-    return arguments.length ? (unknown = _, scale) : unknown;
-  };
-  scale.copy = function() {
-    return ordinal(domain, range2).unknown(unknown);
-  };
-  initRange.apply(scale, arguments);
-  return scale;
-}
-
-// node_modules/d3-scale/src/band.js
-function band() {
-  var scale = ordinal().unknown(void 0), domain = scale.domain, ordinalRange = scale.range, r0 = 0, r1 = 1, step, bandwidth, round = false, paddingInner = 0, paddingOuter = 0, align = 0.5;
-  delete scale.unknown;
-  function rescale() {
-    var n = domain().length, reverse4 = r1 < r0, start2 = reverse4 ? r1 : r0, stop = reverse4 ? r0 : r1;
-    step = (stop - start2) / Math.max(1, n - paddingInner + paddingOuter * 2);
-    if (round) step = Math.floor(step);
-    start2 += (stop - start2 - step * (n - paddingInner)) * align;
-    bandwidth = step * (1 - paddingInner);
-    if (round) start2 = Math.round(start2), bandwidth = Math.round(bandwidth);
-    var values = range(n).map(function(i) {
-      return start2 + step * i;
-    });
-    return ordinalRange(reverse4 ? values.reverse() : values);
-  }
-  scale.domain = function(_) {
-    return arguments.length ? (domain(_), rescale()) : domain();
-  };
-  scale.range = function(_) {
-    return arguments.length ? ([r0, r1] = _, r0 = +r0, r1 = +r1, rescale()) : [r0, r1];
-  };
-  scale.rangeRound = function(_) {
-    return [r0, r1] = _, r0 = +r0, r1 = +r1, round = true, rescale();
-  };
-  scale.bandwidth = function() {
-    return bandwidth;
-  };
-  scale.step = function() {
-    return step;
-  };
-  scale.round = function(_) {
-    return arguments.length ? (round = !!_, rescale()) : round;
-  };
-  scale.padding = function(_) {
-    return arguments.length ? (paddingInner = Math.min(1, paddingOuter = +_), rescale()) : paddingInner;
-  };
-  scale.paddingInner = function(_) {
-    return arguments.length ? (paddingInner = Math.min(1, _), rescale()) : paddingInner;
-  };
-  scale.paddingOuter = function(_) {
-    return arguments.length ? (paddingOuter = +_, rescale()) : paddingOuter;
-  };
-  scale.align = function(_) {
-    return arguments.length ? (align = Math.max(0, Math.min(1, _)), rescale()) : align;
-  };
-  scale.copy = function() {
-    return band(domain(), [r0, r1]).round(round).paddingInner(paddingInner).paddingOuter(paddingOuter).align(align);
-  };
-  return initRange.apply(rescale(), arguments);
-}
-function pointish(scale) {
-  var copy3 = scale.copy;
-  scale.padding = scale.paddingOuter;
-  delete scale.paddingInner;
-  delete scale.paddingOuter;
-  scale.copy = function() {
-    return pointish(copy3());
-  };
-  return scale;
-}
-function point() {
-  return pointish(band.apply(null, arguments).paddingInner(1));
-}
-
-// node_modules/d3-scale/src/constant.js
-function constants(x3) {
-  return function() {
-    return x3;
-  };
-}
-
-// node_modules/d3-scale/src/number.js
-function number3(x3) {
-  return +x3;
-}
-
-// node_modules/d3-scale/src/continuous.js
-var unit = [0, 1];
-function identity3(x3) {
-  return x3;
-}
-function normalize(a3, b) {
-  return (b -= a3 = +a3) ? function(x3) {
-    return (x3 - a3) / b;
-  } : constants(isNaN(b) ? NaN : 0.5);
-}
-function clamper(a3, b) {
-  var t;
-  if (a3 > b) t = a3, a3 = b, b = t;
-  return function(x3) {
-    return Math.max(a3, Math.min(b, x3));
-  };
-}
-function bimap(domain, range2, interpolate) {
-  var d0 = domain[0], d1 = domain[1], r0 = range2[0], r1 = range2[1];
-  if (d1 < d0) d0 = normalize(d1, d0), r0 = interpolate(r1, r0);
-  else d0 = normalize(d0, d1), r0 = interpolate(r0, r1);
-  return function(x3) {
-    return r0(d0(x3));
-  };
-}
-function polymap(domain, range2, interpolate) {
-  var j = Math.min(domain.length, range2.length) - 1, d = new Array(j), r = new Array(j), i = -1;
-  if (domain[j] < domain[0]) {
-    domain = domain.slice().reverse();
-    range2 = range2.slice().reverse();
-  }
-  while (++i < j) {
-    d[i] = normalize(domain[i], domain[i + 1]);
-    r[i] = interpolate(range2[i], range2[i + 1]);
-  }
-  return function(x3) {
-    var i2 = bisect_default(domain, x3, 1, j) - 1;
-    return r[i2](d[i2](x3));
-  };
-}
-function copy(source, target) {
-  return target.domain(source.domain()).range(source.range()).interpolate(source.interpolate()).clamp(source.clamp()).unknown(source.unknown());
-}
-function transformer() {
-  var domain = unit, range2 = unit, interpolate = value_default, transform, untransform, unknown, clamp = identity3, piecewise2, output, input;
-  function rescale() {
-    var n = Math.min(domain.length, range2.length);
-    if (clamp !== identity3) clamp = clamper(domain[0], domain[n - 1]);
-    piecewise2 = n > 2 ? polymap : bimap;
-    output = input = null;
-    return scale;
-  }
-  function scale(x3) {
-    return x3 == null || isNaN(x3 = +x3) ? unknown : (output || (output = piecewise2(domain.map(transform), range2, interpolate)))(transform(clamp(x3)));
-  }
-  scale.invert = function(y3) {
-    return clamp(untransform((input || (input = piecewise2(range2, domain.map(transform), number_default)))(y3)));
-  };
-  scale.domain = function(_) {
-    return arguments.length ? (domain = Array.from(_, number3), rescale()) : domain.slice();
-  };
-  scale.range = function(_) {
-    return arguments.length ? (range2 = Array.from(_), rescale()) : range2.slice();
-  };
-  scale.rangeRound = function(_) {
-    return range2 = Array.from(_), interpolate = round_default, rescale();
-  };
-  scale.clamp = function(_) {
-    return arguments.length ? (clamp = _ ? true : identity3, rescale()) : clamp !== identity3;
-  };
-  scale.interpolate = function(_) {
-    return arguments.length ? (interpolate = _, rescale()) : interpolate;
-  };
-  scale.unknown = function(_) {
-    return arguments.length ? (unknown = _, scale) : unknown;
-  };
-  return function(t, u) {
-    transform = t, untransform = u;
-    return rescale();
-  };
-}
-function continuous() {
-  return transformer()(identity3, identity3);
-}
-
-// node_modules/d3-format/src/formatDecimal.js
-function formatDecimal_default(x3) {
-  return Math.abs(x3 = Math.round(x3)) >= 1e21 ? x3.toLocaleString("en").replace(/,/g, "") : x3.toString(10);
-}
-function formatDecimalParts(x3, p) {
-  if ((i = (x3 = p ? x3.toExponential(p - 1) : x3.toExponential()).indexOf("e")) < 0) return null;
-  var i, coefficient = x3.slice(0, i);
-  return [coefficient.length > 1 ? coefficient[0] + coefficient.slice(2) : coefficient, +x3.slice(i + 1)];
-}
-
-// node_modules/d3-format/src/exponent.js
-function exponent_default(x3) {
-  return x3 = formatDecimalParts(Math.abs(x3)), x3 ? x3[1] : NaN;
-}
-
-// node_modules/d3-format/src/formatGroup.js
-function formatGroup_default(grouping, thousands) {
-  return function(value2, width) {
-    var i = value2.length, t = [], j = 0, g = grouping[0], length = 0;
-    while (i > 0 && g > 0) {
-      if (length + g + 1 > width) g = Math.max(1, width - length);
-      t.push(value2.substring(i -= g, i + g));
-      if ((length += g + 1) > width) break;
-      g = grouping[j = (j + 1) % grouping.length];
-    }
-    return t.reverse().join(thousands);
-  };
-}
-
-// node_modules/d3-format/src/formatNumerals.js
-function formatNumerals_default(numerals) {
-  return function(value2) {
-    return value2.replace(/[0-9]/g, function(i) {
-      return numerals[+i];
-    });
-  };
-}
-
-// node_modules/d3-format/src/formatSpecifier.js
-var re = /^(?:(.)?([<>=^]))?([+\-( ])?([$#])?(0)?(\d+)?(,)?(\.\d+)?(~)?([a-z%])?$/i;
-function formatSpecifier(specifier) {
-  if (!(match = re.exec(specifier))) throw new Error("invalid format: " + specifier);
-  var match;
-  return new FormatSpecifier({
-    fill: match[1],
-    align: match[2],
-    sign: match[3],
-    symbol: match[4],
-    zero: match[5],
-    width: match[6],
-    comma: match[7],
-    precision: match[8] && match[8].slice(1),
-    trim: match[9],
-    type: match[10]
-  });
-}
-formatSpecifier.prototype = FormatSpecifier.prototype;
-function FormatSpecifier(specifier) {
-  this.fill = specifier.fill === void 0 ? " " : specifier.fill + "";
-  this.align = specifier.align === void 0 ? ">" : specifier.align + "";
-  this.sign = specifier.sign === void 0 ? "-" : specifier.sign + "";
-  this.symbol = specifier.symbol === void 0 ? "" : specifier.symbol + "";
-  this.zero = !!specifier.zero;
-  this.width = specifier.width === void 0 ? void 0 : +specifier.width;
-  this.comma = !!specifier.comma;
-  this.precision = specifier.precision === void 0 ? void 0 : +specifier.precision;
-  this.trim = !!specifier.trim;
-  this.type = specifier.type === void 0 ? "" : specifier.type + "";
-}
-FormatSpecifier.prototype.toString = function() {
-  return this.fill + this.align + this.sign + this.symbol + (this.zero ? "0" : "") + (this.width === void 0 ? "" : Math.max(1, this.width | 0)) + (this.comma ? "," : "") + (this.precision === void 0 ? "" : "." + Math.max(0, this.precision | 0)) + (this.trim ? "~" : "") + this.type;
-};
-
-// node_modules/d3-format/src/formatTrim.js
-function formatTrim_default(s3) {
-  out: for (var n = s3.length, i = 1, i0 = -1, i1; i < n; ++i) {
-    switch (s3[i]) {
-      case ".":
-        i0 = i1 = i;
-        break;
-      case "0":
-        if (i0 === 0) i0 = i;
-        i1 = i;
-        break;
-      default:
-        if (!+s3[i]) break out;
-        if (i0 > 0) i0 = 0;
-        break;
-    }
-  }
-  return i0 > 0 ? s3.slice(0, i0) + s3.slice(i1 + 1) : s3;
-}
-
-// node_modules/d3-format/src/formatPrefixAuto.js
-var prefixExponent;
-function formatPrefixAuto_default(x3, p) {
-  var d = formatDecimalParts(x3, p);
-  if (!d) return x3 + "";
-  var coefficient = d[0], exponent2 = d[1], i = exponent2 - (prefixExponent = Math.max(-8, Math.min(8, Math.floor(exponent2 / 3))) * 3) + 1, n = coefficient.length;
-  return i === n ? coefficient : i > n ? coefficient + new Array(i - n + 1).join("0") : i > 0 ? coefficient.slice(0, i) + "." + coefficient.slice(i) : "0." + new Array(1 - i).join("0") + formatDecimalParts(x3, Math.max(0, p + i - 1))[0];
-}
-
-// node_modules/d3-format/src/formatRounded.js
-function formatRounded_default(x3, p) {
-  var d = formatDecimalParts(x3, p);
-  if (!d) return x3 + "";
-  var coefficient = d[0], exponent2 = d[1];
-  return exponent2 < 0 ? "0." + new Array(-exponent2).join("0") + coefficient : coefficient.length > exponent2 + 1 ? coefficient.slice(0, exponent2 + 1) + "." + coefficient.slice(exponent2 + 1) : coefficient + new Array(exponent2 - coefficient.length + 2).join("0");
-}
-
-// node_modules/d3-format/src/formatTypes.js
-var formatTypes_default = {
-  "%": (x3, p) => (x3 * 100).toFixed(p),
-  "b": (x3) => Math.round(x3).toString(2),
-  "c": (x3) => x3 + "",
-  "d": formatDecimal_default,
-  "e": (x3, p) => x3.toExponential(p),
-  "f": (x3, p) => x3.toFixed(p),
-  "g": (x3, p) => x3.toPrecision(p),
-  "o": (x3) => Math.round(x3).toString(8),
-  "p": (x3, p) => formatRounded_default(x3 * 100, p),
-  "r": formatRounded_default,
-  "s": formatPrefixAuto_default,
-  "X": (x3) => Math.round(x3).toString(16).toUpperCase(),
-  "x": (x3) => Math.round(x3).toString(16)
-};
-
-// node_modules/d3-format/src/identity.js
-function identity_default(x3) {
-  return x3;
-}
-
-// node_modules/d3-format/src/locale.js
-var map3 = Array.prototype.map;
-var prefixes = ["y", "z", "a", "f", "p", "n", "µ", "m", "", "k", "M", "G", "T", "P", "E", "Z", "Y"];
-function locale_default(locale3) {
-  var group4 = locale3.grouping === void 0 || locale3.thousands === void 0 ? identity_default : formatGroup_default(map3.call(locale3.grouping, Number), locale3.thousands + ""), currencyPrefix = locale3.currency === void 0 ? "" : locale3.currency[0] + "", currencySuffix = locale3.currency === void 0 ? "" : locale3.currency[1] + "", decimal = locale3.decimal === void 0 ? "." : locale3.decimal + "", numerals = locale3.numerals === void 0 ? identity_default : formatNumerals_default(map3.call(locale3.numerals, String)), percent = locale3.percent === void 0 ? "%" : locale3.percent + "", minus = locale3.minus === void 0 ? "−" : locale3.minus + "", nan = locale3.nan === void 0 ? "NaN" : locale3.nan + "";
-  function newFormat(specifier) {
-    specifier = formatSpecifier(specifier);
-    var fill = specifier.fill, align = specifier.align, sign3 = specifier.sign, symbol = specifier.symbol, zero3 = specifier.zero, width = specifier.width, comma = specifier.comma, precision = specifier.precision, trim = specifier.trim, type2 = specifier.type;
-    if (type2 === "n") comma = true, type2 = "g";
-    else if (!formatTypes_default[type2]) precision === void 0 && (precision = 12), trim = true, type2 = "g";
-    if (zero3 || fill === "0" && align === "=") zero3 = true, fill = "0", align = "=";
-    var prefix = symbol === "$" ? currencyPrefix : symbol === "#" && /[boxX]/.test(type2) ? "0" + type2.toLowerCase() : "", suffix = symbol === "$" ? currencySuffix : /[%p]/.test(type2) ? percent : "";
-    var formatType = formatTypes_default[type2], maybeSuffix = /[defgprs%]/.test(type2);
-    precision = precision === void 0 ? 6 : /[gprs]/.test(type2) ? Math.max(1, Math.min(21, precision)) : Math.max(0, Math.min(20, precision));
-    function format2(value2) {
-      var valuePrefix = prefix, valueSuffix = suffix, i, n, c;
-      if (type2 === "c") {
-        valueSuffix = formatType(value2) + valueSuffix;
-        value2 = "";
-      } else {
-        value2 = +value2;
-        var valueNegative = value2 < 0 || 1 / value2 < 0;
-        value2 = isNaN(value2) ? nan : formatType(Math.abs(value2), precision);
-        if (trim) value2 = formatTrim_default(value2);
-        if (valueNegative && +value2 === 0 && sign3 !== "+") valueNegative = false;
-        valuePrefix = (valueNegative ? sign3 === "(" ? sign3 : minus : sign3 === "-" || sign3 === "(" ? "" : sign3) + valuePrefix;
-        valueSuffix = (type2 === "s" ? prefixes[8 + prefixExponent / 3] : "") + valueSuffix + (valueNegative && sign3 === "(" ? ")" : "");
-        if (maybeSuffix) {
-          i = -1, n = value2.length;
-          while (++i < n) {
-            if (c = value2.charCodeAt(i), 48 > c || c > 57) {
-              valueSuffix = (c === 46 ? decimal + value2.slice(i + 1) : value2.slice(i)) + valueSuffix;
-              value2 = value2.slice(0, i);
-              break;
-            }
-          }
-        }
-      }
-      if (comma && !zero3) value2 = group4(value2, Infinity);
-      var length = valuePrefix.length + value2.length + valueSuffix.length, padding = length < width ? new Array(width - length + 1).join(fill) : "";
-      if (comma && zero3) value2 = group4(padding + value2, padding.length ? width - valueSuffix.length : Infinity), padding = "";
-      switch (align) {
-        case "<":
-          value2 = valuePrefix + value2 + valueSuffix + padding;
-          break;
-        case "=":
-          value2 = valuePrefix + padding + value2 + valueSuffix;
-          break;
-        case "^":
-          value2 = padding.slice(0, length = padding.length >> 1) + valuePrefix + value2 + valueSuffix + padding.slice(length);
-          break;
-        default:
-          value2 = padding + valuePrefix + value2 + valueSuffix;
-          break;
-      }
-      return numerals(value2);
-    }
-    format2.toString = function() {
-      return specifier + "";
-    };
-    return format2;
-  }
-  function formatPrefix2(specifier, value2) {
-    var f = newFormat((specifier = formatSpecifier(specifier), specifier.type = "f", specifier)), e = Math.max(-8, Math.min(8, Math.floor(exponent_default(value2) / 3))) * 3, k3 = Math.pow(10, -e), prefix = prefixes[8 + e / 3];
-    return function(value3) {
-      return f(k3 * value3) + prefix;
-    };
-  }
-  return {
-    format: newFormat,
-    formatPrefix: formatPrefix2
-  };
-}
-
-// node_modules/d3-format/src/defaultLocale.js
-var locale;
-var format;
-var formatPrefix;
-defaultLocale({
-  thousands: ",",
-  grouping: [3],
-  currency: ["$", ""]
-});
-function defaultLocale(definition) {
-  locale = locale_default(definition);
-  format = locale.format;
-  formatPrefix = locale.formatPrefix;
-  return locale;
-}
-
-// node_modules/d3-format/src/precisionFixed.js
-function precisionFixed_default(step) {
-  return Math.max(0, -exponent_default(Math.abs(step)));
-}
-
-// node_modules/d3-format/src/precisionPrefix.js
-function precisionPrefix_default(step, value2) {
-  return Math.max(0, Math.max(-8, Math.min(8, Math.floor(exponent_default(value2) / 3))) * 3 - exponent_default(Math.abs(step)));
-}
-
-// node_modules/d3-format/src/precisionRound.js
-function precisionRound_default(step, max7) {
-  step = Math.abs(step), max7 = Math.abs(max7) - step;
-  return Math.max(0, exponent_default(max7) - exponent_default(step)) + 1;
-}
-
-// node_modules/d3-scale/src/tickFormat.js
-function tickFormat(start2, stop, count6, specifier) {
-  var step = tickStep(start2, stop, count6), precision;
-  specifier = formatSpecifier(specifier == null ? ",f" : specifier);
-  switch (specifier.type) {
-    case "s": {
-      var value2 = Math.max(Math.abs(start2), Math.abs(stop));
-      if (specifier.precision == null && !isNaN(precision = precisionPrefix_default(step, value2))) specifier.precision = precision;
-      return formatPrefix(specifier, value2);
-    }
-    case "":
-    case "e":
-    case "g":
-    case "p":
-    case "r": {
-      if (specifier.precision == null && !isNaN(precision = precisionRound_default(step, Math.max(Math.abs(start2), Math.abs(stop))))) specifier.precision = precision - (specifier.type === "e");
-      break;
-    }
-    case "f":
-    case "%": {
-      if (specifier.precision == null && !isNaN(precision = precisionFixed_default(step))) specifier.precision = precision - (specifier.type === "%") * 2;
-      break;
-    }
-  }
-  return format(specifier);
-}
-
-// node_modules/d3-scale/src/linear.js
-function linearish(scale) {
-  var domain = scale.domain;
-  scale.ticks = function(count6) {
-    var d = domain();
-    return ticks(d[0], d[d.length - 1], count6 == null ? 10 : count6);
-  };
-  scale.tickFormat = function(count6, specifier) {
-    var d = domain();
-    return tickFormat(d[0], d[d.length - 1], count6 == null ? 10 : count6, specifier);
-  };
-  scale.nice = function(count6) {
-    if (count6 == null) count6 = 10;
-    var d = domain();
-    var i0 = 0;
-    var i1 = d.length - 1;
-    var start2 = d[i0];
-    var stop = d[i1];
-    var prestep;
-    var step;
-    var maxIter = 10;
-    if (stop < start2) {
-      step = start2, start2 = stop, stop = step;
-      step = i0, i0 = i1, i1 = step;
-    }
-    while (maxIter-- > 0) {
-      step = tickIncrement(start2, stop, count6);
-      if (step === prestep) {
-        d[i0] = start2;
-        d[i1] = stop;
-        return domain(d);
-      } else if (step > 0) {
-        start2 = Math.floor(start2 / step) * step;
-        stop = Math.ceil(stop / step) * step;
-      } else if (step < 0) {
-        start2 = Math.ceil(start2 * step) / step;
-        stop = Math.floor(stop * step) / step;
-      } else {
-        break;
-      }
-      prestep = step;
-    }
-    return scale;
-  };
-  return scale;
-}
-function linear3() {
-  var scale = continuous();
-  scale.copy = function() {
-    return copy(scale, linear3());
-  };
-  initRange.apply(scale, arguments);
-  return linearish(scale);
-}
-
-// node_modules/d3-scale/src/nice.js
-function nice2(domain, interval2) {
-  domain = domain.slice();
-  var i0 = 0, i1 = domain.length - 1, x0 = domain[i0], x1 = domain[i1], t;
-  if (x1 < x0) {
-    t = i0, i0 = i1, i1 = t;
-    t = x0, x0 = x1, x1 = t;
-  }
-  domain[i0] = interval2.floor(x0);
-  domain[i1] = interval2.ceil(x1);
-  return domain;
-}
-
-// node_modules/d3-scale/src/quantile.js
-function quantile2() {
-  var domain = [], range2 = [], thresholds = [], unknown;
-  function rescale() {
-    var i = 0, n = Math.max(1, range2.length);
-    thresholds = new Array(n - 1);
-    while (++i < n) thresholds[i - 1] = quantileSorted(domain, i / n);
-    return scale;
-  }
-  function scale(x3) {
-    return x3 == null || isNaN(x3 = +x3) ? unknown : range2[bisect_default(thresholds, x3)];
-  }
-  scale.invertExtent = function(y3) {
-    var i = range2.indexOf(y3);
-    return i < 0 ? [NaN, NaN] : [i > 0 ? thresholds[i - 1] : domain[0], i < thresholds.length ? thresholds[i] : domain[domain.length - 1]];
-  };
-  scale.domain = function(_) {
-    if (!arguments.length) return domain.slice();
-    domain = [];
-    for (let d of _) if (d != null && !isNaN(d = +d)) domain.push(d);
-    domain.sort(ascending2);
-    return rescale();
-  };
-  scale.range = function(_) {
-    return arguments.length ? (range2 = Array.from(_), rescale()) : range2.slice();
-  };
-  scale.unknown = function(_) {
-    return arguments.length ? (unknown = _, scale) : unknown;
-  };
-  scale.quantiles = function() {
-    return thresholds.slice();
-  };
-  scale.copy = function() {
-    return quantile2().domain(domain).range(range2).unknown(unknown);
-  };
-  return initRange.apply(scale, arguments);
-}
-
-// node_modules/d3-time/src/interval.js
-var t02 = /* @__PURE__ */ new Date();
-var t12 = /* @__PURE__ */ new Date();
-function timeInterval(floori, offseti, count6, field) {
-  function interval2(date2) {
-    return floori(date2 = arguments.length === 0 ? /* @__PURE__ */ new Date() : /* @__PURE__ */ new Date(+date2)), date2;
-  }
-  interval2.floor = (date2) => {
-    return floori(date2 = /* @__PURE__ */ new Date(+date2)), date2;
-  };
-  interval2.ceil = (date2) => {
-    return floori(date2 = new Date(date2 - 1)), offseti(date2, 1), floori(date2), date2;
-  };
-  interval2.round = (date2) => {
-    const d0 = interval2(date2), d1 = interval2.ceil(date2);
-    return date2 - d0 < d1 - date2 ? d0 : d1;
-  };
-  interval2.offset = (date2, step) => {
-    return offseti(date2 = /* @__PURE__ */ new Date(+date2), step == null ? 1 : Math.floor(step)), date2;
-  };
-  interval2.range = (start2, stop, step) => {
-    const range2 = [];
-    start2 = interval2.ceil(start2);
-    step = step == null ? 1 : Math.floor(step);
-    if (!(start2 < stop) || !(step > 0)) return range2;
-    let previous;
-    do
-      range2.push(previous = /* @__PURE__ */ new Date(+start2)), offseti(start2, step), floori(start2);
-    while (previous < start2 && start2 < stop);
-    return range2;
-  };
-  interval2.filter = (test) => {
-    return timeInterval((date2) => {
-      if (date2 >= date2) while (floori(date2), !test(date2)) date2.setTime(date2 - 1);
-    }, (date2, step) => {
-      if (date2 >= date2) {
-        if (step < 0) while (++step <= 0) {
-          while (offseti(date2, -1), !test(date2)) {
-          }
-        }
-        else while (--step >= 0) {
-          while (offseti(date2, 1), !test(date2)) {
-          }
-        }
-      }
-    });
-  };
-  if (count6) {
-    interval2.count = (start2, end) => {
-      t02.setTime(+start2), t12.setTime(+end);
-      floori(t02), floori(t12);
-      return Math.floor(count6(t02, t12));
-    };
-    interval2.every = (step) => {
-      step = Math.floor(step);
-      return !isFinite(step) || !(step > 0) ? null : !(step > 1) ? interval2 : interval2.filter(field ? (d) => field(d) % step === 0 : (d) => interval2.count(0, d) % step === 0);
-    };
-  }
-  return interval2;
-}
-
-// node_modules/d3-time/src/millisecond.js
-var millisecond = timeInterval(() => {
-}, (date2, step) => {
-  date2.setTime(+date2 + step);
-}, (start2, end) => {
-  return end - start2;
-});
-millisecond.every = (k3) => {
-  k3 = Math.floor(k3);
-  if (!isFinite(k3) || !(k3 > 0)) return null;
-  if (!(k3 > 1)) return millisecond;
-  return timeInterval((date2) => {
-    date2.setTime(Math.floor(date2 / k3) * k3);
-  }, (date2, step) => {
-    date2.setTime(+date2 + step * k3);
-  }, (start2, end) => {
-    return (end - start2) / k3;
-  });
-};
-var milliseconds = millisecond.range;
-
-// node_modules/d3-time/src/duration.js
-var durationSecond = 1e3;
-var durationMinute = durationSecond * 60;
-var durationHour = durationMinute * 60;
-var durationDay = durationHour * 24;
-var durationWeek = durationDay * 7;
-var durationMonth = durationDay * 30;
-var durationYear = durationDay * 365;
-
-// node_modules/d3-time/src/second.js
-var second = timeInterval((date2) => {
-  date2.setTime(date2 - date2.getMilliseconds());
-}, (date2, step) => {
-  date2.setTime(+date2 + step * durationSecond);
-}, (start2, end) => {
-  return (end - start2) / durationSecond;
-}, (date2) => {
-  return date2.getUTCSeconds();
-});
-var seconds = second.range;
-
-// node_modules/d3-time/src/minute.js
-var timeMinute = timeInterval((date2) => {
-  date2.setTime(date2 - date2.getMilliseconds() - date2.getSeconds() * durationSecond);
-}, (date2, step) => {
-  date2.setTime(+date2 + step * durationMinute);
-}, (start2, end) => {
-  return (end - start2) / durationMinute;
-}, (date2) => {
-  return date2.getMinutes();
-});
-var timeMinutes = timeMinute.range;
-var utcMinute = timeInterval((date2) => {
-  date2.setUTCSeconds(0, 0);
-}, (date2, step) => {
-  date2.setTime(+date2 + step * durationMinute);
-}, (start2, end) => {
-  return (end - start2) / durationMinute;
-}, (date2) => {
-  return date2.getUTCMinutes();
-});
-var utcMinutes = utcMinute.range;
-
-// node_modules/d3-time/src/hour.js
-var timeHour = timeInterval((date2) => {
-  date2.setTime(date2 - date2.getMilliseconds() - date2.getSeconds() * durationSecond - date2.getMinutes() * durationMinute);
-}, (date2, step) => {
-  date2.setTime(+date2 + step * durationHour);
-}, (start2, end) => {
-  return (end - start2) / durationHour;
-}, (date2) => {
-  return date2.getHours();
-});
-var timeHours = timeHour.range;
-var utcHour = timeInterval((date2) => {
-  date2.setUTCMinutes(0, 0, 0);
-}, (date2, step) => {
-  date2.setTime(+date2 + step * durationHour);
-}, (start2, end) => {
-  return (end - start2) / durationHour;
-}, (date2) => {
-  return date2.getUTCHours();
-});
-var utcHours = utcHour.range;
-
-// node_modules/d3-time/src/day.js
-var timeDay = timeInterval((date2) => date2.setHours(0, 0, 0, 0), (date2, step) => date2.setDate(date2.getDate() + step), (start2, end) => (end - start2 - (end.getTimezoneOffset() - start2.getTimezoneOffset()) * durationMinute) / durationDay, (date2) => date2.getDate() - 1);
-var timeDays = timeDay.range;
-var utcDay = timeInterval((date2) => {
-  date2.setUTCHours(0, 0, 0, 0);
-}, (date2, step) => {
-  date2.setUTCDate(date2.getUTCDate() + step);
-}, (start2, end) => {
-  return (end - start2) / durationDay;
-}, (date2) => {
-  return date2.getUTCDate() - 1;
-});
-var utcDays = utcDay.range;
-var unixDay = timeInterval((date2) => {
-  date2.setUTCHours(0, 0, 0, 0);
-}, (date2, step) => {
-  date2.setUTCDate(date2.getUTCDate() + step);
-}, (start2, end) => {
-  return (end - start2) / durationDay;
-}, (date2) => {
-  return Math.floor(date2 / durationDay);
-});
-var unixDays = unixDay.range;
-
-// node_modules/d3-time/src/week.js
-function timeWeekday(i) {
-  return timeInterval((date2) => {
-    date2.setDate(date2.getDate() - (date2.getDay() + 7 - i) % 7);
-    date2.setHours(0, 0, 0, 0);
-  }, (date2, step) => {
-    date2.setDate(date2.getDate() + step * 7);
-  }, (start2, end) => {
-    return (end - start2 - (end.getTimezoneOffset() - start2.getTimezoneOffset()) * durationMinute) / durationWeek;
-  });
-}
-var timeSunday = timeWeekday(0);
-var timeMonday = timeWeekday(1);
-var timeTuesday = timeWeekday(2);
-var timeWednesday = timeWeekday(3);
-var timeThursday = timeWeekday(4);
-var timeFriday = timeWeekday(5);
-var timeSaturday = timeWeekday(6);
-var timeSundays = timeSunday.range;
-var timeMondays = timeMonday.range;
-var timeTuesdays = timeTuesday.range;
-var timeWednesdays = timeWednesday.range;
-var timeThursdays = timeThursday.range;
-var timeFridays = timeFriday.range;
-var timeSaturdays = timeSaturday.range;
-function utcWeekday(i) {
-  return timeInterval((date2) => {
-    date2.setUTCDate(date2.getUTCDate() - (date2.getUTCDay() + 7 - i) % 7);
-    date2.setUTCHours(0, 0, 0, 0);
-  }, (date2, step) => {
-    date2.setUTCDate(date2.getUTCDate() + step * 7);
-  }, (start2, end) => {
-    return (end - start2) / durationWeek;
-  });
-}
-var utcSunday = utcWeekday(0);
-var utcMonday = utcWeekday(1);
-var utcTuesday = utcWeekday(2);
-var utcWednesday = utcWeekday(3);
-var utcThursday = utcWeekday(4);
-var utcFriday = utcWeekday(5);
-var utcSaturday = utcWeekday(6);
-var utcSundays = utcSunday.range;
-var utcMondays = utcMonday.range;
-var utcTuesdays = utcTuesday.range;
-var utcWednesdays = utcWednesday.range;
-var utcThursdays = utcThursday.range;
-var utcFridays = utcFriday.range;
-var utcSaturdays = utcSaturday.range;
-
-// node_modules/d3-time/src/month.js
-var timeMonth = timeInterval((date2) => {
-  date2.setDate(1);
-  date2.setHours(0, 0, 0, 0);
-}, (date2, step) => {
-  date2.setMonth(date2.getMonth() + step);
-}, (start2, end) => {
-  return end.getMonth() - start2.getMonth() + (end.getFullYear() - start2.getFullYear()) * 12;
-}, (date2) => {
-  return date2.getMonth();
-});
-var timeMonths = timeMonth.range;
-var utcMonth = timeInterval((date2) => {
-  date2.setUTCDate(1);
-  date2.setUTCHours(0, 0, 0, 0);
-}, (date2, step) => {
-  date2.setUTCMonth(date2.getUTCMonth() + step);
-}, (start2, end) => {
-  return end.getUTCMonth() - start2.getUTCMonth() + (end.getUTCFullYear() - start2.getUTCFullYear()) * 12;
-}, (date2) => {
-  return date2.getUTCMonth();
-});
-var utcMonths = utcMonth.range;
-
-// node_modules/d3-time/src/year.js
-var timeYear = timeInterval((date2) => {
-  date2.setMonth(0, 1);
-  date2.setHours(0, 0, 0, 0);
-}, (date2, step) => {
-  date2.setFullYear(date2.getFullYear() + step);
-}, (start2, end) => {
-  return end.getFullYear() - start2.getFullYear();
-}, (date2) => {
-  return date2.getFullYear();
-});
-timeYear.every = (k3) => {
-  return !isFinite(k3 = Math.floor(k3)) || !(k3 > 0) ? null : timeInterval((date2) => {
-    date2.setFullYear(Math.floor(date2.getFullYear() / k3) * k3);
-    date2.setMonth(0, 1);
-    date2.setHours(0, 0, 0, 0);
-  }, (date2, step) => {
-    date2.setFullYear(date2.getFullYear() + step * k3);
-  });
-};
-var timeYears = timeYear.range;
-var utcYear = timeInterval((date2) => {
-  date2.setUTCMonth(0, 1);
-  date2.setUTCHours(0, 0, 0, 0);
-}, (date2, step) => {
-  date2.setUTCFullYear(date2.getUTCFullYear() + step);
-}, (start2, end) => {
-  return end.getUTCFullYear() - start2.getUTCFullYear();
-}, (date2) => {
-  return date2.getUTCFullYear();
-});
-utcYear.every = (k3) => {
-  return !isFinite(k3 = Math.floor(k3)) || !(k3 > 0) ? null : timeInterval((date2) => {
-    date2.setUTCFullYear(Math.floor(date2.getUTCFullYear() / k3) * k3);
-    date2.setUTCMonth(0, 1);
-    date2.setUTCHours(0, 0, 0, 0);
-  }, (date2, step) => {
-    date2.setUTCFullYear(date2.getUTCFullYear() + step * k3);
-  });
-};
-var utcYears = utcYear.range;
-
-// node_modules/d3-time/src/ticks.js
-function ticker(year2, month2, week, day2, hour2, minute2) {
-  const tickIntervals = [[second, 1, durationSecond], [second, 5, 5 * durationSecond], [second, 15, 15 * durationSecond], [second, 30, 30 * durationSecond], [minute2, 1, durationMinute], [minute2, 5, 5 * durationMinute], [minute2, 15, 15 * durationMinute], [minute2, 30, 30 * durationMinute], [hour2, 1, durationHour], [hour2, 3, 3 * durationHour], [hour2, 6, 6 * durationHour], [hour2, 12, 12 * durationHour], [day2, 1, durationDay], [day2, 2, 2 * durationDay], [week, 1, durationWeek], [month2, 1, durationMonth], [month2, 3, 3 * durationMonth], [year2, 1, durationYear]];
-  function ticks2(start2, stop, count6) {
-    const reverse4 = stop < start2;
-    if (reverse4) [start2, stop] = [stop, start2];
-    const interval2 = count6 && typeof count6.range === "function" ? count6 : tickInterval(start2, stop, count6);
-    const ticks3 = interval2 ? interval2.range(start2, +stop + 1) : [];
-    return reverse4 ? ticks3.reverse() : ticks3;
-  }
-  function tickInterval(start2, stop, count6) {
-    const target = Math.abs(stop - start2) / count6;
-    const i = bisector(([, , step2]) => step2).right(tickIntervals, target);
-    if (i === tickIntervals.length) return year2.every(tickStep(start2 / durationYear, stop / durationYear, count6));
-    if (i === 0) return millisecond.every(Math.max(tickStep(start2, stop, count6), 1));
-    const [t, step] = tickIntervals[target / tickIntervals[i - 1][2] < tickIntervals[i][2] / target ? i - 1 : i];
-    return t.every(step);
-  }
-  return [ticks2, tickInterval];
-}
-var [utcTicks, utcTickInterval] = ticker(utcYear, utcMonth, utcSunday, unixDay, utcHour, utcMinute);
-var [timeTicks, timeTickInterval] = ticker(timeYear, timeMonth, timeSunday, timeDay, timeHour, timeMinute);
-
-// node_modules/d3-time-format/node_modules/d3-time/src/interval.js
-var t03 = /* @__PURE__ */ new Date();
-var t13 = /* @__PURE__ */ new Date();
-function newInterval(floori, offseti, count6, field) {
-  function interval2(date2) {
-    return floori(date2 = arguments.length === 0 ? /* @__PURE__ */ new Date() : /* @__PURE__ */ new Date(+date2)), date2;
-  }
-  interval2.floor = function(date2) {
-    return floori(date2 = /* @__PURE__ */ new Date(+date2)), date2;
-  };
-  interval2.ceil = function(date2) {
-    return floori(date2 = new Date(date2 - 1)), offseti(date2, 1), floori(date2), date2;
-  };
-  interval2.round = function(date2) {
-    var d0 = interval2(date2), d1 = interval2.ceil(date2);
-    return date2 - d0 < d1 - date2 ? d0 : d1;
-  };
-  interval2.offset = function(date2, step) {
-    return offseti(date2 = /* @__PURE__ */ new Date(+date2), step == null ? 1 : Math.floor(step)), date2;
-  };
-  interval2.range = function(start2, stop, step) {
-    var range2 = [], previous;
-    start2 = interval2.ceil(start2);
-    step = step == null ? 1 : Math.floor(step);
-    if (!(start2 < stop) || !(step > 0)) return range2;
-    do
-      range2.push(previous = /* @__PURE__ */ new Date(+start2)), offseti(start2, step), floori(start2);
-    while (previous < start2 && start2 < stop);
-    return range2;
-  };
-  interval2.filter = function(test) {
-    return newInterval(function(date2) {
-      if (date2 >= date2) while (floori(date2), !test(date2)) date2.setTime(date2 - 1);
-    }, function(date2, step) {
-      if (date2 >= date2) {
-        if (step < 0) while (++step <= 0) {
-          while (offseti(date2, -1), !test(date2)) {
-          }
-        }
-        else while (--step >= 0) {
-          while (offseti(date2, 1), !test(date2)) {
-          }
-        }
-      }
-    });
-  };
-  if (count6) {
-    interval2.count = function(start2, end) {
-      t03.setTime(+start2), t13.setTime(+end);
-      floori(t03), floori(t13);
-      return Math.floor(count6(t03, t13));
-    };
-    interval2.every = function(step) {
-      step = Math.floor(step);
-      return !isFinite(step) || !(step > 0) ? null : !(step > 1) ? interval2 : interval2.filter(field ? function(d) {
-        return field(d) % step === 0;
-      } : function(d) {
-        return interval2.count(0, d) % step === 0;
-      });
-    };
-  }
-  return interval2;
-}
-
-// node_modules/d3-time-format/node_modules/d3-time/src/millisecond.js
-var millisecond2 = newInterval(function() {
-}, function(date2, step) {
-  date2.setTime(+date2 + step);
-}, function(start2, end) {
-  return end - start2;
-});
-millisecond2.every = function(k3) {
-  k3 = Math.floor(k3);
-  if (!isFinite(k3) || !(k3 > 0)) return null;
-  if (!(k3 > 1)) return millisecond2;
-  return newInterval(function(date2) {
-    date2.setTime(Math.floor(date2 / k3) * k3);
-  }, function(date2, step) {
-    date2.setTime(+date2 + step * k3);
-  }, function(start2, end) {
-    return (end - start2) / k3;
-  });
-};
-var millisecond_default = millisecond2;
-var milliseconds2 = millisecond2.range;
-
-// node_modules/d3-time-format/node_modules/d3-time/src/duration.js
-var durationSecond2 = 1e3;
-var durationMinute2 = durationSecond2 * 60;
-var durationHour2 = durationMinute2 * 60;
-var durationDay2 = durationHour2 * 24;
-var durationWeek2 = durationDay2 * 7;
-var durationMonth2 = durationDay2 * 30;
-var durationYear2 = durationDay2 * 365;
-
-// node_modules/d3-time-format/node_modules/d3-time/src/second.js
-var second2 = newInterval(function(date2) {
-  date2.setTime(date2 - date2.getMilliseconds());
-}, function(date2, step) {
-  date2.setTime(+date2 + step * durationSecond2);
-}, function(start2, end) {
-  return (end - start2) / durationSecond2;
-}, function(date2) {
-  return date2.getUTCSeconds();
-});
-var second_default = second2;
-var seconds2 = second2.range;
-
-// node_modules/d3-time-format/node_modules/d3-time/src/minute.js
-var minute = newInterval(function(date2) {
-  date2.setTime(date2 - date2.getMilliseconds() - date2.getSeconds() * durationSecond2);
-}, function(date2, step) {
-  date2.setTime(+date2 + step * durationMinute2);
-}, function(start2, end) {
-  return (end - start2) / durationMinute2;
-}, function(date2) {
-  return date2.getMinutes();
-});
-var minute_default = minute;
-var minutes = minute.range;
-
-// node_modules/d3-time-format/node_modules/d3-time/src/hour.js
-var hour = newInterval(function(date2) {
-  date2.setTime(date2 - date2.getMilliseconds() - date2.getSeconds() * durationSecond2 - date2.getMinutes() * durationMinute2);
-}, function(date2, step) {
-  date2.setTime(+date2 + step * durationHour2);
-}, function(start2, end) {
-  return (end - start2) / durationHour2;
-}, function(date2) {
-  return date2.getHours();
-});
-var hour_default = hour;
-var hours = hour.range;
-
-// node_modules/d3-time-format/node_modules/d3-time/src/day.js
-var day = newInterval((date2) => date2.setHours(0, 0, 0, 0), (date2, step) => date2.setDate(date2.getDate() + step), (start2, end) => (end - start2 - (end.getTimezoneOffset() - start2.getTimezoneOffset()) * durationMinute2) / durationDay2, (date2) => date2.getDate() - 1);
-var day_default = day;
-var days = day.range;
-
-// node_modules/d3-time-format/node_modules/d3-time/src/week.js
-function weekday(i) {
-  return newInterval(function(date2) {
-    date2.setDate(date2.getDate() - (date2.getDay() + 7 - i) % 7);
-    date2.setHours(0, 0, 0, 0);
-  }, function(date2, step) {
-    date2.setDate(date2.getDate() + step * 7);
-  }, function(start2, end) {
-    return (end - start2 - (end.getTimezoneOffset() - start2.getTimezoneOffset()) * durationMinute2) / durationWeek2;
-  });
-}
-var sunday = weekday(0);
-var monday = weekday(1);
-var tuesday = weekday(2);
-var wednesday = weekday(3);
-var thursday = weekday(4);
-var friday = weekday(5);
-var saturday = weekday(6);
-var sundays = sunday.range;
-var mondays = monday.range;
-var tuesdays = tuesday.range;
-var wednesdays = wednesday.range;
-var thursdays = thursday.range;
-var fridays = friday.range;
-var saturdays = saturday.range;
-
-// node_modules/d3-time-format/node_modules/d3-time/src/month.js
-var month = newInterval(function(date2) {
-  date2.setDate(1);
-  date2.setHours(0, 0, 0, 0);
-}, function(date2, step) {
-  date2.setMonth(date2.getMonth() + step);
-}, function(start2, end) {
-  return end.getMonth() - start2.getMonth() + (end.getFullYear() - start2.getFullYear()) * 12;
-}, function(date2) {
-  return date2.getMonth();
-});
-var month_default = month;
-var months = month.range;
-
-// node_modules/d3-time-format/node_modules/d3-time/src/year.js
-var year = newInterval(function(date2) {
-  date2.setMonth(0, 1);
-  date2.setHours(0, 0, 0, 0);
-}, function(date2, step) {
-  date2.setFullYear(date2.getFullYear() + step);
-}, function(start2, end) {
-  return end.getFullYear() - start2.getFullYear();
-}, function(date2) {
-  return date2.getFullYear();
-});
-year.every = function(k3) {
-  return !isFinite(k3 = Math.floor(k3)) || !(k3 > 0) ? null : newInterval(function(date2) {
-    date2.setFullYear(Math.floor(date2.getFullYear() / k3) * k3);
-    date2.setMonth(0, 1);
-    date2.setHours(0, 0, 0, 0);
-  }, function(date2, step) {
-    date2.setFullYear(date2.getFullYear() + step * k3);
-  });
-};
-var year_default = year;
-var years = year.range;
-
-// node_modules/d3-time-format/node_modules/d3-time/src/utcMinute.js
-var utcMinute2 = newInterval(function(date2) {
-  date2.setUTCSeconds(0, 0);
-}, function(date2, step) {
-  date2.setTime(+date2 + step * durationMinute2);
-}, function(start2, end) {
-  return (end - start2) / durationMinute2;
-}, function(date2) {
-  return date2.getUTCMinutes();
-});
-var utcMinute_default = utcMinute2;
-var utcMinutes2 = utcMinute2.range;
-
-// node_modules/d3-time-format/node_modules/d3-time/src/utcHour.js
-var utcHour2 = newInterval(function(date2) {
-  date2.setUTCMinutes(0, 0, 0);
-}, function(date2, step) {
-  date2.setTime(+date2 + step * durationHour2);
-}, function(start2, end) {
-  return (end - start2) / durationHour2;
-}, function(date2) {
-  return date2.getUTCHours();
-});
-var utcHour_default = utcHour2;
-var utcHours2 = utcHour2.range;
-
-// node_modules/d3-time-format/node_modules/d3-time/src/utcDay.js
-var utcDay2 = newInterval(function(date2) {
-  date2.setUTCHours(0, 0, 0, 0);
-}, function(date2, step) {
-  date2.setUTCDate(date2.getUTCDate() + step);
-}, function(start2, end) {
-  return (end - start2) / durationDay2;
-}, function(date2) {
-  return date2.getUTCDate() - 1;
-});
-var utcDay_default = utcDay2;
-var utcDays2 = utcDay2.range;
-
-// node_modules/d3-time-format/node_modules/d3-time/src/utcWeek.js
-function utcWeekday2(i) {
-  return newInterval(function(date2) {
-    date2.setUTCDate(date2.getUTCDate() - (date2.getUTCDay() + 7 - i) % 7);
-    date2.setUTCHours(0, 0, 0, 0);
-  }, function(date2, step) {
-    date2.setUTCDate(date2.getUTCDate() + step * 7);
-  }, function(start2, end) {
-    return (end - start2) / durationWeek2;
-  });
-}
-var utcSunday2 = utcWeekday2(0);
-var utcMonday2 = utcWeekday2(1);
-var utcTuesday2 = utcWeekday2(2);
-var utcWednesday2 = utcWeekday2(3);
-var utcThursday2 = utcWeekday2(4);
-var utcFriday2 = utcWeekday2(5);
-var utcSaturday2 = utcWeekday2(6);
-var utcSundays2 = utcSunday2.range;
-var utcMondays2 = utcMonday2.range;
-var utcTuesdays2 = utcTuesday2.range;
-var utcWednesdays2 = utcWednesday2.range;
-var utcThursdays2 = utcThursday2.range;
-var utcFridays2 = utcFriday2.range;
-var utcSaturdays2 = utcSaturday2.range;
-
-// node_modules/d3-time-format/node_modules/d3-time/src/utcMonth.js
-var utcMonth2 = newInterval(function(date2) {
-  date2.setUTCDate(1);
-  date2.setUTCHours(0, 0, 0, 0);
-}, function(date2, step) {
-  date2.setUTCMonth(date2.getUTCMonth() + step);
-}, function(start2, end) {
-  return end.getUTCMonth() - start2.getUTCMonth() + (end.getUTCFullYear() - start2.getUTCFullYear()) * 12;
-}, function(date2) {
-  return date2.getUTCMonth();
-});
-var utcMonth_default = utcMonth2;
-var utcMonths2 = utcMonth2.range;
-
-// node_modules/d3-time-format/node_modules/d3-time/src/utcYear.js
-var utcYear2 = newInterval(function(date2) {
-  date2.setUTCMonth(0, 1);
-  date2.setUTCHours(0, 0, 0, 0);
-}, function(date2, step) {
-  date2.setUTCFullYear(date2.getUTCFullYear() + step);
-}, function(start2, end) {
-  return end.getUTCFullYear() - start2.getUTCFullYear();
-}, function(date2) {
-  return date2.getUTCFullYear();
-});
-utcYear2.every = function(k3) {
-  return !isFinite(k3 = Math.floor(k3)) || !(k3 > 0) ? null : newInterval(function(date2) {
-    date2.setUTCFullYear(Math.floor(date2.getUTCFullYear() / k3) * k3);
-    date2.setUTCMonth(0, 1);
-    date2.setUTCHours(0, 0, 0, 0);
-  }, function(date2, step) {
-    date2.setUTCFullYear(date2.getUTCFullYear() + step * k3);
-  });
-};
-var utcYear_default = utcYear2;
-var utcYears2 = utcYear2.range;
-
-// node_modules/d3-time-format/node_modules/d3-array/src/ascending.js
-function ascending_default(a3, b) {
-  return a3 < b ? -1 : a3 > b ? 1 : a3 >= b ? 0 : NaN;
-}
-
-// node_modules/d3-time-format/node_modules/d3-array/src/bisector.js
+// node_modules/d3-sankey/node_modules/d3-array/src/bisector.js
 function bisector_default(f) {
   let delta = f;
   let compare = f;
   if (f.length === 1) {
-    delta = (d, x3) => f(d) - x3;
+    delta = (d, x2) => f(d) - x2;
     compare = ascendingComparator(f);
   }
-  function left2(a3, x3, lo, hi) {
+  function left2(a2, x2, lo, hi) {
     if (lo == null) lo = 0;
-    if (hi == null) hi = a3.length;
+    if (hi == null) hi = a2.length;
     while (lo < hi) {
       const mid = lo + hi >>> 1;
-      if (compare(a3[mid], x3) < 0) lo = mid + 1;
+      if (compare(a2[mid], x2) < 0) lo = mid + 1;
       else hi = mid;
     }
     return lo;
   }
-  function right2(a3, x3, lo, hi) {
+  function right2(a2, x2, lo, hi) {
     if (lo == null) lo = 0;
-    if (hi == null) hi = a3.length;
+    if (hi == null) hi = a2.length;
     while (lo < hi) {
       const mid = lo + hi >>> 1;
-      if (compare(a3[mid], x3) > 0) hi = mid;
+      if (compare(a2[mid], x2) > 0) hi = mid;
       else lo = mid + 1;
     }
     return lo;
   }
-  function center2(a3, x3, lo, hi) {
+  function center2(a2, x2, lo, hi) {
     if (lo == null) lo = 0;
-    if (hi == null) hi = a3.length;
-    const i = left2(a3, x3, lo, hi - 1);
-    return i > lo && delta(a3[i - 1], x3) > -delta(a3[i], x3) ? i - 1 : i;
+    if (hi == null) hi = a2.length;
+    const i = left2(a2, x2, lo, hi - 1);
+    return i > lo && delta(a2[i - 1], x2) > -delta(a2[i], x2) ? i - 1 : i;
   }
   return {
     left: left2,
@@ -6085,2717 +1113,102 @@ function bisector_default(f) {
   };
 }
 function ascendingComparator(f) {
-  return (d, x3) => ascending_default(f(d), x3);
-}
-
-// node_modules/d3-time-format/node_modules/d3-array/src/number.js
-function number_default2(x3) {
-  return x3 === null ? NaN : +x3;
-}
-
-// node_modules/d3-time-format/node_modules/d3-array/src/bisect.js
-var ascendingBisect2 = bisector_default(ascending_default);
-var bisectRight2 = ascendingBisect2.right;
-var bisectLeft2 = ascendingBisect2.left;
-var bisectCenter2 = bisector_default(number_default2).center;
-
-// node_modules/d3-time-format/node_modules/d3-array/src/array.js
-var array3 = Array.prototype;
-var slice2 = array3.slice;
-var map4 = array3.map;
-
-// node_modules/d3-time-format/node_modules/d3-array/src/ticks.js
-var e102 = Math.sqrt(50);
-var e52 = Math.sqrt(10);
-var e22 = Math.sqrt(2);
-function tickStep2(start2, stop, count6) {
-  var step0 = Math.abs(stop - start2) / Math.max(0, count6), step1 = Math.pow(10, Math.floor(Math.log(step0) / Math.LN10)), error = step0 / step1;
-  if (error >= e102) step1 *= 10;
-  else if (error >= e52) step1 *= 5;
-  else if (error >= e22) step1 *= 2;
-  return stop < start2 ? -step1 : step1;
-}
-
-// node_modules/d3-time-format/node_modules/d3-array/src/shuffle.js
-var shuffle_default2 = shuffler2(Math.random);
-function shuffler2(random) {
-  return function shuffle2(array5, i0 = 0, i1 = array5.length) {
-    let m = i1 - (i0 = +i0);
-    while (m) {
-      const i = random() * m-- | 0, t = array5[m + i0];
-      array5[m + i0] = array5[i + i0];
-      array5[i + i0] = t;
-    }
-    return array5;
-  };
-}
-
-// node_modules/d3-time-format/node_modules/d3-time/src/ticks.js
-function ticker2(year2, month2, week, day2, hour2, minute2) {
-  const tickIntervals = [[second_default, 1, durationSecond2], [second_default, 5, 5 * durationSecond2], [second_default, 15, 15 * durationSecond2], [second_default, 30, 30 * durationSecond2], [minute2, 1, durationMinute2], [minute2, 5, 5 * durationMinute2], [minute2, 15, 15 * durationMinute2], [minute2, 30, 30 * durationMinute2], [hour2, 1, durationHour2], [hour2, 3, 3 * durationHour2], [hour2, 6, 6 * durationHour2], [hour2, 12, 12 * durationHour2], [day2, 1, durationDay2], [day2, 2, 2 * durationDay2], [week, 1, durationWeek2], [month2, 1, durationMonth2], [month2, 3, 3 * durationMonth2], [year2, 1, durationYear2]];
-  function ticks2(start2, stop, count6) {
-    const reverse4 = stop < start2;
-    if (reverse4) [start2, stop] = [stop, start2];
-    const interval2 = count6 && typeof count6.range === "function" ? count6 : tickInterval(start2, stop, count6);
-    const ticks3 = interval2 ? interval2.range(start2, +stop + 1) : [];
-    return reverse4 ? ticks3.reverse() : ticks3;
-  }
-  function tickInterval(start2, stop, count6) {
-    const target = Math.abs(stop - start2) / count6;
-    const i = bisector_default(([, , step2]) => step2).right(tickIntervals, target);
-    if (i === tickIntervals.length) return year2.every(tickStep2(start2 / durationYear2, stop / durationYear2, count6));
-    if (i === 0) return millisecond_default.every(Math.max(tickStep2(start2, stop, count6), 1));
-    const [t, step] = tickIntervals[target / tickIntervals[i - 1][2] < tickIntervals[i][2] / target ? i - 1 : i];
-    return t.every(step);
-  }
-  return [ticks2, tickInterval];
-}
-var [utcTicks2, utcTickInterval2] = ticker2(utcYear_default, utcMonth_default, utcSunday2, utcDay_default, utcHour_default, utcMinute_default);
-var [timeTicks2, timeTickInterval2] = ticker2(year_default, month_default, sunday, day_default, hour_default, minute_default);
-
-// node_modules/d3-time-format/src/locale.js
-function localDate(d) {
-  if (0 <= d.y && d.y < 100) {
-    var date2 = new Date(-1, d.m, d.d, d.H, d.M, d.S, d.L);
-    date2.setFullYear(d.y);
-    return date2;
-  }
-  return new Date(d.y, d.m, d.d, d.H, d.M, d.S, d.L);
-}
-function utcDate(d) {
-  if (0 <= d.y && d.y < 100) {
-    var date2 = new Date(Date.UTC(-1, d.m, d.d, d.H, d.M, d.S, d.L));
-    date2.setUTCFullYear(d.y);
-    return date2;
-  }
-  return new Date(Date.UTC(d.y, d.m, d.d, d.H, d.M, d.S, d.L));
-}
-function newDate(y3, m, d) {
-  return {
-    y: y3,
-    m,
-    d,
-    H: 0,
-    M: 0,
-    S: 0,
-    L: 0
-  };
-}
-function formatLocale(locale3) {
-  var locale_dateTime = locale3.dateTime, locale_date = locale3.date, locale_time = locale3.time, locale_periods = locale3.periods, locale_weekdays = locale3.days, locale_shortWeekdays = locale3.shortDays, locale_months = locale3.months, locale_shortMonths = locale3.shortMonths;
-  var periodRe = formatRe(locale_periods), periodLookup = formatLookup(locale_periods), weekdayRe = formatRe(locale_weekdays), weekdayLookup = formatLookup(locale_weekdays), shortWeekdayRe = formatRe(locale_shortWeekdays), shortWeekdayLookup = formatLookup(locale_shortWeekdays), monthRe = formatRe(locale_months), monthLookup = formatLookup(locale_months), shortMonthRe = formatRe(locale_shortMonths), shortMonthLookup = formatLookup(locale_shortMonths);
-  var formats = {
-    "a": formatShortWeekday,
-    "A": formatWeekday,
-    "b": formatShortMonth,
-    "B": formatMonth,
-    "c": null,
-    "d": formatDayOfMonth,
-    "e": formatDayOfMonth,
-    "f": formatMicroseconds,
-    "g": formatYearISO,
-    "G": formatFullYearISO,
-    "H": formatHour24,
-    "I": formatHour12,
-    "j": formatDayOfYear,
-    "L": formatMilliseconds,
-    "m": formatMonthNumber,
-    "M": formatMinutes,
-    "p": formatPeriod,
-    "q": formatQuarter,
-    "Q": formatUnixTimestamp,
-    "s": formatUnixTimestampSeconds,
-    "S": formatSeconds,
-    "u": formatWeekdayNumberMonday,
-    "U": formatWeekNumberSunday,
-    "V": formatWeekNumberISO,
-    "w": formatWeekdayNumberSunday,
-    "W": formatWeekNumberMonday,
-    "x": null,
-    "X": null,
-    "y": formatYear,
-    "Y": formatFullYear,
-    "Z": formatZone,
-    "%": formatLiteralPercent
-  };
-  var utcFormats = {
-    "a": formatUTCShortWeekday,
-    "A": formatUTCWeekday,
-    "b": formatUTCShortMonth,
-    "B": formatUTCMonth,
-    "c": null,
-    "d": formatUTCDayOfMonth,
-    "e": formatUTCDayOfMonth,
-    "f": formatUTCMicroseconds,
-    "g": formatUTCYearISO,
-    "G": formatUTCFullYearISO,
-    "H": formatUTCHour24,
-    "I": formatUTCHour12,
-    "j": formatUTCDayOfYear,
-    "L": formatUTCMilliseconds,
-    "m": formatUTCMonthNumber,
-    "M": formatUTCMinutes,
-    "p": formatUTCPeriod,
-    "q": formatUTCQuarter,
-    "Q": formatUnixTimestamp,
-    "s": formatUnixTimestampSeconds,
-    "S": formatUTCSeconds,
-    "u": formatUTCWeekdayNumberMonday,
-    "U": formatUTCWeekNumberSunday,
-    "V": formatUTCWeekNumberISO,
-    "w": formatUTCWeekdayNumberSunday,
-    "W": formatUTCWeekNumberMonday,
-    "x": null,
-    "X": null,
-    "y": formatUTCYear,
-    "Y": formatUTCFullYear,
-    "Z": formatUTCZone,
-    "%": formatLiteralPercent
-  };
-  var parses = {
-    "a": parseShortWeekday,
-    "A": parseWeekday,
-    "b": parseShortMonth,
-    "B": parseMonth,
-    "c": parseLocaleDateTime,
-    "d": parseDayOfMonth,
-    "e": parseDayOfMonth,
-    "f": parseMicroseconds,
-    "g": parseYear,
-    "G": parseFullYear,
-    "H": parseHour24,
-    "I": parseHour24,
-    "j": parseDayOfYear,
-    "L": parseMilliseconds,
-    "m": parseMonthNumber,
-    "M": parseMinutes,
-    "p": parsePeriod,
-    "q": parseQuarter,
-    "Q": parseUnixTimestamp,
-    "s": parseUnixTimestampSeconds,
-    "S": parseSeconds,
-    "u": parseWeekdayNumberMonday,
-    "U": parseWeekNumberSunday,
-    "V": parseWeekNumberISO,
-    "w": parseWeekdayNumberSunday,
-    "W": parseWeekNumberMonday,
-    "x": parseLocaleDate,
-    "X": parseLocaleTime,
-    "y": parseYear,
-    "Y": parseFullYear,
-    "Z": parseZone,
-    "%": parseLiteralPercent
-  };
-  formats.x = newFormat(locale_date, formats);
-  formats.X = newFormat(locale_time, formats);
-  formats.c = newFormat(locale_dateTime, formats);
-  utcFormats.x = newFormat(locale_date, utcFormats);
-  utcFormats.X = newFormat(locale_time, utcFormats);
-  utcFormats.c = newFormat(locale_dateTime, utcFormats);
-  function newFormat(specifier, formats2) {
-    return function(date2) {
-      var string = [], i = -1, j = 0, n = specifier.length, c, pad2, format2;
-      if (!(date2 instanceof Date)) date2 = /* @__PURE__ */ new Date(+date2);
-      while (++i < n) {
-        if (specifier.charCodeAt(i) === 37) {
-          string.push(specifier.slice(j, i));
-          if ((pad2 = pads[c = specifier.charAt(++i)]) != null) c = specifier.charAt(++i);
-          else pad2 = c === "e" ? " " : "0";
-          if (format2 = formats2[c]) c = format2(date2, pad2);
-          string.push(c);
-          j = i + 1;
-        }
-      }
-      string.push(specifier.slice(j, i));
-      return string.join("");
-    };
-  }
-  function newParse(specifier, Z) {
-    return function(string) {
-      var d = newDate(1900, void 0, 1), i = parseSpecifier(d, specifier, string += "", 0), week, day2;
-      if (i != string.length) return null;
-      if ("Q" in d) return new Date(d.Q);
-      if ("s" in d) return new Date(d.s * 1e3 + ("L" in d ? d.L : 0));
-      if (Z && !("Z" in d)) d.Z = 0;
-      if ("p" in d) d.H = d.H % 12 + d.p * 12;
-      if (d.m === void 0) d.m = "q" in d ? d.q : 0;
-      if ("V" in d) {
-        if (d.V < 1 || d.V > 53) return null;
-        if (!("w" in d)) d.w = 1;
-        if ("Z" in d) {
-          week = utcDate(newDate(d.y, 0, 1)), day2 = week.getUTCDay();
-          week = day2 > 4 || day2 === 0 ? utcMonday2.ceil(week) : utcMonday2(week);
-          week = utcDay_default.offset(week, (d.V - 1) * 7);
-          d.y = week.getUTCFullYear();
-          d.m = week.getUTCMonth();
-          d.d = week.getUTCDate() + (d.w + 6) % 7;
-        } else {
-          week = localDate(newDate(d.y, 0, 1)), day2 = week.getDay();
-          week = day2 > 4 || day2 === 0 ? monday.ceil(week) : monday(week);
-          week = day_default.offset(week, (d.V - 1) * 7);
-          d.y = week.getFullYear();
-          d.m = week.getMonth();
-          d.d = week.getDate() + (d.w + 6) % 7;
-        }
-      } else if ("W" in d || "U" in d) {
-        if (!("w" in d)) d.w = "u" in d ? d.u % 7 : "W" in d ? 1 : 0;
-        day2 = "Z" in d ? utcDate(newDate(d.y, 0, 1)).getUTCDay() : localDate(newDate(d.y, 0, 1)).getDay();
-        d.m = 0;
-        d.d = "W" in d ? (d.w + 6) % 7 + d.W * 7 - (day2 + 5) % 7 : d.w + d.U * 7 - (day2 + 6) % 7;
-      }
-      if ("Z" in d) {
-        d.H += d.Z / 100 | 0;
-        d.M += d.Z % 100;
-        return utcDate(d);
-      }
-      return localDate(d);
-    };
-  }
-  function parseSpecifier(d, specifier, string, j) {
-    var i = 0, n = specifier.length, m = string.length, c, parse;
-    while (i < n) {
-      if (j >= m) return -1;
-      c = specifier.charCodeAt(i++);
-      if (c === 37) {
-        c = specifier.charAt(i++);
-        parse = parses[c in pads ? specifier.charAt(i++) : c];
-        if (!parse || (j = parse(d, string, j)) < 0) return -1;
-      } else if (c != string.charCodeAt(j++)) {
-        return -1;
-      }
-    }
-    return j;
-  }
-  function parsePeriod(d, string, i) {
-    var n = periodRe.exec(string.slice(i));
-    return n ? (d.p = periodLookup.get(n[0].toLowerCase()), i + n[0].length) : -1;
-  }
-  function parseShortWeekday(d, string, i) {
-    var n = shortWeekdayRe.exec(string.slice(i));
-    return n ? (d.w = shortWeekdayLookup.get(n[0].toLowerCase()), i + n[0].length) : -1;
-  }
-  function parseWeekday(d, string, i) {
-    var n = weekdayRe.exec(string.slice(i));
-    return n ? (d.w = weekdayLookup.get(n[0].toLowerCase()), i + n[0].length) : -1;
-  }
-  function parseShortMonth(d, string, i) {
-    var n = shortMonthRe.exec(string.slice(i));
-    return n ? (d.m = shortMonthLookup.get(n[0].toLowerCase()), i + n[0].length) : -1;
-  }
-  function parseMonth(d, string, i) {
-    var n = monthRe.exec(string.slice(i));
-    return n ? (d.m = monthLookup.get(n[0].toLowerCase()), i + n[0].length) : -1;
-  }
-  function parseLocaleDateTime(d, string, i) {
-    return parseSpecifier(d, locale_dateTime, string, i);
-  }
-  function parseLocaleDate(d, string, i) {
-    return parseSpecifier(d, locale_date, string, i);
-  }
-  function parseLocaleTime(d, string, i) {
-    return parseSpecifier(d, locale_time, string, i);
-  }
-  function formatShortWeekday(d) {
-    return locale_shortWeekdays[d.getDay()];
-  }
-  function formatWeekday(d) {
-    return locale_weekdays[d.getDay()];
-  }
-  function formatShortMonth(d) {
-    return locale_shortMonths[d.getMonth()];
-  }
-  function formatMonth(d) {
-    return locale_months[d.getMonth()];
-  }
-  function formatPeriod(d) {
-    return locale_periods[+(d.getHours() >= 12)];
-  }
-  function formatQuarter(d) {
-    return 1 + ~~(d.getMonth() / 3);
-  }
-  function formatUTCShortWeekday(d) {
-    return locale_shortWeekdays[d.getUTCDay()];
-  }
-  function formatUTCWeekday(d) {
-    return locale_weekdays[d.getUTCDay()];
-  }
-  function formatUTCShortMonth(d) {
-    return locale_shortMonths[d.getUTCMonth()];
-  }
-  function formatUTCMonth(d) {
-    return locale_months[d.getUTCMonth()];
-  }
-  function formatUTCPeriod(d) {
-    return locale_periods[+(d.getUTCHours() >= 12)];
-  }
-  function formatUTCQuarter(d) {
-    return 1 + ~~(d.getUTCMonth() / 3);
-  }
-  return {
-    format: function(specifier) {
-      var f = newFormat(specifier += "", formats);
-      f.toString = function() {
-        return specifier;
-      };
-      return f;
-    },
-    parse: function(specifier) {
-      var p = newParse(specifier += "", false);
-      p.toString = function() {
-        return specifier;
-      };
-      return p;
-    },
-    utcFormat: function(specifier) {
-      var f = newFormat(specifier += "", utcFormats);
-      f.toString = function() {
-        return specifier;
-      };
-      return f;
-    },
-    utcParse: function(specifier) {
-      var p = newParse(specifier += "", true);
-      p.toString = function() {
-        return specifier;
-      };
-      return p;
-    }
-  };
-}
-var pads = {
-  "-": "",
-  "_": " ",
-  "0": "0"
-};
-var numberRe = /^\s*\d+/;
-var percentRe = /^%/;
-var requoteRe = /[\\^$*+?|[\]().{}]/g;
-function pad(value2, fill, width) {
-  var sign3 = value2 < 0 ? "-" : "", string = (sign3 ? -value2 : value2) + "", length = string.length;
-  return sign3 + (length < width ? new Array(width - length + 1).join(fill) + string : string);
-}
-function requote(s3) {
-  return s3.replace(requoteRe, "\\$&");
-}
-function formatRe(names) {
-  return new RegExp("^(?:" + names.map(requote).join("|") + ")", "i");
-}
-function formatLookup(names) {
-  return new Map(names.map((name, i) => [name.toLowerCase(), i]));
-}
-function parseWeekdayNumberSunday(d, string, i) {
-  var n = numberRe.exec(string.slice(i, i + 1));
-  return n ? (d.w = +n[0], i + n[0].length) : -1;
-}
-function parseWeekdayNumberMonday(d, string, i) {
-  var n = numberRe.exec(string.slice(i, i + 1));
-  return n ? (d.u = +n[0], i + n[0].length) : -1;
-}
-function parseWeekNumberSunday(d, string, i) {
-  var n = numberRe.exec(string.slice(i, i + 2));
-  return n ? (d.U = +n[0], i + n[0].length) : -1;
-}
-function parseWeekNumberISO(d, string, i) {
-  var n = numberRe.exec(string.slice(i, i + 2));
-  return n ? (d.V = +n[0], i + n[0].length) : -1;
-}
-function parseWeekNumberMonday(d, string, i) {
-  var n = numberRe.exec(string.slice(i, i + 2));
-  return n ? (d.W = +n[0], i + n[0].length) : -1;
-}
-function parseFullYear(d, string, i) {
-  var n = numberRe.exec(string.slice(i, i + 4));
-  return n ? (d.y = +n[0], i + n[0].length) : -1;
-}
-function parseYear(d, string, i) {
-  var n = numberRe.exec(string.slice(i, i + 2));
-  return n ? (d.y = +n[0] + (+n[0] > 68 ? 1900 : 2e3), i + n[0].length) : -1;
-}
-function parseZone(d, string, i) {
-  var n = /^(Z)|([+-]\d\d)(?::?(\d\d))?/.exec(string.slice(i, i + 6));
-  return n ? (d.Z = n[1] ? 0 : -(n[2] + (n[3] || "00")), i + n[0].length) : -1;
-}
-function parseQuarter(d, string, i) {
-  var n = numberRe.exec(string.slice(i, i + 1));
-  return n ? (d.q = n[0] * 3 - 3, i + n[0].length) : -1;
-}
-function parseMonthNumber(d, string, i) {
-  var n = numberRe.exec(string.slice(i, i + 2));
-  return n ? (d.m = n[0] - 1, i + n[0].length) : -1;
-}
-function parseDayOfMonth(d, string, i) {
-  var n = numberRe.exec(string.slice(i, i + 2));
-  return n ? (d.d = +n[0], i + n[0].length) : -1;
-}
-function parseDayOfYear(d, string, i) {
-  var n = numberRe.exec(string.slice(i, i + 3));
-  return n ? (d.m = 0, d.d = +n[0], i + n[0].length) : -1;
-}
-function parseHour24(d, string, i) {
-  var n = numberRe.exec(string.slice(i, i + 2));
-  return n ? (d.H = +n[0], i + n[0].length) : -1;
-}
-function parseMinutes(d, string, i) {
-  var n = numberRe.exec(string.slice(i, i + 2));
-  return n ? (d.M = +n[0], i + n[0].length) : -1;
-}
-function parseSeconds(d, string, i) {
-  var n = numberRe.exec(string.slice(i, i + 2));
-  return n ? (d.S = +n[0], i + n[0].length) : -1;
-}
-function parseMilliseconds(d, string, i) {
-  var n = numberRe.exec(string.slice(i, i + 3));
-  return n ? (d.L = +n[0], i + n[0].length) : -1;
-}
-function parseMicroseconds(d, string, i) {
-  var n = numberRe.exec(string.slice(i, i + 6));
-  return n ? (d.L = Math.floor(n[0] / 1e3), i + n[0].length) : -1;
-}
-function parseLiteralPercent(d, string, i) {
-  var n = percentRe.exec(string.slice(i, i + 1));
-  return n ? i + n[0].length : -1;
-}
-function parseUnixTimestamp(d, string, i) {
-  var n = numberRe.exec(string.slice(i));
-  return n ? (d.Q = +n[0], i + n[0].length) : -1;
-}
-function parseUnixTimestampSeconds(d, string, i) {
-  var n = numberRe.exec(string.slice(i));
-  return n ? (d.s = +n[0], i + n[0].length) : -1;
-}
-function formatDayOfMonth(d, p) {
-  return pad(d.getDate(), p, 2);
-}
-function formatHour24(d, p) {
-  return pad(d.getHours(), p, 2);
-}
-function formatHour12(d, p) {
-  return pad(d.getHours() % 12 || 12, p, 2);
-}
-function formatDayOfYear(d, p) {
-  return pad(1 + day_default.count(year_default(d), d), p, 3);
-}
-function formatMilliseconds(d, p) {
-  return pad(d.getMilliseconds(), p, 3);
-}
-function formatMicroseconds(d, p) {
-  return formatMilliseconds(d, p) + "000";
-}
-function formatMonthNumber(d, p) {
-  return pad(d.getMonth() + 1, p, 2);
-}
-function formatMinutes(d, p) {
-  return pad(d.getMinutes(), p, 2);
-}
-function formatSeconds(d, p) {
-  return pad(d.getSeconds(), p, 2);
-}
-function formatWeekdayNumberMonday(d) {
-  var day2 = d.getDay();
-  return day2 === 0 ? 7 : day2;
-}
-function formatWeekNumberSunday(d, p) {
-  return pad(sunday.count(year_default(d) - 1, d), p, 2);
-}
-function dISO(d) {
-  var day2 = d.getDay();
-  return day2 >= 4 || day2 === 0 ? thursday(d) : thursday.ceil(d);
-}
-function formatWeekNumberISO(d, p) {
-  d = dISO(d);
-  return pad(thursday.count(year_default(d), d) + (year_default(d).getDay() === 4), p, 2);
-}
-function formatWeekdayNumberSunday(d) {
-  return d.getDay();
-}
-function formatWeekNumberMonday(d, p) {
-  return pad(monday.count(year_default(d) - 1, d), p, 2);
-}
-function formatYear(d, p) {
-  return pad(d.getFullYear() % 100, p, 2);
-}
-function formatYearISO(d, p) {
-  d = dISO(d);
-  return pad(d.getFullYear() % 100, p, 2);
-}
-function formatFullYear(d, p) {
-  return pad(d.getFullYear() % 1e4, p, 4);
-}
-function formatFullYearISO(d, p) {
-  var day2 = d.getDay();
-  d = day2 >= 4 || day2 === 0 ? thursday(d) : thursday.ceil(d);
-  return pad(d.getFullYear() % 1e4, p, 4);
-}
-function formatZone(d) {
-  var z = d.getTimezoneOffset();
-  return (z > 0 ? "-" : (z *= -1, "+")) + pad(z / 60 | 0, "0", 2) + pad(z % 60, "0", 2);
-}
-function formatUTCDayOfMonth(d, p) {
-  return pad(d.getUTCDate(), p, 2);
-}
-function formatUTCHour24(d, p) {
-  return pad(d.getUTCHours(), p, 2);
-}
-function formatUTCHour12(d, p) {
-  return pad(d.getUTCHours() % 12 || 12, p, 2);
-}
-function formatUTCDayOfYear(d, p) {
-  return pad(1 + utcDay_default.count(utcYear_default(d), d), p, 3);
-}
-function formatUTCMilliseconds(d, p) {
-  return pad(d.getUTCMilliseconds(), p, 3);
-}
-function formatUTCMicroseconds(d, p) {
-  return formatUTCMilliseconds(d, p) + "000";
-}
-function formatUTCMonthNumber(d, p) {
-  return pad(d.getUTCMonth() + 1, p, 2);
-}
-function formatUTCMinutes(d, p) {
-  return pad(d.getUTCMinutes(), p, 2);
-}
-function formatUTCSeconds(d, p) {
-  return pad(d.getUTCSeconds(), p, 2);
-}
-function formatUTCWeekdayNumberMonday(d) {
-  var dow = d.getUTCDay();
-  return dow === 0 ? 7 : dow;
-}
-function formatUTCWeekNumberSunday(d, p) {
-  return pad(utcSunday2.count(utcYear_default(d) - 1, d), p, 2);
-}
-function UTCdISO(d) {
-  var day2 = d.getUTCDay();
-  return day2 >= 4 || day2 === 0 ? utcThursday2(d) : utcThursday2.ceil(d);
-}
-function formatUTCWeekNumberISO(d, p) {
-  d = UTCdISO(d);
-  return pad(utcThursday2.count(utcYear_default(d), d) + (utcYear_default(d).getUTCDay() === 4), p, 2);
-}
-function formatUTCWeekdayNumberSunday(d) {
-  return d.getUTCDay();
-}
-function formatUTCWeekNumberMonday(d, p) {
-  return pad(utcMonday2.count(utcYear_default(d) - 1, d), p, 2);
-}
-function formatUTCYear(d, p) {
-  return pad(d.getUTCFullYear() % 100, p, 2);
-}
-function formatUTCYearISO(d, p) {
-  d = UTCdISO(d);
-  return pad(d.getUTCFullYear() % 100, p, 2);
-}
-function formatUTCFullYear(d, p) {
-  return pad(d.getUTCFullYear() % 1e4, p, 4);
-}
-function formatUTCFullYearISO(d, p) {
-  var day2 = d.getUTCDay();
-  d = day2 >= 4 || day2 === 0 ? utcThursday2(d) : utcThursday2.ceil(d);
-  return pad(d.getUTCFullYear() % 1e4, p, 4);
-}
-function formatUTCZone() {
-  return "+0000";
-}
-function formatLiteralPercent() {
-  return "%";
-}
-function formatUnixTimestamp(d) {
-  return +d;
-}
-function formatUnixTimestampSeconds(d) {
-  return Math.floor(+d / 1e3);
-}
-
-// node_modules/d3-time-format/src/defaultLocale.js
-var locale2;
-var timeFormat;
-var timeParse;
-var utcFormat;
-var utcParse;
-defaultLocale2({
-  dateTime: "%x, %X",
-  date: "%-m/%-d/%Y",
-  time: "%-I:%M:%S %p",
-  periods: ["AM", "PM"],
-  days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-  shortDays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-  months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-  shortMonths: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-});
-function defaultLocale2(definition) {
-  locale2 = formatLocale(definition);
-  timeFormat = locale2.format;
-  timeParse = locale2.parse;
-  utcFormat = locale2.utcFormat;
-  utcParse = locale2.utcParse;
-  return locale2;
-}
-
-// node_modules/d3-time-format/src/isoFormat.js
-var isoSpecifier = "%Y-%m-%dT%H:%M:%S.%LZ";
-function formatIsoNative(date2) {
-  return date2.toISOString();
-}
-var formatIso = Date.prototype.toISOString ? formatIsoNative : utcFormat(isoSpecifier);
-
-// node_modules/d3-time-format/src/isoParse.js
-function parseIsoNative(string) {
-  var date2 = new Date(string);
-  return isNaN(date2) ? null : date2;
-}
-var parseIso = +/* @__PURE__ */ new Date("2000-01-01T00:00:00.000Z") ? parseIsoNative : utcParse(isoSpecifier);
-
-// node_modules/d3-scale/src/time.js
-function date(t) {
-  return new Date(t);
-}
-function number4(t) {
-  return t instanceof Date ? +t : +/* @__PURE__ */ new Date(+t);
-}
-function calendar(ticks2, tickInterval, year2, month2, week, day2, hour2, minute2, second3, format2) {
-  var scale = continuous(), invert = scale.invert, domain = scale.domain;
-  var formatMillisecond = format2(".%L"), formatSecond = format2(":%S"), formatMinute = format2("%I:%M"), formatHour = format2("%I %p"), formatDay = format2("%a %d"), formatWeek = format2("%b %d"), formatMonth = format2("%B"), formatYear2 = format2("%Y");
-  function tickFormat3(date2) {
-    return (second3(date2) < date2 ? formatMillisecond : minute2(date2) < date2 ? formatSecond : hour2(date2) < date2 ? formatMinute : day2(date2) < date2 ? formatHour : month2(date2) < date2 ? week(date2) < date2 ? formatDay : formatWeek : year2(date2) < date2 ? formatMonth : formatYear2)(date2);
-  }
-  scale.invert = function(y3) {
-    return new Date(invert(y3));
-  };
-  scale.domain = function(_) {
-    return arguments.length ? domain(Array.from(_, number4)) : domain().map(date);
-  };
-  scale.ticks = function(interval2) {
-    var d = domain();
-    return ticks2(d[0], d[d.length - 1], interval2 == null ? 10 : interval2);
-  };
-  scale.tickFormat = function(count6, specifier) {
-    return specifier == null ? tickFormat3 : format2(specifier);
-  };
-  scale.nice = function(interval2) {
-    var d = domain();
-    if (!interval2 || typeof interval2.range !== "function") interval2 = tickInterval(d[0], d[d.length - 1], interval2 == null ? 10 : interval2);
-    return interval2 ? domain(nice2(d, interval2)) : scale;
-  };
-  scale.copy = function() {
-    return copy(scale, calendar(ticks2, tickInterval, year2, month2, week, day2, hour2, minute2, second3, format2));
-  };
-  return scale;
-}
-function time() {
-  return initRange.apply(calendar(timeTicks, timeTickInterval, timeYear, timeMonth, timeSunday, timeDay, timeHour, timeMinute, second, timeFormat).domain([new Date(2e3, 0, 1), new Date(2e3, 0, 2)]), arguments);
-}
-
-// node_modules/d3-shape/src/constant.js
-function constant_default6(x3) {
-  return function constant3() {
-    return x3;
-  };
-}
-
-// node_modules/d3-shape/src/math.js
-var abs2 = Math.abs;
-var atan2 = Math.atan2;
-var cos = Math.cos;
-var max4 = Math.max;
-var min4 = Math.min;
-var sin = Math.sin;
-var sqrt2 = Math.sqrt;
-var epsilon = 1e-12;
-var pi2 = Math.PI;
-var halfPi2 = pi2 / 2;
-var tau2 = 2 * pi2;
-function acos(x3) {
-  return x3 > 1 ? 0 : x3 < -1 ? pi2 : Math.acos(x3);
-}
-function asin(x3) {
-  return x3 >= 1 ? halfPi2 : x3 <= -1 ? -halfPi2 : Math.asin(x3);
-}
-
-// node_modules/d3-path/src/path.js
-var pi3 = Math.PI;
-var tau3 = 2 * pi3;
-var epsilon3 = 1e-6;
-var tauEpsilon = tau3 - epsilon3;
-function append(strings) {
-  this._ += strings[0];
-  for (let i = 1, n = strings.length; i < n; ++i) {
-    this._ += arguments[i] + strings[i];
-  }
-}
-function appendRound(digits) {
-  let d = Math.floor(digits);
-  if (!(d >= 0)) throw new Error(`invalid digits: ${digits}`);
-  if (d > 15) return append;
-  const k3 = 10 ** d;
-  return function(strings) {
-    this._ += strings[0];
-    for (let i = 1, n = strings.length; i < n; ++i) {
-      this._ += Math.round(arguments[i] * k3) / k3 + strings[i];
-    }
-  };
-}
-var Path = class {
-  constructor(digits) {
-    this._x0 = this._y0 = // start of current subpath
-    this._x1 = this._y1 = null;
-    this._ = "";
-    this._append = digits == null ? append : appendRound(digits);
-  }
-  moveTo(x3, y3) {
-    this._append`M${this._x0 = this._x1 = +x3},${this._y0 = this._y1 = +y3}`;
-  }
-  closePath() {
-    if (this._x1 !== null) {
-      this._x1 = this._x0, this._y1 = this._y0;
-      this._append`Z`;
-    }
-  }
-  lineTo(x3, y3) {
-    this._append`L${this._x1 = +x3},${this._y1 = +y3}`;
-  }
-  quadraticCurveTo(x1, y1, x3, y3) {
-    this._append`Q${+x1},${+y1},${this._x1 = +x3},${this._y1 = +y3}`;
-  }
-  bezierCurveTo(x1, y1, x22, y22, x3, y3) {
-    this._append`C${+x1},${+y1},${+x22},${+y22},${this._x1 = +x3},${this._y1 = +y3}`;
-  }
-  arcTo(x1, y1, x22, y22, r) {
-    x1 = +x1, y1 = +y1, x22 = +x22, y22 = +y22, r = +r;
-    if (r < 0) throw new Error(`negative radius: ${r}`);
-    let x0 = this._x1, y0 = this._y1, x21 = x22 - x1, y21 = y22 - y1, x01 = x0 - x1, y01 = y0 - y1, l01_2 = x01 * x01 + y01 * y01;
-    if (this._x1 === null) {
-      this._append`M${this._x1 = x1},${this._y1 = y1}`;
-    } else if (!(l01_2 > epsilon3)) ;
-    else if (!(Math.abs(y01 * x21 - y21 * x01) > epsilon3) || !r) {
-      this._append`L${this._x1 = x1},${this._y1 = y1}`;
-    } else {
-      let x20 = x22 - x0, y20 = y22 - y0, l21_2 = x21 * x21 + y21 * y21, l20_2 = x20 * x20 + y20 * y20, l21 = Math.sqrt(l21_2), l01 = Math.sqrt(l01_2), l = r * Math.tan((pi3 - Math.acos((l21_2 + l01_2 - l20_2) / (2 * l21 * l01))) / 2), t01 = l / l01, t21 = l / l21;
-      if (Math.abs(t01 - 1) > epsilon3) {
-        this._append`L${x1 + t01 * x01},${y1 + t01 * y01}`;
-      }
-      this._append`A${r},${r},0,0,${+(y01 * x20 > x01 * y20)},${this._x1 = x1 + t21 * x21},${this._y1 = y1 + t21 * y21}`;
-    }
-  }
-  arc(x3, y3, r, a0, a1, ccw) {
-    x3 = +x3, y3 = +y3, r = +r, ccw = !!ccw;
-    if (r < 0) throw new Error(`negative radius: ${r}`);
-    let dx = r * Math.cos(a0), dy = r * Math.sin(a0), x0 = x3 + dx, y0 = y3 + dy, cw = 1 ^ ccw, da = ccw ? a0 - a1 : a1 - a0;
-    if (this._x1 === null) {
-      this._append`M${x0},${y0}`;
-    } else if (Math.abs(this._x1 - x0) > epsilon3 || Math.abs(this._y1 - y0) > epsilon3) {
-      this._append`L${x0},${y0}`;
-    }
-    if (!r) return;
-    if (da < 0) da = da % tau3 + tau3;
-    if (da > tauEpsilon) {
-      this._append`A${r},${r},0,1,${cw},${x3 - dx},${y3 - dy}A${r},${r},0,1,${cw},${this._x1 = x0},${this._y1 = y0}`;
-    } else if (da > epsilon3) {
-      this._append`A${r},${r},0,${+(da >= pi3)},${cw},${this._x1 = x3 + r * Math.cos(a1)},${this._y1 = y3 + r * Math.sin(a1)}`;
-    }
-  }
-  rect(x3, y3, w, h) {
-    this._append`M${this._x0 = this._x1 = +x3},${this._y0 = this._y1 = +y3}h${w = +w}v${+h}h${-w}Z`;
-  }
-  toString() {
-    return this._;
-  }
-};
-function path() {
-  return new Path();
-}
-path.prototype = Path.prototype;
-
-// node_modules/d3-shape/src/path.js
-function withPath(shape) {
-  let digits = 3;
-  shape.digits = function(_) {
-    if (!arguments.length) return digits;
-    if (_ == null) {
-      digits = null;
-    } else {
-      const d = Math.floor(_);
-      if (!(d >= 0)) throw new RangeError(`invalid digits: ${_}`);
-      digits = d;
-    }
-    return shape;
-  };
-  return () => new Path(digits);
-}
-
-// node_modules/d3-shape/src/arc.js
-function arcInnerRadius(d) {
-  return d.innerRadius;
-}
-function arcOuterRadius(d) {
-  return d.outerRadius;
-}
-function arcStartAngle(d) {
-  return d.startAngle;
-}
-function arcEndAngle(d) {
-  return d.endAngle;
-}
-function arcPadAngle(d) {
-  return d && d.padAngle;
-}
-function intersect(x0, y0, x1, y1, x22, y22, x3, y3) {
-  var x10 = x1 - x0, y10 = y1 - y0, x32 = x3 - x22, y32 = y3 - y22, t = y32 * x10 - x32 * y10;
-  if (t * t < epsilon) return;
-  t = (x32 * (y0 - y22) - y32 * (x0 - x22)) / t;
-  return [x0 + t * x10, y0 + t * y10];
-}
-function cornerTangents(x0, y0, x1, y1, r1, rc, cw) {
-  var x01 = x0 - x1, y01 = y0 - y1, lo = (cw ? rc : -rc) / sqrt2(x01 * x01 + y01 * y01), ox = lo * y01, oy = -lo * x01, x11 = x0 + ox, y11 = y0 + oy, x10 = x1 + ox, y10 = y1 + oy, x00 = (x11 + x10) / 2, y00 = (y11 + y10) / 2, dx = x10 - x11, dy = y10 - y11, d2 = dx * dx + dy * dy, r = r1 - rc, D2 = x11 * y10 - x10 * y11, d = (dy < 0 ? -1 : 1) * sqrt2(max4(0, r * r * d2 - D2 * D2)), cx0 = (D2 * dy - dx * d) / d2, cy0 = (-D2 * dx - dy * d) / d2, cx1 = (D2 * dy + dx * d) / d2, cy1 = (-D2 * dx + dy * d) / d2, dx0 = cx0 - x00, dy0 = cy0 - y00, dx1 = cx1 - x00, dy1 = cy1 - y00;
-  if (dx0 * dx0 + dy0 * dy0 > dx1 * dx1 + dy1 * dy1) cx0 = cx1, cy0 = cy1;
-  return {
-    cx: cx0,
-    cy: cy0,
-    x01: -ox,
-    y01: -oy,
-    x11: cx0 * (r1 / r - 1),
-    y11: cy0 * (r1 / r - 1)
-  };
-}
-function arc_default() {
-  var innerRadius = arcInnerRadius, outerRadius = arcOuterRadius, cornerRadius = constant_default6(0), padRadius = null, startAngle = arcStartAngle, endAngle = arcEndAngle, padAngle = arcPadAngle, context = null, path3 = withPath(arc);
-  function arc() {
-    var buffer, r, r0 = +innerRadius.apply(this, arguments), r1 = +outerRadius.apply(this, arguments), a0 = startAngle.apply(this, arguments) - halfPi2, a1 = endAngle.apply(this, arguments) - halfPi2, da = abs2(a1 - a0), cw = a1 > a0;
-    if (!context) context = buffer = path3();
-    if (r1 < r0) r = r1, r1 = r0, r0 = r;
-    if (!(r1 > epsilon)) context.moveTo(0, 0);
-    else if (da > tau2 - epsilon) {
-      context.moveTo(r1 * cos(a0), r1 * sin(a0));
-      context.arc(0, 0, r1, a0, a1, !cw);
-      if (r0 > epsilon) {
-        context.moveTo(r0 * cos(a1), r0 * sin(a1));
-        context.arc(0, 0, r0, a1, a0, cw);
-      }
-    } else {
-      var a01 = a0, a11 = a1, a00 = a0, a10 = a1, da0 = da, da1 = da, ap = padAngle.apply(this, arguments) / 2, rp = ap > epsilon && (padRadius ? +padRadius.apply(this, arguments) : sqrt2(r0 * r0 + r1 * r1)), rc = min4(abs2(r1 - r0) / 2, +cornerRadius.apply(this, arguments)), rc0 = rc, rc1 = rc, t04, t14;
-      if (rp > epsilon) {
-        var p0 = asin(rp / r0 * sin(ap)), p1 = asin(rp / r1 * sin(ap));
-        if ((da0 -= p0 * 2) > epsilon) p0 *= cw ? 1 : -1, a00 += p0, a10 -= p0;
-        else da0 = 0, a00 = a10 = (a0 + a1) / 2;
-        if ((da1 -= p1 * 2) > epsilon) p1 *= cw ? 1 : -1, a01 += p1, a11 -= p1;
-        else da1 = 0, a01 = a11 = (a0 + a1) / 2;
-      }
-      var x01 = r1 * cos(a01), y01 = r1 * sin(a01), x10 = r0 * cos(a10), y10 = r0 * sin(a10);
-      if (rc > epsilon) {
-        var x11 = r1 * cos(a11), y11 = r1 * sin(a11), x00 = r0 * cos(a00), y00 = r0 * sin(a00), oc;
-        if (da < pi2) {
-          if (oc = intersect(x01, y01, x00, y00, x11, y11, x10, y10)) {
-            var ax = x01 - oc[0], ay = y01 - oc[1], bx = x11 - oc[0], by = y11 - oc[1], kc = 1 / sin(acos((ax * bx + ay * by) / (sqrt2(ax * ax + ay * ay) * sqrt2(bx * bx + by * by))) / 2), lc = sqrt2(oc[0] * oc[0] + oc[1] * oc[1]);
-            rc0 = min4(rc, (r0 - lc) / (kc - 1));
-            rc1 = min4(rc, (r1 - lc) / (kc + 1));
-          } else {
-            rc0 = rc1 = 0;
-          }
-        }
-      }
-      if (!(da1 > epsilon)) context.moveTo(x01, y01);
-      else if (rc1 > epsilon) {
-        t04 = cornerTangents(x00, y00, x01, y01, r1, rc1, cw);
-        t14 = cornerTangents(x11, y11, x10, y10, r1, rc1, cw);
-        context.moveTo(t04.cx + t04.x01, t04.cy + t04.y01);
-        if (rc1 < rc) context.arc(t04.cx, t04.cy, rc1, atan2(t04.y01, t04.x01), atan2(t14.y01, t14.x01), !cw);
-        else {
-          context.arc(t04.cx, t04.cy, rc1, atan2(t04.y01, t04.x01), atan2(t04.y11, t04.x11), !cw);
-          context.arc(0, 0, r1, atan2(t04.cy + t04.y11, t04.cx + t04.x11), atan2(t14.cy + t14.y11, t14.cx + t14.x11), !cw);
-          context.arc(t14.cx, t14.cy, rc1, atan2(t14.y11, t14.x11), atan2(t14.y01, t14.x01), !cw);
-        }
-      } else context.moveTo(x01, y01), context.arc(0, 0, r1, a01, a11, !cw);
-      if (!(r0 > epsilon) || !(da0 > epsilon)) context.lineTo(x10, y10);
-      else if (rc0 > epsilon) {
-        t04 = cornerTangents(x10, y10, x11, y11, r0, -rc0, cw);
-        t14 = cornerTangents(x01, y01, x00, y00, r0, -rc0, cw);
-        context.lineTo(t04.cx + t04.x01, t04.cy + t04.y01);
-        if (rc0 < rc) context.arc(t04.cx, t04.cy, rc0, atan2(t04.y01, t04.x01), atan2(t14.y01, t14.x01), !cw);
-        else {
-          context.arc(t04.cx, t04.cy, rc0, atan2(t04.y01, t04.x01), atan2(t04.y11, t04.x11), !cw);
-          context.arc(0, 0, r0, atan2(t04.cy + t04.y11, t04.cx + t04.x11), atan2(t14.cy + t14.y11, t14.cx + t14.x11), cw);
-          context.arc(t14.cx, t14.cy, rc0, atan2(t14.y11, t14.x11), atan2(t14.y01, t14.x01), !cw);
-        }
-      } else context.arc(0, 0, r0, a10, a00, cw);
-    }
-    context.closePath();
-    if (buffer) return context = null, buffer + "" || null;
-  }
-  arc.centroid = function() {
-    var r = (+innerRadius.apply(this, arguments) + +outerRadius.apply(this, arguments)) / 2, a3 = (+startAngle.apply(this, arguments) + +endAngle.apply(this, arguments)) / 2 - pi2 / 2;
-    return [cos(a3) * r, sin(a3) * r];
-  };
-  arc.innerRadius = function(_) {
-    return arguments.length ? (innerRadius = typeof _ === "function" ? _ : constant_default6(+_), arc) : innerRadius;
-  };
-  arc.outerRadius = function(_) {
-    return arguments.length ? (outerRadius = typeof _ === "function" ? _ : constant_default6(+_), arc) : outerRadius;
-  };
-  arc.cornerRadius = function(_) {
-    return arguments.length ? (cornerRadius = typeof _ === "function" ? _ : constant_default6(+_), arc) : cornerRadius;
-  };
-  arc.padRadius = function(_) {
-    return arguments.length ? (padRadius = _ == null ? null : typeof _ === "function" ? _ : constant_default6(+_), arc) : padRadius;
-  };
-  arc.startAngle = function(_) {
-    return arguments.length ? (startAngle = typeof _ === "function" ? _ : constant_default6(+_), arc) : startAngle;
-  };
-  arc.endAngle = function(_) {
-    return arguments.length ? (endAngle = typeof _ === "function" ? _ : constant_default6(+_), arc) : endAngle;
-  };
-  arc.padAngle = function(_) {
-    return arguments.length ? (padAngle = typeof _ === "function" ? _ : constant_default6(+_), arc) : padAngle;
-  };
-  arc.context = function(_) {
-    return arguments.length ? (context = _ == null ? null : _, arc) : context;
-  };
-  return arc;
-}
-
-// node_modules/d3-shape/src/array.js
-var slice3 = Array.prototype.slice;
-function array_default2(x3) {
-  return typeof x3 === "object" && "length" in x3 ? x3 : Array.from(x3);
-}
-
-// node_modules/d3-shape/src/curve/linear.js
-function Linear(context) {
-  this._context = context;
-}
-Linear.prototype = {
-  areaStart: function() {
-    this._line = 0;
-  },
-  areaEnd: function() {
-    this._line = NaN;
-  },
-  lineStart: function() {
-    this._point = 0;
-  },
-  lineEnd: function() {
-    if (this._line || this._line !== 0 && this._point === 1) this._context.closePath();
-    this._line = 1 - this._line;
-  },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
-    switch (this._point) {
-      case 0:
-        this._point = 1;
-        this._line ? this._context.lineTo(x3, y3) : this._context.moveTo(x3, y3);
-        break;
-      case 1:
-        this._point = 2;
-      default:
-        this._context.lineTo(x3, y3);
-        break;
-    }
-  }
-};
-function linear_default(context) {
-  return new Linear(context);
-}
-
-// node_modules/d3-shape/src/point.js
-function x(p) {
-  return p[0];
-}
-function y(p) {
-  return p[1];
-}
-
-// node_modules/d3-shape/src/line.js
-function line_default(x3, y3) {
-  var defined = constant_default6(true), context = null, curve = linear_default, output = null, path3 = withPath(line);
-  x3 = typeof x3 === "function" ? x3 : x3 === void 0 ? x : constant_default6(x3);
-  y3 = typeof y3 === "function" ? y3 : y3 === void 0 ? y : constant_default6(y3);
-  function line(data) {
-    var i, n = (data = array_default2(data)).length, d, defined0 = false, buffer;
-    if (context == null) output = curve(buffer = path3());
-    for (i = 0; i <= n; ++i) {
-      if (!(i < n && defined(d = data[i], i, data)) === defined0) {
-        if (defined0 = !defined0) output.lineStart();
-        else output.lineEnd();
-      }
-      if (defined0) output.point(+x3(d, i, data), +y3(d, i, data));
-    }
-    if (buffer) return output = null, buffer + "" || null;
-  }
-  line.x = function(_) {
-    return arguments.length ? (x3 = typeof _ === "function" ? _ : constant_default6(+_), line) : x3;
-  };
-  line.y = function(_) {
-    return arguments.length ? (y3 = typeof _ === "function" ? _ : constant_default6(+_), line) : y3;
-  };
-  line.defined = function(_) {
-    return arguments.length ? (defined = typeof _ === "function" ? _ : constant_default6(!!_), line) : defined;
-  };
-  line.curve = function(_) {
-    return arguments.length ? (curve = _, context != null && (output = curve(context)), line) : curve;
-  };
-  line.context = function(_) {
-    return arguments.length ? (_ == null ? context = output = null : output = curve(context = _), line) : context;
-  };
-  return line;
-}
-
-// node_modules/d3-shape/src/area.js
-function area_default(x0, y0, y1) {
-  var x1 = null, defined = constant_default6(true), context = null, curve = linear_default, output = null, path3 = withPath(area);
-  x0 = typeof x0 === "function" ? x0 : x0 === void 0 ? x : constant_default6(+x0);
-  y0 = typeof y0 === "function" ? y0 : y0 === void 0 ? constant_default6(0) : constant_default6(+y0);
-  y1 = typeof y1 === "function" ? y1 : y1 === void 0 ? y : constant_default6(+y1);
-  function area(data) {
-    var i, j, k3, n = (data = array_default2(data)).length, d, defined0 = false, buffer, x0z = new Array(n), y0z = new Array(n);
-    if (context == null) output = curve(buffer = path3());
-    for (i = 0; i <= n; ++i) {
-      if (!(i < n && defined(d = data[i], i, data)) === defined0) {
-        if (defined0 = !defined0) {
-          j = i;
-          output.areaStart();
-          output.lineStart();
-        } else {
-          output.lineEnd();
-          output.lineStart();
-          for (k3 = i - 1; k3 >= j; --k3) {
-            output.point(x0z[k3], y0z[k3]);
-          }
-          output.lineEnd();
-          output.areaEnd();
-        }
-      }
-      if (defined0) {
-        x0z[i] = +x0(d, i, data), y0z[i] = +y0(d, i, data);
-        output.point(x1 ? +x1(d, i, data) : x0z[i], y1 ? +y1(d, i, data) : y0z[i]);
-      }
-    }
-    if (buffer) return output = null, buffer + "" || null;
-  }
-  function arealine() {
-    return line_default().defined(defined).curve(curve).context(context);
-  }
-  area.x = function(_) {
-    return arguments.length ? (x0 = typeof _ === "function" ? _ : constant_default6(+_), x1 = null, area) : x0;
-  };
-  area.x0 = function(_) {
-    return arguments.length ? (x0 = typeof _ === "function" ? _ : constant_default6(+_), area) : x0;
-  };
-  area.x1 = function(_) {
-    return arguments.length ? (x1 = _ == null ? null : typeof _ === "function" ? _ : constant_default6(+_), area) : x1;
-  };
-  area.y = function(_) {
-    return arguments.length ? (y0 = typeof _ === "function" ? _ : constant_default6(+_), y1 = null, area) : y0;
-  };
-  area.y0 = function(_) {
-    return arguments.length ? (y0 = typeof _ === "function" ? _ : constant_default6(+_), area) : y0;
-  };
-  area.y1 = function(_) {
-    return arguments.length ? (y1 = _ == null ? null : typeof _ === "function" ? _ : constant_default6(+_), area) : y1;
-  };
-  area.lineX0 = area.lineY0 = function() {
-    return arealine().x(x0).y(y0);
-  };
-  area.lineY1 = function() {
-    return arealine().x(x0).y(y1);
-  };
-  area.lineX1 = function() {
-    return arealine().x(x1).y(y0);
-  };
-  area.defined = function(_) {
-    return arguments.length ? (defined = typeof _ === "function" ? _ : constant_default6(!!_), area) : defined;
-  };
-  area.curve = function(_) {
-    return arguments.length ? (curve = _, context != null && (output = curve(context)), area) : curve;
-  };
-  area.context = function(_) {
-    return arguments.length ? (_ == null ? context = output = null : output = curve(context = _), area) : context;
-  };
-  return area;
-}
-
-// node_modules/d3-shape/src/descending.js
-function descending_default2(a3, b) {
-  return b < a3 ? -1 : b > a3 ? 1 : b >= a3 ? 0 : NaN;
-}
-
-// node_modules/d3-shape/src/identity.js
-function identity_default3(d) {
-  return d;
-}
-
-// node_modules/d3-shape/src/pie.js
-function pie_default() {
-  var value2 = identity_default3, sortValues = descending_default2, sort4 = null, startAngle = constant_default6(0), endAngle = constant_default6(tau2), padAngle = constant_default6(0);
-  function pie(data) {
-    var i, n = (data = array_default2(data)).length, j, k3, sum6 = 0, index4 = new Array(n), arcs = new Array(n), a0 = +startAngle.apply(this, arguments), da = Math.min(tau2, Math.max(-tau2, endAngle.apply(this, arguments) - a0)), a1, p = Math.min(Math.abs(da) / n, padAngle.apply(this, arguments)), pa = p * (da < 0 ? -1 : 1), v;
-    for (i = 0; i < n; ++i) {
-      if ((v = arcs[index4[i] = i] = +value2(data[i], i, data)) > 0) {
-        sum6 += v;
-      }
-    }
-    if (sortValues != null) index4.sort(function(i2, j2) {
-      return sortValues(arcs[i2], arcs[j2]);
-    });
-    else if (sort4 != null) index4.sort(function(i2, j2) {
-      return sort4(data[i2], data[j2]);
-    });
-    for (i = 0, k3 = sum6 ? (da - n * pa) / sum6 : 0; i < n; ++i, a0 = a1) {
-      j = index4[i], v = arcs[j], a1 = a0 + (v > 0 ? v * k3 : 0) + pa, arcs[j] = {
-        data: data[j],
-        index: i,
-        value: v,
-        startAngle: a0,
-        endAngle: a1,
-        padAngle: p
-      };
-    }
-    return arcs;
-  }
-  pie.value = function(_) {
-    return arguments.length ? (value2 = typeof _ === "function" ? _ : constant_default6(+_), pie) : value2;
-  };
-  pie.sortValues = function(_) {
-    return arguments.length ? (sortValues = _, sort4 = null, pie) : sortValues;
-  };
-  pie.sort = function(_) {
-    return arguments.length ? (sort4 = _, sortValues = null, pie) : sort4;
-  };
-  pie.startAngle = function(_) {
-    return arguments.length ? (startAngle = typeof _ === "function" ? _ : constant_default6(+_), pie) : startAngle;
-  };
-  pie.endAngle = function(_) {
-    return arguments.length ? (endAngle = typeof _ === "function" ? _ : constant_default6(+_), pie) : endAngle;
-  };
-  pie.padAngle = function(_) {
-    return arguments.length ? (padAngle = typeof _ === "function" ? _ : constant_default6(+_), pie) : padAngle;
-  };
-  return pie;
-}
-
-// node_modules/d3-shape/src/curve/radial.js
-var curveRadialLinear = curveRadial(linear_default);
-function Radial(curve) {
-  this._curve = curve;
-}
-Radial.prototype = {
-  areaStart: function() {
-    this._curve.areaStart();
-  },
-  areaEnd: function() {
-    this._curve.areaEnd();
-  },
-  lineStart: function() {
-    this._curve.lineStart();
-  },
-  lineEnd: function() {
-    this._curve.lineEnd();
-  },
-  point: function(a3, r) {
-    this._curve.point(r * Math.sin(a3), r * -Math.cos(a3));
-  }
-};
-function curveRadial(curve) {
-  function radial2(context) {
-    return new Radial(curve(context));
-  }
-  radial2._curve = curve;
-  return radial2;
-}
-
-// node_modules/d3-shape/src/lineRadial.js
-function lineRadial(l) {
-  var c = l.curve;
-  l.angle = l.x, delete l.x;
-  l.radius = l.y, delete l.y;
-  l.curve = function(_) {
-    return arguments.length ? c(curveRadial(_)) : c()._curve;
-  };
-  return l;
-}
-function lineRadial_default() {
-  return lineRadial(line_default().curve(curveRadialLinear));
-}
-
-// node_modules/d3-shape/src/symbol/asterisk.js
-var sqrt3 = sqrt2(3);
-
-// node_modules/d3-shape/src/symbol/diamond.js
-var tan30 = sqrt2(1 / 3);
-var tan30_2 = tan30 * 2;
-
-// node_modules/d3-shape/src/symbol/star.js
-var kr = sin(pi2 / 10) / sin(7 * pi2 / 10);
-var kx = sin(tau2 / 10) * kr;
-var ky = -cos(tau2 / 10) * kr;
-
-// node_modules/d3-shape/src/symbol/triangle.js
-var sqrt32 = sqrt2(3);
-
-// node_modules/d3-shape/src/symbol/triangle2.js
-var sqrt33 = sqrt2(3);
-
-// node_modules/d3-shape/src/symbol/wye.js
-var s = sqrt2(3) / 2;
-var k = 1 / sqrt2(12);
-var a = (k / 2 + 1) * 3;
-
-// node_modules/d3-shape/src/noop.js
-function noop_default() {
-}
-
-// node_modules/d3-shape/src/curve/basis.js
-function point2(that, x3, y3) {
-  that._context.bezierCurveTo((2 * that._x0 + that._x1) / 3, (2 * that._y0 + that._y1) / 3, (that._x0 + 2 * that._x1) / 3, (that._y0 + 2 * that._y1) / 3, (that._x0 + 4 * that._x1 + x3) / 6, (that._y0 + 4 * that._y1 + y3) / 6);
-}
-function Basis(context) {
-  this._context = context;
-}
-Basis.prototype = {
-  areaStart: function() {
-    this._line = 0;
-  },
-  areaEnd: function() {
-    this._line = NaN;
-  },
-  lineStart: function() {
-    this._x0 = this._x1 = this._y0 = this._y1 = NaN;
-    this._point = 0;
-  },
-  lineEnd: function() {
-    switch (this._point) {
-      case 3:
-        point2(this, this._x1, this._y1);
-      case 2:
-        this._context.lineTo(this._x1, this._y1);
-        break;
-    }
-    if (this._line || this._line !== 0 && this._point === 1) this._context.closePath();
-    this._line = 1 - this._line;
-  },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
-    switch (this._point) {
-      case 0:
-        this._point = 1;
-        this._line ? this._context.lineTo(x3, y3) : this._context.moveTo(x3, y3);
-        break;
-      case 1:
-        this._point = 2;
-        break;
-      case 2:
-        this._point = 3;
-        this._context.lineTo((5 * this._x0 + this._x1) / 6, (5 * this._y0 + this._y1) / 6);
-      default:
-        point2(this, x3, y3);
-        break;
-    }
-    this._x0 = this._x1, this._x1 = x3;
-    this._y0 = this._y1, this._y1 = y3;
-  }
-};
-
-// node_modules/d3-shape/src/curve/basisClosed.js
-function BasisClosed(context) {
-  this._context = context;
-}
-BasisClosed.prototype = {
-  areaStart: noop_default,
-  areaEnd: noop_default,
-  lineStart: function() {
-    this._x0 = this._x1 = this._x2 = this._x3 = this._x4 = this._y0 = this._y1 = this._y2 = this._y3 = this._y4 = NaN;
-    this._point = 0;
-  },
-  lineEnd: function() {
-    switch (this._point) {
-      case 1: {
-        this._context.moveTo(this._x2, this._y2);
-        this._context.closePath();
-        break;
-      }
-      case 2: {
-        this._context.moveTo((this._x2 + 2 * this._x3) / 3, (this._y2 + 2 * this._y3) / 3);
-        this._context.lineTo((this._x3 + 2 * this._x2) / 3, (this._y3 + 2 * this._y2) / 3);
-        this._context.closePath();
-        break;
-      }
-      case 3: {
-        this.point(this._x2, this._y2);
-        this.point(this._x3, this._y3);
-        this.point(this._x4, this._y4);
-        break;
-      }
-    }
-  },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
-    switch (this._point) {
-      case 0:
-        this._point = 1;
-        this._x2 = x3, this._y2 = y3;
-        break;
-      case 1:
-        this._point = 2;
-        this._x3 = x3, this._y3 = y3;
-        break;
-      case 2:
-        this._point = 3;
-        this._x4 = x3, this._y4 = y3;
-        this._context.moveTo((this._x0 + 4 * this._x1 + x3) / 6, (this._y0 + 4 * this._y1 + y3) / 6);
-        break;
-      default:
-        point2(this, x3, y3);
-        break;
-    }
-    this._x0 = this._x1, this._x1 = x3;
-    this._y0 = this._y1, this._y1 = y3;
-  }
-};
-
-// node_modules/d3-shape/src/curve/basisOpen.js
-function BasisOpen(context) {
-  this._context = context;
-}
-BasisOpen.prototype = {
-  areaStart: function() {
-    this._line = 0;
-  },
-  areaEnd: function() {
-    this._line = NaN;
-  },
-  lineStart: function() {
-    this._x0 = this._x1 = this._y0 = this._y1 = NaN;
-    this._point = 0;
-  },
-  lineEnd: function() {
-    if (this._line || this._line !== 0 && this._point === 3) this._context.closePath();
-    this._line = 1 - this._line;
-  },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
-    switch (this._point) {
-      case 0:
-        this._point = 1;
-        break;
-      case 1:
-        this._point = 2;
-        break;
-      case 2:
-        this._point = 3;
-        var x0 = (this._x0 + 4 * this._x1 + x3) / 6, y0 = (this._y0 + 4 * this._y1 + y3) / 6;
-        this._line ? this._context.lineTo(x0, y0) : this._context.moveTo(x0, y0);
-        break;
-      case 3:
-        this._point = 4;
-      default:
-        point2(this, x3, y3);
-        break;
-    }
-    this._x0 = this._x1, this._x1 = x3;
-    this._y0 = this._y1, this._y1 = y3;
-  }
-};
-
-// node_modules/d3-shape/src/curve/bundle.js
-function Bundle(context, beta) {
-  this._basis = new Basis(context);
-  this._beta = beta;
-}
-Bundle.prototype = {
-  lineStart: function() {
-    this._x = [];
-    this._y = [];
-    this._basis.lineStart();
-  },
-  lineEnd: function() {
-    var x3 = this._x, y3 = this._y, j = x3.length - 1;
-    if (j > 0) {
-      var x0 = x3[0], y0 = y3[0], dx = x3[j] - x0, dy = y3[j] - y0, i = -1, t;
-      while (++i <= j) {
-        t = i / j;
-        this._basis.point(this._beta * x3[i] + (1 - this._beta) * (x0 + t * dx), this._beta * y3[i] + (1 - this._beta) * (y0 + t * dy));
-      }
-    }
-    this._x = this._y = null;
-    this._basis.lineEnd();
-  },
-  point: function(x3, y3) {
-    this._x.push(+x3);
-    this._y.push(+y3);
-  }
-};
-var bundle_default = function custom10(beta) {
-  function bundle(context) {
-    return beta === 1 ? new Basis(context) : new Bundle(context, beta);
-  }
-  bundle.beta = function(beta2) {
-    return custom10(+beta2);
-  };
-  return bundle;
-}(0.85);
-
-// node_modules/d3-shape/src/curve/cardinal.js
-function point3(that, x3, y3) {
-  that._context.bezierCurveTo(that._x1 + that._k * (that._x2 - that._x0), that._y1 + that._k * (that._y2 - that._y0), that._x2 + that._k * (that._x1 - x3), that._y2 + that._k * (that._y1 - y3), that._x2, that._y2);
-}
-function Cardinal(context, tension) {
-  this._context = context;
-  this._k = (1 - tension) / 6;
-}
-Cardinal.prototype = {
-  areaStart: function() {
-    this._line = 0;
-  },
-  areaEnd: function() {
-    this._line = NaN;
-  },
-  lineStart: function() {
-    this._x0 = this._x1 = this._x2 = this._y0 = this._y1 = this._y2 = NaN;
-    this._point = 0;
-  },
-  lineEnd: function() {
-    switch (this._point) {
-      case 2:
-        this._context.lineTo(this._x2, this._y2);
-        break;
-      case 3:
-        point3(this, this._x1, this._y1);
-        break;
-    }
-    if (this._line || this._line !== 0 && this._point === 1) this._context.closePath();
-    this._line = 1 - this._line;
-  },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
-    switch (this._point) {
-      case 0:
-        this._point = 1;
-        this._line ? this._context.lineTo(x3, y3) : this._context.moveTo(x3, y3);
-        break;
-      case 1:
-        this._point = 2;
-        this._x1 = x3, this._y1 = y3;
-        break;
-      case 2:
-        this._point = 3;
-      default:
-        point3(this, x3, y3);
-        break;
-    }
-    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x3;
-    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y3;
-  }
-};
-var cardinal_default = function custom11(tension) {
-  function cardinal(context) {
-    return new Cardinal(context, tension);
-  }
-  cardinal.tension = function(tension2) {
-    return custom11(+tension2);
-  };
-  return cardinal;
-}(0);
-
-// node_modules/d3-shape/src/curve/cardinalClosed.js
-function CardinalClosed(context, tension) {
-  this._context = context;
-  this._k = (1 - tension) / 6;
-}
-CardinalClosed.prototype = {
-  areaStart: noop_default,
-  areaEnd: noop_default,
-  lineStart: function() {
-    this._x0 = this._x1 = this._x2 = this._x3 = this._x4 = this._x5 = this._y0 = this._y1 = this._y2 = this._y3 = this._y4 = this._y5 = NaN;
-    this._point = 0;
-  },
-  lineEnd: function() {
-    switch (this._point) {
-      case 1: {
-        this._context.moveTo(this._x3, this._y3);
-        this._context.closePath();
-        break;
-      }
-      case 2: {
-        this._context.lineTo(this._x3, this._y3);
-        this._context.closePath();
-        break;
-      }
-      case 3: {
-        this.point(this._x3, this._y3);
-        this.point(this._x4, this._y4);
-        this.point(this._x5, this._y5);
-        break;
-      }
-    }
-  },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
-    switch (this._point) {
-      case 0:
-        this._point = 1;
-        this._x3 = x3, this._y3 = y3;
-        break;
-      case 1:
-        this._point = 2;
-        this._context.moveTo(this._x4 = x3, this._y4 = y3);
-        break;
-      case 2:
-        this._point = 3;
-        this._x5 = x3, this._y5 = y3;
-        break;
-      default:
-        point3(this, x3, y3);
-        break;
-    }
-    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x3;
-    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y3;
-  }
-};
-var cardinalClosed_default = function custom12(tension) {
-  function cardinal(context) {
-    return new CardinalClosed(context, tension);
-  }
-  cardinal.tension = function(tension2) {
-    return custom12(+tension2);
-  };
-  return cardinal;
-}(0);
-
-// node_modules/d3-shape/src/curve/cardinalOpen.js
-function CardinalOpen(context, tension) {
-  this._context = context;
-  this._k = (1 - tension) / 6;
-}
-CardinalOpen.prototype = {
-  areaStart: function() {
-    this._line = 0;
-  },
-  areaEnd: function() {
-    this._line = NaN;
-  },
-  lineStart: function() {
-    this._x0 = this._x1 = this._x2 = this._y0 = this._y1 = this._y2 = NaN;
-    this._point = 0;
-  },
-  lineEnd: function() {
-    if (this._line || this._line !== 0 && this._point === 3) this._context.closePath();
-    this._line = 1 - this._line;
-  },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
-    switch (this._point) {
-      case 0:
-        this._point = 1;
-        break;
-      case 1:
-        this._point = 2;
-        break;
-      case 2:
-        this._point = 3;
-        this._line ? this._context.lineTo(this._x2, this._y2) : this._context.moveTo(this._x2, this._y2);
-        break;
-      case 3:
-        this._point = 4;
-      default:
-        point3(this, x3, y3);
-        break;
-    }
-    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x3;
-    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y3;
-  }
-};
-var cardinalOpen_default = function custom13(tension) {
-  function cardinal(context) {
-    return new CardinalOpen(context, tension);
-  }
-  cardinal.tension = function(tension2) {
-    return custom13(+tension2);
-  };
-  return cardinal;
-}(0);
-
-// node_modules/d3-shape/src/curve/catmullRom.js
-function point4(that, x3, y3) {
-  var x1 = that._x1, y1 = that._y1, x22 = that._x2, y22 = that._y2;
-  if (that._l01_a > epsilon) {
-    var a3 = 2 * that._l01_2a + 3 * that._l01_a * that._l12_a + that._l12_2a, n = 3 * that._l01_a * (that._l01_a + that._l12_a);
-    x1 = (x1 * a3 - that._x0 * that._l12_2a + that._x2 * that._l01_2a) / n;
-    y1 = (y1 * a3 - that._y0 * that._l12_2a + that._y2 * that._l01_2a) / n;
-  }
-  if (that._l23_a > epsilon) {
-    var b = 2 * that._l23_2a + 3 * that._l23_a * that._l12_a + that._l12_2a, m = 3 * that._l23_a * (that._l23_a + that._l12_a);
-    x22 = (x22 * b + that._x1 * that._l23_2a - x3 * that._l12_2a) / m;
-    y22 = (y22 * b + that._y1 * that._l23_2a - y3 * that._l12_2a) / m;
-  }
-  that._context.bezierCurveTo(x1, y1, x22, y22, that._x2, that._y2);
-}
-function CatmullRom(context, alpha) {
-  this._context = context;
-  this._alpha = alpha;
-}
-CatmullRom.prototype = {
-  areaStart: function() {
-    this._line = 0;
-  },
-  areaEnd: function() {
-    this._line = NaN;
-  },
-  lineStart: function() {
-    this._x0 = this._x1 = this._x2 = this._y0 = this._y1 = this._y2 = NaN;
-    this._l01_a = this._l12_a = this._l23_a = this._l01_2a = this._l12_2a = this._l23_2a = this._point = 0;
-  },
-  lineEnd: function() {
-    switch (this._point) {
-      case 2:
-        this._context.lineTo(this._x2, this._y2);
-        break;
-      case 3:
-        this.point(this._x2, this._y2);
-        break;
-    }
-    if (this._line || this._line !== 0 && this._point === 1) this._context.closePath();
-    this._line = 1 - this._line;
-  },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
-    if (this._point) {
-      var x23 = this._x2 - x3, y23 = this._y2 - y3;
-      this._l23_a = Math.sqrt(this._l23_2a = Math.pow(x23 * x23 + y23 * y23, this._alpha));
-    }
-    switch (this._point) {
-      case 0:
-        this._point = 1;
-        this._line ? this._context.lineTo(x3, y3) : this._context.moveTo(x3, y3);
-        break;
-      case 1:
-        this._point = 2;
-        break;
-      case 2:
-        this._point = 3;
-      default:
-        point4(this, x3, y3);
-        break;
-    }
-    this._l01_a = this._l12_a, this._l12_a = this._l23_a;
-    this._l01_2a = this._l12_2a, this._l12_2a = this._l23_2a;
-    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x3;
-    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y3;
-  }
-};
-var catmullRom_default = function custom14(alpha) {
-  function catmullRom(context) {
-    return alpha ? new CatmullRom(context, alpha) : new Cardinal(context, 0);
-  }
-  catmullRom.alpha = function(alpha2) {
-    return custom14(+alpha2);
-  };
-  return catmullRom;
-}(0.5);
-
-// node_modules/d3-shape/src/curve/catmullRomClosed.js
-function CatmullRomClosed(context, alpha) {
-  this._context = context;
-  this._alpha = alpha;
-}
-CatmullRomClosed.prototype = {
-  areaStart: noop_default,
-  areaEnd: noop_default,
-  lineStart: function() {
-    this._x0 = this._x1 = this._x2 = this._x3 = this._x4 = this._x5 = this._y0 = this._y1 = this._y2 = this._y3 = this._y4 = this._y5 = NaN;
-    this._l01_a = this._l12_a = this._l23_a = this._l01_2a = this._l12_2a = this._l23_2a = this._point = 0;
-  },
-  lineEnd: function() {
-    switch (this._point) {
-      case 1: {
-        this._context.moveTo(this._x3, this._y3);
-        this._context.closePath();
-        break;
-      }
-      case 2: {
-        this._context.lineTo(this._x3, this._y3);
-        this._context.closePath();
-        break;
-      }
-      case 3: {
-        this.point(this._x3, this._y3);
-        this.point(this._x4, this._y4);
-        this.point(this._x5, this._y5);
-        break;
-      }
-    }
-  },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
-    if (this._point) {
-      var x23 = this._x2 - x3, y23 = this._y2 - y3;
-      this._l23_a = Math.sqrt(this._l23_2a = Math.pow(x23 * x23 + y23 * y23, this._alpha));
-    }
-    switch (this._point) {
-      case 0:
-        this._point = 1;
-        this._x3 = x3, this._y3 = y3;
-        break;
-      case 1:
-        this._point = 2;
-        this._context.moveTo(this._x4 = x3, this._y4 = y3);
-        break;
-      case 2:
-        this._point = 3;
-        this._x5 = x3, this._y5 = y3;
-        break;
-      default:
-        point4(this, x3, y3);
-        break;
-    }
-    this._l01_a = this._l12_a, this._l12_a = this._l23_a;
-    this._l01_2a = this._l12_2a, this._l12_2a = this._l23_2a;
-    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x3;
-    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y3;
-  }
-};
-var catmullRomClosed_default = function custom15(alpha) {
-  function catmullRom(context) {
-    return alpha ? new CatmullRomClosed(context, alpha) : new CardinalClosed(context, 0);
-  }
-  catmullRom.alpha = function(alpha2) {
-    return custom15(+alpha2);
-  };
-  return catmullRom;
-}(0.5);
-
-// node_modules/d3-shape/src/curve/catmullRomOpen.js
-function CatmullRomOpen(context, alpha) {
-  this._context = context;
-  this._alpha = alpha;
-}
-CatmullRomOpen.prototype = {
-  areaStart: function() {
-    this._line = 0;
-  },
-  areaEnd: function() {
-    this._line = NaN;
-  },
-  lineStart: function() {
-    this._x0 = this._x1 = this._x2 = this._y0 = this._y1 = this._y2 = NaN;
-    this._l01_a = this._l12_a = this._l23_a = this._l01_2a = this._l12_2a = this._l23_2a = this._point = 0;
-  },
-  lineEnd: function() {
-    if (this._line || this._line !== 0 && this._point === 3) this._context.closePath();
-    this._line = 1 - this._line;
-  },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
-    if (this._point) {
-      var x23 = this._x2 - x3, y23 = this._y2 - y3;
-      this._l23_a = Math.sqrt(this._l23_2a = Math.pow(x23 * x23 + y23 * y23, this._alpha));
-    }
-    switch (this._point) {
-      case 0:
-        this._point = 1;
-        break;
-      case 1:
-        this._point = 2;
-        break;
-      case 2:
-        this._point = 3;
-        this._line ? this._context.lineTo(this._x2, this._y2) : this._context.moveTo(this._x2, this._y2);
-        break;
-      case 3:
-        this._point = 4;
-      default:
-        point4(this, x3, y3);
-        break;
-    }
-    this._l01_a = this._l12_a, this._l12_a = this._l23_a;
-    this._l01_2a = this._l12_2a, this._l12_2a = this._l23_2a;
-    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x3;
-    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y3;
-  }
-};
-var catmullRomOpen_default = function custom16(alpha) {
-  function catmullRom(context) {
-    return alpha ? new CatmullRomOpen(context, alpha) : new CardinalOpen(context, 0);
-  }
-  catmullRom.alpha = function(alpha2) {
-    return custom16(+alpha2);
-  };
-  return catmullRom;
-}(0.5);
-
-// node_modules/d3-shape/src/curve/linearClosed.js
-function LinearClosed(context) {
-  this._context = context;
-}
-LinearClosed.prototype = {
-  areaStart: noop_default,
-  areaEnd: noop_default,
-  lineStart: function() {
-    this._point = 0;
-  },
-  lineEnd: function() {
-    if (this._point) this._context.closePath();
-  },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
-    if (this._point) this._context.lineTo(x3, y3);
-    else this._point = 1, this._context.moveTo(x3, y3);
-  }
-};
-
-// node_modules/d3-shape/src/curve/monotone.js
-function sign(x3) {
-  return x3 < 0 ? -1 : 1;
-}
-function slope3(that, x22, y22) {
-  var h0 = that._x1 - that._x0, h1 = x22 - that._x1, s0 = (that._y1 - that._y0) / (h0 || h1 < 0 && -0), s1 = (y22 - that._y1) / (h1 || h0 < 0 && -0), p = (s0 * h1 + s1 * h0) / (h0 + h1);
-  return (sign(s0) + sign(s1)) * Math.min(Math.abs(s0), Math.abs(s1), 0.5 * Math.abs(p)) || 0;
-}
-function slope2(that, t) {
-  var h = that._x1 - that._x0;
-  return h ? (3 * (that._y1 - that._y0) / h - t) / 2 : t;
-}
-function point5(that, t04, t14) {
-  var x0 = that._x0, y0 = that._y0, x1 = that._x1, y1 = that._y1, dx = (x1 - x0) / 3;
-  that._context.bezierCurveTo(x0 + dx, y0 + dx * t04, x1 - dx, y1 - dx * t14, x1, y1);
-}
-function MonotoneX(context) {
-  this._context = context;
-}
-MonotoneX.prototype = {
-  areaStart: function() {
-    this._line = 0;
-  },
-  areaEnd: function() {
-    this._line = NaN;
-  },
-  lineStart: function() {
-    this._x0 = this._x1 = this._y0 = this._y1 = this._t0 = NaN;
-    this._point = 0;
-  },
-  lineEnd: function() {
-    switch (this._point) {
-      case 2:
-        this._context.lineTo(this._x1, this._y1);
-        break;
-      case 3:
-        point5(this, this._t0, slope2(this, this._t0));
-        break;
-    }
-    if (this._line || this._line !== 0 && this._point === 1) this._context.closePath();
-    this._line = 1 - this._line;
-  },
-  point: function(x3, y3) {
-    var t14 = NaN;
-    x3 = +x3, y3 = +y3;
-    if (x3 === this._x1 && y3 === this._y1) return;
-    switch (this._point) {
-      case 0:
-        this._point = 1;
-        this._line ? this._context.lineTo(x3, y3) : this._context.moveTo(x3, y3);
-        break;
-      case 1:
-        this._point = 2;
-        break;
-      case 2:
-        this._point = 3;
-        point5(this, slope2(this, t14 = slope3(this, x3, y3)), t14);
-        break;
-      default:
-        point5(this, this._t0, t14 = slope3(this, x3, y3));
-        break;
-    }
-    this._x0 = this._x1, this._x1 = x3;
-    this._y0 = this._y1, this._y1 = y3;
-    this._t0 = t14;
-  }
-};
-function MonotoneY(context) {
-  this._context = new ReflectContext(context);
-}
-(MonotoneY.prototype = Object.create(MonotoneX.prototype)).point = function(x3, y3) {
-  MonotoneX.prototype.point.call(this, y3, x3);
-};
-function ReflectContext(context) {
-  this._context = context;
-}
-ReflectContext.prototype = {
-  moveTo: function(x3, y3) {
-    this._context.moveTo(y3, x3);
-  },
-  closePath: function() {
-    this._context.closePath();
-  },
-  lineTo: function(x3, y3) {
-    this._context.lineTo(y3, x3);
-  },
-  bezierCurveTo: function(x1, y1, x22, y22, x3, y3) {
-    this._context.bezierCurveTo(y1, x1, y22, x22, y3, x3);
-  }
-};
-
-// node_modules/d3-shape/src/curve/natural.js
-function Natural(context) {
-  this._context = context;
-}
-Natural.prototype = {
-  areaStart: function() {
-    this._line = 0;
-  },
-  areaEnd: function() {
-    this._line = NaN;
-  },
-  lineStart: function() {
-    this._x = [];
-    this._y = [];
-  },
-  lineEnd: function() {
-    var x3 = this._x, y3 = this._y, n = x3.length;
-    if (n) {
-      this._line ? this._context.lineTo(x3[0], y3[0]) : this._context.moveTo(x3[0], y3[0]);
-      if (n === 2) {
-        this._context.lineTo(x3[1], y3[1]);
-      } else {
-        var px = controlPoints(x3), py = controlPoints(y3);
-        for (var i0 = 0, i1 = 1; i1 < n; ++i0, ++i1) {
-          this._context.bezierCurveTo(px[0][i0], py[0][i0], px[1][i0], py[1][i0], x3[i1], y3[i1]);
-        }
-      }
-    }
-    if (this._line || this._line !== 0 && n === 1) this._context.closePath();
-    this._line = 1 - this._line;
-    this._x = this._y = null;
-  },
-  point: function(x3, y3) {
-    this._x.push(+x3);
-    this._y.push(+y3);
-  }
-};
-function controlPoints(x3) {
-  var i, n = x3.length - 1, m, a3 = new Array(n), b = new Array(n), r = new Array(n);
-  a3[0] = 0, b[0] = 2, r[0] = x3[0] + 2 * x3[1];
-  for (i = 1; i < n - 1; ++i) a3[i] = 1, b[i] = 4, r[i] = 4 * x3[i] + 2 * x3[i + 1];
-  a3[n - 1] = 2, b[n - 1] = 7, r[n - 1] = 8 * x3[n - 1] + x3[n];
-  for (i = 1; i < n; ++i) m = a3[i] / b[i - 1], b[i] -= m, r[i] -= m * r[i - 1];
-  a3[n - 1] = r[n - 1] / b[n - 1];
-  for (i = n - 2; i >= 0; --i) a3[i] = (r[i] - a3[i + 1]) / b[i];
-  b[n - 1] = (x3[n] + a3[n - 1]) / 2;
-  for (i = 0; i < n - 1; ++i) b[i] = 2 * x3[i + 1] - a3[i + 1];
-  return [a3, b];
-}
-
-// node_modules/d3-shape/src/curve/step.js
-function Step(context, t) {
-  this._context = context;
-  this._t = t;
-}
-Step.prototype = {
-  areaStart: function() {
-    this._line = 0;
-  },
-  areaEnd: function() {
-    this._line = NaN;
-  },
-  lineStart: function() {
-    this._x = this._y = NaN;
-    this._point = 0;
-  },
-  lineEnd: function() {
-    if (0 < this._t && this._t < 1 && this._point === 2) this._context.lineTo(this._x, this._y);
-    if (this._line || this._line !== 0 && this._point === 1) this._context.closePath();
-    if (this._line >= 0) this._t = 1 - this._t, this._line = 1 - this._line;
-  },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
-    switch (this._point) {
-      case 0:
-        this._point = 1;
-        this._line ? this._context.lineTo(x3, y3) : this._context.moveTo(x3, y3);
-        break;
-      case 1:
-        this._point = 2;
-      default: {
-        if (this._t <= 0) {
-          this._context.lineTo(this._x, y3);
-          this._context.lineTo(x3, y3);
-        } else {
-          var x1 = this._x * (1 - this._t) + x3 * this._t;
-          this._context.lineTo(x1, this._y);
-          this._context.lineTo(x1, y3);
-        }
-        break;
-      }
-    }
-    this._x = x3, this._y = y3;
-  }
-};
-
-// node_modules/@swimlane/ngx-charts/fesm2020/swimlane-ngx-charts.mjs
-var import_rfdc = __toESM(require_rfdc(), 1);
-
-// node_modules/d3-hierarchy/src/hierarchy/count.js
-function count3(node) {
-  var sum6 = 0, children2 = node.children, i = children2 && children2.length;
-  if (!i) sum6 = 1;
-  else while (--i >= 0) sum6 += children2[i].value;
-  node.value = sum6;
-}
-function count_default() {
-  return this.eachAfter(count3);
-}
-
-// node_modules/d3-hierarchy/src/hierarchy/each.js
-function each_default2(callback, that) {
-  let index4 = -1;
-  for (const node of this) {
-    callback.call(that, node, ++index4, this);
-  }
-  return this;
-}
-
-// node_modules/d3-hierarchy/src/hierarchy/eachBefore.js
-function eachBefore_default(callback, that) {
-  var node = this, nodes = [node], children2, i, index4 = -1;
-  while (node = nodes.pop()) {
-    callback.call(that, node, ++index4, this);
-    if (children2 = node.children) {
-      for (i = children2.length - 1; i >= 0; --i) {
-        nodes.push(children2[i]);
-      }
-    }
-  }
-  return this;
-}
-
-// node_modules/d3-hierarchy/src/hierarchy/eachAfter.js
-function eachAfter_default(callback, that) {
-  var node = this, nodes = [node], next = [], children2, i, n, index4 = -1;
-  while (node = nodes.pop()) {
-    next.push(node);
-    if (children2 = node.children) {
-      for (i = 0, n = children2.length; i < n; ++i) {
-        nodes.push(children2[i]);
-      }
-    }
-  }
-  while (node = next.pop()) {
-    callback.call(that, node, ++index4, this);
-  }
-  return this;
-}
-
-// node_modules/d3-hierarchy/src/hierarchy/find.js
-function find_default(callback, that) {
-  let index4 = -1;
-  for (const node of this) {
-    if (callback.call(that, node, ++index4, this)) {
-      return node;
-    }
-  }
-}
-
-// node_modules/d3-hierarchy/src/hierarchy/sum.js
-function sum_default(value2) {
-  return this.eachAfter(function(node) {
-    var sum6 = +value2(node.data) || 0, children2 = node.children, i = children2 && children2.length;
-    while (--i >= 0) sum6 += children2[i].value;
-    node.value = sum6;
-  });
-}
-
-// node_modules/d3-hierarchy/src/hierarchy/sort.js
-function sort_default2(compare) {
-  return this.eachBefore(function(node) {
-    if (node.children) {
-      node.children.sort(compare);
-    }
-  });
-}
-
-// node_modules/d3-hierarchy/src/hierarchy/path.js
-function path_default(end) {
-  var start2 = this, ancestor = leastCommonAncestor(start2, end), nodes = [start2];
-  while (start2 !== ancestor) {
-    start2 = start2.parent;
-    nodes.push(start2);
-  }
-  var k3 = nodes.length;
-  while (end !== ancestor) {
-    nodes.splice(k3, 0, end);
-    end = end.parent;
-  }
-  return nodes;
-}
-function leastCommonAncestor(a3, b) {
-  if (a3 === b) return a3;
-  var aNodes = a3.ancestors(), bNodes = b.ancestors(), c = null;
-  a3 = aNodes.pop();
-  b = bNodes.pop();
-  while (a3 === b) {
-    c = a3;
-    a3 = aNodes.pop();
-    b = bNodes.pop();
-  }
-  return c;
-}
-
-// node_modules/d3-hierarchy/src/hierarchy/ancestors.js
-function ancestors_default() {
-  var node = this, nodes = [node];
-  while (node = node.parent) {
-    nodes.push(node);
-  }
-  return nodes;
-}
-
-// node_modules/d3-hierarchy/src/hierarchy/descendants.js
-function descendants_default() {
-  return Array.from(this);
-}
-
-// node_modules/d3-hierarchy/src/hierarchy/leaves.js
-function leaves_default() {
-  var leaves = [];
-  this.eachBefore(function(node) {
-    if (!node.children) {
-      leaves.push(node);
-    }
-  });
-  return leaves;
-}
-
-// node_modules/d3-hierarchy/src/hierarchy/links.js
-function links_default() {
-  var root3 = this, links = [];
-  root3.each(function(node) {
-    if (node !== root3) {
-      links.push({
-        source: node.parent,
-        target: node
-      });
-    }
-  });
-  return links;
-}
-
-// node_modules/d3-hierarchy/src/hierarchy/iterator.js
-function* iterator_default2() {
-  var node = this, current, next = [node], children2, i, n;
-  do {
-    current = next.reverse(), next = [];
-    while (node = current.pop()) {
-      yield node;
-      if (children2 = node.children) {
-        for (i = 0, n = children2.length; i < n; ++i) {
-          next.push(children2[i]);
-        }
-      }
-    }
-  } while (next.length);
-}
-
-// node_modules/d3-hierarchy/src/hierarchy/index.js
-function hierarchy(data, children2) {
-  if (data instanceof Map) {
-    data = [void 0, data];
-    if (children2 === void 0) children2 = mapChildren;
-  } else if (children2 === void 0) {
-    children2 = objectChildren;
-  }
-  var root3 = new Node(data), node, nodes = [root3], child, childs, i, n;
-  while (node = nodes.pop()) {
-    if ((childs = children2(node.data)) && (n = (childs = Array.from(childs)).length)) {
-      node.children = childs;
-      for (i = n - 1; i >= 0; --i) {
-        nodes.push(child = childs[i] = new Node(childs[i]));
-        child.parent = node;
-        child.depth = node.depth + 1;
-      }
-    }
-  }
-  return root3.eachBefore(computeHeight);
-}
-function node_copy() {
-  return hierarchy(this).eachBefore(copyData);
-}
-function objectChildren(d) {
-  return d.children;
-}
-function mapChildren(d) {
-  return Array.isArray(d) ? d[1] : null;
-}
-function copyData(node) {
-  if (node.data.value !== void 0) node.value = node.data.value;
-  node.data = node.data.data;
-}
-function computeHeight(node) {
-  var height = 0;
-  do
-    node.height = height;
-  while ((node = node.parent) && node.height < ++height);
-}
-function Node(data) {
-  this.data = data;
-  this.depth = this.height = 0;
-  this.parent = null;
-}
-Node.prototype = hierarchy.prototype = {
-  constructor: Node,
-  count: count_default,
-  each: each_default2,
-  eachAfter: eachAfter_default,
-  eachBefore: eachBefore_default,
-  find: find_default,
-  sum: sum_default,
-  sort: sort_default2,
-  path: path_default,
-  ancestors: ancestors_default,
-  descendants: descendants_default,
-  leaves: leaves_default,
-  links: links_default,
-  copy: node_copy,
-  [Symbol.iterator]: iterator_default2
-};
-
-// node_modules/d3-hierarchy/src/accessors.js
-function optional(f) {
-  return f == null ? null : required(f);
-}
-function required(f) {
-  if (typeof f !== "function") throw new Error();
-  return f;
-}
-
-// node_modules/d3-hierarchy/src/constant.js
-function constantZero() {
-  return 0;
-}
-function constant_default7(x3) {
-  return function() {
-    return x3;
-  };
-}
-
-// node_modules/d3-hierarchy/src/treemap/round.js
-function round_default2(node) {
-  node.x0 = Math.round(node.x0);
-  node.y0 = Math.round(node.y0);
-  node.x1 = Math.round(node.x1);
-  node.y1 = Math.round(node.y1);
-}
-
-// node_modules/d3-hierarchy/src/treemap/dice.js
-function dice_default(parent, x0, y0, x1, y1) {
-  var nodes = parent.children, node, i = -1, n = nodes.length, k3 = parent.value && (x1 - x0) / parent.value;
-  while (++i < n) {
-    node = nodes[i], node.y0 = y0, node.y1 = y1;
-    node.x0 = x0, node.x1 = x0 += node.value * k3;
-  }
-}
-
-// node_modules/d3-hierarchy/src/stratify.js
-var preroot = {
-  depth: -1
-};
-var ambiguous = {};
-var imputed = {};
-function defaultId(d) {
-  return d.id;
-}
-function defaultParentId(d) {
-  return d.parentId;
-}
-function stratify_default() {
-  var id3 = defaultId, parentId = defaultParentId, path3;
-  function stratify(data) {
-    var nodes = Array.from(data), currentId = id3, currentParentId = parentId, n, d, i, root3, parent, node, nodeId, nodeKey, nodeByKey = /* @__PURE__ */ new Map();
-    if (path3 != null) {
-      const I = nodes.map((d2, i2) => normalize2(path3(d2, i2, data)));
-      const P = I.map(parentof);
-      const S = new Set(I).add("");
-      for (const i2 of P) {
-        if (!S.has(i2)) {
-          S.add(i2);
-          I.push(i2);
-          P.push(parentof(i2));
-          nodes.push(imputed);
-        }
-      }
-      currentId = (_, i2) => I[i2];
-      currentParentId = (_, i2) => P[i2];
-    }
-    for (i = 0, n = nodes.length; i < n; ++i) {
-      d = nodes[i], node = nodes[i] = new Node(d);
-      if ((nodeId = currentId(d, i, data)) != null && (nodeId += "")) {
-        nodeKey = node.id = nodeId;
-        nodeByKey.set(nodeKey, nodeByKey.has(nodeKey) ? ambiguous : node);
-      }
-      if ((nodeId = currentParentId(d, i, data)) != null && (nodeId += "")) {
-        node.parent = nodeId;
-      }
-    }
-    for (i = 0; i < n; ++i) {
-      node = nodes[i];
-      if (nodeId = node.parent) {
-        parent = nodeByKey.get(nodeId);
-        if (!parent) throw new Error("missing: " + nodeId);
-        if (parent === ambiguous) throw new Error("ambiguous: " + nodeId);
-        if (parent.children) parent.children.push(node);
-        else parent.children = [node];
-        node.parent = parent;
-      } else {
-        if (root3) throw new Error("multiple roots");
-        root3 = node;
-      }
-    }
-    if (!root3) throw new Error("no root");
-    if (path3 != null) {
-      while (root3.data === imputed && root3.children.length === 1) {
-        root3 = root3.children[0], --n;
-      }
-      for (let i2 = nodes.length - 1; i2 >= 0; --i2) {
-        node = nodes[i2];
-        if (node.data !== imputed) break;
-        node.data = null;
-      }
-    }
-    root3.parent = preroot;
-    root3.eachBefore(function(node2) {
-      node2.depth = node2.parent.depth + 1;
-      --n;
-    }).eachBefore(computeHeight);
-    root3.parent = null;
-    if (n > 0) throw new Error("cycle");
-    return root3;
-  }
-  stratify.id = function(x3) {
-    return arguments.length ? (id3 = optional(x3), stratify) : id3;
-  };
-  stratify.parentId = function(x3) {
-    return arguments.length ? (parentId = optional(x3), stratify) : parentId;
-  };
-  stratify.path = function(x3) {
-    return arguments.length ? (path3 = optional(x3), stratify) : path3;
-  };
-  return stratify;
-}
-function normalize2(path3) {
-  path3 = `${path3}`;
-  let i = path3.length;
-  if (slash(path3, i - 1) && !slash(path3, i - 2)) path3 = path3.slice(0, -1);
-  return path3[0] === "/" ? path3 : `/${path3}`;
-}
-function parentof(path3) {
-  let i = path3.length;
-  if (i < 2) return "";
-  while (--i > 1) if (slash(path3, i)) break;
-  return path3.slice(0, i);
-}
-function slash(path3, i) {
-  if (path3[i] === "/") {
-    let k3 = 0;
-    while (i > 0 && path3[--i] === "\\") ++k3;
-    if ((k3 & 1) === 0) return true;
-  }
-  return false;
-}
-
-// node_modules/d3-hierarchy/src/tree.js
-function TreeNode(node, i) {
-  this._ = node;
-  this.parent = null;
-  this.children = null;
-  this.A = null;
-  this.a = this;
-  this.z = 0;
-  this.m = 0;
-  this.c = 0;
-  this.s = 0;
-  this.t = null;
-  this.i = i;
-}
-TreeNode.prototype = Object.create(Node.prototype);
-
-// node_modules/d3-hierarchy/src/treemap/slice.js
-function slice_default(parent, x0, y0, x1, y1) {
-  var nodes = parent.children, node, i = -1, n = nodes.length, k3 = parent.value && (y1 - y0) / parent.value;
-  while (++i < n) {
-    node = nodes[i], node.x0 = x0, node.x1 = x1;
-    node.y0 = y0, node.y1 = y0 += node.value * k3;
-  }
-}
-
-// node_modules/d3-hierarchy/src/treemap/squarify.js
-var phi = (1 + Math.sqrt(5)) / 2;
-function squarifyRatio(ratio, parent, x0, y0, x1, y1) {
-  var rows = [], nodes = parent.children, row, nodeValue, i0 = 0, i1 = 0, n = nodes.length, dx, dy, value2 = parent.value, sumValue, minValue, maxValue, newRatio, minRatio, alpha, beta;
-  while (i0 < n) {
-    dx = x1 - x0, dy = y1 - y0;
-    do
-      sumValue = nodes[i1++].value;
-    while (!sumValue && i1 < n);
-    minValue = maxValue = sumValue;
-    alpha = Math.max(dy / dx, dx / dy) / (value2 * ratio);
-    beta = sumValue * sumValue * alpha;
-    minRatio = Math.max(maxValue / beta, beta / minValue);
-    for (; i1 < n; ++i1) {
-      sumValue += nodeValue = nodes[i1].value;
-      if (nodeValue < minValue) minValue = nodeValue;
-      if (nodeValue > maxValue) maxValue = nodeValue;
-      beta = sumValue * sumValue * alpha;
-      newRatio = Math.max(maxValue / beta, beta / minValue);
-      if (newRatio > minRatio) {
-        sumValue -= nodeValue;
-        break;
-      }
-      minRatio = newRatio;
-    }
-    rows.push(row = {
-      value: sumValue,
-      dice: dx < dy,
-      children: nodes.slice(i0, i1)
-    });
-    if (row.dice) dice_default(row, x0, y0, x1, value2 ? y0 += dy * sumValue / value2 : y1);
-    else slice_default(row, x0, y0, value2 ? x0 += dx * sumValue / value2 : x1, y1);
-    value2 -= sumValue, i0 = i1;
-  }
-  return rows;
-}
-var squarify_default = function custom17(ratio) {
-  function squarify(parent, x0, y0, x1, y1) {
-    squarifyRatio(ratio, parent, x0, y0, x1, y1);
-  }
-  squarify.ratio = function(x3) {
-    return custom17((x3 = +x3) > 1 ? x3 : 1);
-  };
-  return squarify;
-}(phi);
-
-// node_modules/d3-hierarchy/src/treemap/index.js
-function treemap_default() {
-  var tile = squarify_default, round = false, dx = 1, dy = 1, paddingStack = [0], paddingInner = constantZero, paddingTop = constantZero, paddingRight = constantZero, paddingBottom = constantZero, paddingLeft = constantZero;
-  function treemap(root3) {
-    root3.x0 = root3.y0 = 0;
-    root3.x1 = dx;
-    root3.y1 = dy;
-    root3.eachBefore(positionNode);
-    paddingStack = [0];
-    if (round) root3.eachBefore(round_default2);
-    return root3;
-  }
-  function positionNode(node) {
-    var p = paddingStack[node.depth], x0 = node.x0 + p, y0 = node.y0 + p, x1 = node.x1 - p, y1 = node.y1 - p;
-    if (x1 < x0) x0 = x1 = (x0 + x1) / 2;
-    if (y1 < y0) y0 = y1 = (y0 + y1) / 2;
-    node.x0 = x0;
-    node.y0 = y0;
-    node.x1 = x1;
-    node.y1 = y1;
-    if (node.children) {
-      p = paddingStack[node.depth + 1] = paddingInner(node) / 2;
-      x0 += paddingLeft(node) - p;
-      y0 += paddingTop(node) - p;
-      x1 -= paddingRight(node) - p;
-      y1 -= paddingBottom(node) - p;
-      if (x1 < x0) x0 = x1 = (x0 + x1) / 2;
-      if (y1 < y0) y0 = y1 = (y0 + y1) / 2;
-      tile(node, x0, y0, x1, y1);
-    }
-  }
-  treemap.round = function(x3) {
-    return arguments.length ? (round = !!x3, treemap) : round;
-  };
-  treemap.size = function(x3) {
-    return arguments.length ? (dx = +x3[0], dy = +x3[1], treemap) : [dx, dy];
-  };
-  treemap.tile = function(x3) {
-    return arguments.length ? (tile = required(x3), treemap) : tile;
-  };
-  treemap.padding = function(x3) {
-    return arguments.length ? treemap.paddingInner(x3).paddingOuter(x3) : treemap.paddingInner();
-  };
-  treemap.paddingInner = function(x3) {
-    return arguments.length ? (paddingInner = typeof x3 === "function" ? x3 : constant_default7(+x3), treemap) : paddingInner;
-  };
-  treemap.paddingOuter = function(x3) {
-    return arguments.length ? treemap.paddingTop(x3).paddingRight(x3).paddingBottom(x3).paddingLeft(x3) : treemap.paddingTop();
-  };
-  treemap.paddingTop = function(x3) {
-    return arguments.length ? (paddingTop = typeof x3 === "function" ? x3 : constant_default7(+x3), treemap) : paddingTop;
-  };
-  treemap.paddingRight = function(x3) {
-    return arguments.length ? (paddingRight = typeof x3 === "function" ? x3 : constant_default7(+x3), treemap) : paddingRight;
-  };
-  treemap.paddingBottom = function(x3) {
-    return arguments.length ? (paddingBottom = typeof x3 === "function" ? x3 : constant_default7(+x3), treemap) : paddingBottom;
-  };
-  treemap.paddingLeft = function(x3) {
-    return arguments.length ? (paddingLeft = typeof x3 === "function" ? x3 : constant_default7(+x3), treemap) : paddingLeft;
-  };
-  return treemap;
-}
-
-// node_modules/d3-hierarchy/src/treemap/resquarify.js
-var resquarify_default = function custom18(ratio) {
-  function resquarify(parent, x0, y0, x1, y1) {
-    if ((rows = parent._squarify) && rows.ratio === ratio) {
-      var rows, row, nodes, i, j = -1, n, m = rows.length, value2 = parent.value;
-      while (++j < m) {
-        row = rows[j], nodes = row.children;
-        for (i = row.value = 0, n = nodes.length; i < n; ++i) row.value += nodes[i].value;
-        if (row.dice) dice_default(row, x0, y0, x1, value2 ? y0 += (y1 - y0) * row.value / value2 : y1);
-        else slice_default(row, x0, y0, value2 ? x0 += (x1 - x0) * row.value / value2 : x1, y1);
-        value2 -= row.value;
-      }
-    } else {
-      parent._squarify = rows = squarifyRatio(ratio, parent, x0, y0, x1, y1);
-      rows.ratio = ratio;
-    }
-  }
-  resquarify.ratio = function(x3) {
-    return custom18((x3 = +x3) > 1 ? x3 : 1);
-  };
-  return resquarify;
-}(phi);
-
-// node_modules/d3-sankey/node_modules/d3-array/src/ascending.js
-function ascending_default3(a3, b) {
-  return a3 < b ? -1 : a3 > b ? 1 : a3 >= b ? 0 : NaN;
-}
-
-// node_modules/d3-sankey/node_modules/d3-array/src/bisector.js
-function bisector_default2(f) {
-  let delta = f;
-  let compare = f;
-  if (f.length === 1) {
-    delta = (d, x3) => f(d) - x3;
-    compare = ascendingComparator2(f);
-  }
-  function left2(a3, x3, lo, hi) {
-    if (lo == null) lo = 0;
-    if (hi == null) hi = a3.length;
-    while (lo < hi) {
-      const mid = lo + hi >>> 1;
-      if (compare(a3[mid], x3) < 0) lo = mid + 1;
-      else hi = mid;
-    }
-    return lo;
-  }
-  function right2(a3, x3, lo, hi) {
-    if (lo == null) lo = 0;
-    if (hi == null) hi = a3.length;
-    while (lo < hi) {
-      const mid = lo + hi >>> 1;
-      if (compare(a3[mid], x3) > 0) hi = mid;
-      else lo = mid + 1;
-    }
-    return lo;
-  }
-  function center2(a3, x3, lo, hi) {
-    if (lo == null) lo = 0;
-    if (hi == null) hi = a3.length;
-    const i = left2(a3, x3, lo, hi - 1);
-    return i > lo && delta(a3[i - 1], x3) > -delta(a3[i], x3) ? i - 1 : i;
-  }
-  return {
-    left: left2,
-    center: center2,
-    right: right2
-  };
-}
-function ascendingComparator2(f) {
-  return (d, x3) => ascending_default3(f(d), x3);
+  return (d, x2) => ascending_default(f(d), x2);
 }
 
 // node_modules/d3-sankey/node_modules/d3-array/src/number.js
-function number_default3(x3) {
-  return x3 === null ? NaN : +x3;
+function number_default(x2) {
+  return x2 === null ? NaN : +x2;
 }
 
 // node_modules/d3-sankey/node_modules/d3-array/src/bisect.js
-var ascendingBisect3 = bisector_default2(ascending_default3);
-var bisectRight3 = ascendingBisect3.right;
-var bisectLeft3 = ascendingBisect3.left;
-var bisectCenter3 = bisector_default2(number_default3).center;
+var ascendingBisect = bisector_default(ascending_default);
+var bisectRight = ascendingBisect.right;
+var bisectLeft = ascendingBisect.left;
+var bisectCenter = bisector_default(number_default).center;
 
 // node_modules/d3-sankey/node_modules/d3-array/src/array.js
-var array4 = Array.prototype;
-var slice4 = array4.slice;
-var map6 = array4.map;
+var array = Array.prototype;
+var slice = array.slice;
+var map = array.map;
 
 // node_modules/d3-sankey/node_modules/d3-array/src/ticks.js
-var e103 = Math.sqrt(50);
-var e53 = Math.sqrt(10);
-var e23 = Math.sqrt(2);
+var e10 = Math.sqrt(50);
+var e5 = Math.sqrt(10);
+var e2 = Math.sqrt(2);
 
 // node_modules/d3-sankey/node_modules/d3-array/src/max.js
-function max5(values, valueof) {
-  let max7;
+function max2(values, valueof) {
+  let max4;
   if (valueof === void 0) {
     for (const value2 of values) {
-      if (value2 != null && (max7 < value2 || max7 === void 0 && value2 >= value2)) {
-        max7 = value2;
+      if (value2 != null && (max4 < value2 || max4 === void 0 && value2 >= value2)) {
+        max4 = value2;
       }
     }
   } else {
-    let index4 = -1;
+    let index2 = -1;
     for (let value2 of values) {
-      if ((value2 = valueof(value2, ++index4, values)) != null && (max7 < value2 || max7 === void 0 && value2 >= value2)) {
-        max7 = value2;
+      if ((value2 = valueof(value2, ++index2, values)) != null && (max4 < value2 || max4 === void 0 && value2 >= value2)) {
+        max4 = value2;
       }
     }
   }
-  return max7;
+  return max4;
 }
 
 // node_modules/d3-sankey/node_modules/d3-array/src/min.js
-function min5(values, valueof) {
-  let min7;
+function min2(values, valueof) {
+  let min4;
   if (valueof === void 0) {
     for (const value2 of values) {
-      if (value2 != null && (min7 > value2 || min7 === void 0 && value2 >= value2)) {
-        min7 = value2;
+      if (value2 != null && (min4 > value2 || min4 === void 0 && value2 >= value2)) {
+        min4 = value2;
       }
     }
   } else {
-    let index4 = -1;
+    let index2 = -1;
     for (let value2 of values) {
-      if ((value2 = valueof(value2, ++index4, values)) != null && (min7 > value2 || min7 === void 0 && value2 >= value2)) {
-        min7 = value2;
+      if ((value2 = valueof(value2, ++index2, values)) != null && (min4 > value2 || min4 === void 0 && value2 >= value2)) {
+        min4 = value2;
       }
     }
   }
-  return min7;
+  return min4;
 }
 
 // node_modules/d3-sankey/node_modules/d3-array/src/shuffle.js
-var shuffle_default3 = shuffler3(Math.random);
-function shuffler3(random) {
-  return function shuffle2(array5, i0 = 0, i1 = array5.length) {
+var shuffle_default = shuffler(Math.random);
+function shuffler(random) {
+  return function shuffle(array2, i0 = 0, i1 = array2.length) {
     let m = i1 - (i0 = +i0);
     while (m) {
-      const i = random() * m-- | 0, t = array5[m + i0];
-      array5[m + i0] = array5[i + i0];
-      array5[i + i0] = t;
+      const i = random() * m-- | 0, t = array2[m + i0];
+      array2[m + i0] = array2[i + i0];
+      array2[i + i0] = t;
     }
-    return array5;
+    return array2;
   };
 }
 
 // node_modules/d3-sankey/node_modules/d3-array/src/sum.js
-function sum4(values, valueof) {
-  let sum6 = 0;
+function sum(values, valueof) {
+  let sum3 = 0;
   if (valueof === void 0) {
     for (let value2 of values) {
       if (value2 = +value2) {
-        sum6 += value2;
+        sum3 += value2;
       }
     }
   } else {
-    let index4 = -1;
+    let index2 = -1;
     for (let value2 of values) {
-      if (value2 = +valueof(value2, ++index4, values)) {
-        sum6 += value2;
+      if (value2 = +valueof(value2, ++index2, values)) {
+        sum3 += value2;
       }
     }
   }
-  return sum6;
+  return sum3;
 }
 
 // node_modules/d3-sankey/src/align.js
@@ -8807,26 +1220,26 @@ function justify(node, n) {
 }
 
 // node_modules/d3-sankey/src/constant.js
-function constant2(x3) {
+function constant(x2) {
   return function() {
-    return x3;
+    return x2;
   };
 }
 
 // node_modules/d3-sankey/src/sankey.js
-function ascendingSourceBreadth(a3, b) {
-  return ascendingBreadth(a3.source, b.source) || a3.index - b.index;
+function ascendingSourceBreadth(a2, b) {
+  return ascendingBreadth(a2.source, b.source) || a2.index - b.index;
 }
-function ascendingTargetBreadth(a3, b) {
-  return ascendingBreadth(a3.target, b.target) || a3.index - b.index;
+function ascendingTargetBreadth(a2, b) {
+  return ascendingBreadth(a2.target, b.target) || a2.index - b.index;
 }
-function ascendingBreadth(a3, b) {
-  return a3.y0 - b.y0;
+function ascendingBreadth(a2, b) {
+  return a2.y0 - b.y0;
 }
 function value(d) {
   return d.value;
 }
-function defaultId2(d) {
+function defaultId(d) {
   return d.index;
 }
 function defaultNodes(graph) {
@@ -8835,9 +1248,9 @@ function defaultNodes(graph) {
 function defaultLinks(graph) {
   return graph.links;
 }
-function find2(nodeById, id3) {
-  const node = nodeById.get(id3);
-  if (!node) throw new Error("missing: " + id3);
+function find(nodeById, id2) {
+  const node = nodeById.get(id2);
+  if (!node) throw new Error("missing: " + id2);
   return node;
 }
 function computeLinkBreadths({
@@ -8846,13 +1259,13 @@ function computeLinkBreadths({
   for (const node of nodes) {
     let y0 = node.y0;
     let y1 = y0;
-    for (const link3 of node.sourceLinks) {
-      link3.y0 = y0 + link3.width / 2;
-      y0 += link3.width;
+    for (const link2 of node.sourceLinks) {
+      link2.y0 = y0 + link2.width / 2;
+      y0 += link2.width;
     }
-    for (const link3 of node.targetLinks) {
-      link3.y1 = y1 + link3.width / 2;
-      y1 += link3.width;
+    for (const link2 of node.targetLinks) {
+      link2.y1 = y1 + link2.width / 2;
+      y1 += link2.width;
     }
   }
 }
@@ -8860,9 +1273,9 @@ function Sankey() {
   let x0 = 0, y0 = 0, x1 = 1, y1 = 1;
   let dx = 24;
   let dy = 8, py;
-  let id3 = defaultId2;
+  let id2 = defaultId;
   let align = justify;
-  let sort4;
+  let sort2;
   let linkSort;
   let nodes = defaultNodes;
   let links = defaultLinks;
@@ -8885,13 +1298,13 @@ function Sankey() {
     return graph;
   };
   sankey.nodeId = function(_) {
-    return arguments.length ? (id3 = typeof _ === "function" ? _ : constant2(_), sankey) : id3;
+    return arguments.length ? (id2 = typeof _ === "function" ? _ : constant(_), sankey) : id2;
   };
   sankey.nodeAlign = function(_) {
-    return arguments.length ? (align = typeof _ === "function" ? _ : constant2(_), sankey) : align;
+    return arguments.length ? (align = typeof _ === "function" ? _ : constant(_), sankey) : align;
   };
   sankey.nodeSort = function(_) {
-    return arguments.length ? (sort4 = _, sankey) : sort4;
+    return arguments.length ? (sort2 = _, sankey) : sort2;
   };
   sankey.nodeWidth = function(_) {
     return arguments.length ? (dx = +_, sankey) : dx;
@@ -8900,10 +1313,10 @@ function Sankey() {
     return arguments.length ? (dy = py = +_, sankey) : dy;
   };
   sankey.nodes = function(_) {
-    return arguments.length ? (nodes = typeof _ === "function" ? _ : constant2(_), sankey) : nodes;
+    return arguments.length ? (nodes = typeof _ === "function" ? _ : constant(_), sankey) : nodes;
   };
   sankey.links = function(_) {
-    return arguments.length ? (links = typeof _ === "function" ? _ : constant2(_), sankey) : links;
+    return arguments.length ? (links = typeof _ === "function" ? _ : constant(_), sankey) : links;
   };
   sankey.linkSort = function(_) {
     return arguments.length ? (linkSort = _, sankey) : linkSort;
@@ -8926,17 +1339,17 @@ function Sankey() {
       node.sourceLinks = [];
       node.targetLinks = [];
     }
-    const nodeById = new Map(nodes2.map((d, i) => [id3(d, i, nodes2), d]));
-    for (const [i, link3] of links2.entries()) {
-      link3.index = i;
+    const nodeById = new Map(nodes2.map((d, i) => [id2(d, i, nodes2), d]));
+    for (const [i, link2] of links2.entries()) {
+      link2.index = i;
       let {
         source,
         target
-      } = link3;
-      if (typeof source !== "object") source = link3.source = find2(nodeById, source);
-      if (typeof target !== "object") target = link3.target = find2(nodeById, target);
-      source.sourceLinks.push(link3);
-      target.targetLinks.push(link3);
+      } = link2;
+      if (typeof source !== "object") source = link2.source = find(nodeById, source);
+      if (typeof target !== "object") target = link2.target = find(nodeById, target);
+      source.sourceLinks.push(link2);
+      target.targetLinks.push(link2);
     }
     if (linkSort != null) {
       for (const {
@@ -8952,7 +1365,7 @@ function Sankey() {
     nodes: nodes2
   }) {
     for (const node of nodes2) {
-      node.value = node.fixedValue === void 0 ? Math.max(sum4(node.sourceLinks, value), sum4(node.targetLinks, value)) : node.fixedValue;
+      node.value = node.fixedValue === void 0 ? Math.max(sum(node.sourceLinks, value), sum(node.targetLinks, value)) : node.fixedValue;
     }
   }
   function computeNodeDepths({
@@ -8961,17 +1374,17 @@ function Sankey() {
     const n = nodes2.length;
     let current = new Set(nodes2);
     let next = /* @__PURE__ */ new Set();
-    let x3 = 0;
+    let x2 = 0;
     while (current.size) {
       for (const node of current) {
-        node.depth = x3;
+        node.depth = x2;
         for (const {
           target
         } of node.sourceLinks) {
           next.add(target);
         }
       }
-      if (++x3 > n) throw new Error("circular link");
+      if (++x2 > n) throw new Error("circular link");
       current = next;
       next = /* @__PURE__ */ new Set();
     }
@@ -8982,17 +1395,17 @@ function Sankey() {
     const n = nodes2.length;
     let current = new Set(nodes2);
     let next = /* @__PURE__ */ new Set();
-    let x3 = 0;
+    let x2 = 0;
     while (current.size) {
       for (const node of current) {
-        node.height = x3;
+        node.height = x2;
         for (const {
           source
         } of node.targetLinks) {
           next.add(source);
         }
       }
-      if (++x3 > n) throw new Error("circular link");
+      if (++x2 > n) throw new Error("circular link");
       current = next;
       next = /* @__PURE__ */ new Set();
     }
@@ -9000,46 +1413,46 @@ function Sankey() {
   function computeNodeLayers({
     nodes: nodes2
   }) {
-    const x3 = max5(nodes2, (d) => d.depth) + 1;
-    const kx3 = (x1 - x0 - dx) / (x3 - 1);
-    const columns = new Array(x3);
+    const x2 = max2(nodes2, (d) => d.depth) + 1;
+    const kx2 = (x1 - x0 - dx) / (x2 - 1);
+    const columns = new Array(x2);
     for (const node of nodes2) {
-      const i = Math.max(0, Math.min(x3 - 1, Math.floor(align.call(null, node, x3))));
+      const i = Math.max(0, Math.min(x2 - 1, Math.floor(align.call(null, node, x2))));
       node.layer = i;
-      node.x0 = x0 + i * kx3;
+      node.x0 = x0 + i * kx2;
       node.x1 = node.x0 + dx;
       if (columns[i]) columns[i].push(node);
       else columns[i] = [node];
     }
-    if (sort4) for (const column of columns) {
-      column.sort(sort4);
+    if (sort2) for (const column of columns) {
+      column.sort(sort2);
     }
     return columns;
   }
   function initializeNodeBreadths(columns) {
-    const ky3 = min5(columns, (c) => (y1 - y0 - (c.length - 1) * py) / sum4(c, value));
+    const ky2 = min2(columns, (c) => (y1 - y0 - (c.length - 1) * py) / sum(c, value));
     for (const nodes2 of columns) {
-      let y3 = y0;
+      let y2 = y0;
       for (const node of nodes2) {
-        node.y0 = y3;
-        node.y1 = y3 + node.value * ky3;
-        y3 = node.y1 + py;
-        for (const link3 of node.sourceLinks) {
-          link3.width = link3.value * ky3;
+        node.y0 = y2;
+        node.y1 = y2 + node.value * ky2;
+        y2 = node.y1 + py;
+        for (const link2 of node.sourceLinks) {
+          link2.width = link2.value * ky2;
         }
       }
-      y3 = (y1 - y3 + py) / (nodes2.length + 1);
+      y2 = (y1 - y2 + py) / (nodes2.length + 1);
       for (let i = 0; i < nodes2.length; ++i) {
         const node = nodes2[i];
-        node.y0 += y3 * (i + 1);
-        node.y1 += y3 * (i + 1);
+        node.y0 += y2 * (i + 1);
+        node.y1 += y2 * (i + 1);
       }
       reorderLinks(nodes2);
     }
   }
   function computeNodeBreadths(graph) {
     const columns = computeNodeLayers(graph);
-    py = Math.min(dy, (y1 - y0) / (max5(columns, (c) => c.length) - 1));
+    py = Math.min(dy, (y1 - y0) / (max2(columns, (c) => c.length) - 1));
     initializeNodeBreadths(columns);
     for (let i = 0; i < iterations; ++i) {
       const alpha = Math.pow(0.99, i);
@@ -9052,23 +1465,23 @@ function Sankey() {
     for (let i = 1, n = columns.length; i < n; ++i) {
       const column = columns[i];
       for (const target of column) {
-        let y3 = 0;
+        let y2 = 0;
         let w = 0;
         for (const {
           source,
           value: value2
         } of target.targetLinks) {
           let v = value2 * (target.layer - source.layer);
-          y3 += targetTop(source, target) * v;
+          y2 += targetTop(source, target) * v;
           w += v;
         }
         if (!(w > 0)) continue;
-        let dy2 = (y3 / w - target.y0) * alpha;
+        let dy2 = (y2 / w - target.y0) * alpha;
         target.y0 += dy2;
         target.y1 += dy2;
         reorderNodeLinks(target);
       }
-      if (sort4 === void 0) column.sort(ascendingBreadth);
+      if (sort2 === void 0) column.sort(ascendingBreadth);
       resolveCollisions(column, beta);
     }
   }
@@ -9076,23 +1489,23 @@ function Sankey() {
     for (let n = columns.length, i = n - 2; i >= 0; --i) {
       const column = columns[i];
       for (const source of column) {
-        let y3 = 0;
+        let y2 = 0;
         let w = 0;
         for (const {
           target,
           value: value2
         } of source.sourceLinks) {
           let v = value2 * (target.layer - source.layer);
-          y3 += sourceTop(source, target) * v;
+          y2 += sourceTop(source, target) * v;
           w += v;
         }
         if (!(w > 0)) continue;
-        let dy2 = (y3 / w - source.y0) * alpha;
+        let dy2 = (y2 / w - source.y0) * alpha;
         source.y0 += dy2;
         source.y1 += dy2;
         reorderNodeLinks(source);
       }
-      if (sort4 === void 0) column.sort(ascendingBreadth);
+      if (sort2 === void 0) column.sort(ascendingBreadth);
       resolveCollisions(column, beta);
     }
   }
@@ -9104,20 +1517,20 @@ function Sankey() {
     resolveCollisionsBottomToTop(nodes2, y1, nodes2.length - 1, alpha);
     resolveCollisionsTopToBottom(nodes2, y0, 0, alpha);
   }
-  function resolveCollisionsTopToBottom(nodes2, y3, i, alpha) {
+  function resolveCollisionsTopToBottom(nodes2, y2, i, alpha) {
     for (; i < nodes2.length; ++i) {
       const node = nodes2[i];
-      const dy2 = (y3 - node.y0) * alpha;
+      const dy2 = (y2 - node.y0) * alpha;
       if (dy2 > 1e-6) node.y0 += dy2, node.y1 += dy2;
-      y3 = node.y1 + py;
+      y2 = node.y1 + py;
     }
   }
-  function resolveCollisionsBottomToTop(nodes2, y3, i, alpha) {
+  function resolveCollisionsBottomToTop(nodes2, y2, i, alpha) {
     for (; i >= 0; --i) {
       const node = nodes2[i];
-      const dy2 = (node.y1 - y3) * alpha;
+      const dy2 = (node.y1 - y2) * alpha;
       if (dy2 > 1e-6) node.y0 -= dy2, node.y1 -= dy2;
-      y3 = node.y0 - py;
+      y2 = node.y0 - py;
     }
   }
   function reorderNodeLinks({
@@ -9153,61 +1566,61 @@ function Sankey() {
     }
   }
   function targetTop(source, target) {
-    let y3 = source.y0 - (source.sourceLinks.length - 1) * py / 2;
+    let y2 = source.y0 - (source.sourceLinks.length - 1) * py / 2;
     for (const {
       target: node,
       width
     } of source.sourceLinks) {
       if (node === target) break;
-      y3 += width + py;
+      y2 += width + py;
     }
     for (const {
       source: node,
       width
     } of target.targetLinks) {
       if (node === source) break;
-      y3 -= width;
+      y2 -= width;
     }
-    return y3;
+    return y2;
   }
   function sourceTop(source, target) {
-    let y3 = target.y0 - (target.targetLinks.length - 1) * py / 2;
+    let y2 = target.y0 - (target.targetLinks.length - 1) * py / 2;
     for (const {
       source: node,
       width
     } of target.targetLinks) {
       if (node === source) break;
-      y3 += width + py;
+      y2 += width + py;
     }
     for (const {
       target: node,
       width
     } of source.sourceLinks) {
       if (node === target) break;
-      y3 -= width;
+      y2 -= width;
     }
-    return y3;
+    return y2;
   }
   return sankey;
 }
 
 // node_modules/d3-sankey/node_modules/d3-path/src/path.js
-var pi4 = Math.PI;
-var tau4 = 2 * pi4;
-var epsilon4 = 1e-6;
-var tauEpsilon2 = tau4 - epsilon4;
-function Path2() {
+var pi = Math.PI;
+var tau = 2 * pi;
+var epsilon = 1e-6;
+var tauEpsilon = tau - epsilon;
+function Path() {
   this._x0 = this._y0 = // start of current subpath
   this._x1 = this._y1 = null;
   this._ = "";
 }
-function path2() {
-  return new Path2();
+function path() {
+  return new Path();
 }
-Path2.prototype = path2.prototype = {
-  constructor: Path2,
-  moveTo: function(x3, y3) {
-    this._ += "M" + (this._x0 = this._x1 = +x3) + "," + (this._y0 = this._y1 = +y3);
+Path.prototype = path.prototype = {
+  constructor: Path,
+  moveTo: function(x2, y2) {
+    this._ += "M" + (this._x0 = this._x1 = +x2) + "," + (this._y0 = this._y1 = +y2);
   },
   closePath: function() {
     if (this._x1 !== null) {
@@ -9215,76 +1628,76 @@ Path2.prototype = path2.prototype = {
       this._ += "Z";
     }
   },
-  lineTo: function(x3, y3) {
-    this._ += "L" + (this._x1 = +x3) + "," + (this._y1 = +y3);
+  lineTo: function(x2, y2) {
+    this._ += "L" + (this._x1 = +x2) + "," + (this._y1 = +y2);
   },
-  quadraticCurveTo: function(x1, y1, x3, y3) {
-    this._ += "Q" + +x1 + "," + +y1 + "," + (this._x1 = +x3) + "," + (this._y1 = +y3);
+  quadraticCurveTo: function(x1, y1, x2, y2) {
+    this._ += "Q" + +x1 + "," + +y1 + "," + (this._x1 = +x2) + "," + (this._y1 = +y2);
   },
-  bezierCurveTo: function(x1, y1, x22, y22, x3, y3) {
-    this._ += "C" + +x1 + "," + +y1 + "," + +x22 + "," + +y22 + "," + (this._x1 = +x3) + "," + (this._y1 = +y3);
+  bezierCurveTo: function(x1, y1, x2, y2, x3, y3) {
+    this._ += "C" + +x1 + "," + +y1 + "," + +x2 + "," + +y2 + "," + (this._x1 = +x3) + "," + (this._y1 = +y3);
   },
-  arcTo: function(x1, y1, x22, y22, r) {
-    x1 = +x1, y1 = +y1, x22 = +x22, y22 = +y22, r = +r;
-    var x0 = this._x1, y0 = this._y1, x21 = x22 - x1, y21 = y22 - y1, x01 = x0 - x1, y01 = y0 - y1, l01_2 = x01 * x01 + y01 * y01;
+  arcTo: function(x1, y1, x2, y2, r) {
+    x1 = +x1, y1 = +y1, x2 = +x2, y2 = +y2, r = +r;
+    var x0 = this._x1, y0 = this._y1, x21 = x2 - x1, y21 = y2 - y1, x01 = x0 - x1, y01 = y0 - y1, l01_2 = x01 * x01 + y01 * y01;
     if (r < 0) throw new Error("negative radius: " + r);
     if (this._x1 === null) {
       this._ += "M" + (this._x1 = x1) + "," + (this._y1 = y1);
-    } else if (!(l01_2 > epsilon4)) ;
-    else if (!(Math.abs(y01 * x21 - y21 * x01) > epsilon4) || !r) {
+    } else if (!(l01_2 > epsilon)) ;
+    else if (!(Math.abs(y01 * x21 - y21 * x01) > epsilon) || !r) {
       this._ += "L" + (this._x1 = x1) + "," + (this._y1 = y1);
     } else {
-      var x20 = x22 - x0, y20 = y22 - y0, l21_2 = x21 * x21 + y21 * y21, l20_2 = x20 * x20 + y20 * y20, l21 = Math.sqrt(l21_2), l01 = Math.sqrt(l01_2), l = r * Math.tan((pi4 - Math.acos((l21_2 + l01_2 - l20_2) / (2 * l21 * l01))) / 2), t01 = l / l01, t21 = l / l21;
-      if (Math.abs(t01 - 1) > epsilon4) {
+      var x20 = x2 - x0, y20 = y2 - y0, l21_2 = x21 * x21 + y21 * y21, l20_2 = x20 * x20 + y20 * y20, l21 = Math.sqrt(l21_2), l01 = Math.sqrt(l01_2), l = r * Math.tan((pi - Math.acos((l21_2 + l01_2 - l20_2) / (2 * l21 * l01))) / 2), t01 = l / l01, t21 = l / l21;
+      if (Math.abs(t01 - 1) > epsilon) {
         this._ += "L" + (x1 + t01 * x01) + "," + (y1 + t01 * y01);
       }
       this._ += "A" + r + "," + r + ",0,0," + +(y01 * x20 > x01 * y20) + "," + (this._x1 = x1 + t21 * x21) + "," + (this._y1 = y1 + t21 * y21);
     }
   },
-  arc: function(x3, y3, r, a0, a1, ccw) {
-    x3 = +x3, y3 = +y3, r = +r, ccw = !!ccw;
-    var dx = r * Math.cos(a0), dy = r * Math.sin(a0), x0 = x3 + dx, y0 = y3 + dy, cw = 1 ^ ccw, da = ccw ? a0 - a1 : a1 - a0;
+  arc: function(x2, y2, r, a0, a1, ccw) {
+    x2 = +x2, y2 = +y2, r = +r, ccw = !!ccw;
+    var dx = r * Math.cos(a0), dy = r * Math.sin(a0), x0 = x2 + dx, y0 = y2 + dy, cw = 1 ^ ccw, da = ccw ? a0 - a1 : a1 - a0;
     if (r < 0) throw new Error("negative radius: " + r);
     if (this._x1 === null) {
       this._ += "M" + x0 + "," + y0;
-    } else if (Math.abs(this._x1 - x0) > epsilon4 || Math.abs(this._y1 - y0) > epsilon4) {
+    } else if (Math.abs(this._x1 - x0) > epsilon || Math.abs(this._y1 - y0) > epsilon) {
       this._ += "L" + x0 + "," + y0;
     }
     if (!r) return;
-    if (da < 0) da = da % tau4 + tau4;
-    if (da > tauEpsilon2) {
-      this._ += "A" + r + "," + r + ",0,1," + cw + "," + (x3 - dx) + "," + (y3 - dy) + "A" + r + "," + r + ",0,1," + cw + "," + (this._x1 = x0) + "," + (this._y1 = y0);
-    } else if (da > epsilon4) {
-      this._ += "A" + r + "," + r + ",0," + +(da >= pi4) + "," + cw + "," + (this._x1 = x3 + r * Math.cos(a1)) + "," + (this._y1 = y3 + r * Math.sin(a1));
+    if (da < 0) da = da % tau + tau;
+    if (da > tauEpsilon) {
+      this._ += "A" + r + "," + r + ",0,1," + cw + "," + (x2 - dx) + "," + (y2 - dy) + "A" + r + "," + r + ",0,1," + cw + "," + (this._x1 = x0) + "," + (this._y1 = y0);
+    } else if (da > epsilon) {
+      this._ += "A" + r + "," + r + ",0," + +(da >= pi) + "," + cw + "," + (this._x1 = x2 + r * Math.cos(a1)) + "," + (this._y1 = y2 + r * Math.sin(a1));
     }
   },
-  rect: function(x3, y3, w, h) {
-    this._ += "M" + (this._x0 = this._x1 = +x3) + "," + (this._y0 = this._y1 = +y3) + "h" + +w + "v" + +h + "h" + -w + "Z";
+  rect: function(x2, y2, w, h) {
+    this._ += "M" + (this._x0 = this._x1 = +x2) + "," + (this._y0 = this._y1 = +y2) + "h" + +w + "v" + +h + "h" + -w + "Z";
   },
   toString: function() {
     return this._;
   }
 };
-var path_default2 = path2;
+var path_default = path;
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/constant.js
-function constant_default9(x3) {
-  return function constant3() {
-    return x3;
+function constant_default2(x2) {
+  return function constant2() {
+    return x2;
   };
 }
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/math.js
-var epsilon5 = 1e-12;
-var pi5 = Math.PI;
-var halfPi3 = pi5 / 2;
-var tau5 = 2 * pi5;
+var epsilon2 = 1e-12;
+var pi2 = Math.PI;
+var halfPi = pi2 / 2;
+var tau2 = 2 * pi2;
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/curve/linear.js
-function Linear2(context) {
+function Linear(context) {
   this._context = context;
 }
-Linear2.prototype = {
+Linear.prototype = {
   areaStart: function() {
     this._line = 0;
   },
@@ -9298,39 +1711,39 @@ Linear2.prototype = {
     if (this._line || this._line !== 0 && this._point === 1) this._context.closePath();
     this._line = 1 - this._line;
   },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
+  point: function(x2, y2) {
+    x2 = +x2, y2 = +y2;
     switch (this._point) {
       case 0:
         this._point = 1;
-        this._line ? this._context.lineTo(x3, y3) : this._context.moveTo(x3, y3);
+        this._line ? this._context.lineTo(x2, y2) : this._context.moveTo(x2, y2);
         break;
       case 1:
         this._point = 2;
       default:
-        this._context.lineTo(x3, y3);
+        this._context.lineTo(x2, y2);
         break;
     }
   }
 };
 function linear_default2(context) {
-  return new Linear2(context);
+  return new Linear(context);
 }
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/point.js
-function x2(p) {
+function x(p) {
   return p[0];
 }
-function y2(p) {
+function y(p) {
   return p[1];
 }
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/curve/radial.js
-var curveRadialLinear2 = curveRadial2(linear_default2);
-function Radial2(curve) {
+var curveRadialLinear = curveRadial(linear_default2);
+function Radial(curve) {
   this._curve = curve;
 }
-Radial2.prototype = {
+Radial.prototype = {
   areaStart: function() {
     this._curve.areaStart();
   },
@@ -9343,20 +1756,20 @@ Radial2.prototype = {
   lineEnd: function() {
     this._curve.lineEnd();
   },
-  point: function(a3, r) {
-    this._curve.point(r * Math.sin(a3), r * -Math.cos(a3));
+  point: function(a2, r) {
+    this._curve.point(r * Math.sin(a2), r * -Math.cos(a2));
   }
 };
-function curveRadial2(curve) {
-  function radial2(context) {
-    return new Radial2(curve(context));
+function curveRadial(curve) {
+  function radial(context) {
+    return new Radial(curve(context));
   }
-  radial2._curve = curve;
-  return radial2;
+  radial._curve = curve;
+  return radial;
 }
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/array.js
-var slice5 = Array.prototype.slice;
+var slice2 = Array.prototype.slice;
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/link/index.js
 function linkSource(d) {
@@ -9365,68 +1778,68 @@ function linkSource(d) {
 function linkTarget(d) {
   return d.target;
 }
-function link2(curve) {
-  var source = linkSource, target = linkTarget, x3 = x2, y3 = y2, context = null;
-  function link3() {
-    var buffer, argv = slice5.call(arguments), s3 = source.apply(this, argv), t = target.apply(this, argv);
-    if (!context) context = buffer = path_default2();
-    curve(context, +x3.apply(this, (argv[0] = s3, argv)), +y3.apply(this, argv), +x3.apply(this, (argv[0] = t, argv)), +y3.apply(this, argv));
+function link(curve) {
+  var source = linkSource, target = linkTarget, x2 = x, y2 = y, context = null;
+  function link2() {
+    var buffer, argv = slice2.call(arguments), s2 = source.apply(this, argv), t = target.apply(this, argv);
+    if (!context) context = buffer = path_default();
+    curve(context, +x2.apply(this, (argv[0] = s2, argv)), +y2.apply(this, argv), +x2.apply(this, (argv[0] = t, argv)), +y2.apply(this, argv));
     if (buffer) return context = null, buffer + "" || null;
   }
-  link3.source = function(_) {
-    return arguments.length ? (source = _, link3) : source;
+  link2.source = function(_) {
+    return arguments.length ? (source = _, link2) : source;
   };
-  link3.target = function(_) {
-    return arguments.length ? (target = _, link3) : target;
+  link2.target = function(_) {
+    return arguments.length ? (target = _, link2) : target;
   };
-  link3.x = function(_) {
-    return arguments.length ? (x3 = typeof _ === "function" ? _ : constant_default9(+_), link3) : x3;
+  link2.x = function(_) {
+    return arguments.length ? (x2 = typeof _ === "function" ? _ : constant_default2(+_), link2) : x2;
   };
-  link3.y = function(_) {
-    return arguments.length ? (y3 = typeof _ === "function" ? _ : constant_default9(+_), link3) : y3;
+  link2.y = function(_) {
+    return arguments.length ? (y2 = typeof _ === "function" ? _ : constant_default2(+_), link2) : y2;
   };
-  link3.context = function(_) {
-    return arguments.length ? (context = _ == null ? null : _, link3) : context;
+  link2.context = function(_) {
+    return arguments.length ? (context = _ == null ? null : _, link2) : context;
   };
-  return link3;
+  return link2;
 }
 function curveHorizontal(context, x0, y0, x1, y1) {
   context.moveTo(x0, y0);
   context.bezierCurveTo(x0 = (x0 + x1) / 2, y0, x0, y1, x1, y1);
 }
-function linkHorizontal2() {
-  return link2(curveHorizontal);
+function linkHorizontal() {
+  return link(curveHorizontal);
 }
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/symbol/diamond.js
-var tan302 = Math.sqrt(1 / 3);
-var tan30_22 = tan302 * 2;
+var tan30 = Math.sqrt(1 / 3);
+var tan30_2 = tan30 * 2;
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/symbol/star.js
-var kr2 = Math.sin(pi5 / 10) / Math.sin(7 * pi5 / 10);
-var kx2 = Math.sin(tau5 / 10) * kr2;
-var ky2 = -Math.cos(tau5 / 10) * kr2;
+var kr = Math.sin(pi2 / 10) / Math.sin(7 * pi2 / 10);
+var kx = Math.sin(tau2 / 10) * kr;
+var ky = -Math.cos(tau2 / 10) * kr;
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/symbol/triangle.js
-var sqrt34 = Math.sqrt(3);
+var sqrt3 = Math.sqrt(3);
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/symbol/wye.js
-var s2 = Math.sqrt(3) / 2;
-var k2 = 1 / Math.sqrt(12);
-var a2 = (k2 / 2 + 1) * 3;
+var s = Math.sqrt(3) / 2;
+var k = 1 / Math.sqrt(12);
+var a = (k / 2 + 1) * 3;
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/noop.js
-function noop_default2() {
+function noop_default() {
 }
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/curve/basis.js
-function point6(that, x3, y3) {
-  that._context.bezierCurveTo((2 * that._x0 + that._x1) / 3, (2 * that._y0 + that._y1) / 3, (that._x0 + 2 * that._x1) / 3, (that._y0 + 2 * that._y1) / 3, (that._x0 + 4 * that._x1 + x3) / 6, (that._y0 + 4 * that._y1 + y3) / 6);
+function point2(that, x2, y2) {
+  that._context.bezierCurveTo((2 * that._x0 + that._x1) / 3, (2 * that._y0 + that._y1) / 3, (that._x0 + 2 * that._x1) / 3, (that._y0 + 2 * that._y1) / 3, (that._x0 + 4 * that._x1 + x2) / 6, (that._y0 + 4 * that._y1 + y2) / 6);
 }
-function Basis2(context) {
+function Basis(context) {
   this._context = context;
 }
-Basis2.prototype = {
+Basis.prototype = {
   areaStart: function() {
     this._line = 0;
   },
@@ -9440,7 +1853,7 @@ Basis2.prototype = {
   lineEnd: function() {
     switch (this._point) {
       case 3:
-        point6(this, this._x1, this._y1);
+        point2(this, this._x1, this._y1);
       case 2:
         this._context.lineTo(this._x1, this._y1);
         break;
@@ -9448,12 +1861,12 @@ Basis2.prototype = {
     if (this._line || this._line !== 0 && this._point === 1) this._context.closePath();
     this._line = 1 - this._line;
   },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
+  point: function(x2, y2) {
+    x2 = +x2, y2 = +y2;
     switch (this._point) {
       case 0:
         this._point = 1;
-        this._line ? this._context.lineTo(x3, y3) : this._context.moveTo(x3, y3);
+        this._line ? this._context.lineTo(x2, y2) : this._context.moveTo(x2, y2);
         break;
       case 1:
         this._point = 2;
@@ -9462,21 +1875,21 @@ Basis2.prototype = {
         this._point = 3;
         this._context.lineTo((5 * this._x0 + this._x1) / 6, (5 * this._y0 + this._y1) / 6);
       default:
-        point6(this, x3, y3);
+        point2(this, x2, y2);
         break;
     }
-    this._x0 = this._x1, this._x1 = x3;
-    this._y0 = this._y1, this._y1 = y3;
+    this._x0 = this._x1, this._x1 = x2;
+    this._y0 = this._y1, this._y1 = y2;
   }
 };
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/curve/basisClosed.js
-function BasisClosed2(context) {
+function BasisClosed(context) {
   this._context = context;
 }
-BasisClosed2.prototype = {
-  areaStart: noop_default2,
-  areaEnd: noop_default2,
+BasisClosed.prototype = {
+  areaStart: noop_default,
+  areaEnd: noop_default,
   lineStart: function() {
     this._x0 = this._x1 = this._x2 = this._x3 = this._x4 = this._y0 = this._y1 = this._y2 = this._y3 = this._y4 = NaN;
     this._point = 0;
@@ -9502,36 +1915,36 @@ BasisClosed2.prototype = {
       }
     }
   },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
+  point: function(x2, y2) {
+    x2 = +x2, y2 = +y2;
     switch (this._point) {
       case 0:
         this._point = 1;
-        this._x2 = x3, this._y2 = y3;
+        this._x2 = x2, this._y2 = y2;
         break;
       case 1:
         this._point = 2;
-        this._x3 = x3, this._y3 = y3;
+        this._x3 = x2, this._y3 = y2;
         break;
       case 2:
         this._point = 3;
-        this._x4 = x3, this._y4 = y3;
-        this._context.moveTo((this._x0 + 4 * this._x1 + x3) / 6, (this._y0 + 4 * this._y1 + y3) / 6);
+        this._x4 = x2, this._y4 = y2;
+        this._context.moveTo((this._x0 + 4 * this._x1 + x2) / 6, (this._y0 + 4 * this._y1 + y2) / 6);
         break;
       default:
-        point6(this, x3, y3);
+        point2(this, x2, y2);
         break;
     }
-    this._x0 = this._x1, this._x1 = x3;
-    this._y0 = this._y1, this._y1 = y3;
+    this._x0 = this._x1, this._x1 = x2;
+    this._y0 = this._y1, this._y1 = y2;
   }
 };
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/curve/basisOpen.js
-function BasisOpen2(context) {
+function BasisOpen(context) {
   this._context = context;
 }
-BasisOpen2.prototype = {
+BasisOpen.prototype = {
   areaStart: function() {
     this._line = 0;
   },
@@ -9546,8 +1959,8 @@ BasisOpen2.prototype = {
     if (this._line || this._line !== 0 && this._point === 3) this._context.closePath();
     this._line = 1 - this._line;
   },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
+  point: function(x2, y2) {
+    x2 = +x2, y2 = +y2;
     switch (this._point) {
       case 0:
         this._point = 1;
@@ -9557,67 +1970,67 @@ BasisOpen2.prototype = {
         break;
       case 2:
         this._point = 3;
-        var x0 = (this._x0 + 4 * this._x1 + x3) / 6, y0 = (this._y0 + 4 * this._y1 + y3) / 6;
+        var x0 = (this._x0 + 4 * this._x1 + x2) / 6, y0 = (this._y0 + 4 * this._y1 + y2) / 6;
         this._line ? this._context.lineTo(x0, y0) : this._context.moveTo(x0, y0);
         break;
       case 3:
         this._point = 4;
       default:
-        point6(this, x3, y3);
+        point2(this, x2, y2);
         break;
     }
-    this._x0 = this._x1, this._x1 = x3;
-    this._y0 = this._y1, this._y1 = y3;
+    this._x0 = this._x1, this._x1 = x2;
+    this._y0 = this._y1, this._y1 = y2;
   }
 };
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/curve/bundle.js
-function Bundle2(context, beta) {
-  this._basis = new Basis2(context);
+function Bundle(context, beta) {
+  this._basis = new Basis(context);
   this._beta = beta;
 }
-Bundle2.prototype = {
+Bundle.prototype = {
   lineStart: function() {
     this._x = [];
     this._y = [];
     this._basis.lineStart();
   },
   lineEnd: function() {
-    var x3 = this._x, y3 = this._y, j = x3.length - 1;
+    var x2 = this._x, y2 = this._y, j = x2.length - 1;
     if (j > 0) {
-      var x0 = x3[0], y0 = y3[0], dx = x3[j] - x0, dy = y3[j] - y0, i = -1, t;
+      var x0 = x2[0], y0 = y2[0], dx = x2[j] - x0, dy = y2[j] - y0, i = -1, t;
       while (++i <= j) {
         t = i / j;
-        this._basis.point(this._beta * x3[i] + (1 - this._beta) * (x0 + t * dx), this._beta * y3[i] + (1 - this._beta) * (y0 + t * dy));
+        this._basis.point(this._beta * x2[i] + (1 - this._beta) * (x0 + t * dx), this._beta * y2[i] + (1 - this._beta) * (y0 + t * dy));
       }
     }
     this._x = this._y = null;
     this._basis.lineEnd();
   },
-  point: function(x3, y3) {
-    this._x.push(+x3);
-    this._y.push(+y3);
+  point: function(x2, y2) {
+    this._x.push(+x2);
+    this._y.push(+y2);
   }
 };
-var bundle_default2 = function custom19(beta) {
+var bundle_default = function custom(beta) {
   function bundle(context) {
-    return beta === 1 ? new Basis2(context) : new Bundle2(context, beta);
+    return beta === 1 ? new Basis(context) : new Bundle(context, beta);
   }
   bundle.beta = function(beta2) {
-    return custom19(+beta2);
+    return custom(+beta2);
   };
   return bundle;
 }(0.85);
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/curve/cardinal.js
-function point7(that, x3, y3) {
-  that._context.bezierCurveTo(that._x1 + that._k * (that._x2 - that._x0), that._y1 + that._k * (that._y2 - that._y0), that._x2 + that._k * (that._x1 - x3), that._y2 + that._k * (that._y1 - y3), that._x2, that._y2);
+function point3(that, x2, y2) {
+  that._context.bezierCurveTo(that._x1 + that._k * (that._x2 - that._x0), that._y1 + that._k * (that._y2 - that._y0), that._x2 + that._k * (that._x1 - x2), that._y2 + that._k * (that._y1 - y2), that._x2, that._y2);
 }
-function Cardinal2(context, tension) {
+function Cardinal(context, tension) {
   this._context = context;
   this._k = (1 - tension) / 6;
 }
-Cardinal2.prototype = {
+Cardinal.prototype = {
   areaStart: function() {
     this._line = 0;
   },
@@ -9634,51 +2047,51 @@ Cardinal2.prototype = {
         this._context.lineTo(this._x2, this._y2);
         break;
       case 3:
-        point7(this, this._x1, this._y1);
+        point3(this, this._x1, this._y1);
         break;
     }
     if (this._line || this._line !== 0 && this._point === 1) this._context.closePath();
     this._line = 1 - this._line;
   },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
+  point: function(x2, y2) {
+    x2 = +x2, y2 = +y2;
     switch (this._point) {
       case 0:
         this._point = 1;
-        this._line ? this._context.lineTo(x3, y3) : this._context.moveTo(x3, y3);
+        this._line ? this._context.lineTo(x2, y2) : this._context.moveTo(x2, y2);
         break;
       case 1:
         this._point = 2;
-        this._x1 = x3, this._y1 = y3;
+        this._x1 = x2, this._y1 = y2;
         break;
       case 2:
         this._point = 3;
       default:
-        point7(this, x3, y3);
+        point3(this, x2, y2);
         break;
     }
-    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x3;
-    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y3;
+    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x2;
+    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y2;
   }
 };
-var cardinal_default2 = function custom20(tension) {
+var cardinal_default = function custom2(tension) {
   function cardinal(context) {
-    return new Cardinal2(context, tension);
+    return new Cardinal(context, tension);
   }
   cardinal.tension = function(tension2) {
-    return custom20(+tension2);
+    return custom2(+tension2);
   };
   return cardinal;
 }(0);
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/curve/cardinalClosed.js
-function CardinalClosed2(context, tension) {
+function CardinalClosed(context, tension) {
   this._context = context;
   this._k = (1 - tension) / 6;
 }
-CardinalClosed2.prototype = {
-  areaStart: noop_default2,
-  areaEnd: noop_default2,
+CardinalClosed.prototype = {
+  areaStart: noop_default,
+  areaEnd: noop_default,
   lineStart: function() {
     this._x0 = this._x1 = this._x2 = this._x3 = this._x4 = this._x5 = this._y0 = this._y1 = this._y2 = this._y3 = this._y4 = this._y5 = NaN;
     this._point = 0;
@@ -9703,45 +2116,45 @@ CardinalClosed2.prototype = {
       }
     }
   },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
+  point: function(x2, y2) {
+    x2 = +x2, y2 = +y2;
     switch (this._point) {
       case 0:
         this._point = 1;
-        this._x3 = x3, this._y3 = y3;
+        this._x3 = x2, this._y3 = y2;
         break;
       case 1:
         this._point = 2;
-        this._context.moveTo(this._x4 = x3, this._y4 = y3);
+        this._context.moveTo(this._x4 = x2, this._y4 = y2);
         break;
       case 2:
         this._point = 3;
-        this._x5 = x3, this._y5 = y3;
+        this._x5 = x2, this._y5 = y2;
         break;
       default:
-        point7(this, x3, y3);
+        point3(this, x2, y2);
         break;
     }
-    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x3;
-    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y3;
+    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x2;
+    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y2;
   }
 };
-var cardinalClosed_default2 = function custom21(tension) {
+var cardinalClosed_default2 = function custom3(tension) {
   function cardinal(context) {
-    return new CardinalClosed2(context, tension);
+    return new CardinalClosed(context, tension);
   }
   cardinal.tension = function(tension2) {
-    return custom21(+tension2);
+    return custom3(+tension2);
   };
   return cardinal;
 }(0);
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/curve/cardinalOpen.js
-function CardinalOpen2(context, tension) {
+function CardinalOpen(context, tension) {
   this._context = context;
   this._k = (1 - tension) / 6;
 }
-CardinalOpen2.prototype = {
+CardinalOpen.prototype = {
   areaStart: function() {
     this._line = 0;
   },
@@ -9756,8 +2169,8 @@ CardinalOpen2.prototype = {
     if (this._line || this._line !== 0 && this._point === 3) this._context.closePath();
     this._line = 1 - this._line;
   },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
+  point: function(x2, y2) {
+    x2 = +x2, y2 = +y2;
     switch (this._point) {
       case 0:
         this._point = 1;
@@ -9772,43 +2185,43 @@ CardinalOpen2.prototype = {
       case 3:
         this._point = 4;
       default:
-        point7(this, x3, y3);
+        point3(this, x2, y2);
         break;
     }
-    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x3;
-    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y3;
+    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x2;
+    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y2;
   }
 };
-var cardinalOpen_default2 = function custom22(tension) {
+var cardinalOpen_default = function custom4(tension) {
   function cardinal(context) {
-    return new CardinalOpen2(context, tension);
+    return new CardinalOpen(context, tension);
   }
   cardinal.tension = function(tension2) {
-    return custom22(+tension2);
+    return custom4(+tension2);
   };
   return cardinal;
 }(0);
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/curve/catmullRom.js
-function point8(that, x3, y3) {
+function point4(that, x2, y2) {
   var x1 = that._x1, y1 = that._y1, x22 = that._x2, y22 = that._y2;
-  if (that._l01_a > epsilon5) {
-    var a3 = 2 * that._l01_2a + 3 * that._l01_a * that._l12_a + that._l12_2a, n = 3 * that._l01_a * (that._l01_a + that._l12_a);
-    x1 = (x1 * a3 - that._x0 * that._l12_2a + that._x2 * that._l01_2a) / n;
-    y1 = (y1 * a3 - that._y0 * that._l12_2a + that._y2 * that._l01_2a) / n;
+  if (that._l01_a > epsilon2) {
+    var a2 = 2 * that._l01_2a + 3 * that._l01_a * that._l12_a + that._l12_2a, n = 3 * that._l01_a * (that._l01_a + that._l12_a);
+    x1 = (x1 * a2 - that._x0 * that._l12_2a + that._x2 * that._l01_2a) / n;
+    y1 = (y1 * a2 - that._y0 * that._l12_2a + that._y2 * that._l01_2a) / n;
   }
-  if (that._l23_a > epsilon5) {
+  if (that._l23_a > epsilon2) {
     var b = 2 * that._l23_2a + 3 * that._l23_a * that._l12_a + that._l12_2a, m = 3 * that._l23_a * (that._l23_a + that._l12_a);
-    x22 = (x22 * b + that._x1 * that._l23_2a - x3 * that._l12_2a) / m;
-    y22 = (y22 * b + that._y1 * that._l23_2a - y3 * that._l12_2a) / m;
+    x22 = (x22 * b + that._x1 * that._l23_2a - x2 * that._l12_2a) / m;
+    y22 = (y22 * b + that._y1 * that._l23_2a - y2 * that._l12_2a) / m;
   }
   that._context.bezierCurveTo(x1, y1, x22, y22, that._x2, that._y2);
 }
-function CatmullRom2(context, alpha) {
+function CatmullRom(context, alpha) {
   this._context = context;
   this._alpha = alpha;
 }
-CatmullRom2.prototype = {
+CatmullRom.prototype = {
   areaStart: function() {
     this._line = 0;
   },
@@ -9831,16 +2244,16 @@ CatmullRom2.prototype = {
     if (this._line || this._line !== 0 && this._point === 1) this._context.closePath();
     this._line = 1 - this._line;
   },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
+  point: function(x2, y2) {
+    x2 = +x2, y2 = +y2;
     if (this._point) {
-      var x23 = this._x2 - x3, y23 = this._y2 - y3;
+      var x23 = this._x2 - x2, y23 = this._y2 - y2;
       this._l23_a = Math.sqrt(this._l23_2a = Math.pow(x23 * x23 + y23 * y23, this._alpha));
     }
     switch (this._point) {
       case 0:
         this._point = 1;
-        this._line ? this._context.lineTo(x3, y3) : this._context.moveTo(x3, y3);
+        this._line ? this._context.lineTo(x2, y2) : this._context.moveTo(x2, y2);
         break;
       case 1:
         this._point = 2;
@@ -9848,33 +2261,33 @@ CatmullRom2.prototype = {
       case 2:
         this._point = 3;
       default:
-        point8(this, x3, y3);
+        point4(this, x2, y2);
         break;
     }
     this._l01_a = this._l12_a, this._l12_a = this._l23_a;
     this._l01_2a = this._l12_2a, this._l12_2a = this._l23_2a;
-    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x3;
-    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y3;
+    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x2;
+    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y2;
   }
 };
-var catmullRom_default2 = function custom23(alpha) {
+var catmullRom_default = function custom5(alpha) {
   function catmullRom(context) {
-    return alpha ? new CatmullRom2(context, alpha) : new Cardinal2(context, 0);
+    return alpha ? new CatmullRom(context, alpha) : new Cardinal(context, 0);
   }
   catmullRom.alpha = function(alpha2) {
-    return custom23(+alpha2);
+    return custom5(+alpha2);
   };
   return catmullRom;
 }(0.5);
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/curve/catmullRomClosed.js
-function CatmullRomClosed2(context, alpha) {
+function CatmullRomClosed(context, alpha) {
   this._context = context;
   this._alpha = alpha;
 }
-CatmullRomClosed2.prototype = {
-  areaStart: noop_default2,
-  areaEnd: noop_default2,
+CatmullRomClosed.prototype = {
+  areaStart: noop_default,
+  areaEnd: noop_default,
   lineStart: function() {
     this._x0 = this._x1 = this._x2 = this._x3 = this._x4 = this._x5 = this._y0 = this._y1 = this._y2 = this._y3 = this._y4 = this._y5 = NaN;
     this._l01_a = this._l12_a = this._l23_a = this._l01_2a = this._l12_2a = this._l23_2a = this._point = 0;
@@ -9899,51 +2312,51 @@ CatmullRomClosed2.prototype = {
       }
     }
   },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
+  point: function(x2, y2) {
+    x2 = +x2, y2 = +y2;
     if (this._point) {
-      var x23 = this._x2 - x3, y23 = this._y2 - y3;
+      var x23 = this._x2 - x2, y23 = this._y2 - y2;
       this._l23_a = Math.sqrt(this._l23_2a = Math.pow(x23 * x23 + y23 * y23, this._alpha));
     }
     switch (this._point) {
       case 0:
         this._point = 1;
-        this._x3 = x3, this._y3 = y3;
+        this._x3 = x2, this._y3 = y2;
         break;
       case 1:
         this._point = 2;
-        this._context.moveTo(this._x4 = x3, this._y4 = y3);
+        this._context.moveTo(this._x4 = x2, this._y4 = y2);
         break;
       case 2:
         this._point = 3;
-        this._x5 = x3, this._y5 = y3;
+        this._x5 = x2, this._y5 = y2;
         break;
       default:
-        point8(this, x3, y3);
+        point4(this, x2, y2);
         break;
     }
     this._l01_a = this._l12_a, this._l12_a = this._l23_a;
     this._l01_2a = this._l12_2a, this._l12_2a = this._l23_2a;
-    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x3;
-    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y3;
+    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x2;
+    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y2;
   }
 };
-var catmullRomClosed_default2 = function custom24(alpha) {
+var catmullRomClosed_default = function custom6(alpha) {
   function catmullRom(context) {
-    return alpha ? new CatmullRomClosed2(context, alpha) : new CardinalClosed2(context, 0);
+    return alpha ? new CatmullRomClosed(context, alpha) : new CardinalClosed(context, 0);
   }
   catmullRom.alpha = function(alpha2) {
-    return custom24(+alpha2);
+    return custom6(+alpha2);
   };
   return catmullRom;
 }(0.5);
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/curve/catmullRomOpen.js
-function CatmullRomOpen2(context, alpha) {
+function CatmullRomOpen(context, alpha) {
   this._context = context;
   this._alpha = alpha;
 }
-CatmullRomOpen2.prototype = {
+CatmullRomOpen.prototype = {
   areaStart: function() {
     this._line = 0;
   },
@@ -9958,10 +2371,10 @@ CatmullRomOpen2.prototype = {
     if (this._line || this._line !== 0 && this._point === 3) this._context.closePath();
     this._line = 1 - this._line;
   },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
+  point: function(x2, y2) {
+    x2 = +x2, y2 = +y2;
     if (this._point) {
-      var x23 = this._x2 - x3, y23 = this._y2 - y3;
+      var x23 = this._x2 - x2, y23 = this._y2 - y2;
       this._l23_a = Math.sqrt(this._l23_2a = Math.pow(x23 * x23 + y23 * y23, this._alpha));
     }
     switch (this._point) {
@@ -9978,65 +2391,65 @@ CatmullRomOpen2.prototype = {
       case 3:
         this._point = 4;
       default:
-        point8(this, x3, y3);
+        point4(this, x2, y2);
         break;
     }
     this._l01_a = this._l12_a, this._l12_a = this._l23_a;
     this._l01_2a = this._l12_2a, this._l12_2a = this._l23_2a;
-    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x3;
-    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y3;
+    this._x0 = this._x1, this._x1 = this._x2, this._x2 = x2;
+    this._y0 = this._y1, this._y1 = this._y2, this._y2 = y2;
   }
 };
-var catmullRomOpen_default2 = function custom25(alpha) {
+var catmullRomOpen_default = function custom7(alpha) {
   function catmullRom(context) {
-    return alpha ? new CatmullRomOpen2(context, alpha) : new CardinalOpen2(context, 0);
+    return alpha ? new CatmullRomOpen(context, alpha) : new CardinalOpen(context, 0);
   }
   catmullRom.alpha = function(alpha2) {
-    return custom25(+alpha2);
+    return custom7(+alpha2);
   };
   return catmullRom;
 }(0.5);
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/curve/linearClosed.js
-function LinearClosed2(context) {
+function LinearClosed(context) {
   this._context = context;
 }
-LinearClosed2.prototype = {
-  areaStart: noop_default2,
-  areaEnd: noop_default2,
+LinearClosed.prototype = {
+  areaStart: noop_default,
+  areaEnd: noop_default,
   lineStart: function() {
     this._point = 0;
   },
   lineEnd: function() {
     if (this._point) this._context.closePath();
   },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
-    if (this._point) this._context.lineTo(x3, y3);
-    else this._point = 1, this._context.moveTo(x3, y3);
+  point: function(x2, y2) {
+    x2 = +x2, y2 = +y2;
+    if (this._point) this._context.lineTo(x2, y2);
+    else this._point = 1, this._context.moveTo(x2, y2);
   }
 };
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/curve/monotone.js
-function sign2(x3) {
-  return x3 < 0 ? -1 : 1;
+function sign(x2) {
+  return x2 < 0 ? -1 : 1;
 }
-function slope32(that, x22, y22) {
-  var h0 = that._x1 - that._x0, h1 = x22 - that._x1, s0 = (that._y1 - that._y0) / (h0 || h1 < 0 && -0), s1 = (y22 - that._y1) / (h1 || h0 < 0 && -0), p = (s0 * h1 + s1 * h0) / (h0 + h1);
-  return (sign2(s0) + sign2(s1)) * Math.min(Math.abs(s0), Math.abs(s1), 0.5 * Math.abs(p)) || 0;
+function slope3(that, x2, y2) {
+  var h0 = that._x1 - that._x0, h1 = x2 - that._x1, s0 = (that._y1 - that._y0) / (h0 || h1 < 0 && -0), s1 = (y2 - that._y1) / (h1 || h0 < 0 && -0), p = (s0 * h1 + s1 * h0) / (h0 + h1);
+  return (sign(s0) + sign(s1)) * Math.min(Math.abs(s0), Math.abs(s1), 0.5 * Math.abs(p)) || 0;
 }
-function slope22(that, t) {
+function slope2(that, t) {
   var h = that._x1 - that._x0;
   return h ? (3 * (that._y1 - that._y0) / h - t) / 2 : t;
 }
-function point9(that, t04, t14) {
+function point5(that, t0, t1) {
   var x0 = that._x0, y0 = that._y0, x1 = that._x1, y1 = that._y1, dx = (x1 - x0) / 3;
-  that._context.bezierCurveTo(x0 + dx, y0 + dx * t04, x1 - dx, y1 - dx * t14, x1, y1);
+  that._context.bezierCurveTo(x0 + dx, y0 + dx * t0, x1 - dx, y1 - dx * t1, x1, y1);
 }
-function MonotoneX2(context) {
+function MonotoneX(context) {
   this._context = context;
 }
-MonotoneX2.prototype = {
+MonotoneX.prototype = {
   areaStart: function() {
     this._line = 0;
   },
@@ -10053,66 +2466,66 @@ MonotoneX2.prototype = {
         this._context.lineTo(this._x1, this._y1);
         break;
       case 3:
-        point9(this, this._t0, slope22(this, this._t0));
+        point5(this, this._t0, slope2(this, this._t0));
         break;
     }
     if (this._line || this._line !== 0 && this._point === 1) this._context.closePath();
     this._line = 1 - this._line;
   },
-  point: function(x3, y3) {
-    var t14 = NaN;
-    x3 = +x3, y3 = +y3;
-    if (x3 === this._x1 && y3 === this._y1) return;
+  point: function(x2, y2) {
+    var t1 = NaN;
+    x2 = +x2, y2 = +y2;
+    if (x2 === this._x1 && y2 === this._y1) return;
     switch (this._point) {
       case 0:
         this._point = 1;
-        this._line ? this._context.lineTo(x3, y3) : this._context.moveTo(x3, y3);
+        this._line ? this._context.lineTo(x2, y2) : this._context.moveTo(x2, y2);
         break;
       case 1:
         this._point = 2;
         break;
       case 2:
         this._point = 3;
-        point9(this, slope22(this, t14 = slope32(this, x3, y3)), t14);
+        point5(this, slope2(this, t1 = slope3(this, x2, y2)), t1);
         break;
       default:
-        point9(this, this._t0, t14 = slope32(this, x3, y3));
+        point5(this, this._t0, t1 = slope3(this, x2, y2));
         break;
     }
-    this._x0 = this._x1, this._x1 = x3;
-    this._y0 = this._y1, this._y1 = y3;
-    this._t0 = t14;
+    this._x0 = this._x1, this._x1 = x2;
+    this._y0 = this._y1, this._y1 = y2;
+    this._t0 = t1;
   }
 };
-function MonotoneY2(context) {
-  this._context = new ReflectContext2(context);
+function MonotoneY(context) {
+  this._context = new ReflectContext(context);
 }
-(MonotoneY2.prototype = Object.create(MonotoneX2.prototype)).point = function(x3, y3) {
-  MonotoneX2.prototype.point.call(this, y3, x3);
+(MonotoneY.prototype = Object.create(MonotoneX.prototype)).point = function(x2, y2) {
+  MonotoneX.prototype.point.call(this, y2, x2);
 };
-function ReflectContext2(context) {
+function ReflectContext(context) {
   this._context = context;
 }
-ReflectContext2.prototype = {
-  moveTo: function(x3, y3) {
-    this._context.moveTo(y3, x3);
+ReflectContext.prototype = {
+  moveTo: function(x2, y2) {
+    this._context.moveTo(y2, x2);
   },
   closePath: function() {
     this._context.closePath();
   },
-  lineTo: function(x3, y3) {
-    this._context.lineTo(y3, x3);
+  lineTo: function(x2, y2) {
+    this._context.lineTo(y2, x2);
   },
-  bezierCurveTo: function(x1, y1, x22, y22, x3, y3) {
-    this._context.bezierCurveTo(y1, x1, y22, x22, y3, x3);
+  bezierCurveTo: function(x1, y1, x2, y2, x3, y3) {
+    this._context.bezierCurveTo(y1, x1, y2, x2, y3, x3);
   }
 };
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/curve/natural.js
-function Natural2(context) {
+function Natural(context) {
   this._context = context;
 }
-Natural2.prototype = {
+Natural.prototype = {
   areaStart: function() {
     this._line = 0;
   },
@@ -10124,15 +2537,15 @@ Natural2.prototype = {
     this._y = [];
   },
   lineEnd: function() {
-    var x3 = this._x, y3 = this._y, n = x3.length;
+    var x2 = this._x, y2 = this._y, n = x2.length;
     if (n) {
-      this._line ? this._context.lineTo(x3[0], y3[0]) : this._context.moveTo(x3[0], y3[0]);
+      this._line ? this._context.lineTo(x2[0], y2[0]) : this._context.moveTo(x2[0], y2[0]);
       if (n === 2) {
-        this._context.lineTo(x3[1], y3[1]);
+        this._context.lineTo(x2[1], y2[1]);
       } else {
-        var px = controlPoints2(x3), py = controlPoints2(y3);
+        var px = controlPoints(x2), py = controlPoints(y2);
         for (var i0 = 0, i1 = 1; i1 < n; ++i0, ++i1) {
-          this._context.bezierCurveTo(px[0][i0], py[0][i0], px[1][i0], py[1][i0], x3[i1], y3[i1]);
+          this._context.bezierCurveTo(px[0][i0], py[0][i0], px[1][i0], py[1][i0], x2[i1], y2[i1]);
         }
       }
     }
@@ -10140,30 +2553,30 @@ Natural2.prototype = {
     this._line = 1 - this._line;
     this._x = this._y = null;
   },
-  point: function(x3, y3) {
-    this._x.push(+x3);
-    this._y.push(+y3);
+  point: function(x2, y2) {
+    this._x.push(+x2);
+    this._y.push(+y2);
   }
 };
-function controlPoints2(x3) {
-  var i, n = x3.length - 1, m, a3 = new Array(n), b = new Array(n), r = new Array(n);
-  a3[0] = 0, b[0] = 2, r[0] = x3[0] + 2 * x3[1];
-  for (i = 1; i < n - 1; ++i) a3[i] = 1, b[i] = 4, r[i] = 4 * x3[i] + 2 * x3[i + 1];
-  a3[n - 1] = 2, b[n - 1] = 7, r[n - 1] = 8 * x3[n - 1] + x3[n];
-  for (i = 1; i < n; ++i) m = a3[i] / b[i - 1], b[i] -= m, r[i] -= m * r[i - 1];
-  a3[n - 1] = r[n - 1] / b[n - 1];
-  for (i = n - 2; i >= 0; --i) a3[i] = (r[i] - a3[i + 1]) / b[i];
-  b[n - 1] = (x3[n] + a3[n - 1]) / 2;
-  for (i = 0; i < n - 1; ++i) b[i] = 2 * x3[i + 1] - a3[i + 1];
-  return [a3, b];
+function controlPoints(x2) {
+  var i, n = x2.length - 1, m, a2 = new Array(n), b = new Array(n), r = new Array(n);
+  a2[0] = 0, b[0] = 2, r[0] = x2[0] + 2 * x2[1];
+  for (i = 1; i < n - 1; ++i) a2[i] = 1, b[i] = 4, r[i] = 4 * x2[i] + 2 * x2[i + 1];
+  a2[n - 1] = 2, b[n - 1] = 7, r[n - 1] = 8 * x2[n - 1] + x2[n];
+  for (i = 1; i < n; ++i) m = a2[i] / b[i - 1], b[i] -= m, r[i] -= m * r[i - 1];
+  a2[n - 1] = r[n - 1] / b[n - 1];
+  for (i = n - 2; i >= 0; --i) a2[i] = (r[i] - a2[i + 1]) / b[i];
+  b[n - 1] = (x2[n] + a2[n - 1]) / 2;
+  for (i = 0; i < n - 1; ++i) b[i] = 2 * x2[i + 1] - a2[i + 1];
+  return [a2, b];
 }
 
 // node_modules/d3-sankey/node_modules/d3-shape/src/curve/step.js
-function Step2(context, t) {
+function Step(context, t) {
   this._context = context;
   this._t = t;
 }
-Step2.prototype = {
+Step.prototype = {
   areaStart: function() {
     this._line = 0;
   },
@@ -10179,28 +2592,28 @@ Step2.prototype = {
     if (this._line || this._line !== 0 && this._point === 1) this._context.closePath();
     if (this._line >= 0) this._t = 1 - this._t, this._line = 1 - this._line;
   },
-  point: function(x3, y3) {
-    x3 = +x3, y3 = +y3;
+  point: function(x2, y2) {
+    x2 = +x2, y2 = +y2;
     switch (this._point) {
       case 0:
         this._point = 1;
-        this._line ? this._context.lineTo(x3, y3) : this._context.moveTo(x3, y3);
+        this._line ? this._context.lineTo(x2, y2) : this._context.moveTo(x2, y2);
         break;
       case 1:
         this._point = 2;
       default: {
         if (this._t <= 0) {
-          this._context.lineTo(this._x, y3);
-          this._context.lineTo(x3, y3);
+          this._context.lineTo(this._x, y2);
+          this._context.lineTo(x2, y2);
         } else {
-          var x1 = this._x * (1 - this._t) + x3 * this._t;
+          var x1 = this._x * (1 - this._t) + x2 * this._t;
           this._context.lineTo(x1, this._y);
-          this._context.lineTo(x1, y3);
+          this._context.lineTo(x1, y2);
         }
         break;
       }
     }
-    this._x = x3, this._y = y3;
+    this._x = x2, this._y = y2;
   }
 };
 
@@ -10212,7 +2625,7 @@ function horizontalTarget(d) {
   return [d.target.x0, d.y1];
 }
 function sankeyLinkHorizontal_default() {
-  return linkHorizontal2().source(horizontalSource).target(horizontalTarget);
+  return linkHorizontal().source(horizontalSource).target(horizontalTarget);
 }
 
 // node_modules/@swimlane/ngx-charts/fesm2020/swimlane-ngx-charts.mjs
@@ -12649,10 +5062,10 @@ function HeatMapCellComponent__svg_defs_1_Template(rf, ctx) {
   }
 }
 var _c34 = ["ngx-charts-heat-map-cell-series", ""];
-var _c35 = (a0, a1, a22) => ({
+var _c35 = (a0, a1, a2) => ({
   series: a0,
   name: a1,
-  value: a22
+  value: a2
 });
 function HeatCellSeriesComponent__svg_g_0_Template(rf, ctx) {
   if (rf & 1) {
@@ -13679,28 +6092,28 @@ function throttle(func, wait, options) {
   let context;
   let args;
   let result;
-  let timeout2 = null;
+  let timeout = null;
   let previous = 0;
   function later() {
     previous = options.leading === false ? 0 : +/* @__PURE__ */ new Date();
-    timeout2 = null;
+    timeout = null;
     result = func.apply(context, args);
   }
   return function() {
-    const now2 = +/* @__PURE__ */ new Date();
+    const now = +/* @__PURE__ */ new Date();
     if (!previous && options.leading === false) {
-      previous = now2;
+      previous = now;
     }
-    const remaining = wait - (now2 - previous);
+    const remaining = wait - (now - previous);
     context = this;
     args = arguments;
     if (remaining <= 0) {
-      clearTimeout(timeout2);
-      timeout2 = null;
-      previous = now2;
+      clearTimeout(timeout);
+      timeout = null;
+      previous = now;
       result = func.apply(context, args);
-    } else if (!timeout2 && options.trailing !== false) {
-      timeout2 = setTimeout(later, remaining);
+    } else if (!timeout && options.trailing !== false) {
+      timeout = setTimeout(later, remaining);
     }
     return result;
   };
@@ -14127,16 +6540,16 @@ var InjectionRegisteryService = class {
     this.defaults = {};
     this.components = /* @__PURE__ */ new Map();
   }
-  getByType(type2 = this.type) {
-    return this.components.get(type2);
+  getByType(type = this.type) {
+    return this.components.get(type);
   }
   create(bindings) {
     return this.createByType(this.type, bindings);
   }
-  createByType(type2, bindings) {
+  createByType(type, bindings) {
     bindings = this.assignDefaults(bindings);
-    const component = this.injectComponent(type2, bindings);
-    this.register(type2, component);
+    const component = this.injectComponent(type, bindings);
+    this.register(type, component);
     return component;
   }
   destroy(instance) {
@@ -14153,8 +6566,8 @@ var InjectionRegisteryService = class {
   destroyAll() {
     this.destroyByType(this.type);
   }
-  destroyByType(type2) {
-    const comps = this.components.get(type2);
+  destroyByType(type) {
+    const comps = this.components.get(type);
     if (comps && comps.length) {
       let i = comps.length - 1;
       while (i >= 0) {
@@ -14162,8 +6575,8 @@ var InjectionRegisteryService = class {
       }
     }
   }
-  injectComponent(type2, bindings) {
-    return this.injectionService.appendComponent(type2, bindings);
+  injectComponent(type, bindings) {
+    return this.injectionService.appendComponent(type, bindings);
   }
   assignDefaults(bindings) {
     const inputs = __spreadValues({}, this.defaults.inputs);
@@ -14181,16 +6594,16 @@ var InjectionRegisteryService = class {
     }
     return bindings;
   }
-  register(type2, component) {
-    if (!this.components.has(type2)) {
-      this.components.set(type2, []);
+  register(type, component) {
+    if (!this.components.has(type)) {
+      this.components.set(type, []);
     }
-    const types = this.components.get(type2);
+    const types = this.components.get(type);
     types.push(component);
   }
 };
-function isViewContainerRef(x3) {
-  return x3.element;
+function isViewContainerRef(x2) {
+  return x2.element;
 }
 var InjectionService = class _InjectionService {
   constructor(applicationRef, componentFactoryResolver, injector) {
@@ -14373,11 +6786,11 @@ var ScaleLegendComponent = class {
    */
   gradientString(colors, splits) {
     splits.push(1);
-    const pairs4 = [];
+    const pairs2 = [];
     colors.reverse().forEach((c, i) => {
-      pairs4.push(`${c} ${Math.round(splits[i] * 100)}%`);
+      pairs2.push(`${c} ${Math.round(splits[i] * 100)}%`);
     });
-    return pairs4.join(", ");
+    return pairs2.join(", ");
   }
 };
 ScaleLegendComponent.ɵfac = function ScaleLegendComponent_Factory(t) {
@@ -14661,7 +7074,7 @@ var LegendComponent = class {
   deactivate(item) {
     this.labelDeactivate.emit(item);
   }
-  trackBy(index4, item) {
+  trackBy(index2, item) {
     return item.label;
   }
 };
@@ -15133,30 +7546,30 @@ var BaseChartComponent = class {
   cloneData(data) {
     const results = [];
     for (const item of data) {
-      const copy3 = {};
+      const copy = {};
       if (item["name"] !== void 0) {
-        copy3["name"] = item["name"];
+        copy["name"] = item["name"];
       }
       if (item["value"] !== void 0) {
-        copy3["value"] = item["value"];
+        copy["value"] = item["value"];
       }
       if (item["series"] !== void 0) {
-        copy3["series"] = [];
+        copy["series"] = [];
         for (const seriesItem of item["series"]) {
           const seriesItemCopy = Object.assign({}, seriesItem);
-          copy3["series"].push(seriesItemCopy);
+          copy["series"].push(seriesItemCopy);
         }
       }
       if (item["extra"] !== void 0) {
-        copy3["extra"] = JSON.parse(JSON.stringify(item["extra"]));
+        copy["extra"] = JSON.parse(JSON.stringify(item["extra"]));
       }
       if (item["source"] !== void 0) {
-        copy3["source"] = item["source"];
+        copy["source"] = item["source"];
       }
       if (item["target"] !== void 0) {
-        copy3["target"] = item["target"];
+        copy["target"] = item["target"];
       }
-      results.push(copy3);
+      results.push(copy);
     }
     return results;
   }
@@ -15349,33 +7762,33 @@ AxisLabelComponent.ɵcmp = ɵɵdefineComponent({
     }]
   });
 })();
-function trimLabel(s3, max7 = 16) {
-  if (typeof s3 !== "string") {
-    if (typeof s3 === "number") {
-      return s3 + "";
+function trimLabel(s2, max4 = 16) {
+  if (typeof s2 !== "string") {
+    if (typeof s2 === "number") {
+      return s2 + "";
     } else {
       return "";
     }
   }
-  s3 = s3.trim();
-  if (s3.length <= max7) {
-    return s3;
+  s2 = s2.trim();
+  if (s2.length <= max4) {
+    return s2;
   } else {
-    return `${s3.slice(0, max7)}...`;
+    return `${s2.slice(0, max4)}...`;
   }
 }
-function reduceTicks(ticks2, maxTicks) {
-  if (ticks2.length > maxTicks) {
+function reduceTicks(ticks, maxTicks) {
+  if (ticks.length > maxTicks) {
     const reduced = [];
-    const modulus = Math.floor(ticks2.length / maxTicks);
-    for (let i = 0; i < ticks2.length; i++) {
+    const modulus = Math.floor(ticks.length / maxTicks);
+    for (let i = 0; i < ticks.length; i++) {
       if (i % modulus === 0) {
-        reduced.push(ticks2[i]);
+        reduced.push(ticks[i]);
       }
     }
-    ticks2 = reduced;
+    ticks = reduced;
   }
-  return ticks2;
+  return ticks;
 }
 function getTickLines(label, maxLength, maxLines) {
   const labelString = (label || "").toString();
@@ -15481,11 +7894,11 @@ var XAxisTicksComponent = class {
     }
     setTimeout(() => this.updateDims());
   }
-  getRotationAngle(ticks2) {
+  getRotationAngle(ticks) {
     let angle = 0;
     this.maxTicksLength = 0;
-    for (let i = 0; i < ticks2.length; i++) {
-      const tick = this.tickFormat(ticks2[i]).toString();
+    for (let i = 0; i < ticks.length; i++) {
+      const tick = this.tickFormat(ticks[i]).toString();
       let tickLength = tick.length;
       if (this.trimTicks) {
         tickLength = this.tickTrim(tick).length;
@@ -15498,7 +7911,7 @@ var XAxisTicksComponent = class {
     const charWidth = 7;
     const wordWidth = len * charWidth;
     let baseWidth = wordWidth;
-    const maxBaseWidth = Math.floor(this.width / ticks2.length);
+    const maxBaseWidth = Math.floor(this.width / ticks.length);
     while (baseWidth > maxBaseWidth && angle > -90) {
       angle -= 30;
       baseWidth = Math.cos(angle * (Math.PI / 180)) * wordWidth;
@@ -15515,18 +7928,18 @@ var XAxisTicksComponent = class {
     return angle;
   }
   getTicks() {
-    let ticks2;
+    let ticks;
     const maxTicks = this.getMaxTicks(20);
     const maxScaleTicks = this.getMaxTicks(100);
     if (this.tickValues) {
-      ticks2 = this.tickValues;
+      ticks = this.tickValues;
     } else if (this.scale.ticks) {
-      ticks2 = this.scale.ticks.apply(this.scale, [maxScaleTicks]);
+      ticks = this.scale.ticks.apply(this.scale, [maxScaleTicks]);
     } else {
-      ticks2 = this.scale.domain();
-      ticks2 = reduceTicks(ticks2, maxTicks);
+      ticks = this.scale.domain();
+      ticks = reduceTicks(ticks, maxTicks);
     }
-    return ticks2;
+    return ticks;
   }
   getMaxTicks(tickWidth) {
     return Math.floor(this.width / tickWidth);
@@ -15911,13 +8324,13 @@ XAxisComponent.ɵcmp = ɵɵdefineComponent({
     }]
   });
 })();
-function roundedRect(x3, y3, w, h, r, [tl, tr, bl, br]) {
+function roundedRect(x2, y2, w, h, r, [tl, tr, bl, br]) {
   let retval = "";
   w = Math.floor(w);
   h = Math.floor(h);
   w = w === 0 ? 1 : w;
   h = h === 0 ? 1 : h;
-  retval = `M${[x3 + r, y3]}`;
+  retval = `M${[x2 + r, y2]}`;
   retval += `h${w - 2 * r}`;
   if (tr) {
     retval += `a${[r, r]} 0 0 1 ${[r, r]}`;
@@ -15992,7 +8405,7 @@ var YAxisTicksComponent = class {
   }
   update() {
     const scale = this.scale;
-    const sign3 = this.orient === Orientation.Top || this.orient === Orientation.Right ? -1 : 1;
+    const sign2 = this.orient === Orientation.Top || this.orient === Orientation.Right ? -1 : 1;
     this.tickSpacing = Math.max(this.innerTickSize, 0) + this.tickPadding;
     this.ticks = this.getTicks();
     if (this.tickFormatting) {
@@ -16030,26 +8443,26 @@ var YAxisTicksComponent = class {
           return "translate(" + this.adjustedScale(tick) + ",0)";
         };
         this.textAnchor = TextAnchor.Middle;
-        this.y2 = this.innerTickSize * sign3;
-        this.y1 = this.tickSpacing * sign3;
-        this.dy = sign3 < 0 ? "0em" : ".71em";
+        this.y2 = this.innerTickSize * sign2;
+        this.y1 = this.tickSpacing * sign2;
+        this.dy = sign2 < 0 ? "0em" : ".71em";
         break;
       case Orientation.Bottom:
         this.transform = function(tick) {
           return "translate(" + this.adjustedScale(tick) + ",0)";
         };
         this.textAnchor = TextAnchor.Middle;
-        this.y2 = this.innerTickSize * sign3;
-        this.y1 = this.tickSpacing * sign3;
-        this.dy = sign3 < 0 ? "0em" : ".71em";
+        this.y2 = this.innerTickSize * sign2;
+        this.y1 = this.tickSpacing * sign2;
+        this.dy = sign2 < 0 ? "0em" : ".71em";
         break;
       case Orientation.Left:
         this.transform = function(tick) {
           return "translate(0," + this.adjustedScale(tick) + ")";
         };
         this.textAnchor = TextAnchor.End;
-        this.x2 = this.innerTickSize * -sign3;
-        this.x1 = this.tickSpacing * -sign3;
+        this.x2 = this.innerTickSize * -sign2;
+        this.x1 = this.tickSpacing * -sign2;
         this.dy = ".32em";
         break;
       case Orientation.Right:
@@ -16057,8 +8470,8 @@ var YAxisTicksComponent = class {
           return "translate(0," + this.adjustedScale(tick) + ")";
         };
         this.textAnchor = TextAnchor.Start;
-        this.x2 = this.innerTickSize * -sign3;
-        this.x1 = this.tickSpacing * -sign3;
+        this.x2 = this.innerTickSize * -sign2;
+        this.x1 = this.tickSpacing * -sign2;
         this.dy = ".32em";
         break;
       default:
@@ -16072,18 +8485,18 @@ var YAxisTicksComponent = class {
     this.referenceAreaPath = roundedRect(0, this.refMax, this.gridLineWidth, this.refMin - this.refMax, 0, [false, false, false, false]);
   }
   getTicks() {
-    let ticks2;
+    let ticks;
     const maxTicks = this.getMaxTicks(20);
     const maxScaleTicks = this.getMaxTicks(50);
     if (this.tickValues) {
-      ticks2 = this.tickValues;
+      ticks = this.tickValues;
     } else if (this.scale.ticks) {
-      ticks2 = this.scale.ticks.apply(this.scale, [maxScaleTicks]);
+      ticks = this.scale.ticks.apply(this.scale, [maxScaleTicks]);
     } else {
-      ticks2 = this.scale.domain();
-      ticks2 = reduceTicks(ticks2, maxTicks);
+      ticks = this.scale.domain();
+      ticks = reduceTicks(ticks, maxTicks);
     }
-    return ticks2;
+    return ticks;
   }
   getMaxTicks(tickHeight) {
     return Math.floor(this.height / tickHeight);
@@ -16863,14 +9276,14 @@ TooltipModule.ɵinj = ɵɵdefineInjector({
   }], null, null);
 })();
 var cache = {};
-function id2() {
-  let newId2 = ("0000" + (Math.random() * Math.pow(36, 4) << 0).toString(36)).slice(-4);
-  newId2 = `a${newId2}`;
-  if (!cache[newId2]) {
-    cache[newId2] = true;
-    return newId2;
+function id() {
+  let newId = ("0000" + (Math.random() * Math.pow(36, 4) << 0).toString(36)).slice(-4);
+  newId = `a${newId}`;
+  if (!cache[newId]) {
+    cache[newId] = true;
+    return newId;
   }
-  return id2();
+  return id();
 }
 var BarOrientation;
 (function(BarOrientation2) {
@@ -17115,7 +9528,7 @@ var CircleSeriesComponent = class {
     this.isSSR = false;
   }
   ngOnInit() {
-    this.gradientId = "grad" + id2().toString();
+    this.gradientId = "grad" + id().toString();
     this.gradientFill = `url(#${this.gradientId})`;
     if (isPlatformServer(this.platformId)) {
       this.isSSR = true;
@@ -17154,15 +9567,15 @@ var CircleSeriesComponent = class {
     const radius = 5;
     const height = this.yScale.range()[0] - cy;
     const opacity = 1;
-    let color2;
+    let color;
     if (this.colors.scaleType === ScaleType.Linear) {
       if (this.type === SeriesType.Standard) {
-        color2 = this.colors.getColor(value2);
+        color = this.colors.getColor(value2);
       } else {
-        color2 = this.colors.getColor(d.d1);
+        color = this.colors.getColor(d.d1);
       }
     } else {
-      color2 = this.colors.getColor(seriesName);
+      color = this.colors.getColor(seriesName);
     }
     const data = Object.assign({}, d, {
       series: seriesName,
@@ -17179,10 +9592,10 @@ var CircleSeriesComponent = class {
       radius,
       height,
       tooltipLabel,
-      color: color2,
+      color,
       opacity,
       seriesName,
-      gradientStops: this.getGradientStops(color2),
+      gradientStops: this.getGradientStops(color),
       min: d.min,
       max: d.max
     };
@@ -17191,30 +9604,30 @@ var CircleSeriesComponent = class {
     tooltipLabel,
     value: value2,
     seriesName,
-    min: min7,
-    max: max7
+    min: min4,
+    max: max4
   }) {
     return `
       <span class="tooltip-label">${escapeLabel(seriesName)} • ${escapeLabel(tooltipLabel)}</span>
-      <span class="tooltip-val">${value2.toLocaleString()}${this.getTooltipMinMaxText(min7, max7)}</span>
+      <span class="tooltip-val">${value2.toLocaleString()}${this.getTooltipMinMaxText(min4, max4)}</span>
     `;
   }
-  getTooltipMinMaxText(min7, max7) {
-    if (min7 !== void 0 || max7 !== void 0) {
+  getTooltipMinMaxText(min4, max4) {
+    if (min4 !== void 0 || max4 !== void 0) {
       let result = " (";
-      if (min7 !== void 0) {
-        if (max7 === void 0) {
+      if (min4 !== void 0) {
+        if (max4 === void 0) {
           result += "≥";
         }
-        result += min7.toLocaleString();
-        if (max7 !== void 0) {
+        result += min4.toLocaleString();
+        if (max4 !== void 0) {
           result += " - ";
         }
-      } else if (max7 !== void 0) {
+      } else if (max4 !== void 0) {
         result += "≤";
       }
-      if (max7 !== void 0) {
-        result += max7.toLocaleString();
+      if (max4 !== void 0) {
+        result += max4.toLocaleString();
       }
       result += ")";
       return result;
@@ -17222,14 +9635,14 @@ var CircleSeriesComponent = class {
       return "";
     }
   }
-  getGradientStops(color2) {
+  getGradientStops(color) {
     return [{
       offset: 0,
-      color: color2,
+      color,
       opacity: 0.2
     }, {
       offset: 100,
-      color: color2,
+      color,
       opacity: 1
     }];
   }
@@ -17491,8 +9904,8 @@ var GridPanelSeriesComponent = class {
       let offset;
       let width;
       let height;
-      let x3;
-      let y3;
+      let x2;
+      let y2;
       let className = ClassEnum.Odd;
       if (this.orient === BarOrientation.Vertical) {
         const position = this.xScale(d.name);
@@ -17503,8 +9916,8 @@ var GridPanelSeriesComponent = class {
         offset = this.xScale.bandwidth() * this.xScale.paddingInner();
         width = this.xScale.bandwidth() + offset;
         height = this.dims.height;
-        x3 = this.xScale(d.name) - offset / 2;
-        y3 = 0;
+        x2 = this.xScale(d.name) - offset / 2;
+        y2 = 0;
       } else if (this.orient === BarOrientation.Horizontal) {
         const position = this.yScale(d.name);
         const positionIndex = Number.parseInt((position / this.yScale.step()).toString(), 10);
@@ -17514,16 +9927,16 @@ var GridPanelSeriesComponent = class {
         offset = this.yScale.bandwidth() * this.yScale.paddingInner();
         width = this.dims.width;
         height = this.yScale.bandwidth() + offset;
-        x3 = 0;
-        y3 = this.yScale(d.name) - offset / 2;
+        x2 = 0;
+        y2 = this.yScale(d.name) - offset / 2;
       }
       return {
         name: d.name,
         class: className,
         height,
         width,
-        x: x3,
-        y: y3
+        x: x2,
+        y: y2
       };
     });
   }
@@ -17723,7 +10136,7 @@ var AreaComponent = class {
     }
   }
   update() {
-    this.gradientId = "grad" + id2().toString();
+    this.gradientId = "grad" + id().toString();
     this.gradientFill = `url(#${this.gradientId})`;
     if (this.gradient || this.stops) {
       this.gradientStops = this.getGradient();
@@ -17738,7 +10151,7 @@ var AreaComponent = class {
     setTimeout(this.updatePathEl.bind(this), 100);
   }
   updatePathEl() {
-    const node = select_default2(this.element).select(".area");
+    const node = select_default(this.element).select(".area");
     if (this.animations) {
       node.transition().duration(750).attr("d", this.path);
     } else {
@@ -17864,7 +10277,7 @@ AreaComponent.ɵcmp = ɵɵdefineComponent({
 function easeOutExpo(t, b, c, d) {
   return c * (-Math.pow(2, -10 * t / d) + 1) * 1024 / 1023 + b;
 }
-function count5(countFrom, countTo, countDecimals, countDuration, callback) {
+function count2(countFrom, countTo, countDecimals, countDuration, callback) {
   const startVal = Number(countFrom);
   const endVal = Number(countTo);
   const countDown = startVal > endVal;
@@ -17966,7 +10379,7 @@ var CountUpDirective = class {
         progress
       });
     };
-    this.animationReq = count5(this.countFrom, this.countTo, this.countDecimals, this.countDuration, callback);
+    this.animationReq = count2(this.countFrom, this.countTo, this.countDecimals, this.countDuration, callback);
   }
 };
 CountUpDirective.ɵfac = function CountUpDirective_Factory(t) {
@@ -18044,13 +10457,13 @@ CountUpDirective.ɵcmp = ɵɵdefineComponent({
     }]
   });
 })();
-var root2;
+var root;
 if (typeof window !== "undefined") {
-  root2 = window;
+  root = window;
 } else if (typeof global !== "undefined") {
-  root2 = global;
+  root = global;
 }
-var MouseEvent = root2.MouseEvent;
+var MouseEvent = root.MouseEvent;
 function createMouseEvent(name, bubbles = false, cancelable = true) {
   if (typeof MouseEvent === "function") {
     return new MouseEvent(name, {
@@ -18077,9 +10490,9 @@ var TooltipArea = class {
   }
   getValues(xVal) {
     const results = [];
-    for (const group4 of this.results) {
-      const item = group4.series.find((d) => d.name.toString() === xVal.toString());
-      let groupName = group4.name;
+    for (const group2 of this.results) {
+      const item = group2.series.find((d) => d.name.toString() === xVal.toString());
+      let groupName = group2.name;
       if (groupName instanceof Date) {
         groupName = groupName.toLocaleDateString();
       }
@@ -18089,15 +10502,15 @@ var TooltipArea = class {
         if (this.showPercentage) {
           val = (item.d1 - item.d0).toFixed(2) + "%";
         }
-        let color2;
+        let color;
         if (this.colors.scaleType === ScaleType.Linear) {
           let v = val;
           if (item.d1) {
             v = item.d1;
           }
-          color2 = this.colors.getColor(v);
+          color = this.colors.getColor(v);
         } else {
-          color2 = this.colors.getColor(group4.name);
+          color = this.colors.getColor(group2.name);
         }
         const data = Object.assign({}, item, {
           value: val,
@@ -18105,7 +10518,7 @@ var TooltipArea = class {
           series: groupName,
           min: item.min,
           max: item.max,
-          color: color2
+          color
         });
         results.push(data);
       }
@@ -18135,12 +10548,12 @@ var TooltipArea = class {
     }
   }
   findClosestPointIndex(xPos) {
-    let minIndex4 = 0;
-    let maxIndex4 = this.xSet.length - 1;
+    let minIndex2 = 0;
+    let maxIndex2 = this.xSet.length - 1;
     let minDiff = Number.MAX_VALUE;
     let closestIndex = 0;
-    while (minIndex4 <= maxIndex4) {
-      const currentIndex = (minIndex4 + maxIndex4) / 2 | 0;
+    while (minIndex2 <= maxIndex2) {
+      const currentIndex = (minIndex2 + maxIndex2) / 2 | 0;
       const currentElement = this.xScale(this.xSet[currentIndex]);
       const curDiff = Math.abs(currentElement - xPos);
       if (curDiff < minDiff) {
@@ -18148,9 +10561,9 @@ var TooltipArea = class {
         closestIndex = currentIndex;
       }
       if (currentElement < xPos) {
-        minIndex4 = currentIndex + 1;
+        minIndex2 = currentIndex + 1;
       } else if (currentElement > xPos) {
-        maxIndex4 = currentIndex - 1;
+        maxIndex2 = currentIndex - 1;
       } else {
         minDiff = 0;
         closestIndex = currentIndex;
@@ -18406,7 +10819,7 @@ var Timeline = class {
       this.updateBrush();
     }
     this.transform = `translate(0 , ${offsetY})`;
-    this.filterId = "filter" + id2().toString();
+    this.filterId = "filter" + id().toString();
     this.filter = `url(#${this.filterId})`;
     this.cd.markForCheck();
   }
@@ -18421,14 +10834,14 @@ var Timeline = class {
     }
     let domain = [];
     if (this.scaleType === ScaleType.Time) {
-      const min7 = Math.min(...values);
-      const max7 = Math.max(...values);
-      domain = [min7, max7];
+      const min4 = Math.min(...values);
+      const max4 = Math.max(...values);
+      domain = [min4, max4];
     } else if (this.scaleType === ScaleType.Linear) {
       values = values.map((v) => Number(v));
-      const min7 = Math.min(...values);
-      const max7 = Math.max(...values);
-      domain = [min7, max7];
+      const min4 = Math.min(...values);
+      const max4 = Math.max(...values);
+      domain = [min4, max4];
     } else {
       domain = values;
     }
@@ -18439,7 +10852,7 @@ var Timeline = class {
     if (this.scaleType === ScaleType.Time) {
       scale = time().range([0, this.dims.width]).domain(this.xDomain);
     } else if (this.scaleType === ScaleType.Linear) {
-      scale = linear3().range([0, this.dims.width]).domain(this.xDomain);
+      scale = linear().range([0, this.dims.width]).domain(this.xDomain);
     } else if (this.scaleType === ScaleType.Ordinal) {
       scale = point().range([0, this.dims.width]).padding(0.1).domain(this.xDomain);
     }
@@ -18450,22 +10863,22 @@ var Timeline = class {
     const height = this.height;
     const width = this.view[0];
     this.brush = brushX().extent([[0, 0], [width, height]]).on("brush end", ({
-      selection: selection2
+      selection
     }) => {
-      const newSelection = selection2 || this.xScale.range();
+      const newSelection = selection || this.xScale.range();
       const newDomain = newSelection.map(this.xScale.invert);
       this.onDomainChange.emit(newDomain);
       this.cd.markForCheck();
     });
-    select_default2(this.element).select(".brush").call(this.brush);
+    select_default(this.element).select(".brush").call(this.brush);
   }
   updateBrush() {
     if (!this.brush) return;
     const height = this.height;
     const width = this.view[0];
     this.brush.extent([[0, 0], [width, height]]);
-    select_default2(this.element).select(".brush").call(this.brush);
-    select_default2(this.element).select(".selection").attr("fill", void 0).attr("stroke", void 0).attr("fill-opacity", void 0);
+    select_default(this.element).select(".brush").call(this.brush);
+    select_default(this.element).select(".selection").attr("fill", void 0).attr("stroke", void 0).attr("fill-opacity", void 0);
     this.cd.markForCheck();
   }
   getDims() {
@@ -18608,7 +11021,7 @@ var AdvancedLegendComponent = class {
     this.update();
   }
   getTotal() {
-    return this.data.map((d) => Number(d.value)).reduce((sum6, d) => sum6 + d, 0);
+    return this.data.map((d) => Number(d.value)).reduce((sum3, d) => sum3 + d, 0);
   }
   update() {
     this.total = this.getTotal();
@@ -18619,14 +11032,14 @@ var AdvancedLegendComponent = class {
     return this.data.map((d) => {
       const label = formatLabel(d.name);
       const value2 = d.value;
-      const color2 = this.colors.getColor(label);
+      const color = this.colors.getColor(label);
       const percentage = this.total > 0 ? value2 / this.total * 100 : 0;
       const formattedLabel = typeof this.labelFormatting === "function" ? this.labelFormatting(label) : label;
       return {
         _value: value2,
         data: d,
         value: value2,
-        color: color2,
+        color,
         label: formattedLabel,
         displayLabel: trimLabel(formattedLabel, 20),
         origialLabel: d.name,
@@ -18634,7 +11047,7 @@ var AdvancedLegendComponent = class {
       };
     });
   }
-  trackBy(index4, item) {
+  trackBy(index2, item) {
     return item.label;
   }
 };
@@ -18942,26 +11355,26 @@ var colorSets = [{
   domain: ["#4e31a5", "#9c25a7", "#3065ab", "#57468b", "#904497", "#46648b", "#32118d", "#a00fb3", "#1052a2", "#6e51bd", "#b63cc3", "#6c97cb", "#8671c1", "#b455be", "#7496c3"]
 }];
 var ColorHelper = class {
-  constructor(scheme, type2, domain, customColors) {
+  constructor(scheme, type, domain, customColors) {
     if (typeof scheme === "string") {
       scheme = colorSets.find((cs) => {
         return cs.name === scheme;
       });
     }
     this.colorDomain = scheme.domain;
-    this.scaleType = type2;
+    this.scaleType = type;
     this.domain = domain;
     this.customColors = customColors;
-    this.scale = this.generateColorScheme(scheme, type2, this.domain);
+    this.scale = this.generateColorScheme(scheme, type, this.domain);
   }
-  generateColorScheme(scheme, type2, domain) {
+  generateColorScheme(scheme, type, domain) {
     if (typeof scheme === "string") {
       scheme = colorSets.find((cs) => {
         return cs.name === scheme;
       });
     }
     let colorScale;
-    switch (type2) {
+    switch (type) {
       case ScaleType.Quantile:
         colorScale = quantile2().range(scheme.domain).domain(domain);
         break;
@@ -18976,7 +11389,7 @@ var ColorHelper = class {
             this.colorDomain = colorDomain;
           }
           const points = range(0, 1, 1 / colorDomain.length);
-          colorScale = linear3().range(colorDomain).domain(points);
+          colorScale = linear().range(colorDomain).domain(points);
         }
         break;
       default:
@@ -18989,7 +11402,7 @@ var ColorHelper = class {
       throw new Error("Value can not be null");
     }
     if (this.scaleType === ScaleType.Linear) {
-      const valueScale = linear3().domain(this.domain).range([0, 1]);
+      const valueScale = linear().domain(this.domain).range([0, 1]);
       return this.scale(valueScale(value2));
     } else {
       if (typeof this.customColors === "function") {
@@ -19009,15 +11422,15 @@ var ColorHelper = class {
       }
     }
   }
-  getLinearGradientStops(value2, start2) {
-    if (start2 === void 0) {
-      start2 = this.domain[0];
+  getLinearGradientStops(value2, start) {
+    if (start === void 0) {
+      start = this.domain[0];
     }
-    const valueScale = linear3().domain(this.domain).range([0, 1]);
+    const valueScale = linear().domain(this.domain).range([0, 1]);
     const colorValueScale = band().domain(this.colorDomain).range([0, 1]);
     const endColor = this.getColor(value2);
-    const startVal = valueScale(start2);
-    const startColor = this.getColor(start2);
+    const startVal = valueScale(start);
+    const startColor = this.getColor(start);
     const endVal = valueScale(value2);
     let i = 1;
     let currentVal = startVal;
@@ -19029,8 +11442,8 @@ var ColorHelper = class {
       opacity: 1
     });
     while (currentVal < endVal && i < this.colorDomain.length) {
-      const color2 = this.colorDomain[i];
-      const offset = colorValueScale(color2);
+      const color = this.colorDomain[i];
+      const offset = colorValueScale(color);
       if (offset <= startVal) {
         i++;
         continue;
@@ -19039,7 +11452,7 @@ var ColorHelper = class {
         break;
       }
       stops.push({
-        color: color2,
+        color,
         offset,
         opacity: 1
       });
@@ -19058,8 +11471,8 @@ var ColorHelper = class {
       stops[1].offset = 100;
     } else {
       if (stops[stops.length - 1].offset !== 100) {
-        for (const s3 of stops) {
-          s3.offset = (s3.offset - startVal) / (endVal - startVal) * 100;
+        for (const s2 of stops) {
+          s2.offset = (s2.offset - startVal) / (endVal - startVal) * 100;
         }
       }
     }
@@ -19095,25 +11508,25 @@ function getXDomainArray(values, xScaleMin, xScaleMax) {
   if (scaleType === ScaleType.Linear) {
     values = values.map((v) => Number(v));
   }
-  let min7;
-  let max7;
+  let min4;
+  let max4;
   if (scaleType === ScaleType.Time || scaleType === ScaleType.Linear) {
     const mappedValues = values.map((v) => Number(v));
-    min7 = xScaleMin ? xScaleMin : Math.min(...mappedValues);
-    max7 = xScaleMax ? xScaleMax : Math.max(...mappedValues);
+    min4 = xScaleMin ? xScaleMin : Math.min(...mappedValues);
+    max4 = xScaleMax ? xScaleMax : Math.max(...mappedValues);
   }
   if (scaleType === ScaleType.Time) {
-    domain = [new Date(min7), new Date(max7)];
-    xSet = [...values].sort((a3, b) => {
-      const aDate = a3.getTime();
+    domain = [new Date(min4), new Date(max4)];
+    xSet = [...values].sort((a2, b) => {
+      const aDate = a2.getTime();
       const bDate = b.getTime();
       if (aDate > bDate) return 1;
       if (bDate > aDate) return -1;
       return 0;
     });
   } else if (scaleType === ScaleType.Linear) {
-    domain = [min7, max7];
-    xSet = [...values].sort((a3, b) => a3 - b);
+    domain = [min4, max4];
+    xSet = [...values].sort((a2, b) => a2 - b);
   } else {
     domain = values;
     xSet = values;
@@ -19125,17 +11538,17 @@ function getXDomainArray(values, xScaleMin, xScaleMax) {
   };
 }
 function sortLinear(data, property, direction = "asc") {
-  return data.sort((a3, b) => {
+  return data.sort((a2, b) => {
     if (direction === "asc") {
-      return a3[property] - b[property];
+      return a2[property] - b[property];
     } else {
-      return b[property] - a3[property];
+      return b[property] - a2[property];
     }
   });
 }
 function sortByDomain(data, property, direction = "asc", domain) {
-  return data.sort((a3, b) => {
-    const aVal = a3[property];
+  return data.sort((a2, b) => {
+    const aVal = a2[property];
     const bVal = b[property];
     const aIdx = domain.indexOf(aVal);
     const bIdx = domain.indexOf(bVal);
@@ -19147,8 +11560,8 @@ function sortByDomain(data, property, direction = "asc", domain) {
   });
 }
 function sortByTime(data, property, direction = "asc") {
-  return data.sort((a3, b) => {
-    const aDate = a3[property].getTime();
+  return data.sort((a2, b) => {
+    const aDate = a2[property].getTime();
     const bDate = b[property].getTime();
     if (direction === "asc") {
       if (aDate > bDate) return 1;
@@ -19207,13 +11620,13 @@ var AreaSeriesComponent = class {
       if (this.stacked || this.normalized) {
         const d0values = this.data.series.map((d) => d.d0);
         const d1values = this.data.series.map((d) => d.d1);
-        const max7 = Math.max(...d1values);
-        const min7 = Math.min(...d0values);
-        this.gradientStops = this.colors.getLinearGradientStops(max7, min7);
+        const max4 = Math.max(...d1values);
+        const min4 = Math.min(...d0values);
+        this.gradientStops = this.colors.getLinearGradientStops(max4, min4);
       } else {
         const values = this.data.series.map((d) => d.value);
-        const max7 = Math.max(...values);
-        this.gradientStops = this.colors.getLinearGradientStops(max7);
+        const max4 = Math.max(...values);
+        this.gradientStops = this.colors.getLinearGradientStops(max4);
       }
     } else {
       this.hasGradient = false;
@@ -19371,7 +11784,7 @@ var AreaChartComponent = class extends BaseChartComponent {
     this.yAxisWidth = 0;
     this.timelineHeight = 50;
     this.timelinePadding = 10;
-    this.trackBy = (index4, item) => {
+    this.trackBy = (index2, item) => {
       return item.name;
     };
   }
@@ -19406,7 +11819,7 @@ var AreaChartComponent = class extends BaseChartComponent {
     this.setColors();
     this.legendOptions = this.getLegendOptions();
     this.transform = `translate(${this.dims.xOffset}, ${this.margin[0]})`;
-    this.clipPathId = "clip" + id2().toString();
+    this.clipPathId = "clip" + id().toString();
     this.clipPath = `url(#${this.clipPathId})`;
   }
   updateTimeline() {
@@ -19425,24 +11838,24 @@ var AreaChartComponent = class extends BaseChartComponent {
     if (this.scaleType === ScaleType.Linear) {
       values = values.map((v) => Number(v));
     }
-    let min7;
-    let max7;
+    let min4;
+    let max4;
     if (this.scaleType === ScaleType.Time || this.scaleType === ScaleType.Linear) {
-      min7 = this.xScaleMin ? this.xScaleMin : Math.min(...values);
-      max7 = this.xScaleMax ? this.xScaleMax : Math.max(...values);
+      min4 = this.xScaleMin ? this.xScaleMin : Math.min(...values);
+      max4 = this.xScaleMax ? this.xScaleMax : Math.max(...values);
     }
     if (this.scaleType === ScaleType.Time) {
-      domain = [new Date(min7), new Date(max7)];
-      this.xSet = [...values].sort((a3, b) => {
-        const aDate = a3.getTime();
+      domain = [new Date(min4), new Date(max4)];
+      this.xSet = [...values].sort((a2, b) => {
+        const aDate = a2.getTime();
         const bDate = b.getTime();
         if (aDate > bDate) return 1;
         if (bDate > aDate) return -1;
         return 0;
       });
     } else if (this.scaleType === ScaleType.Linear) {
-      domain = [min7, max7];
-      this.xSet = [...values].sort((a3, b) => a3 - b);
+      domain = [min4, max4];
+      this.xSet = [...values].sort((a2, b) => a2 - b);
     } else {
       domain = values;
       this.xSet = values;
@@ -19465,9 +11878,9 @@ var AreaChartComponent = class extends BaseChartComponent {
     if (this.baseValue !== "auto") {
       values.push(this.baseValue);
     }
-    const min7 = this.yScaleMin ? this.yScaleMin : Math.min(...values);
-    const max7 = this.yScaleMax ? this.yScaleMax : Math.max(...values);
-    return [min7, max7];
+    const min4 = this.yScaleMin ? this.yScaleMin : Math.min(...values);
+    const max4 = this.yScaleMax ? this.yScaleMax : Math.max(...values);
+    return [min4, max4];
   }
   getSeriesDomain() {
     return this.results.map((d) => d.name);
@@ -19477,7 +11890,7 @@ var AreaChartComponent = class extends BaseChartComponent {
     if (this.scaleType === ScaleType.Time) {
       scale = time();
     } else if (this.scaleType === ScaleType.Linear) {
-      scale = linear3();
+      scale = linear();
     } else if (this.scaleType === ScaleType.Ordinal) {
       scale = point().padding(0.1);
     }
@@ -19485,21 +11898,21 @@ var AreaChartComponent = class extends BaseChartComponent {
     return this.roundDomains ? scale.nice() : scale;
   }
   getYScale(domain, height) {
-    const scale = linear3().range([height, 0]).domain(domain);
+    const scale = linear().range([height, 0]).domain(domain);
     return this.roundDomains ? scale.nice() : scale;
   }
   getScaleType(values) {
-    let date2 = true;
+    let date = true;
     let num = true;
     for (const value2 of values) {
       if (isDate(value2)) {
-        date2 = false;
+        date = false;
       }
       if (isNumber(value2)) {
         num = false;
       }
     }
-    if (date2) {
+    if (date) {
       return ScaleType.Time;
     }
     if (num) {
@@ -20009,7 +12422,7 @@ var AreaChartNormalizedComponent = class extends BaseChartComponent {
     this.seriesType = SeriesType;
     this.timelineHeight = 50;
     this.timelinePadding = 10;
-    this.trackBy = (index4, item) => {
+    this.trackBy = (index2, item) => {
       return item.name;
     };
   }
@@ -20043,29 +12456,29 @@ var AreaChartNormalizedComponent = class extends BaseChartComponent {
       const val = this.xSet[i];
       let d0 = 0;
       let total = 0;
-      for (const group4 of this.results) {
-        const d = group4.series.find((item) => {
-          let a3 = item.name;
+      for (const group2 of this.results) {
+        const d = group2.series.find((item) => {
+          let a2 = item.name;
           let b = val;
           if (this.scaleType === ScaleType.Time) {
-            a3 = a3.valueOf();
+            a2 = a2.valueOf();
             b = b.valueOf();
           }
-          return a3 === b;
+          return a2 === b;
         });
         if (d) {
           total += d.value;
         }
       }
-      for (const group4 of this.results) {
-        let d = group4.series.find((item) => {
-          let a3 = item.name;
+      for (const group2 of this.results) {
+        let d = group2.series.find((item) => {
+          let a2 = item.name;
           let b = val;
           if (this.scaleType === ScaleType.Time) {
-            a3 = a3.valueOf();
+            a2 = a2.valueOf();
             b = b.valueOf();
           }
-          return a3 === b;
+          return a2 === b;
         });
         if (d) {
           d.d0 = d0;
@@ -20078,7 +12491,7 @@ var AreaChartNormalizedComponent = class extends BaseChartComponent {
             d0,
             d1: d0
           };
-          group4.series.push(d);
+          group2.series.push(d);
         }
         if (total > 0) {
           d.d0 = d.d0 * 100 / total;
@@ -20093,7 +12506,7 @@ var AreaChartNormalizedComponent = class extends BaseChartComponent {
     this.setColors();
     this.legendOptions = this.getLegendOptions();
     this.transform = `translate(${this.dims.xOffset} , ${this.margin[0]})`;
-    this.clipPathId = "clip" + id2().toString();
+    this.clipPathId = "clip" + id().toString();
     this.clipPath = `url(#${this.clipPathId})`;
   }
   updateTimeline() {
@@ -20110,11 +12523,11 @@ var AreaChartNormalizedComponent = class extends BaseChartComponent {
     this.scaleType = getScaleType(values);
     let domain = [];
     if (this.scaleType === ScaleType.Time) {
-      const min7 = Math.min(...values);
-      const max7 = Math.max(...values);
-      domain = [new Date(min7), new Date(max7)];
-      this.xSet = [...values].sort((a3, b) => {
-        const aDate = a3.getTime();
+      const min4 = Math.min(...values);
+      const max4 = Math.max(...values);
+      domain = [new Date(min4), new Date(max4)];
+      this.xSet = [...values].sort((a2, b) => {
+        const aDate = a2.getTime();
         const bDate = b.getTime();
         if (aDate > bDate) return 1;
         if (bDate > aDate) return -1;
@@ -20122,10 +12535,10 @@ var AreaChartNormalizedComponent = class extends BaseChartComponent {
       });
     } else if (this.scaleType === ScaleType.Linear) {
       values = values.map((v) => Number(v));
-      const min7 = Math.min(...values);
-      const max7 = Math.max(...values);
-      domain = [min7, max7];
-      this.xSet = [...values].sort((a3, b) => a3 - b);
+      const min4 = Math.min(...values);
+      const max4 = Math.max(...values);
+      domain = [min4, max4];
+      this.xSet = [...values].sort((a2, b) => a2 - b);
     } else {
       domain = values;
       this.xSet = values;
@@ -20140,7 +12553,7 @@ var AreaChartNormalizedComponent = class extends BaseChartComponent {
     if (this.scaleType === ScaleType.Time) {
       scale = time();
     } else if (this.scaleType === ScaleType.Linear) {
-      scale = linear3();
+      scale = linear();
     } else if (this.scaleType === ScaleType.Ordinal) {
       scale = point().padding(0.1);
     }
@@ -20148,7 +12561,7 @@ var AreaChartNormalizedComponent = class extends BaseChartComponent {
     return this.roundDomains ? scale.nice() : scale;
   }
   getYScale(domain, height) {
-    const scale = linear3().range([height, 0]).domain(domain);
+    const scale = linear().range([height, 0]).domain(domain);
     return this.roundDomains ? scale.nice() : scale;
   }
   updateDomain(domain) {
@@ -20662,15 +13075,15 @@ var AreaChartStackedComponent = class extends BaseChartComponent {
     for (let i = 0; i < this.xSet.length; i++) {
       const val = this.xSet[i];
       let d0 = 0;
-      for (const group4 of this.results) {
-        let d = group4.series.find((item) => {
-          let a3 = item.name;
+      for (const group2 of this.results) {
+        let d = group2.series.find((item) => {
+          let a2 = item.name;
           let b = val;
           if (this.scaleType === ScaleType.Time) {
-            a3 = a3.valueOf();
+            a2 = a2.valueOf();
             b = b.valueOf();
           }
-          return a3 === b;
+          return a2 === b;
         });
         if (d) {
           d.d0 = d0;
@@ -20683,7 +13096,7 @@ var AreaChartStackedComponent = class extends BaseChartComponent {
             d0,
             d1: d0
           };
-          group4.series.push(d);
+          group2.series.push(d);
         }
       }
     }
@@ -20691,7 +13104,7 @@ var AreaChartStackedComponent = class extends BaseChartComponent {
     this.setColors();
     this.legendOptions = this.getLegendOptions();
     this.transform = `translate(${this.dims.xOffset} , ${this.margin[0]})`;
-    this.clipPathId = "clip" + id2().toString();
+    this.clipPathId = "clip" + id().toString();
     this.clipPath = `url(#${this.clipPathId})`;
   }
   updateTimeline() {
@@ -20710,24 +13123,24 @@ var AreaChartStackedComponent = class extends BaseChartComponent {
     if (this.scaleType === ScaleType.Linear) {
       values = values.map((v) => Number(v));
     }
-    let min7;
-    let max7;
+    let min4;
+    let max4;
     if (this.scaleType === ScaleType.Time || this.scaleType === ScaleType.Linear) {
-      min7 = this.xScaleMin ? this.xScaleMin : Math.min(...values);
-      max7 = this.xScaleMax ? this.xScaleMax : Math.max(...values);
+      min4 = this.xScaleMin ? this.xScaleMin : Math.min(...values);
+      max4 = this.xScaleMax ? this.xScaleMax : Math.max(...values);
     }
     if (this.scaleType === ScaleType.Time) {
-      domain = [new Date(min7), new Date(max7)];
-      this.xSet = [...values].sort((a3, b) => {
-        const aDate = a3.getTime();
+      domain = [new Date(min4), new Date(max4)];
+      this.xSet = [...values].sort((a2, b) => {
+        const aDate = a2.getTime();
         const bDate = b.getTime();
         if (aDate > bDate) return 1;
         if (bDate > aDate) return -1;
         return 0;
       });
     } else if (this.scaleType === ScaleType.Linear) {
-      domain = [min7, max7];
-      this.xSet = [...values].sort((a3, b) => a3 - b);
+      domain = [min4, max4];
+      this.xSet = [...values].sort((a2, b) => a2 - b);
     } else {
       domain = values;
       this.xSet = values;
@@ -20738,26 +13151,26 @@ var AreaChartStackedComponent = class extends BaseChartComponent {
     const domain = [];
     for (let i = 0; i < this.xSet.length; i++) {
       const val = this.xSet[i];
-      let sum6 = 0;
-      for (const group4 of this.results) {
-        const d = group4.series.find((item) => {
-          let a3 = item.name;
+      let sum3 = 0;
+      for (const group2 of this.results) {
+        const d = group2.series.find((item) => {
+          let a2 = item.name;
           let b = val;
           if (this.scaleType === ScaleType.Time) {
-            a3 = a3.valueOf();
+            a2 = a2.valueOf();
             b = b.valueOf();
           }
-          return a3 === b;
+          return a2 === b;
         });
         if (d) {
-          sum6 += d.value;
+          sum3 += d.value;
         }
       }
-      domain.push(sum6);
+      domain.push(sum3);
     }
-    const min7 = this.yScaleMin ? this.yScaleMin : Math.min(0, ...domain);
-    const max7 = this.yScaleMax ? this.yScaleMax : Math.max(...domain);
-    return [min7, max7];
+    const min4 = this.yScaleMin ? this.yScaleMin : Math.min(0, ...domain);
+    const max4 = this.yScaleMax ? this.yScaleMax : Math.max(...domain);
+    return [min4, max4];
   }
   getSeriesDomain() {
     return this.results.map((d) => d.name);
@@ -20767,7 +13180,7 @@ var AreaChartStackedComponent = class extends BaseChartComponent {
     if (this.scaleType === ScaleType.Time) {
       scale = time();
     } else if (this.scaleType === ScaleType.Linear) {
-      scale = linear3();
+      scale = linear();
     } else if (this.scaleType === ScaleType.Ordinal) {
       scale = point().padding(0.1);
     }
@@ -20775,7 +13188,7 @@ var AreaChartStackedComponent = class extends BaseChartComponent {
     return this.roundDomains ? scale.nice() : scale;
   }
   getYScale(domain, height) {
-    const scale = linear3().range([height, 0]).domain(domain);
+    const scale = linear().range([height, 0]).domain(domain);
     return this.roundDomains ? scale.nice() : scale;
   }
   updateDomain(domain) {
@@ -20797,7 +13210,7 @@ var AreaChartStackedComponent = class extends BaseChartComponent {
     }
     this.select.emit(data);
   }
-  trackBy(index4, item) {
+  trackBy(index2, item) {
     return `${item.name}`;
   }
   setColors() {
@@ -21294,7 +13707,7 @@ var BarComponent = class {
     this.update();
   }
   update() {
-    this.gradientId = "grad" + id2().toString();
+    this.gradientId = "grad" + id().toString();
     this.gradientFill = `url(#${this.gradientId})`;
     if (this.gradient || this.stops) {
       this.gradientStops = this.getGradient();
@@ -21310,12 +13723,12 @@ var BarComponent = class {
     setTimeout(this.update.bind(this), 100);
   }
   updatePathEl() {
-    const node = select_default2(this.element).select(".bar");
-    const path3 = this.getPath();
+    const node = select_default(this.element).select(".bar");
+    const path2 = this.getPath();
     if (this.animations) {
-      node.transition().duration(500).attr("d", path3);
+      node.transition().duration(500).attr("d", path2);
     } else {
-      node.attr("d", path3);
+      node.attr("d", path2);
     }
   }
   getGradient() {
@@ -21337,39 +13750,39 @@ var BarComponent = class {
       return this.getPath();
     }
     let radius = this.getRadius();
-    let path3;
+    let path2;
     if (this.roundEdges) {
       if (this.orientation === BarOrientation.Vertical) {
         radius = Math.min(this.height, radius);
-        path3 = roundedRect(this.x, this.y + this.height, this.width, 1, 0, this.edges);
+        path2 = roundedRect(this.x, this.y + this.height, this.width, 1, 0, this.edges);
       } else if (this.orientation === BarOrientation.Horizontal) {
         radius = Math.min(this.width, radius);
-        path3 = roundedRect(this.x, this.y, 1, this.height, 0, this.edges);
+        path2 = roundedRect(this.x, this.y, 1, this.height, 0, this.edges);
       }
     } else {
       if (this.orientation === BarOrientation.Vertical) {
-        path3 = roundedRect(this.x, this.y + this.height, this.width, 1, 0, this.edges);
+        path2 = roundedRect(this.x, this.y + this.height, this.width, 1, 0, this.edges);
       } else if (this.orientation === BarOrientation.Horizontal) {
-        path3 = roundedRect(this.x, this.y, 1, this.height, 0, this.edges);
+        path2 = roundedRect(this.x, this.y, 1, this.height, 0, this.edges);
       }
     }
-    return path3;
+    return path2;
   }
   getPath() {
     let radius = this.getRadius();
-    let path3;
+    let path2;
     if (this.roundEdges) {
       if (this.orientation === BarOrientation.Vertical) {
         radius = Math.min(this.height, radius);
-        path3 = roundedRect(this.x, this.y, this.width, this.height, radius, this.edges);
+        path2 = roundedRect(this.x, this.y, this.width, this.height, radius, this.edges);
       } else if (this.orientation === BarOrientation.Horizontal) {
         radius = Math.min(this.width, radius);
-        path3 = roundedRect(this.x, this.y, this.width, this.height, radius, this.edges);
+        path2 = roundedRect(this.x, this.y, this.width, this.height, radius, this.edges);
       }
     } else {
-      path3 = roundedRect(this.x, this.y, this.width, this.height, radius, this.edges);
+      path2 = roundedRect(this.x, this.y, this.width, this.height, radius, this.edges);
     }
-    return path3;
+    return path2;
   }
   getRadius() {
     let radius = 0;
@@ -21750,7 +14163,7 @@ var SeriesHorizontal = class {
     d0Type = D0Types.positive;
     let total;
     if (this.type === BarChartType.Normalized) {
-      total = this.series.map((d) => d.value).reduce((sum6, d) => sum6 + d, 0);
+      total = this.series.map((d) => d.value).reduce((sum3, d) => sum3 + d, 0);
     }
     const xScaleMin = Math.max(this.xScale.domain()[0], 0);
     this.bars = this.series.map((d) => {
@@ -21833,8 +14246,8 @@ var SeriesHorizontal = class {
       this.barsForDataLabels = [];
       const section = {};
       section.series = this.seriesName;
-      const totalPositive = this.series.map((d) => d.value).reduce((sum6, d) => d > 0 ? sum6 + d : sum6, 0);
-      const totalNegative = this.series.map((d) => d.value).reduce((sum6, d) => d < 0 ? sum6 + d : sum6, 0);
+      const totalPositive = this.series.map((d) => d.value).reduce((sum3, d) => d > 0 ? sum3 + d : sum3, 0);
+      const totalNegative = this.series.map((d) => d.value).reduce((sum3, d) => d < 0 ? sum3 + d : sum3, 0);
       section.total = totalPositive + totalNegative;
       section.x = 0;
       section.y = 0;
@@ -21875,11 +14288,11 @@ var SeriesHorizontal = class {
     }
     return dataItem.name;
   }
-  trackBy(index4, bar) {
+  trackBy(index2, bar) {
     return bar.label;
   }
-  trackDataLabelBy(index4, barLabel) {
-    return index4 + "#" + barLabel.series + "#" + barLabel.total;
+  trackDataLabelBy(index2, barLabel) {
+    return index2 + "#" + barLabel.series + "#" + barLabel.total;
   }
   click(data) {
     this.select.emit(data);
@@ -22123,7 +14536,7 @@ var BarHorizontalComponent = class extends BaseChartComponent {
   }
   getXScale() {
     this.xDomain = this.getXDomain();
-    const scale = linear3().range([0, this.dims.width]).domain(this.xDomain);
+    const scale = linear().range([0, this.dims.width]).domain(this.xDomain);
     return this.roundDomains ? scale.nice() : scale;
   }
   getYScale() {
@@ -22133,9 +14546,9 @@ var BarHorizontalComponent = class extends BaseChartComponent {
   }
   getXDomain() {
     const values = this.results.map((d) => d.value);
-    const min7 = this.xScaleMin ? Math.min(this.xScaleMin, ...values) : Math.min(0, ...values);
-    const max7 = this.xScaleMax ? Math.max(this.xScaleMax, ...values) : Math.max(0, ...values);
-    return [min7, max7];
+    const min4 = this.xScaleMin ? Math.min(this.xScaleMin, ...values) : Math.min(0, ...values);
+    const max4 = this.xScaleMax ? Math.max(this.xScaleMax, ...values) : Math.max(0, ...values);
+    return [min4, max4];
   }
   getYDomain() {
     return this.results.map((d) => d.label);
@@ -22550,7 +14963,7 @@ var BarHorizontal2DComponent = class extends BaseChartComponent {
     };
     this.isSSR = false;
     this.barOrientation = BarOrientation;
-    this.trackBy = (index4, item) => {
+    this.trackBy = (index2, item) => {
       return item.name;
     };
   }
@@ -22603,22 +15016,22 @@ var BarHorizontal2DComponent = class extends BaseChartComponent {
     return band().rangeRound([0, height]).paddingInner(spacing).domain(this.innerDomain);
   }
   getValueScale() {
-    const scale = linear3().range([0, this.dims.width]).domain(this.valueDomain);
+    const scale = linear().range([0, this.dims.width]).domain(this.valueDomain);
     return this.roundDomains ? scale.nice() : scale;
   }
   getGroupDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      if (!domain.includes(group4.label)) {
-        domain.push(group4.label);
+    for (const group2 of this.results) {
+      if (!domain.includes(group2.label)) {
+        domain.push(group2.label);
       }
     }
     return domain;
   }
   getInnerDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      for (const d of group4.series) {
+    for (const group2 of this.results) {
+      for (const d of group2.series) {
         if (!domain.includes(d.label)) {
           domain.push(d.label);
         }
@@ -22628,23 +15041,23 @@ var BarHorizontal2DComponent = class extends BaseChartComponent {
   }
   getValueDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      for (const d of group4.series) {
+    for (const group2 of this.results) {
+      for (const d of group2.series) {
         if (!domain.includes(d.value)) {
           domain.push(d.value);
         }
       }
     }
-    const min7 = Math.min(0, ...domain);
-    const max7 = this.xScaleMax ? Math.max(this.xScaleMax, ...domain) : Math.max(0, ...domain);
-    return [min7, max7];
+    const min4 = Math.min(0, ...domain);
+    const max4 = this.xScaleMax ? Math.max(this.xScaleMax, ...domain) : Math.max(0, ...domain);
+    return [min4, max4];
   }
-  groupTransform(group4) {
-    return `translate(0, ${this.groupScale(group4.label)})`;
+  groupTransform(group2) {
+    return `translate(0, ${this.groupScale(group2.label)})`;
   }
-  onClick(data, group4) {
-    if (group4) {
-      data.series = group4.name;
+  onClick(data, group2) {
+    if (group2) {
+      data.series = group2.name;
     }
     this.select.emit(data);
   }
@@ -22697,10 +15110,10 @@ var BarHorizontal2DComponent = class extends BaseChartComponent {
       setTimeout(() => this.update());
     }
   }
-  onActivate(event, group4, fromLegend = false) {
+  onActivate(event, group2, fromLegend = false) {
     const item = Object.assign({}, event);
-    if (group4) {
-      item.series = group4.name;
+    if (group2) {
+      item.series = group2.name;
     }
     const items = this.results.map((g) => g.series).flat().filter((i) => {
       if (fromLegend) {
@@ -22715,10 +15128,10 @@ var BarHorizontal2DComponent = class extends BaseChartComponent {
       entries: this.activeEntries
     });
   }
-  onDeactivate(event, group4, fromLegend = false) {
+  onDeactivate(event, group2, fromLegend = false) {
     const item = Object.assign({}, event);
-    if (group4) {
-      item.series = group4.name;
+    if (group2) {
+      item.series = group2.name;
     }
     this.activeEntries = this.activeEntries.filter((i) => {
       if (fromLegend) {
@@ -23104,7 +15517,7 @@ var BarHorizontalNormalizedComponent = class extends BaseChartComponent {
     this.yAxisWidth = 0;
     this.barChartType = BarChartType;
     this.isSSR = false;
-    this.trackBy = (index4, item) => {
+    this.trackBy = (index2, item) => {
       return item.name;
     };
   }
@@ -23140,17 +15553,17 @@ var BarHorizontalNormalizedComponent = class extends BaseChartComponent {
   }
   getGroupDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      if (!domain.includes(group4.label)) {
-        domain.push(group4.label);
+    for (const group2 of this.results) {
+      if (!domain.includes(group2.label)) {
+        domain.push(group2.label);
       }
     }
     return domain;
   }
   getInnerDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      for (const d of group4.series) {
+    for (const group2 of this.results) {
+      for (const d of group2.series) {
         if (!domain.includes(d.label)) {
           domain.push(d.label);
         }
@@ -23163,15 +15576,15 @@ var BarHorizontalNormalizedComponent = class extends BaseChartComponent {
     return band().rangeRound([0, this.dims.height]).paddingInner(spacing).domain(this.groupDomain);
   }
   getXScale() {
-    const scale = linear3().range([0, this.dims.width]).domain(this.valueDomain);
+    const scale = linear().range([0, this.dims.width]).domain(this.valueDomain);
     return this.roundDomains ? scale.nice() : scale;
   }
-  groupTransform(group4) {
-    return `translate(0, ${this.yScale(group4.name)})`;
+  groupTransform(group2) {
+    return `translate(0, ${this.yScale(group2.name)})`;
   }
-  onClick(data, group4) {
-    if (group4) {
-      data.series = group4.name;
+  onClick(data, group2) {
+    if (group2) {
+      data.series = group2.name;
     }
     this.select.emit(data);
   }
@@ -23214,10 +15627,10 @@ var BarHorizontalNormalizedComponent = class extends BaseChartComponent {
     this.xAxisHeight = height;
     this.update();
   }
-  onActivate(event, group4, fromLegend = false) {
+  onActivate(event, group2, fromLegend = false) {
     const item = Object.assign({}, event);
-    if (group4) {
-      item.series = group4.name;
+    if (group2) {
+      item.series = group2.name;
     }
     const items = this.results.map((g) => g.series).flat().filter((i) => {
       if (fromLegend) {
@@ -23232,10 +15645,10 @@ var BarHorizontalNormalizedComponent = class extends BaseChartComponent {
       entries: this.activeEntries
     });
   }
-  onDeactivate(event, group4, fromLegend = false) {
+  onDeactivate(event, group2, fromLegend = false) {
     const item = Object.assign({}, event);
-    if (group4) {
-      item.series = group4.name;
+    if (group2) {
+      item.series = group2.name;
     }
     this.activeEntries = this.activeEntries.filter((i) => {
       if (fromLegend) {
@@ -23583,7 +15996,7 @@ var BarHorizontalStackedComponent = class extends BaseChartComponent {
     };
     this.barChartType = BarChartType;
     this.isSSR = false;
-    this.trackBy = (index4, item) => {
+    this.trackBy = (index2, item) => {
       return item.name;
     };
   }
@@ -23627,17 +16040,17 @@ var BarHorizontalStackedComponent = class extends BaseChartComponent {
   }
   getGroupDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      if (!domain.includes(group4.label)) {
-        domain.push(group4.label);
+    for (const group2 of this.results) {
+      if (!domain.includes(group2.label)) {
+        domain.push(group2.label);
       }
     }
     return domain;
   }
   getInnerDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      for (const d of group4.series) {
+    for (const group2 of this.results) {
+      for (const d of group2.series) {
         if (!domain.includes(d.label)) {
           domain.push(d.label);
         }
@@ -23649,10 +16062,10 @@ var BarHorizontalStackedComponent = class extends BaseChartComponent {
     const domain = [];
     let smallest = 0;
     let biggest = 0;
-    for (const group4 of this.results) {
+    for (const group2 of this.results) {
       let smallestSum = 0;
       let biggestSum = 0;
-      for (const d of group4.series) {
+      for (const d of group2.series) {
         if (d.value < 0) {
           smallestSum += d.value;
         } else {
@@ -23666,24 +16079,24 @@ var BarHorizontalStackedComponent = class extends BaseChartComponent {
     }
     domain.push(smallest);
     domain.push(biggest);
-    const min7 = Math.min(0, ...domain);
-    const max7 = this.xScaleMax ? Math.max(this.xScaleMax, ...domain) : Math.max(...domain);
-    return [min7, max7];
+    const min4 = Math.min(0, ...domain);
+    const max4 = this.xScaleMax ? Math.max(this.xScaleMax, ...domain) : Math.max(...domain);
+    return [min4, max4];
   }
   getYScale() {
     const spacing = this.groupDomain.length / (this.dims.height / this.barPadding + 1);
     return band().rangeRound([0, this.dims.height]).paddingInner(spacing).domain(this.groupDomain);
   }
   getXScale() {
-    const scale = linear3().range([0, this.dims.width]).domain(this.valueDomain);
+    const scale = linear().range([0, this.dims.width]).domain(this.valueDomain);
     return this.roundDomains ? scale.nice() : scale;
   }
-  groupTransform(group4) {
-    return `translate(0, ${this.yScale(group4.name)})`;
+  groupTransform(group2) {
+    return `translate(0, ${this.yScale(group2.name)})`;
   }
-  onClick(data, group4) {
-    if (group4) {
-      data.series = group4.name;
+  onClick(data, group2) {
+    if (group2) {
+      data.series = group2.name;
     }
     this.select.emit(data);
   }
@@ -23736,10 +16149,10 @@ var BarHorizontalStackedComponent = class extends BaseChartComponent {
       setTimeout(() => this.update());
     }
   }
-  onActivate(event, group4, fromLegend = false) {
+  onActivate(event, group2, fromLegend = false) {
     const item = Object.assign({}, event);
-    if (group4) {
-      item.series = group4.name;
+    if (group2) {
+      item.series = group2.name;
     }
     const items = this.results.map((g) => g.series).flat().filter((i) => {
       if (fromLegend) {
@@ -23754,10 +16167,10 @@ var BarHorizontalStackedComponent = class extends BaseChartComponent {
       entries: this.activeEntries
     });
   }
-  onDeactivate(event, group4, fromLegend = false) {
+  onDeactivate(event, group2, fromLegend = false) {
     const item = Object.assign({}, event);
-    if (group4) {
-      item.series = group4.name;
+    if (group2) {
+      item.series = group2.name;
     }
     this.activeEntries = this.activeEntries.filter((i) => {
       if (fromLegend) {
@@ -24136,9 +16549,9 @@ var SeriesVerticalComponent = class {
     let d0Type = D0Types.positive;
     let total;
     if (this.type === BarChartType.Normalized) {
-      total = this.series.map((d) => d.value).reduce((sum6, d) => sum6 + d, 0);
+      total = this.series.map((d) => d.value).reduce((sum3, d) => sum3 + d, 0);
     }
-    this.bars = this.series.map((d, index4) => {
+    this.bars = this.series.map((d, index2) => {
       let value2 = d.value;
       const label = this.getLabel(d);
       const formattedLabel = formatLabel(label);
@@ -24221,8 +16634,8 @@ var SeriesVerticalComponent = class {
       this.barsForDataLabels = [];
       const section = {};
       section.series = this.seriesName;
-      const totalPositive = this.series.map((d) => d.value).reduce((sum6, d) => d > 0 ? sum6 + d : sum6, 0);
-      const totalNegative = this.series.map((d) => d.value).reduce((sum6, d) => d < 0 ? sum6 + d : sum6, 0);
+      const totalPositive = this.series.map((d) => d.value).reduce((sum3, d) => d > 0 ? sum3 + d : sum3, 0);
+      const totalNegative = this.series.map((d) => d.value).reduce((sum3, d) => d < 0 ? sum3 + d : sum3, 0);
       section.total = totalPositive + totalNegative;
       section.x = 0;
       section.y = 0;
@@ -24266,11 +16679,11 @@ var SeriesVerticalComponent = class {
     }
     return dataItem.name;
   }
-  trackBy(index4, bar) {
+  trackBy(index2, bar) {
     return bar.label;
   }
-  trackDataLabelBy(index4, barLabel) {
-    return index4 + "#" + barLabel.series + "#" + barLabel.total;
+  trackDataLabelBy(index2, barLabel) {
+    return index2 + "#" + barLabel.series + "#" + barLabel.total;
   }
 };
 SeriesVerticalComponent.ɵfac = function SeriesVerticalComponent_Factory(t) {
@@ -24562,7 +16975,7 @@ var BarVerticalComponent = class extends BaseChartComponent {
   }
   getYScale() {
     this.yDomain = this.getYDomain();
-    const scale = linear3().range([this.dims.height, 0]).domain(this.yDomain);
+    const scale = linear().range([this.dims.height, 0]).domain(this.yDomain);
     return this.roundDomains ? scale.nice() : scale;
   }
   getXDomain() {
@@ -24570,15 +16983,15 @@ var BarVerticalComponent = class extends BaseChartComponent {
   }
   getYDomain() {
     const values = this.results.map((d) => d.value);
-    let min7 = this.yScaleMin ? Math.min(this.yScaleMin, ...values) : Math.min(0, ...values);
+    let min4 = this.yScaleMin ? Math.min(this.yScaleMin, ...values) : Math.min(0, ...values);
     if (this.yAxisTicks && !this.yAxisTicks.some(isNaN)) {
-      min7 = Math.min(min7, ...this.yAxisTicks);
+      min4 = Math.min(min4, ...this.yAxisTicks);
     }
-    let max7 = this.yScaleMax ? Math.max(this.yScaleMax, ...values) : Math.max(0, ...values);
+    let max4 = this.yScaleMax ? Math.max(this.yScaleMax, ...values) : Math.max(0, ...values);
     if (this.yAxisTicks && !this.yAxisTicks.some(isNaN)) {
-      max7 = Math.max(max7, ...this.yAxisTicks);
+      max4 = Math.max(max4, ...this.yAxisTicks);
     }
-    return [min7, max7];
+    return [min4, max4];
   }
   onClick(data) {
     this.select.emit(data);
@@ -24992,7 +17405,7 @@ var BarVertical2DComponent = class extends BaseChartComponent {
     };
     this.isSSR = false;
     this.barOrientation = BarOrientation;
-    this.trackBy = (index4, item) => {
+    this.trackBy = (index2, item) => {
       return item.name;
     };
   }
@@ -25058,22 +17471,22 @@ var BarVertical2DComponent = class extends BaseChartComponent {
     return band().rangeRound([0, width]).paddingInner(spacing).domain(this.innerDomain);
   }
   getValueScale() {
-    const scale = linear3().range([this.dims.height, 0]).domain(this.valueDomain);
+    const scale = linear().range([this.dims.height, 0]).domain(this.valueDomain);
     return this.roundDomains ? scale.nice() : scale;
   }
   getGroupDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      if (!domain.includes(group4.label)) {
-        domain.push(group4.label);
+    for (const group2 of this.results) {
+      if (!domain.includes(group2.label)) {
+        domain.push(group2.label);
       }
     }
     return domain;
   }
   getInnerDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      for (const d of group4.series) {
+    for (const group2 of this.results) {
+      for (const d of group2.series) {
         if (!domain.includes(d.label)) {
           domain.push(d.label);
         }
@@ -25083,23 +17496,23 @@ var BarVertical2DComponent = class extends BaseChartComponent {
   }
   getValueDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      for (const d of group4.series) {
+    for (const group2 of this.results) {
+      for (const d of group2.series) {
         if (!domain.includes(d.value)) {
           domain.push(d.value);
         }
       }
     }
-    const min7 = Math.min(0, ...domain);
-    const max7 = this.yScaleMax ? Math.max(this.yScaleMax, ...domain) : Math.max(0, ...domain);
-    return [min7, max7];
+    const min4 = Math.min(0, ...domain);
+    const max4 = this.yScaleMax ? Math.max(this.yScaleMax, ...domain) : Math.max(0, ...domain);
+    return [min4, max4];
   }
-  groupTransform(group4) {
-    return `translate(${this.groupScale(group4.label)}, 0)`;
+  groupTransform(group2) {
+    return `translate(${this.groupScale(group2.label)}, 0)`;
   }
-  onClick(data, group4) {
-    if (group4) {
-      data.series = group4.name;
+  onClick(data, group2) {
+    if (group2) {
+      data.series = group2.name;
     }
     this.select.emit(data);
   }
@@ -25142,10 +17555,10 @@ var BarVertical2DComponent = class extends BaseChartComponent {
     this.xAxisHeight = height;
     this.update();
   }
-  onActivate(event, group4, fromLegend = false) {
+  onActivate(event, group2, fromLegend = false) {
     const item = Object.assign({}, event);
-    if (group4) {
-      item.series = group4.name;
+    if (group2) {
+      item.series = group2.name;
     }
     const items = this.results.map((g) => g.series).flat().filter((i) => {
       if (fromLegend) {
@@ -25160,10 +17573,10 @@ var BarVertical2DComponent = class extends BaseChartComponent {
       entries: this.activeEntries
     });
   }
-  onDeactivate(event, group4, fromLegend = false) {
+  onDeactivate(event, group2, fromLegend = false) {
     const item = Object.assign({}, event);
-    if (group4) {
-      item.series = group4.name;
+    if (group2) {
+      item.series = group2.name;
     }
     this.activeEntries = this.activeEntries.filter((i) => {
       if (fromLegend) {
@@ -25548,7 +17961,7 @@ var BarVerticalNormalizedComponent = class extends BaseChartComponent {
     this.yAxisWidth = 0;
     this.isSSR = false;
     this.barChartType = BarChartType;
-    this.trackBy = (index4, item) => {
+    this.trackBy = (index2, item) => {
       return item.name;
     };
   }
@@ -25584,17 +17997,17 @@ var BarVerticalNormalizedComponent = class extends BaseChartComponent {
   }
   getGroupDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      if (!domain.includes(group4.label)) {
-        domain.push(group4.label);
+    for (const group2 of this.results) {
+      if (!domain.includes(group2.label)) {
+        domain.push(group2.label);
       }
     }
     return domain;
   }
   getInnerDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      for (const d of group4.series) {
+    for (const group2 of this.results) {
+      for (const d of group2.series) {
         if (!domain.includes(d.label)) {
           domain.push(d.label);
         }
@@ -25607,15 +18020,15 @@ var BarVerticalNormalizedComponent = class extends BaseChartComponent {
     return band().rangeRound([0, this.dims.width]).paddingInner(spacing).domain(this.groupDomain);
   }
   getYScale() {
-    const scale = linear3().range([this.dims.height, 0]).domain(this.valueDomain);
+    const scale = linear().range([this.dims.height, 0]).domain(this.valueDomain);
     return this.roundDomains ? scale.nice() : scale;
   }
-  groupTransform(group4) {
-    return `translate(${this.xScale(group4.name)}, 0)`;
+  groupTransform(group2) {
+    return `translate(${this.xScale(group2.name)}, 0)`;
   }
-  onClick(data, group4) {
-    if (group4) {
-      data.series = group4.name;
+  onClick(data, group2) {
+    if (group2) {
+      data.series = group2.name;
     }
     this.select.emit(data);
   }
@@ -25658,10 +18071,10 @@ var BarVerticalNormalizedComponent = class extends BaseChartComponent {
     this.xAxisHeight = height;
     this.update();
   }
-  onActivate(event, group4, fromLegend = false) {
+  onActivate(event, group2, fromLegend = false) {
     const item = Object.assign({}, event);
-    if (group4) {
-      item.series = group4.name;
+    if (group2) {
+      item.series = group2.name;
     }
     const items = this.results.map((g) => g.series).flat().filter((i) => {
       if (fromLegend) {
@@ -25676,10 +18089,10 @@ var BarVerticalNormalizedComponent = class extends BaseChartComponent {
       entries: this.activeEntries
     });
   }
-  onDeactivate(event, group4, fromLegend = false) {
+  onDeactivate(event, group2, fromLegend = false) {
     const item = Object.assign({}, event);
-    if (group4) {
-      item.series = group4.name;
+    if (group2) {
+      item.series = group2.name;
     }
     this.activeEntries = this.activeEntries.filter((i) => {
       if (fromLegend) {
@@ -26027,7 +18440,7 @@ var BarVerticalStackedComponent = class extends BaseChartComponent {
     };
     this.isSSR = false;
     this.barChartType = BarChartType;
-    this.trackBy = (index4, item) => {
+    this.trackBy = (index2, item) => {
       return item.name;
     };
   }
@@ -26074,17 +18487,17 @@ var BarVerticalStackedComponent = class extends BaseChartComponent {
   }
   getGroupDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      if (!domain.includes(group4.label)) {
-        domain.push(group4.label);
+    for (const group2 of this.results) {
+      if (!domain.includes(group2.label)) {
+        domain.push(group2.label);
       }
     }
     return domain;
   }
   getInnerDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      for (const d of group4.series) {
+    for (const group2 of this.results) {
+      for (const d of group2.series) {
         if (!domain.includes(d.label)) {
           domain.push(d.label);
         }
@@ -26096,10 +18509,10 @@ var BarVerticalStackedComponent = class extends BaseChartComponent {
     const domain = [];
     let smallest = 0;
     let biggest = 0;
-    for (const group4 of this.results) {
+    for (const group2 of this.results) {
       let smallestSum = 0;
       let biggestSum = 0;
-      for (const d of group4.series) {
+      for (const d of group2.series) {
         if (d.value < 0) {
           smallestSum += d.value;
         } else {
@@ -26113,16 +18526,16 @@ var BarVerticalStackedComponent = class extends BaseChartComponent {
     }
     domain.push(smallest);
     domain.push(biggest);
-    const min7 = Math.min(0, ...domain);
-    const max7 = this.yScaleMax ? Math.max(this.yScaleMax, ...domain) : Math.max(...domain);
-    return [min7, max7];
+    const min4 = Math.min(0, ...domain);
+    const max4 = this.yScaleMax ? Math.max(this.yScaleMax, ...domain) : Math.max(...domain);
+    return [min4, max4];
   }
   getXScale() {
     const spacing = this.groupDomain.length / (this.dims.width / this.barPadding + 1);
     return band().rangeRound([0, this.dims.width]).paddingInner(spacing).domain(this.groupDomain);
   }
   getYScale() {
-    const scale = linear3().range([this.dims.height, 0]).domain(this.valueDomain);
+    const scale = linear().range([this.dims.height, 0]).domain(this.valueDomain);
     return this.roundDomains ? scale.nice() : scale;
   }
   onDataLabelMaxHeightChanged(event, groupIndex) {
@@ -26135,12 +18548,12 @@ var BarVerticalStackedComponent = class extends BaseChartComponent {
       setTimeout(() => this.update());
     }
   }
-  groupTransform(group4) {
-    return `translate(${this.xScale(group4.name) || 0}, 0)`;
+  groupTransform(group2) {
+    return `translate(${this.xScale(group2.name) || 0}, 0)`;
   }
-  onClick(data, group4) {
-    if (group4) {
-      data.series = group4.name;
+  onClick(data, group2) {
+    if (group2) {
+      data.series = group2.name;
     }
     this.select.emit(data);
   }
@@ -26183,10 +18596,10 @@ var BarVerticalStackedComponent = class extends BaseChartComponent {
     this.xAxisHeight = height;
     this.update();
   }
-  onActivate(event, group4, fromLegend = false) {
+  onActivate(event, group2, fromLegend = false) {
     const item = Object.assign({}, event);
-    if (group4) {
-      item.series = group4.name;
+    if (group2) {
+      item.series = group2.name;
     }
     const items = this.results.map((g) => g.series).flat().filter((i) => {
       if (fromLegend) {
@@ -26201,10 +18614,10 @@ var BarVerticalStackedComponent = class extends BaseChartComponent {
       entries: this.activeEntries
     });
   }
-  onDeactivate(event, group4, fromLegend = false) {
+  onDeactivate(event, group2, fromLegend = false) {
     const item = Object.assign({}, event);
-    if (group4) {
-      item.series = group4.name;
+    if (group2) {
+      item.series = group2.name;
     }
     this.activeEntries = this.activeEntries.filter((i) => {
       if (fromLegend) {
@@ -26601,7 +19014,7 @@ var BoxComponent = class {
     this.boxStrokeWidth = Math.max(this.strokeWidth, 1);
     this.whiskerStrokeWidth = Math.max(this.strokeWidth / 2, 1);
     this.medianLineWidth = 1.5 * this.strokeWidth;
-    this.gradientId = "grad" + id2().toString();
+    this.gradientId = "grad" + id().toString();
     this.gradientFill = `url(#${this.gradientId})`;
     if (this.gradient) {
       this.gradientStops = this.getGradient();
@@ -26612,7 +19025,7 @@ var BoxComponent = class {
     this.updateLineEl();
     this.updatePathEl();
     this.checkToHideBar();
-    this.maskLineId = "mask" + id2().toString();
+    this.maskLineId = "mask" + id().toString();
     this.maskLine = `url(#${this.maskLineId})`;
     if (this.cd) {
       this.cd.markForCheck();
@@ -26624,23 +19037,23 @@ var BoxComponent = class {
     setTimeout(this.update.bind(this), 100);
   }
   updatePathEl() {
-    const nodeBar = select_default2(this.nativeElm).selectAll(".bar");
-    const path3 = this.getPath();
+    const nodeBar = select_default(this.nativeElm).selectAll(".bar");
+    const path2 = this.getPath();
     if (this.animations) {
-      nodeBar.attr("d", this.oldPath).transition().ease(sinInOut).duration(500).attrTween("d", this.pathTween(path3, 4));
+      nodeBar.attr("d", this.oldPath).transition().ease(sinInOut).duration(500).attrTween("d", this.pathTween(path2, 4));
     } else {
-      nodeBar.attr("d", path3);
+      nodeBar.attr("d", path2);
     }
-    this.oldPath = path3;
+    this.oldPath = path2;
   }
   updateLineEl() {
-    const lineEl = select_default2(this.nativeElm).selectAll(".bar-line");
+    const lineEl = select_default(this.nativeElm).selectAll(".bar-line");
     const lineCoordinates = this.lineCoordinates;
     const oldLineCoordinates = this.oldLineCoordinates;
     if (this.animations) {
-      lineEl.attr("x1", (_, index4) => oldLineCoordinates[index4].v1.x).attr("y1", (_, index4) => oldLineCoordinates[index4].v1.y).attr("x2", (_, index4) => oldLineCoordinates[index4].v2.x).attr("y2", (_, index4) => oldLineCoordinates[index4].v2.y).transition().ease(sinInOut).duration(500).attr("x1", (_, index4) => lineCoordinates[index4].v1.x).attr("y1", (_, index4) => lineCoordinates[index4].v1.y).attr("x2", (_, index4) => lineCoordinates[index4].v2.x).attr("y2", (_, index4) => lineCoordinates[index4].v2.y);
+      lineEl.attr("x1", (_, index2) => oldLineCoordinates[index2].v1.x).attr("y1", (_, index2) => oldLineCoordinates[index2].v1.y).attr("x2", (_, index2) => oldLineCoordinates[index2].v2.x).attr("y2", (_, index2) => oldLineCoordinates[index2].v2.y).transition().ease(sinInOut).duration(500).attr("x1", (_, index2) => lineCoordinates[index2].v1.x).attr("y1", (_, index2) => lineCoordinates[index2].v1.y).attr("x2", (_, index2) => lineCoordinates[index2].v2.x).attr("y2", (_, index2) => lineCoordinates[index2].v2.y);
     } else {
-      lineEl.attr("x1", (_, index4) => lineCoordinates[index4].v1.x).attr("y1", (_, index4) => lineCoordinates[index4].v1.y).attr("x2", (_, index4) => lineCoordinates[index4].v2.x).attr("y2", (_, index4) => lineCoordinates[index4].v2.y);
+      lineEl.attr("x1", (_, index2) => lineCoordinates[index2].v1.x).attr("y1", (_, index2) => lineCoordinates[index2].v1.y).attr("x2", (_, index2) => lineCoordinates[index2].v2.x).attr("y2", (_, index2) => lineCoordinates[index2].v2.y);
     }
     this.oldLineCoordinates = [...lineCoordinates];
   }
@@ -26650,8 +19063,8 @@ var BoxComponent = class {
    * @param index The index of the element within the selection
    * @param node The node element (Line).
    */
-  lineTween(attr, d, index4, node) {
-    const nodeLineEl = node[index4];
+  lineTween(attr, d, index2, node) {
+    const nodeLineEl = node[index2];
     return nodeLineEl[attr].baseVal.value;
   }
   // TODO: Refactor into another .ts file if https://github.com/swimlane/ngx-charts/pull/1179 gets merged.
@@ -26686,16 +19099,16 @@ var BoxComponent = class {
     }
     const radius = this.roundEdges ? 1 : 0;
     const {
-      x: x3,
-      y: y3
+      x: x2,
+      y: y2
     } = this.lineCoordinates[2].v1;
-    return roundedRect(x3 - this.width, y3 - 1, this.width, 2, radius, this.edges);
+    return roundedRect(x2 - this.width, y2 - 1, this.width, 2, radius, this.edges);
   }
   getPath() {
     const radius = this.getRadius();
-    let path3 = "";
-    path3 = roundedRect(this.x, this.y, this.width, this.height, Math.min(this.height, radius), this.edges);
-    return path3;
+    let path2 = "";
+    path2 = roundedRect(this.x, this.y, this.width, this.height, Math.min(this.height, radius), this.edges);
+    return path2;
   }
   getStartingLineCoordinates() {
     if (!this.animations) {
@@ -26975,8 +19388,8 @@ var BoxSeriesComponent = class {
     const seriesName = this.series.name;
     this.counts = this.series.series;
     const mappedCounts = this.counts.map((serie) => Number(serie.value));
-    this.whiskers = [min2(mappedCounts), max2(mappedCounts)];
-    const groupCounts = this.counts.map((item) => item.value).sort((a3, b) => Number(a3) - Number(b));
+    this.whiskers = [min(mappedCounts), max(mappedCounts)];
+    const groupCounts = this.counts.map((item) => item.value).sort((a2, b) => Number(a2) - Number(b));
     this.quartiles = this.getBoxQuantiles(groupCounts);
     this.lineCoordinates = this.getLinesCoordinates(seriesName.toString(), this.whiskers, this.quartiles, width);
     const value2 = this.quartiles[1];
@@ -27025,7 +19438,7 @@ var BoxSeriesComponent = class {
     const whiskerLineWidth = Math.max(barWidth / 3, 1);
     const whiskerZero = this.yScale(whiskers[0]);
     const whiskerOne = this.yScale(whiskers[1]);
-    const median2 = this.yScale(quartiles[1]);
+    const median = this.yScale(quartiles[1]);
     const topLine = {
       v1: {
         x: offsetX + whiskerLineWidth / 2,
@@ -27039,11 +19452,11 @@ var BoxSeriesComponent = class {
     const medianLine = {
       v1: {
         x: offsetX + medianLineWidth / 2,
-        y: median2
+        y: median
       },
       v2: {
         x: offsetX - medianLineWidth / 2,
-        y: median2
+        y: median
       }
     };
     const bottomLine = {
@@ -27263,7 +19676,7 @@ var BoxChartComponent = class extends BaseChartComponent {
     this.xAxisHeight = 0;
     this.yAxisWidth = 0;
   }
-  trackBy(index4, item) {
+  trackBy(index2, item) {
     return item.name;
   }
   update() {
@@ -27307,7 +19720,7 @@ var BoxChartComponent = class extends BaseChartComponent {
     return scale;
   }
   getYScale(domain, height) {
-    const scale = linear3().domain(domain).range([height, 0]);
+    const scale = linear().domain(domain).range([height, 0]);
     return this.roundDomains ? scale.nice() : scale;
   }
   getUniqueBoxChartXDomainValues(results) {
@@ -27320,20 +19733,20 @@ var BoxChartComponent = class extends BaseChartComponent {
   getXDomain() {
     let domain = [];
     const values = this.getUniqueBoxChartXDomainValues(this.results);
-    let min7;
-    let max7;
+    let min4;
+    let max4;
     if (typeof values[0] === "string") {
       domain = values.map((val) => val.toString());
     } else if (typeof values[0] === "number") {
       const mappedValues = values.map((v) => Number(v));
-      min7 = Math.min(...mappedValues);
-      max7 = Math.max(...mappedValues);
-      domain = [min7, max7];
+      min4 = Math.min(...mappedValues);
+      max4 = Math.max(...mappedValues);
+      domain = [min4, max4];
     } else {
       const mappedValues = values.map((v) => Number(new Date(v)));
-      min7 = Math.min(...mappedValues);
-      max7 = Math.max(...mappedValues);
-      domain = [new Date(min7), new Date(max7)];
+      min4 = Math.min(...mappedValues);
+      max4 = Math.max(...mappedValues);
+      domain = [new Date(min4), new Date(max4)];
     }
     return domain;
   }
@@ -27348,9 +19761,9 @@ var BoxChartComponent = class extends BaseChartComponent {
     }
     const values = [...domain];
     const mappedValues = values.map((v) => Number(v));
-    const min7 = Math.min(...mappedValues);
-    const max7 = Math.max(...mappedValues);
-    return [min7, max7];
+    const min4 = Math.min(...mappedValues);
+    const max4 = Math.max(...mappedValues);
+    return [min4, max4];
   }
   getSeriesDomain() {
     return this.results.map((d) => `${d.name}`);
@@ -27655,9 +20068,9 @@ function getDomain(values, scaleType, autoScale, minVal, maxVal) {
     }
   }
   if (scaleType === ScaleType.Time || scaleType === ScaleType.Linear) {
-    const min7 = minVal || minVal === 0 ? minVal : Math.min(...values);
-    const max7 = maxVal ? maxVal : Math.max(...values);
-    domain = [min7, max7];
+    const min4 = minVal || minVal === 0 ? minVal : Math.min(...values);
+    const max4 = maxVal ? maxVal : Math.max(...values);
+    domain = [min4, max4];
   } else {
     domain = values;
   }
@@ -27668,7 +20081,7 @@ function getScale(domain, range2, scaleType, roundDomains) {
     case ScaleType.Time:
       return time().range(range2).domain(domain);
     case ScaleType.Linear: {
-      const scale = linear3().range(range2).domain(domain);
+      const scale = linear().range(range2).domain(domain);
       if (roundDomains) {
         return scale.nice();
       }
@@ -27706,14 +20119,14 @@ var BubbleSeriesComponent = class {
     const seriesName = this.data.name;
     return this.data.series.map((d, i) => {
       if (typeof d.y !== "undefined" && typeof d.x !== "undefined") {
-        const y3 = d.y;
-        const x3 = d.x;
+        const y2 = d.y;
+        const x2 = d.x;
         const r = d.r;
         const radius = this.rScale(r || 1);
         const tooltipLabel = formatLabel(d.name);
-        const cx = this.xScaleType === ScaleType.Linear ? this.xScale(Number(x3)) : this.xScale(x3);
-        const cy = this.yScaleType === ScaleType.Linear ? this.yScale(Number(y3)) : this.yScale(y3);
-        const color2 = this.colors.scaleType === ScaleType.Linear ? this.colors.getColor(r) : this.colors.getColor(seriesName);
+        const cx = this.xScaleType === ScaleType.Linear ? this.xScale(Number(x2)) : this.xScale(x2);
+        const cy = this.yScaleType === ScaleType.Linear ? this.yScale(Number(y2)) : this.yScale(y2);
+        const color = this.colors.scaleType === ScaleType.Linear ? this.colors.getColor(r) : this.colors.getColor(seriesName);
         const isActive = !this.activeEntries.length ? true : this.isActive({
           name: seriesName
         });
@@ -27727,17 +20140,17 @@ var BubbleSeriesComponent = class {
         });
         return {
           data,
-          x: x3,
-          y: y3,
+          x: x2,
+          y: y2,
           r,
           classNames: [`circle-data-${i}`],
-          value: y3,
-          label: x3,
+          value: y2,
+          label: x2,
           cx,
           cy,
           radius,
           tooltipLabel,
-          color: color2,
+          color,
           opacity,
           seriesName,
           isActive,
@@ -27753,15 +20166,15 @@ var BubbleSeriesComponent = class {
     const radiusValue = hasRadius ? formatLabel(circle.r) : "";
     const xAxisLabel = this.xAxisLabel && this.xAxisLabel !== "" ? `${this.xAxisLabel}:` : "";
     const yAxisLabel = this.yAxisLabel && this.yAxisLabel !== "" ? `${this.yAxisLabel}:` : "";
-    const x3 = formatLabel(circle.x);
-    const y3 = formatLabel(circle.y);
+    const x2 = formatLabel(circle.x);
+    const y2 = formatLabel(circle.y);
     const name = hasSeriesName && hasTooltipLabel ? `${circle.seriesName} • ${circle.tooltipLabel}` : circle.seriesName + circle.tooltipLabel;
     const tooltipTitle = hasSeriesName || hasTooltipLabel ? `<span class="tooltip-label">${escapeLabel(name)}</span>` : "";
     return `
       ${tooltipTitle}
       <span class="tooltip-label">
-        <label>${escapeLabel(xAxisLabel)}</label> ${escapeLabel(x3)}<br />
-        <label>${escapeLabel(yAxisLabel)}</label> ${escapeLabel(y3)}
+        <label>${escapeLabel(xAxisLabel)}</label> ${escapeLabel(x2)}<br />
+        <label>${escapeLabel(yAxisLabel)}</label> ${escapeLabel(y2)}
       </span>
       <span class="tooltip-val">
         ${escapeLabel(radiusValue)}
@@ -27798,7 +20211,7 @@ var BubbleSeriesComponent = class {
       name: this.data.name
     });
   }
-  trackBy(index4, circle) {
+  trackBy(index2, circle) {
     return `${circle.data.series} ${circle.data.name}`;
   }
 };
@@ -28049,7 +20462,7 @@ var BubbleChartComponent = class extends BaseChartComponent {
     this.bubblePadding = this.getBubblePadding();
     this.setScales();
     this.legendOptions = this.getLegendOptions();
-    this.clipPathId = "clip" + id2().toString();
+    this.clipPathId = "clip" + id().toString();
     this.clipPath = `url(#${this.clipPathId})`;
   }
   hideCircles() {
@@ -28066,8 +20479,8 @@ var BubbleChartComponent = class extends BaseChartComponent {
     let xMin = 0;
     let yMax = this.dims.height;
     let xMax = this.dims.width;
-    for (const s3 of this.data) {
-      for (const d of s3.series) {
+    for (const s2 of this.data) {
+      for (const d of s2.series) {
         const r = this.rScale(d.r);
         const cx = this.xScaleType === ScaleType.Linear ? this.xScale(Number(d.x)) : this.xScale(d.x);
         const cy = this.yScaleType === ScaleType.Linear ? this.yScale(Number(d.y)) : this.yScale(d.y);
@@ -28100,7 +20513,7 @@ var BubbleChartComponent = class extends BaseChartComponent {
     return getScale(domain, [this.bubblePadding[3], width], this.xScaleType, this.roundDomains);
   }
   getRScale(domain, range2) {
-    const scale = linear3().range(range2).domain(domain);
+    const scale = linear().range(range2).domain(domain);
     return this.roundDomains ? scale.nice() : scale;
   }
   getLegendOptions() {
@@ -28146,16 +20559,16 @@ var BubbleChartComponent = class extends BaseChartComponent {
     return getDomain(values, this.yScaleType, this.autoScale, this.yScaleMin, this.yScaleMax);
   }
   getRDomain() {
-    let min7 = Infinity;
-    let max7 = -Infinity;
+    let min4 = Infinity;
+    let max4 = -Infinity;
     for (const results of this.results) {
       for (const d of results.series) {
         const value2 = Number(d.r) || 1;
-        min7 = Math.min(min7, value2);
-        max7 = Math.max(max7, value2);
+        min4 = Math.min(min4, value2);
+        max4 = Math.max(max4, value2);
       }
     }
-    return [min7, max7];
+    return [min4, max4];
   }
   updateYAxisWidth({
     width
@@ -28203,7 +20616,7 @@ var BubbleChartComponent = class extends BaseChartComponent {
     }
     this.activeEntries = [];
   }
-  trackBy(index4, item) {
+  trackBy(index2, item) {
     return `${item.name}`;
   }
 };
@@ -28594,7 +21007,7 @@ var HeatMapCellComponent = class {
   ngOnChanges(changes) {
     this.transform = `translate(${this.x} , ${this.y})`;
     this.startOpacity = 0.3;
-    this.gradientId = "grad" + id2().toString();
+    this.gradientId = "grad" + id().toString();
     this.gradientUrl = `url(#${this.gradientId})`;
     this.gradientStops = this.getGradientStops();
     if (this.animations) {
@@ -28613,12 +21026,12 @@ var HeatMapCellComponent = class {
     }];
   }
   loadAnimation() {
-    const node = select_default2(this.element).select(".cell");
+    const node = select_default(this.element).select(".cell");
     node.attr("opacity", 0);
     this.animateToCurrentForm();
   }
   animateToCurrentForm() {
-    const node = select_default2(this.element).select(".cell");
+    const node = select_default(this.element).select(".cell");
     node.transition().duration(750).attr("opacity", 1);
   }
   onClick() {
@@ -28817,7 +21230,7 @@ var HeatCellSeriesComponent = class {
       <span class="tooltip-val">${data.toLocaleString()}</span>
     `;
   }
-  trackBy(index4, item) {
+  trackBy(index2, item) {
     return item.label;
   }
   onClick(data) {
@@ -28976,15 +21389,15 @@ var HeatMapComponent = class extends BaseChartComponent {
       legendPosition: this.legendPosition
     });
     if (this.scaleType === ScaleType.Linear) {
-      let min7 = this.min;
-      let max7 = this.max;
+      let min4 = this.min;
+      let max4 = this.max;
       if (!this.min) {
-        min7 = Math.min(0, ...this.valueDomain);
+        min4 = Math.min(0, ...this.valueDomain);
       }
       if (!this.max) {
-        max7 = Math.max(...this.valueDomain);
+        max4 = Math.max(...this.valueDomain);
       }
-      this.valueDomain = [min7, max7];
+      this.valueDomain = [min4, max4];
     }
     this.xScale = this.getXScale();
     this.yScale = this.getYScale();
@@ -28995,17 +21408,17 @@ var HeatMapComponent = class extends BaseChartComponent {
   }
   getXDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      if (!domain.includes(group4.name)) {
-        domain.push(group4.name);
+    for (const group2 of this.results) {
+      if (!domain.includes(group2.name)) {
+        domain.push(group2.name);
       }
     }
     return domain;
   }
   getYDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      for (const d of group4.series) {
+    for (const group2 of this.results) {
+      for (const d of group2.series) {
         if (!domain.includes(d.name)) {
           domain.push(d.name);
         }
@@ -29015,8 +21428,8 @@ var HeatMapComponent = class extends BaseChartComponent {
   }
   getValueDomain() {
     const domain = [];
-    for (const group4 of this.results) {
-      for (const d of group4.series) {
+    for (const group2 of this.results) {
+      for (const d of group2.series) {
         if (!domain.includes(d.value)) {
           domain.push(d.value);
         }
@@ -29034,15 +21447,15 @@ var HeatMapComponent = class extends BaseChartComponent {
    *
    * @memberOf HeatMapComponent
    */
-  getDimension(value2, index4 = 0, N, L) {
+  getDimension(value2, index2 = 0, N, L) {
     if (typeof value2 === "string") {
       value2 = value2.replace("[", "").replace("]", "").replace("px", "").replace("'", "");
       if (value2.includes(",")) {
         value2 = value2.split(",");
       }
     }
-    if (Array.isArray(value2) && typeof index4 === "number") {
-      return this.getDimension(value2[index4], null, N, L);
+    if (Array.isArray(value2) && typeof index2 === "number") {
+      return this.getDimension(value2[index2], null, N, L);
     }
     if (typeof value2 === "string" && value2.includes("%")) {
       return +value2.replace("%", "") / 100;
@@ -29100,10 +21513,10 @@ var HeatMapComponent = class extends BaseChartComponent {
     this.xAxisHeight = height;
     this.update();
   }
-  onActivate(event, group4, fromLegend = false) {
+  onActivate(event, group2, fromLegend = false) {
     const item = Object.assign({}, event);
-    if (group4) {
-      item.series = group4.name;
+    if (group2) {
+      item.series = group2.name;
     }
     const items = this.results.map((g) => g.series).flat().filter((i) => {
       if (fromLegend) {
@@ -29118,10 +21531,10 @@ var HeatMapComponent = class extends BaseChartComponent {
       entries: this.activeEntries
     });
   }
-  onDeactivate(event, group4, fromLegend = false) {
+  onDeactivate(event, group2, fromLegend = false) {
     const item = Object.assign({}, event);
-    if (group4) {
-      item.series = group4.name;
+    if (group2) {
+      item.series = group2.name;
     }
     this.activeEntries = this.activeEntries.filter((i) => {
       if (fromLegend) {
@@ -29440,7 +21853,7 @@ var LineComponent = class {
     }
   }
   updatePathEl() {
-    const node = select_default2(this.element.nativeElement).select(".line");
+    const node = select_default(this.element.nativeElement).select(".line");
     if (this.animations) {
       node.transition().duration(750).attr("d", this.path);
     } else {
@@ -29566,10 +21979,10 @@ var LineSeriesComponent = class {
     if (this.hasGradient) {
       this.stroke = this.gradientUrl;
       const values = this.data.series.map((d) => d.value);
-      const max7 = Math.max(...values);
-      const min7 = Math.min(...values);
-      if (max7 === min7) {
-        this.stroke = this.colors.getColor(max7);
+      const max4 = Math.max(...values);
+      const min4 = Math.min(...values);
+      if (max4 === min4) {
+        this.stroke = this.colors.getColor(max4);
       }
     } else {
       this.stroke = this.colors.getColor(this.data.name);
@@ -29623,13 +22036,13 @@ var LineSeriesComponent = class {
   updateGradients() {
     if (this.colors.scaleType === ScaleType.Linear) {
       this.hasGradient = true;
-      this.gradientId = "grad" + id2().toString();
+      this.gradientId = "grad" + id().toString();
       this.gradientUrl = `url(#${this.gradientId})`;
       const values = this.data.series.map((d) => d.value);
-      const max7 = Math.max(...values);
-      const min7 = Math.min(...values);
-      this.gradientStops = this.colors.getLinearGradientStops(max7, min7);
-      this.areaGradientStops = this.colors.getLinearGradientStops(max7);
+      const max4 = Math.max(...values);
+      const min4 = Math.min(...values);
+      this.gradientStops = this.colors.getLinearGradientStops(max4, min4);
+      this.areaGradientStops = this.colors.getLinearGradientStops(max4);
     } else {
       this.hasGradient = false;
       this.gradientStops = void 0;
@@ -29853,7 +22266,7 @@ var LineChartComponent = class extends BaseChartComponent {
     this.setColors();
     this.legendOptions = this.getLegendOptions();
     this.transform = `translate(${this.dims.xOffset} , ${this.margin[0]})`;
-    this.clipPathId = "clip" + id2().toString();
+    this.clipPathId = "clip" + id().toString();
     this.clipPath = `url(#${this.clipPathId})`;
   }
   updateTimeline() {
@@ -29872,24 +22285,24 @@ var LineChartComponent = class extends BaseChartComponent {
     if (this.scaleType === ScaleType.Linear) {
       values = values.map((v) => Number(v));
     }
-    let min7;
-    let max7;
+    let min4;
+    let max4;
     if (this.scaleType === ScaleType.Time || this.scaleType === ScaleType.Linear) {
-      min7 = this.xScaleMin ? this.xScaleMin : Math.min(...values);
-      max7 = this.xScaleMax ? this.xScaleMax : Math.max(...values);
+      min4 = this.xScaleMin ? this.xScaleMin : Math.min(...values);
+      max4 = this.xScaleMax ? this.xScaleMax : Math.max(...values);
     }
     if (this.scaleType === ScaleType.Time) {
-      domain = [new Date(min7), new Date(max7)];
-      this.xSet = [...values].sort((a3, b) => {
-        const aDate = a3.getTime();
+      domain = [new Date(min4), new Date(max4)];
+      this.xSet = [...values].sort((a2, b) => {
+        const aDate = a2.getTime();
         const bDate = b.getTime();
         if (aDate > bDate) return 1;
         if (bDate > aDate) return -1;
         return 0;
       });
     } else if (this.scaleType === ScaleType.Linear) {
-      domain = [min7, max7];
-      this.xSet = [...values].sort((a3, b) => a3 - b);
+      domain = [min4, max4];
+      this.xSet = [...values].sort((a2, b) => a2 - b);
     } else {
       domain = values;
       this.xSet = values;
@@ -29921,9 +22334,9 @@ var LineChartComponent = class extends BaseChartComponent {
     if (!this.autoScale) {
       values.push(0);
     }
-    const min7 = this.yScaleMin ? this.yScaleMin : Math.min(...values);
-    const max7 = this.yScaleMax ? this.yScaleMax : Math.max(...values);
-    return [min7, max7];
+    const min4 = this.yScaleMin ? this.yScaleMin : Math.min(...values);
+    const max4 = this.yScaleMax ? this.yScaleMax : Math.max(...values);
+    return [min4, max4];
   }
   getSeriesDomain() {
     return this.results.map((d) => d.name);
@@ -29933,7 +22346,7 @@ var LineChartComponent = class extends BaseChartComponent {
     if (this.scaleType === ScaleType.Time) {
       scale = time().range([0, width]).domain(domain);
     } else if (this.scaleType === ScaleType.Linear) {
-      scale = linear3().range([0, width]).domain(domain);
+      scale = linear().range([0, width]).domain(domain);
       if (this.roundDomains) {
         scale = scale.nice();
       }
@@ -29943,7 +22356,7 @@ var LineChartComponent = class extends BaseChartComponent {
     return scale;
   }
   getYScale(domain, height) {
-    const scale = linear3().range([height, 0]).domain(domain);
+    const scale = linear().range([height, 0]).domain(domain);
     return this.roundDomains ? scale.nice() : scale;
   }
   updateDomain(domain) {
@@ -29962,7 +22375,7 @@ var LineChartComponent = class extends BaseChartComponent {
   onClick(data) {
     this.select.emit(data);
   }
-  trackBy(index4, item) {
+  trackBy(index2, item) {
     return `${item.name}`;
   }
   setColors() {
@@ -30687,14 +23100,14 @@ var PolarSeriesComponent = class {
     const data = this.sortData(this.data.series);
     const seriesName = this.data.name;
     const linearScaleType = this.colors.scaleType === ScaleType.Linear;
-    const min7 = this.yScale.domain()[0];
-    this.seriesColor = this.colors.getColor(linearScaleType ? min7 : seriesName);
+    const min4 = this.yScale.domain()[0];
+    this.seriesColor = this.colors.getColor(linearScaleType ? min4 : seriesName);
     this.path = line(data) || "";
     this.circles = data.map((d) => {
-      const a3 = this.getAngle(d);
+      const a2 = this.getAngle(d);
       const r = this.getRadius(d);
       const value2 = d.value;
-      const color2 = this.colors.getColor(linearScaleType ? Math.abs(value2) : seriesName);
+      const color = this.colors.getColor(linearScaleType ? Math.abs(value2) : seriesName);
       const cData = Object.assign({}, d, {
         series: seriesName,
         value: value2,
@@ -30702,10 +23115,10 @@ var PolarSeriesComponent = class {
       });
       return {
         data: cData,
-        cx: r * Math.sin(a3),
-        cy: -r * Math.cos(a3),
+        cx: r * Math.sin(a2),
+        cy: -r * Math.cos(a2),
         value: value2,
-        color: color2,
+        color,
         label: d.name
       };
     });
@@ -30764,13 +23177,13 @@ var PolarSeriesComponent = class {
     if (!this.hasGradient) {
       return;
     }
-    this.gradientId = "grad" + id2().toString();
+    this.gradientId = "grad" + id().toString();
     this.gradientUrl = `url(#${this.gradientId})`;
     if (this.colors.scaleType === ScaleType.Linear) {
       const values = this.data.series.map((d) => d.value);
-      const max7 = Math.max(...values);
-      const min7 = Math.min(...values);
-      this.gradientStops = this.colors.getLinearGradientStops(max7, min7);
+      const max4 = Math.max(...values);
+      const min4 = Math.min(...values);
+      this.gradientStops = this.colors.getLinearGradientStops(max4, min4);
     } else {
       this.gradientStops = void 0;
     }
@@ -31019,13 +23432,13 @@ var PolarChartComponent = class extends BaseChartComponent {
     this.yAxisScale = this.getYScale(this.yDomain.reverse(), this.outerRadius);
   }
   setTicks() {
-    let tickFormat3;
+    let tickFormat2;
     if (this.xAxisTickFormatting) {
-      tickFormat3 = this.xAxisTickFormatting;
+      tickFormat2 = this.xAxisTickFormatting;
     } else if (this.xScale.tickFormat) {
-      tickFormat3 = this.xScale.tickFormat.apply(this.xScale, [5]);
+      tickFormat2 = this.xScale.tickFormat.apply(this.xScale, [5]);
     } else {
-      tickFormat3 = (d) => {
+      tickFormat2 = (d) => {
         if (isDate(d)) {
           return d.toLocaleDateString();
         }
@@ -31033,13 +23446,13 @@ var PolarChartComponent = class extends BaseChartComponent {
       };
     }
     const outerRadius = this.outerRadius;
-    const s3 = 1.1;
+    const s2 = 1.1;
     this.thetaTicks = this.xDomain.map((d) => {
       const startAngle = this.xScale(d);
-      const dd = s3 * outerRadius * (startAngle > Math.PI ? -1 : 1);
-      const label = tickFormat3(d);
+      const dd = s2 * outerRadius * (startAngle > Math.PI ? -1 : 1);
+      const label = tickFormat2(d);
       const startPos = [outerRadius * Math.sin(startAngle), -outerRadius * Math.cos(startAngle)];
-      const pos = [dd, s3 * startPos[1]];
+      const pos = [dd, s2 * startPos[1]];
       return {
         innerRadius: 0,
         outerRadius,
@@ -31053,11 +23466,11 @@ var PolarChartComponent = class extends BaseChartComponent {
     });
     const minDistance = 10;
     for (let i = 0; i < this.thetaTicks.length - 1; i++) {
-      const a3 = this.thetaTicks[i];
+      const a2 = this.thetaTicks[i];
       for (let j = i + 1; j < this.thetaTicks.length; j++) {
         const b = this.thetaTicks[j];
-        if (b.pos[0] * a3.pos[0] > 0) {
-          const o = minDistance - Math.abs(b.pos[1] - a3.pos[1]);
+        if (b.pos[0] * a2.pos[0] > 0) {
+          const o = minDistance - Math.abs(b.pos[1] - a2.pos[1]);
           if (o > 0) {
             b.pos[1] += Math.sign(b.pos[0]) * o;
           }
@@ -31079,14 +23492,14 @@ var PolarChartComponent = class extends BaseChartComponent {
   }
   getXDomain(values = this.getXValues()) {
     if (this.scaleType === ScaleType.Time) {
-      const min7 = Math.min(...values);
-      const max7 = Math.max(...values);
-      return [min7, max7];
+      const min4 = Math.min(...values);
+      const max4 = Math.max(...values);
+      return [min4, max4];
     } else if (this.scaleType === ScaleType.Linear) {
       values = values.map((v) => Number(v));
-      const min7 = Math.min(...values);
-      const max7 = Math.max(...values);
-      return [min7, max7];
+      const min4 = Math.min(...values);
+      const max4 = Math.max(...values);
+      return [min4, max4];
     }
     return values;
   }
@@ -31112,13 +23525,13 @@ var PolarChartComponent = class extends BaseChartComponent {
     return domain;
   }
   getYDomain(domain = this.getYValues()) {
-    let min7 = Math.min(...domain);
-    const max7 = Math.max(this.yAxisMinScale, ...domain);
-    min7 = Math.max(0, min7);
+    let min4 = Math.min(...domain);
+    const max4 = Math.max(this.yAxisMinScale, ...domain);
+    min4 = Math.max(0, min4);
     if (!this.autoScale) {
-      min7 = Math.min(0, min7);
+      min4 = Math.min(0, min4);
     }
-    return [min7, max7];
+    return [min4, max4];
   }
   getSeriesDomain() {
     return this.results.map((d) => d.name);
@@ -31128,7 +23541,7 @@ var PolarChartComponent = class extends BaseChartComponent {
       case ScaleType.Time:
         return time().range([0, width]).domain(domain);
       case ScaleType.Linear: {
-        const scale = linear3().range([0, width]).domain(domain);
+        const scale = linear().range([0, width]).domain(domain);
         return this.roundDomains ? scale.nice() : scale;
       }
       default:
@@ -31136,7 +23549,7 @@ var PolarChartComponent = class extends BaseChartComponent {
     }
   }
   getYScale(domain, height) {
-    const scale = linear3().range([0, height]).domain(domain);
+    const scale = linear().range([0, height]).domain(domain);
     return this.roundDomains ? scale.nice() : scale;
   }
   onClick(data, series) {
@@ -31213,7 +23626,7 @@ var PolarChartComponent = class extends BaseChartComponent {
     }
     this.activeEntries = [];
   }
-  trackBy(index4, item) {
+  trackBy(index2, item) {
     return `${item.name}`;
   }
 };
@@ -31572,7 +23985,7 @@ var PieArcComponent = class {
   update() {
     const calc = this.calculateArc();
     this.startOpacity = 0.5;
-    this.radialGradientId = "linearGrad" + id2().toString();
+    this.radialGradientId = "linearGrad" + id().toString();
     this.gradientFill = `url(#${this.radialGradientId})`;
     if (this.animate) {
       if (this.initialized) {
@@ -31593,7 +24006,7 @@ var PieArcComponent = class {
     return arc_default().innerRadius(this.innerRadius).outerRadius(outerRadius).cornerRadius(this.cornerRadius);
   }
   loadAnimation() {
-    const node = select_default2(this.element).selectAll(".arc").data([{
+    const node = select_default(this.element).selectAll(".arc").data([{
       startAngle: this.startAngle,
       endAngle: this.endAngle
     }]);
@@ -31617,7 +24030,7 @@ var PieArcComponent = class {
     });
   }
   updateAnimation() {
-    const node = select_default2(this.element).selectAll(".arc").data([{
+    const node = select_default(this.element).selectAll(".arc").data([{
       startAngle: this.startAngle,
       endAngle: this.endAngle
     }]);
@@ -31816,7 +24229,7 @@ var PieSeriesComponent = class {
   update() {
     const pieGenerator = pie_default().value((d) => d.value).sort(null);
     const arcData = pieGenerator(this.series);
-    this.max = max2(arcData, (d) => {
+    this.max = max(arcData, (d) => {
       return d.value;
     });
     this.data = this.calculateLabelPositions(arcData);
@@ -31838,8 +24251,8 @@ var PieSeriesComponent = class {
       d.pos[0] = factor * this.outerRadius * (this.midAngle(d) < Math.PI ? 1 : -1);
     });
     for (let i = 0; i < labelPositions.length - 1; i++) {
-      const a3 = labelPositions[i];
-      if (!this.labelVisible(a3)) {
+      const a2 = labelPositions[i];
+      if (!this.labelVisible(a2)) {
         continue;
       }
       for (let j = i + 1; j < labelPositions.length; j++) {
@@ -31847,8 +24260,8 @@ var PieSeriesComponent = class {
         if (!this.labelVisible(b)) {
           continue;
         }
-        if (b.pos[0] * a3.pos[0] > 0) {
-          const o = minDistance - Math.abs(b.pos[1] - a3.pos[1]);
+        if (b.pos[0] * a2.pos[0] > 0) {
+          const o = minDistance - Math.abs(b.pos[1] - a2.pos[1]);
           if (o > 0) {
             b.pos[1] += Math.sign(b.pos[0]) * o;
           }
@@ -31860,8 +24273,8 @@ var PieSeriesComponent = class {
   labelVisible(myArc) {
     return this.showLabels && myArc.endAngle - myArc.startAngle > Math.PI / 30;
   }
-  getTooltipTitle(a3) {
-    return this.tooltipTemplate ? void 0 : this.tooltipText(a3);
+  getTooltipTitle(a2) {
+    return this.tooltipTemplate ? void 0 : this.tooltipText(a2);
   }
   labelText(myArc) {
     if (this.labelFormatting) {
@@ -31883,7 +24296,7 @@ var PieSeriesComponent = class {
   color(myArc) {
     return this.colors.getColor(this.label(myArc));
   }
-  trackBy(index4, item) {
+  trackBy(index2, item) {
     return item.data.name;
   }
   onClick(data) {
@@ -32350,8 +24763,8 @@ var PieChartComponent = class extends BaseChartComponent {
       this.innerRadius = this.outerRadius * (1 - this.arcWidth);
     }
     this.domain = this.getDomain();
-    this.data = this.results.sort((a3, b) => {
-      return this.domain.indexOf(a3.name) - this.domain.indexOf(b.name);
+    this.data = this.results.sort((a2, b) => {
+      return this.domain.indexOf(a2.name) - this.domain.indexOf(b.name);
     });
     this.setColors();
     this.legendOptions = this.getLegendOptions();
@@ -32659,7 +25072,7 @@ function gridLayout(dims, data, minWidth, designatedTotal) {
   return res;
 }
 function getTotal(results) {
-  return results.map((d) => d ? d.value : 0).reduce((sum6, val) => sum6 + val, 0);
+  return results.map((d) => d ? d.value : 0).reduce((sum3, val) => sum3 + val, 0);
 }
 var PieGridSeriesComponent = class {
   constructor(element) {
@@ -32679,17 +25092,17 @@ var PieGridSeriesComponent = class {
     this.arcs = this.getArcs();
   }
   getArcs() {
-    return this.layout(this.data).map((arc, index4) => {
+    return this.layout(this.data).map((arc, index2) => {
       const label = arc.data.data.name;
       const other = arc.data.data.other;
-      if (index4 === 0) {
+      if (index2 === 0) {
         arc.startAngle = 0;
       }
-      const color2 = this.colors(label);
+      const color = this.colors(label);
       return {
         data: arc.data.data,
-        class: "arc arc" + index4,
-        fill: color2,
+        class: "arc arc" + index2,
+        fill: color,
         startAngle: other ? 0 : arc.startAngle,
         endAngle: arc.endAngle,
         animate: this.animations && !other,
@@ -32700,7 +25113,7 @@ var PieGridSeriesComponent = class {
   onClick(data) {
     this.select.emit(this.data[0].data);
   }
-  trackBy(index4, item) {
+  trackBy(index2, item) {
     return item.data.name;
   }
   label(arc) {
@@ -32858,12 +25271,12 @@ var PieGridComponent = class extends BaseChartComponent {
       const name = d.data.name;
       const label = formatLabel(name);
       const value2 = d.data.value;
-      const radius = min2([d.width - padding, d.height - baselineLabelHeight]) / 2 - 5;
+      const radius = min([d.width - padding, d.height - baselineLabelHeight]) / 2 - 5;
       const innerRadius = radius * 0.9;
-      let count6 = 0;
+      let count3 = 0;
       const colors = () => {
-        count6 += 1;
-        if (count6 === 1) {
+        count3 += 1;
+        if (count3 === 1) {
           return "rgba(100,100,100,0.3)";
         } else {
           return this.colorScale.getColor(label);
@@ -32892,7 +25305,7 @@ var PieGridComponent = class extends BaseChartComponent {
     });
   }
   getTotal() {
-    return this.results.map((d) => d.value).reduce((sum6, d) => sum6 + d, 0);
+    return this.results.map((d) => d.value).reduce((sum3, d) => sum3 + d, 0);
   }
   onClick(data) {
     this.select.emit(data);
@@ -33330,7 +25743,7 @@ var CardComponent = class {
           this.cd.markForCheck();
         });
       };
-      this.animationReq = count5(0, val, decs, 1, callback);
+      this.animationReq = count2(0, val, decs, 1, callback);
       this.initialized = true;
     }
   }
@@ -33579,19 +25992,19 @@ function hexToRgb(value2) {
   return rgb(value2);
 }
 function invertColor(value2) {
-  const color2 = rgb(value2);
+  const color = rgb(value2);
   const {
     r,
     g,
     b,
     opacity
-  } = color2;
+  } = color;
   if (opacity === 0) {
-    return color2.toString();
+    return color.toString();
   }
   const yiq = (r * 299 + g * 587 + b * 114) / 1e3;
   const depth = yiq >= 128 ? -0.8 : 0.8;
-  return shadeRGBColor(color2, depth);
+  return shadeRGBColor(color, depth);
 }
 function shadeRGBColor({
   r,
@@ -33625,7 +26038,7 @@ var CardSeriesComponent = class {
           label: d ? d.data.name : "",
           value: d && d.data ? d.data.value : ""
         }).length : 0;
-      }).sort((a3, b) => b - a3);
+      }).sort((a2, b) => b - a2);
       const idx = Math.ceil(this.data.length / 2);
       this.medianSize = sortedLengths[idx];
     }
@@ -33636,7 +26049,7 @@ var CardSeriesComponent = class {
   getCards() {
     const yPadding = typeof this.innerPadding === "number" ? this.innerPadding : this.innerPadding[0] + this.innerPadding[2];
     const xPadding = typeof this.innerPadding === "number" ? this.innerPadding : this.innerPadding[1] + this.innerPadding[3];
-    return this.data.map((d, index4) => {
+    return this.data.map((d, index2) => {
       let label = d.data.name;
       if (label && label.constructor.name === "Date") {
         label = label.toLocaleDateString();
@@ -33645,22 +26058,22 @@ var CardSeriesComponent = class {
       }
       const value2 = d.data.value;
       const valueColor = label ? this.colors.getColor(label) : this.emptyColor;
-      const color2 = this.cardColor || valueColor || "#000";
+      const color = this.cardColor || valueColor || "#000";
       return {
         x: d.x,
         y: d.y,
         width: d.width - xPadding,
         height: d.height - yPadding,
-        color: color2,
+        color,
         bandColor: this.bandColor || valueColor,
-        textColor: this.textColor || invertColor(color2),
+        textColor: this.textColor || invertColor(color),
         label,
         data: d.data,
         tooltipText: `${label}: ${value2}`
       };
     });
   }
-  trackBy(index4, card) {
+  trackBy(index2, card) {
     return card.label;
   }
   onClick(data) {
@@ -33974,7 +26387,7 @@ var TreeMapCellComponent = class {
     };
     this.formattedValue = this.valueFormatting(cellData.value);
     this.formattedLabel = labelFormatting(cellData);
-    this.gradientId = "grad" + id2().toString();
+    this.gradientId = "grad" + id().toString();
     this.gradientUrl = `url(#${this.gradientId})`;
     this.gradientStops = this.getGradientStops();
   }
@@ -33989,7 +26402,7 @@ var TreeMapCellComponent = class {
     }
   }
   loadAnimation() {
-    const node = select_default2(this.element).select(".cell");
+    const node = select_default(this.element).select(".cell");
     node.attr("opacity", 0).attr("x", this.x).attr("y", this.y);
     this.animateToCurrentForm();
   }
@@ -33997,7 +26410,7 @@ var TreeMapCellComponent = class {
     return invertColor(this.fill);
   }
   animateToCurrentForm() {
-    const node = select_default2(this.element).select(".cell");
+    const node = select_default(this.element).select(".cell");
     if (this.animations) {
       node.transition().duration(750).attr("opacity", 1).attr("x", this.x).attr("y", this.y).attr("width", this.width).attr("height", this.height);
     } else {
@@ -34187,7 +26600,7 @@ var TreeMapCellSeriesComponent = class {
   getCells() {
     return this.data.children.filter((d) => {
       return d.depth === 1;
-    }).map((d, index4) => {
+    }).map((d, index2) => {
       const label = d.id;
       return {
         data: d.data,
@@ -34213,7 +26626,7 @@ var TreeMapCellSeriesComponent = class {
   onClick(data) {
     this.select.emit(data);
   }
-  trackBy(index4, item) {
+  trackBy(index2, item) {
     return item.label;
   }
 };
@@ -34342,7 +26755,7 @@ var TreeMapComponent = class extends BaseChartComponent {
       value: 0,
       isRoot: true
     };
-    const root3 = stratify_default().id((d) => {
+    const root2 = stratify_default().id((d) => {
       let label = d.name;
       if (label.constructor.name === "Date") {
         label = label.toLocaleDateString();
@@ -34351,7 +26764,7 @@ var TreeMapComponent = class extends BaseChartComponent {
       }
       return label;
     }).parentId((d) => d.isRoot ? null : "root")([rootNode, ...this.results]).sum((d) => d.value);
-    this.data = this.treemap(root3);
+    this.data = this.treemap(root2);
     this.setColors();
     this.transform = `translate(${this.dims.xOffset} , ${this.margin[0]})`;
   }
@@ -34560,7 +26973,7 @@ var LinearGaugeComponent = class extends BaseChartComponent {
     return [this.min, this.max];
   }
   getValueScale() {
-    return linear3().range([0, this.dims.width]).domain(this.valueDomain);
+    return linear().range([0, this.dims.width]).domain(this.valueDomain);
   }
   getDisplayValue() {
     if (this.valueFormatting) {
@@ -35005,7 +27418,7 @@ var GaugeAxisComponent = class {
     const bigTickSegment = this.angleSpan / this.bigSegments;
     const smallTickSegment = bigTickSegment / this.smallSegments;
     const tickLength = 20;
-    const ticks2 = {
+    const ticks = {
       big: [],
       small: []
     };
@@ -35024,7 +27437,7 @@ var GaugeAxisComponent = class {
         if (this.tickFormatting) {
           text = this.tickFormatting(text);
         }
-        ticks2.big.push({
+        ticks.big.push({
           line: this.getTickPath(startDistance, tickLength, angle),
           textAnchor,
           text,
@@ -35039,12 +27452,12 @@ var GaugeAxisComponent = class {
       for (let j = 1; j <= this.smallSegments; j++) {
         const smallAngleDeg = angleDeg + j * smallTickSegment;
         const smallAngle = smallAngleDeg * Math.PI / 180;
-        ticks2.small.push({
+        ticks.small.push({
           line: this.getTickPath(startDistance, tickLength / 2, smallAngle)
         });
       }
     }
-    return ticks2;
+    return ticks;
   }
   getTextAnchor(angle) {
     angle = (this.startAngle + angle) % 360;
@@ -35058,15 +27471,15 @@ var GaugeAxisComponent = class {
   }
   getTickPath(startDistance, tickLength, angle) {
     const y1 = startDistance * Math.sin(angle);
-    const y22 = (startDistance + tickLength) * Math.sin(angle);
+    const y2 = (startDistance + tickLength) * Math.sin(angle);
     const x1 = startDistance * Math.cos(angle);
-    const x22 = (startDistance + tickLength) * Math.cos(angle);
+    const x2 = (startDistance + tickLength) * Math.cos(angle);
     const points = [{
       x: x1,
       y: y1
     }, {
-      x: x22,
-      y: y22
+      x: x2,
+      y: y2
     }];
     const lineGenerator = line_default().x((d) => d.x).y((d) => d.y);
     return lineGenerator(points);
@@ -35292,10 +27705,10 @@ var GaugeComponent = class extends BaseChartComponent {
     return [this.min, this.max];
   }
   getValueScale() {
-    return linear3().range([0, this.angleSpan]).nice().domain(this.valueDomain);
+    return linear().range([0, this.angleSpan]).nice().domain(this.valueDomain);
   }
   getDisplayValue() {
-    const value2 = this.results.map((d) => d.value).reduce((a3, b) => a3 + b, 0);
+    const value2 = this.results.map((d) => d.value).reduce((a2, b) => a2 + b, 0);
     if (this.textValue && 0 !== this.textValue.length) {
       return this.textValue.toLocaleString();
     }
@@ -35372,7 +27785,7 @@ var GaugeComponent = class extends BaseChartComponent {
     });
     return item !== void 0;
   }
-  trackBy(index4, item) {
+  trackBy(index2, item) {
     return item.valueArc.data.name;
   }
 };
@@ -35686,22 +28099,22 @@ var SankeyComponent = class extends BaseChartComponent {
       rect.transform = `translate(${rect.x},${rect.y})`;
       return rect;
     });
-    this.linkPaths = data.links.map((link3) => {
-      const gradientId = "mask" + id2().toString();
+    this.linkPaths = data.links.map((link2) => {
+      const gradientId = "mask" + id().toString();
       const linkPath = {
-        path: sankeyLinkHorizontal_default()(link3),
-        strokeWidth: Math.max(1, link3.width),
-        tooltip: this.getLinkTooltipText(link3.source, link3.target, link3.value),
+        path: sankeyLinkHorizontal_default()(link2),
+        strokeWidth: Math.max(1, link2.width),
+        tooltip: this.getLinkTooltipText(link2.source, link2.target, link2.value),
         id: gradientId,
         gradientFill: `url(#${gradientId})`,
-        source: link3.source,
-        target: link3.target,
-        startColor: this.colors.getColor(link3.source.name),
-        endColor: this.colors.getColor(link3.target.name),
+        source: link2.source,
+        target: link2.target,
+        startColor: this.colors.getColor(link2.source.name),
+        endColor: this.colors.getColor(link2.target.name),
         data: {
-          source: link3.source.name,
-          target: link3.target.name,
-          value: link3.value
+          source: link2.source.name,
+          target: link2.target.name,
+          value: link2.value
         }
       };
       return linkPath;
@@ -35955,7 +28368,7 @@ NgxChartsModule.ɵinj = ɵɵdefineInjector({
     return [];
   }, null);
 })();
-function tickFormat2(fieldType, groupByType) {
+function tickFormat(fieldType, groupByType) {
   return function(label) {
     if (label === "No Value" || label === "Other") {
       return label;
@@ -36071,7 +28484,7 @@ export {
   YAxisTicksComponent,
   calculateViewDimensions,
   colorSets,
-  count5 as count,
+  count2 as count,
   decimalChecker,
   escapeLabel,
   formatLabel,
@@ -36084,7 +28497,7 @@ export {
   gridLayout,
   gridSize,
   hexToRgb,
-  id2 as id,
+  id,
   invertColor,
   reduceTicks,
   shadeRGBColor,
@@ -36093,7 +28506,7 @@ export {
   sortLinear,
   throttle,
   throttleable,
-  tickFormat2 as tickFormat,
+  tickFormat,
   trimLabel
 };
 /*! Bundled license information:
