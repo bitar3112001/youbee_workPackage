@@ -1,6 +1,6 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AssetData} from '../model/dataModel';
+import { AssetData} from '../model/AssetData';
 import { ApiServiceService } from '../api-service.service';
 import * as d3 from 'd3';
 
@@ -27,7 +27,7 @@ export class MyChartComponent implements OnInit {
   ngOnInit(): void {
     this.fetchData();
   }
-  
+
  // Fetch data from the API and update the component state
   fetchData() {
       this.dataService.getData().subscribe(

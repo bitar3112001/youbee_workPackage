@@ -4,7 +4,7 @@ import { CardComponent } from '../card/card.component';
 import { MyChartComponent } from '../my-chart/my-chart.component';
 
 
-import { AssetData } from '../model/dataModel';
+import { AssetData } from '../model/AssetData';
 
 import { ApiServiceService } from '../api-service.service';
 
