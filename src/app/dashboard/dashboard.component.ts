@@ -1,11 +1,7 @@
 import { Component, HostListener, OnInit, Output, EventEmitter, Input, inject } from '@angular/core';
 import { CardComponent } from '../card/card.component';
-
 import { MyChartComponent } from '../my-chart/my-chart.component';
-
-
 import { AssetData } from '../model/AssetData';
-
 import { ApiServiceService } from '../api-service.service';
 
 @Component({
