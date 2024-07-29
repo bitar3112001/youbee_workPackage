@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
 
-# Note please when you want to run the project add apiToken in file environment.ts
+# Note please when you want to run the project add apiToken in file environment/environment.secret.ts
 
 # Components
 1- Card Component:
