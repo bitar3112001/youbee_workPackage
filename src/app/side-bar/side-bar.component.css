@@ -1,0 +1,47 @@
+
+
+.s1 {
+  width: 280px;
+  opacity: 1;
+  visibility: visible;
+  transition: width 0.5s, opacity 0.5s, visibility 0.5s;
+  height: 100vh;
+}
+
+
+.s2 {
+  width: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: width 0.5s, opacity 0.5s, visibility 0.5s;
+  height: 100vh;
+}
+#mainSvg{
+  width:24px;
+   height:24px;
+}
+#subSvg{
+
+  width:14px;
+  height:14px;
+}
+
+
+@media (max-width: 1100px) {
+  .s1 {
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: width 0.5s, opacity 0.5s, visibility 0.5s;
+
+  }
+
+  .s2 {
+    width: 280px;
+    opacity: 1;
+    visibility: visible;
+    transition: width 0.5s, opacity 0.5s, visibility 0.5s;
+    height: 100vh;
+
+  }
+}

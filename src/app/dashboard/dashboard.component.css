@@ -1,0 +1,66 @@
+
+#mainSvg{
+  width:24px;
+   height:24px;
+}
+#map{
+  height:90%;
+  border:0px;
+  max-width: 100%;
+}
+
+
+.btnToggle{
+  display: none;
+}
+.gapCard{
+  gap:50px;
+
+}
+
+.genralInfo{
+  height: 100%;
+}
+.mainCard{
+  min-width: 20%;
+  height: 470px;
+}
+
+
+#instDropDown{
+  max-width: 20%;
+}
+@media (max-width:1100px){
+  .btnToggle{
+    display: block;
+    margin-left: 2%;
+  }
+
+}
+
+@media (max-width:850px){
+  .gapCard app-card{
+    flex: 1 0 100%;
+  }
+
+  .gapCard {
+    gap: 15px;
+
+  }
+
+
+  #instDropDown{
+    max-width: 40%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+

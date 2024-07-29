@@ -1,0 +1,81 @@
+<div>
+
+
+  <div class="d-flex justify-content-between m-3 align-items-center ">
+    <div class="d-flex">
+      <button class=" border-0 bg-light rounded btnToggle me-4" (click)="sendBtn()">
+        <svg xmlns="http://www.w3.org/2000/svg"  id="mainSvg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-justify"><line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line></svg>
+        </button>
+      <h1>Porfolio</h1>
+
+    </div>
+
+      <!-- <select name="" id="instDropDown" class="form-select" >
+        @for (item of selection; track $index) {
+      <option (change)="fetchDataSelect(item.id)" [value]="item.id">{{item.name}}</option>
+    }
+
+    </select> -->
+
+    <select id="instDropDown" class="form-select" (change)="onSelectChange($event)">
+      @for (item of selection; track $index) {
+        <option [value]="item.id">{{item.name}}</option>
+      }
+    </select>
+
+  </div>
+  <hr class="m-3">
+
+  <div class="m-3 rounded p-3">
+    <h3>General Information</h3>
+    <div class="d-flex justify-content-between align-items-center mt-3 mb-3 flex-wrap gapCard">
+      <app-card class="flex-grow-1" [name]="'Companies'" [value]="info.companies"></app-card>
+      <app-card class="flex-grow-1" [name]="'Employees'" [value]="info.employees"></app-card>
+      <app-card class="flex-grow-1" [name]="'Revenue'" [value]="info.revenue" [units]="'€'"></app-card>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-between align-items-center flex-wrap m-3 p-3 gapCard">
+
+
+    <div class=" rounded p-3 layout flex-grow-1 bg-body shadow-sm mainCard"  >
+      <h3>Industry Sectors</h3>
+      <div class="d-flex justify-content-center align-items-center " >
+        <!-- <ngx-charts-pie-chart
+          [view]="chartView"
+          [results]="chartData"
+          [gradient]="gradient"
+        [legend]="showLegend"
+        [labels]="true"
+        [legendPosition]="dynamicLegendPosition"
+        [legendTitle]="'Chart'"
+
+          >
+        </ngx-charts-pie-chart> -->
+<app-my-chart></app-my-chart>
+      </div>
+
+
+    </div>
+    <div class="rounded p-3 layout flex-grow-1 bg-body shadow-sm mainCard">
+      <h3>Indicator Sums</h3>
+      <div class="d-flex flex-column justify-content-between mt-3 flex-wrap gap-3 sectionCard mt-">
+        <app-card  [name]="'Direct GHG Emission'" [value]="info.directGHG" [units]="'CO₂e'"></app-card>
+        <app-card [name]="'Water Consumption'" [value]="info.waterConsumption" [units]="'m³'"></app-card>
+        <app-card [name]="'Acute Risks'" [value]="info.hazardousWaste" [units]="'tones'"></app-card>
+
+      </div>
+    </div>
+
+    <div class=" rounded p-3 layout flex-grow-1 bg-body shadow-sm mainCard">
+      <h3>Assets Location</h3>
+      <div class="d-flex flex-column justify-content-between flex-wrap genralInfo">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13326.683023892174!2d35.47762281869187!3d33.37966069284797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151e94a5d7a1ac15%3A0x23629441e0514c4c!2sNabatieh!5e0!3m2!1sen!2slb!4v1721635327999!5m2!1sen!2slb" allowfullscreen="" loading="lazy"
+             id="map"   referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+      </div>
+    </div>
+
+  </div>
+</div>

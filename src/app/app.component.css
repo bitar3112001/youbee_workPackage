@@ -1,0 +1,17 @@
+.sideBarUpdate{
+  position: fixed;
+  z-index: 10;
+  left: 0;
+}
+.sectionUpdate{
+  margin-left: 280px;
+}
+
+
+
+@media (max-width:1100px) {
+.sectionUpdate{
+  margin-left: 0px;
+}
+
+}

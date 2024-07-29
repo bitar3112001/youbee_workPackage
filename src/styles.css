@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --greenColor: #28a745;
+}
+
+*{
+  font-family: "Nunito",sans-serif;
+  font-size: 18px;
+}
+svg{
+  color: var(--greenColor);
+
+}
+.svgUpdate{
+  height: 24px;
+  width: 24px;
+}
+
+.legend-label-text{
+  overflow: visible !important;
+}
+
+
+
+@media (max-width:850px){
+  .ngx-charts{
+    max-width: 280px;
+  }
+
+  .legend-label{
+    display: block !important;
+  }
+
+.legend-title{
+  max-width: 200px;
+  position: relative;
+  left:15%;
+  margin-bottom: 5px;
+
+}
+  .legend-labels {
+    max-width: 200px;
+    position: relative;
+    left: 15%;
+
+  }
+
+
+}
+
