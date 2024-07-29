@@ -42,7 +42,7 @@ testem.log
 Thumbs.db
 
 # Variable tokens and environment configuration
-src/environment
+src/environment/environment.secret.ts
 
 
 
