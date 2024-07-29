@@ -44,4 +44,4 @@ Thumbs.db
 
 #variable token
 .env
-environment
+environment/environment.ts
