@@ -42,5 +42,4 @@ testem.log
 Thumbs.db
 
 # Variable tokens and environment configuration
-.env
-src/environments/environment.ts
+/src/environments/environment.ts
